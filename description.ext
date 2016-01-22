@@ -71,10 +71,10 @@ class Params
 {
     class f_param_debugMode
     {
-            title = "$STR_f_param_debugMode";
+            title = "Debug Mode";
             values[] = {0,1};
             texts[] = {"Off","On"};
-            default = 0;
+            default = 1;
             code = "f_var_debugMode = %1";
     };
 
@@ -242,7 +242,6 @@ class CfgFunctions
 		};
 		class assignGear
 		{
-			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
 			class assignGear{};
 		};

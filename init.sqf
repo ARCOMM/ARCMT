@@ -1,5 +1,5 @@
 enableSaving [false, false];
-enableSentences true;
+enableSentences false;
 
 // Briefing
 f_script_briefing = [] execVM "briefing.sqf";
@@ -49,10 +49,8 @@ f_var_cachingAggressiveness = 2;
 // Radio Systems Support
 [] execVM "f\radios\radio_init.sqf";
 
-// Medical Systems Support
-[] execVM "f\medical\medical_init.sqf";
-
 // Headless Client Initialization
+waitUntil {!isNil "f_param_headless_client"};
 if (f_param_headless_client == 1) then {
 	[true,30,false,false,30,3,true,[]] execVM "WerthlesHeadless.sqf";
 };

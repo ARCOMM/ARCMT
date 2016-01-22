@@ -10,5 +10,6 @@ class ARC
 	{
 		file = "arc_fnc\helpers";
 		class execHC {};
+		class fileExists {};
 	};
 };

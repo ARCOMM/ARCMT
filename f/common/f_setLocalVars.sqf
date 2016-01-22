@@ -1,56 +1,30 @@
-// F3 - F3 Common Local Variables
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// ====================================================================================
-
 waitUntil {!isnil "f_var_debugMode"};
-
-// ====================================================================================
-// DEBUG DEFINES
 
 #define SLV_NAME "(f\common\f_setLocalVars.sqf)"
 #define DEBUG_OUTPUT player sidechat
 
-// DECLARE VARIABLES AND FUNCTIONS
 private ["_str_f_var_units","_str_f_var_units_BLU","_str_f_var_units_RES","_str_f_var_units_OPF","_str_f_var_units_CIV","_str_f_var_men","_str_f_var_men_BLU","_str_f_var_men_RES","_str_f_var_men_OPF","_str_f_var_men_CIV","_str_f_var_groups_BLU","_str_f_var_groups_RES","_str_f_var_groups_OPF","_str_f_var_groups_CIV","_str_f_var_groups","_str_f_var_vehicles","_str_f_var_vehicles_BLU","_str_f_var_vehicles_RES","_str_f_var_vehicles_OPF","_str_f_var_vehicles_CIV"];
-
-// ====================================================================================
-
-// COMMON VARIABLE: f_var_units
-// We will create an array containing all units.
 
 f_var_units = allUnits + vehicles;
 
-// DEBUG
 if (f_var_debugMode == 1) then
 {
 	_str_f_var_units = str f_var_units;
 	DEBUG_OUTPUT format ["DEBUG %2: f_var_units = %1", _str_f_var_units, SLV_NAME];
 };
 
-// ====================================================================================
-
-// COMMON VARIABLE: f_var_units_BLU
-// Using f_var_units we will create an array containing all BLUFOR units.
-
 f_var_units_BLU = [];
 {if ((side _x) == west ) then {f_var_units_BLU = f_var_units_BLU + [_x]}} forEach f_var_units;
 
-// DEBUG
 if (f_var_debugMode == 1) then
 {
 	_str_f_var_units_BLU = str f_var_units_BLU;
 	DEBUG_OUTPUT format ["DEBUG %2: f_var_units_BLU = %1",_str_f_var_units_BLU, SLV_NAME];
 };
 
-// ====================================================================================
-
-// COMMON VARIABLE: f_var_units_RES
-// Using f_var_units we will create an array containing all resistance units.
-
 f_var_units_RES = [];
 {if ((side _x) == resistance) then {f_var_units_RES = f_var_units_RES + [_x]}} forEach f_var_units;
 
-// DEBUG
 if (f_var_debugMode == 1) then
 {
 	_str_f_var_units_RES = str f_var_units_RES;
@@ -350,4 +324,3 @@ if (f_var_debugMode == 1) then
 	_str_f_var_vehicles_CIV = str f_var_vehicles_CIV;
 	DEBUG_OUTPUT format ["DEBUG %2: f_var_vehicles_CIV = %1",_str_f_var_vehicles_CIV, SLV_NAME];
 };
-

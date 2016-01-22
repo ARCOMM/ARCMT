@@ -1,8 +1,3 @@
-// F3 - Safe Start, Safety Toggle
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-//=====================================================================================
-
-//Exit if server
 if(isDedicated) exitwith {};
 
 switch (_this select 0) do
