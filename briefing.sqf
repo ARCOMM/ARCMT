@@ -8,7 +8,7 @@ waitUntil {!isnil "f_var_debugMode"};
 _unitfaction = toLower (faction player);
 
 if (_unitfaction != toLower (faction (leader group player))) then {
-	_unitfaction = toLower (faction (leader group player))
+	_unitfaction = toLower (faction (leader group player));
 };
 
 if (f_var_debugMode == 1) then {
