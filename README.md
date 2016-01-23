@@ -1,2 +1,2 @@
-# ARC_MF.VR
-ARCOMM mission framework adapted from F3.
+# ARCOMM Mission Framework
+Mission framework adapted from F3.
