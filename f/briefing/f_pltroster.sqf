@@ -14,8 +14,8 @@ _sets = [
 	// NATO
 	["GrpNATO_CO", "#FFC600", "First Platoon", "PltHQ", true],
 
-	["GrpNATO_A2", "#FF4040", "Alpha", "ASL", true],
-	["GrpNATO_A2", "#FF4040", "A1", "", false],
+	["GrpNATO_ASL", "#FF4040", "Alpha", "ASL", true],
+	["GrpNATO_A1", "#FF4040", "A1", "", false],
 	["GrpNATO_A2", "#FF4040", "A2", "", false],
 
 	["GrpNATO_BSL", "#4458EC", "Bravo", "BSL", true],
