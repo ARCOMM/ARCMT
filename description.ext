@@ -5,7 +5,7 @@ class Header
 	maxPlayers = 100;
 };
 
-onLoadName = "ARC_MF";
+onLoadName = "ARC MF";
 onLoadMission = "ARCOMM mission framework adapted from F3.";
 author = "Kingsley";
 overviewPicture = "splash.paa";
@@ -218,7 +218,7 @@ class CfgRespawnTemplates
 
 class CfgFunctions
 {
-	#include "arc_fnc\config.hpp"
+	#include "f\arc\config.hpp"
 
 	class F
 	{
@@ -292,6 +292,5 @@ class CfgFunctions
 			class safety{};
 		};
 		#include "f\spect\functions.hpp"
-
 	};
 };

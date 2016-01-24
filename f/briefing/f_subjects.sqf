@@ -11,3 +11,4 @@ player createDiarySubject ["PltRoster", "Platoon Roster"];
 #include "f_pltroster.sqf"
 
 player createDiarySubject ["CommPlan", "Comm Plan"];
+#include "f_commplan.sqf"

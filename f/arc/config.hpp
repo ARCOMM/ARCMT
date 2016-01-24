@@ -2,14 +2,19 @@ class ARC
 {
 	class halo
 	{
-		file = "arc_fnc\halo";
+		file = "f\arc\halo";
 		class halodrop {};
 		class haloprep {};
 	};
 	class helpers
 	{
-		file = "arc_fnc\helpers";
+		file = "f\arc\helpers";
 		class execHC {};
 		class fileExists {};
+	};
+	class radios
+	{
+		file = "f\arc\radios";
+		class addMissingRadio {};
 	};
 };

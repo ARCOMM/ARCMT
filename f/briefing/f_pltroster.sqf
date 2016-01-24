@@ -26,20 +26,17 @@ _sets = [
 	["GrpNATO_C1", "#4FDC53", "C1", "", false],
 	["GrpNATO_C2", "#4FDC53", "C2", "", false],
 
-	["grpNull", "#F39939", "MMG Teams", "", true],
-	["GrpNATO_MMG1", "#F39939", "MMG1", "", false],
+	["GrpNATO_MMG1", "#F39939", "MMG Teams", "MMG1", true],
 	["GrpNATO_MMG2", "#F39939", "MMG2", "", false],
 	["GrpNATO_MMG3", "#F39939", "MMG3", "", false],
 	["GrpNATO_MMG4", "#F39939", "MMG4", "", false],
 
-	["grpNull", "#FF60E7", "Phantom", "", true],
-	["GrpNATO_PH1", "#FF60E7", "PH1", "", false],
+	["GrpNATO_PH1", "#FF60E7", "Phantom", "PH1", true],
 	["GrpNATO_PH2", "#FF60E7", "PH2", "", false],
 	["GrpNATO_PH3", "#FF60E7", "PH3", "", false],
 	["GrpNATO_PH4", "#FF60E7", "PH4", "", false],
 
-	["grpNull", "#69F9F1", "Gambler", "", true],
-	["GrpNATO_G1", "#69F9F1", "G1", "", false],
+	["GrpNATO_G1", "#69F9F1", "Gambler", "G1", true],
 	["GrpNATO_G2", "#69F9F1", "G2", "", false],
 	["GrpNATO_G3", "#69F9F1", "G3", "", false],
 	["GrpNATO_G4", "#69F9F1", "G4", "", false],
@@ -59,20 +56,17 @@ _sets = [
 	["GrpCSAT_C1", "#4FDC53", "C1", "", false],
 	["GrpCSAT_C2", "#4FDC53", "C2", "", false],
 
-	["grpNull", "#F39939", "MMG Teams", "", true],
-	["GrpCSAT_MMG1", "#F39939", "MMG1", "", false],
+	["GrpCSAT_MMG1", "#F39939", "MMG Teams", "MMG1", true],
 	["GrpCSAT_MMG2", "#F39939", "MMG2", "", false],
 	["GrpCSAT_MMG3", "#F39939", "MMG3", "", false],
 	["GrpCSAT_MMG4", "#F39939", "MMG4", "", false],
 
-	["grpNull", "#FF60E7", "Phantom", "", true],
-	["GrpCSAT_PH1", "#FF60E7", "PH1", "", false],
+	["GrpCSAT_PH1", "#FF60E7", "Phantom", "PH1", true],
 	["GrpCSAT_PH2", "#FF60E7", "PH2", "", false],
 	["GrpCSAT_PH3", "#FF60E7", "PH3", "", false],
 	["GrpCSAT_PH4", "#FF60E7", "PH4", "", false],
 
-	["grpNull", "#69F9F1", "Gambler", "", true],
-	["GrpCSAT_G1", "#69F9F1", "G1", "", false],
+	["GrpCSAT_G1", "#69F9F1", "Gambler", "G1", true],
 	["GrpCSAT_G2", "#69F9F1", "G2", "", false],
 	["GrpCSAT_G3", "#69F9F1", "G3", "", false],
 	["GrpCSAT_G4", "#69F9F1", "G4", "", false],
@@ -92,27 +86,24 @@ _sets = [
 	["GrpAAF_C1", "#4FDC53", "C1", "", false],
 	["GrpAAF_C2", "#4FDC53", "C2", "", false],
 
-	["grpNull", "#F39939", "MMG Teams", "", true],
-	["GrpAAF_MMG1", "#F39939", "MMG1", "", false],
+	["GrpAAF_MMG1", "#F39939", "MMG Teams", "MMG1", true],
 	["GrpAAF_MMG2", "#F39939", "MMG2", "", false],
 	["GrpAAF_MMG3", "#F39939", "MMG3", "", false],
 	["GrpAAF_MMG4", "#F39939", "MMG4", "", false],
 
-	["grpNull", "#FF60E7", "Phantom", "", true],
-	["GrpAAF_PH1", "#FF60E7", "PH1", "", false],
+	["GrpAAF_PH1", "#FF60E7", "Phantom", "PH1", true],
 	["GrpAAF_PH2", "#FF60E7", "PH2", "", false],
 	["GrpAAF_PH3", "#FF60E7", "PH3", "", false],
 	["GrpAAF_PH4", "#FF60E7", "PH4", "", false],
 
-	["grpNull", "#69F9F1", "Gambler", "", true],
-	["GrpAAF_G1", "#69F9F1", "G1", "", false],
+	["GrpAAF_G1", "#69F9F1", "Gambler", "G1", true],
 	["GrpAAF_G2", "#69F9F1", "G2", "", false],
 	["GrpAAF_G3", "#69F9F1", "G3", "", false],
 	["GrpAAF_G4", "#69F9F1", "G4", "", false]
 ];
 
 {
-	if (!isNil (_x select 0) || isNull (_x select 0)) then {
+	if (!isNil (_x select 0)) then {
 		_grp = call compile format ["%1", _x select 0];
 		_color = _x select 1;
 		_longText = _x select 2;
