@@ -17,7 +17,9 @@ respawndelay = 3;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator"};
 
-class cfgNotifications
+#include "f\arc\groups.hpp"
+
+class CfgNotifications
 {
 	class Template
 	{
