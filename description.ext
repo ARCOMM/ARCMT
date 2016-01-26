@@ -17,8 +17,6 @@ respawndelay = 3;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator"};
 
-#include "f\arc\groups.hpp"
-
 class CfgNotifications
 {
 	class Template
@@ -76,7 +74,7 @@ class Params
             title = "Debug Mode";
             values[] = {0,1};
             texts[] = {"Off","On"};
-            default = 1;
+            default = 0;
             code = "f_var_debugMode = %1";
     };
 
