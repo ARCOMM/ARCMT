@@ -149,6 +149,6 @@ switch (_mkrType) do {
 };
 
 while {{!isNull _x} count units _grp > 0} do {
-	_mkrName setMarkerPosLocal [(getPos leader _grp select 0),(getPos leader _grp select 1)];
+	_mkrName setMarkerPosLocal (getPos (leader _grp));
 	sleep 2;
 };

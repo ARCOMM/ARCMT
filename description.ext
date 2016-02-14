@@ -5,9 +5,9 @@ class Header
 	maxPlayers = 100;
 };
 
-onLoadName = "ARC MF";
-onLoadMission = "ARCOMM mission framework adapted from F3.";
-author = "Kingsley";
+onLoadName = "ARCMF";
+onLoadMission = "ARCOMM Mission Framework.";
+author = "ARCOMM";
 overviewPicture = "splash.paa";
 loadScreen = "splash.paa";
 enableDebugConsole = 0;
@@ -130,9 +130,6 @@ class CfgDebriefing
 		title = "Ending #1";
 		subtitle = "";
 		description = "*** Insert debriefing #1 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
 	class End2
@@ -140,9 +137,6 @@ class CfgDebriefing
 		title = "Ending #2";
 		subtitle = "";
 		description = "*** Insert debriefing #2 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
 	class End3
@@ -150,9 +144,6 @@ class CfgDebriefing
 		title = "Ending #3";
 		subtitle = "";
 		description = "*** Insert debriefing #3 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
 	class End4
@@ -160,9 +151,6 @@ class CfgDebriefing
 		title = "Ending #4";
 		subtitle = "";
 		description = "*** Insert debriefing #4 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
 	class End5
@@ -170,9 +158,6 @@ class CfgDebriefing
 		title = "Ending #5";
 		subtitle = "";
 		description = "*** Insert debriefing #5 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
 	class End6
@@ -180,9 +165,6 @@ class CfgDebriefing
 		title = "Ending #6";
 		subtitle = "";
 		description = "*** Insert debriefing #6 here. ***";
-		// pictureBackground = "";
-		// picture = "";
-		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
 };
 
