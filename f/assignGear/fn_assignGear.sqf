@@ -5,7 +5,7 @@ _unit = _this select 1;
 
 _faction = toLower (faction _unit);
 if (count _this > 2) then {
-  _faction = toLower (_this select 2);
+	_faction = toLower (_this select 2);
 };
 
 if !(local _unit) exitWith {};
@@ -40,7 +40,7 @@ _unit setVariable ["f_var_assignGear_done",true,true];
 if (isNil "_file") then {
 	player globalchat format ["DEBUG (assignGear.sqf): Faction %1 is not defined.",_faction];
 } else {
- 	if (f_var_debugMode == 1) then	{
+	if (f_var_debugMode == 1) then	{
 		player sideChat format ["DEBUG (assignGear.sqf): Gear for %1: %1 slot selected.",_unit,_faction,_typeofUnit];
 	};
 };

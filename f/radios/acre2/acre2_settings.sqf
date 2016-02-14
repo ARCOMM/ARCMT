@@ -6,11 +6,11 @@
 
 // Whether any radios should be assigned at all, to any units
 // TRUE = Disable radios for all units
-f_radios_settings_acre2_disableRadios = FALSE;
+f_radios_settings_acre2_disableRadios = false;
 
 // Whether or not the radio frequencies should be left as default, and not split per side
 // TRUE = Disable frequency seperation across sides
-f_radios_settings_acre2_disableFrequencySplit = FALSE;
+f_radios_settings_acre2_disableFrequencySplit = false;
 
 // Set a list of units that get a short wave
 // if its nil, that means all units get a radio
@@ -40,9 +40,9 @@ f_radios_settings_acre2_languages = [["english","English"],["russian","Russian"]
 
 // defines the language that a player can speak.
 // can define multiple
-f_radios_settings_acre2_language_blufor = ["english"];
-f_radios_settings_acre2_language_opfor = ["russian"];
-f_radios_settings_acre2_language_indfor = ["greek"];
+f_radios_settings_acre2_language_blufor = if (arc_param_babel) then { ["english"] } else { ["english","russian","greek"] };
+f_radios_settings_acre2_language_opfor = if (arc_param_babel) then { ["russian"] } else { ["english","russian","greek"] };
+f_radios_settings_acre2_language_indfor = if (arc_param_babel) then { ["greek"] } else { ["english","russian","greek"] };
 
 // Channels names
 // first item in the array will correspond to the first channel
@@ -67,7 +67,7 @@ _duplex = if (arc_param_duplex == 1) then {true} else {false};
 
 // ACRE Interference
 // Sets whether transmissions will interfere with eachother. This, by default, causes signal loss when multiple people are transmitting on the same frequency.
-[true] call acre_api_fnc_setInterference;
+[false] call acre_api_fnc_setInterference;
 
 // ACRE can AI hear players?
 // False - AI not hear players, true - AI hear players.

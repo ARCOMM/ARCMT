@@ -78,24 +78,6 @@ class Params
             code = "f_var_debugMode = %1";
     };
 
-    class f_param_radios
-    {
-            title = "Radio System";
-            values[] = {0,1};
-            texts[] = {"Off","ACRE2"};
-            default = 1;
-            code = "f_var_radios = %1";
-    };
-
-    class f_param_medical
-    {
-            title = "Medical System";
-            values[] = {0};
-            texts[] = {"Arma 3 Default"};
-            default = 0;
-            code = "f_var_medical = %1";
-    };
-
     class f_param_mission_timer
     {
             title = "Safe Start (mins)";
@@ -104,11 +86,11 @@ class Params
             default = 0;
             code = "f_param_mission_timer = %1";
     };
-
+	
 	class f_param_caching
 	{
 		title = "Cache AI outside distance (m)";
-		values[] = {0,600,800,1000,1500,2000};
+		values[] = {0,600,800,1000,1500,2000,2500,3000,3500,4000,4500,5000};
 		default = 0;
 		code = "f_param_caching = %1";
 	};
@@ -119,7 +101,7 @@ class Params
 		values[] = {0,1};
 		texts[] = {"Disabled","Enabled"};
 		default = 1;
-		code = "f_param_headless_client = %1";
+		code = "f_param_headless_client = if (%1 == 0) then {false} else {true};";
 	};
 
 	class arc_param_duplex
@@ -129,6 +111,15 @@ class Params
 		texts[] = {"Half Duplex", "Full Duplex"};
 		default = 1;
 		code = "arc_param_duplex = %1";
+	};
+	
+	class arc_param_babel
+	{
+		title = "Babel";
+		values[] = {0, 1};
+		texts[] = {"Disabled (all sides understand each other)", "Enabled (all sides speak different languages)"};
+		default = 0;
+		code = "arc_param_babel = if (%1 == 0) then {false} else {true};";
 	};
 };
 
@@ -193,7 +184,6 @@ class CfgDebriefing
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
 	};
-
 };
 
 class CfgRespawnTemplates
@@ -240,6 +230,14 @@ class CfgFunctions
 			class mpEnd{};
 			class mpEndReceiver{};
 		};
+		class cache
+		{
+			file = "f\cache";
+			class cInit {};
+			class cTracker {};
+			class gCache {};
+			class gUncache {};
+		};
 		class assignGear
 		{
 			file = "f\assignGear";
@@ -249,14 +247,6 @@ class CfgFunctions
 		{
 			file = "f\setGroupID";
 			class setGroupID{};
-		};
-		class cache
-		{
-			file = "f\cache";
-			class cInit {};
-			class cTracker {};
-			class gCache {};
-			class gUncache {};
 		};
 		class groupMarkers {
 			file = "f\groupMarkers";

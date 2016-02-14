@@ -15,8 +15,6 @@ if (f_var_debugMode == 1) then {
 	player sideChat format ["DEBUG (briefing.sqf): Player faction: %1",_unitfaction];
 };
 
-// #include "f\briefing\f_subjects.sqf"
-
 if (serverCommandAvailable "#kick") then {
 	#include "f\briefing\f_briefing_admin.sqf"
 	if (f_var_debugMode == 1) then {

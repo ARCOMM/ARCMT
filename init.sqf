@@ -1,3 +1,9 @@
+/*
+	ARCOMM Mission Framework
+	Version: 0.1
+	Branch: origin/master
+*/
+
 enableSaving [false, false];
 enableSentences false;
 
@@ -51,8 +57,8 @@ f_var_cachingAggressiveness = 2;
 
 // Headless Client Initialization
 waitUntil {!isNil "f_param_headless_client"};
-if (f_param_headless_client == 1) then {
-	[true,30,false,false,30,3,true,[]] execVM "WerthlesHeadless.sqf";
+if (f_param_headless_client) then {
+	[true, 30, false, false, 30, 3, true, []] execVM "WerthlesHeadless.sqf";
 };
 
 // Disable random button on Virtual Arsenal to prevent breaking ACRE
