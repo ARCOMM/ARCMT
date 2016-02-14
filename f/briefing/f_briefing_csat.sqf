@@ -13,7 +13,7 @@ _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
 *** Insert mission credits here. ***
 <br/><br/>
-Made with F3ARC (https://github.com/CER10TY/F3-ARC)
+Made with ARCMF (https://github.com/ARCOMM/ARC_MF.VR)
 "]];
 
 // ====================================================================================

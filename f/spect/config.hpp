@@ -1,5 +1,5 @@
-#define BACKGROUND_COLOR {0.059,0.059,0.059,1}
-#define PRIMARYCOLOR {0.918,0.655,0.141,1}
+#define BACKGROUND_COLOR {0,0,0,1}
+#define PRIMARYCOLOR {1,1,1,1}
 class RscSpectListBox {
     access = 0;
     type = 5;

@@ -338,7 +338,7 @@ case "KeyDown":
             ctrlShow [1310, !ctrlVisible 1310];
             ctrlShow [1300, !ctrlVisible 1300];
             ctrlShow [1305, !ctrlVisible 1305];
-             _handled = true;
+            _handled = true;
         };
         case 42: // SHIFT
         {
@@ -349,20 +349,7 @@ case "KeyDown":
         case 25:
 		{
             f_cam_muteSpectators = !f_cam_muteSpectators;
-            switch (f_var_radios) do {
-              // ACRE
-              case 1: {
-                [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
-              };
-              // TFR
-              case 2: {
-                [player, f_cam_muteSpectators] call TFAR_fnc_forceSpectator;
-              };
-              case 3: {
-                [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
-              };
-
-            };
+			[f_cam_muteSpectators] call acre_api_fnc_setSpectator;
         };
         case 29: // CTRL
         {
@@ -508,6 +495,11 @@ case "KeyUp":
             f_cam_freecam_buttons set [5,false];
             _handled = true;
         };
+		case 23:
+		{
+			f_cam_toggleTags = !f_cam_toggleTags;
+			_handled = true;
+		};
     };
     _handled
 };

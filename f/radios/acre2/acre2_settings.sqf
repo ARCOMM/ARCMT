@@ -40,6 +40,7 @@ f_radios_settings_acre2_languages = [["english","English"],["russian","Russian"]
 
 // defines the language that a player can speak.
 // can define multiple
+waitUntil {!isNil "arc_param_babel"};
 f_radios_settings_acre2_language_blufor = if (arc_param_babel) then { ["english"] } else { ["english","russian","greek"] };
 f_radios_settings_acre2_language_opfor = if (arc_param_babel) then { ["russian"] } else { ["english","russian","greek"] };
 f_radios_settings_acre2_language_indfor = if (arc_param_babel) then { ["greek"] } else { ["english","russian","greek"] };
