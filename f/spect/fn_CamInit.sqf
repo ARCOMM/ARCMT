@@ -58,7 +58,7 @@ _this spawn {
 	lbClear _listBox;
 	// set inital values.
 	#include "macros.hpp"
-	f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_MODESCOMBO,F_CAM_SPECTEXT,F_CAM_SPECHELP,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_DIVIDER];
+	f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_SPECTEXT,F_CAM_SPECHELP,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON];
 	f_cam_units = [];
 	f_cam_players = [];
 	f_cam_startX = 0;
@@ -103,8 +103,7 @@ _this spawn {
 	f_cam_muteSpectators = true;
 
 	// Menu (Top left)
-	f_cam_menuControls = [2111,2112,2113,2114,2101,4302];
-	f_cam_menuShownTime = 0;
+	f_cam_menuControls = [2111,2112,2113,2114];
 	f_cam_menuShown = true;
 	f_cam_menuWorking = false;
 	f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
@@ -144,7 +143,6 @@ _this spawn {
 			f_cam_mode = 0;
 			f_cam_camera cameraEffect ["internal", "BACK"];
 		};
-		call F_fnc_ReloadModes;
 	};
 	
 	f_cam_GetCurrentCam = {
@@ -201,14 +199,15 @@ _this spawn {
 	f_cam_fired = [];
 	
 	{
-		_event = _x addEventHandler ["fired",{f_cam_fired = f_cam_fired - [objNull];f_cam_fired pushBack (_this select 6)}];
-		_x setVariable ["f_cam_fired_eventid",_event];
+		_event = _x addEventHandler ["fired", {
+			f_cam_fired = f_cam_fired - [objNull];
+			f_cam_fired pushBack (_this select 6);
+		}];
+		_x setVariable ["f_cam_fired_eventid", _event];
 	} forEach (allUnits + vehicles);
 
 	// spawn sub scripts
-	call f_fnc_ReloadModes;
-	lbSetCurSel [2101,0];
-	f_cam_updatevalues_script = [] spawn F_fnc_UpdateValues;
-	["f_spect_tags", "onEachFrame", {_this call F_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
-	["f_spect_cams", "onEachFrame", {_this call F_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;
+	f_cam_updatevalues_script = [] spawn f_fnc_UpdateValues;
+	["f_spect_tags", "onEachFrame", {_this call f_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
+	["f_spect_cams", "onEachFrame", {_this call f_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;
 };

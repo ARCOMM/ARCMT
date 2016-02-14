@@ -7,7 +7,6 @@ class fspectator
 	class EventHandler{};
 	class FreeCam{};
 	class GetPlayers{};
-	class ReloadModes{};
 	class UpdateValues{};
 	class HandleCamera{};
 	class ToggleGUI{};
@@ -15,5 +14,4 @@ class fspectator
 	class DrawMarkers{};
 	class ForceExit{};
 	class HandleMenu{};
-	class showMenu{};
 };

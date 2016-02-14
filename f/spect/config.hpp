@@ -657,10 +657,6 @@ class f_spec_dialog {
             y = -0.1 * safezoneH + safezoneY;
             w = 0.4 * safezoneW;
             h = 0.2 * safezoneH;
-        //    onMouseEnter = "[true] spawn f_fnc_showMenu;f_cam_menuShownTime=time;";
-           // onMouseExit = "[false] spawn f_fnc_showMenu;";
-            onMouseHolding = "f_cam_menuShownTime=time";
-            onMouseMoving = "f_cam_menuShownTime=time";
             borderSize = 0;
             colorBorder[] = {0,0,0,0};
             colorBackgroundActive[] = {0,0,0,0};
@@ -672,14 +668,6 @@ class f_spec_dialog {
             color[] = {0,0,0,0};
             colorBackground[] = {0,0,0,0};
         };
-        class Devider: RscSpectPic
-        {
-            idc = 4302;
-            x = 0.00293747 * safezoneW + safezoneX;
-            y = -0.00160002 * safezoneH + safezoneY;
-            w = 0.180469 * safezoneW;
-            h = 0.02 * safezoneH;
-        };
         class SpectStrText: RscSpectStructuredText
         {
             idc = 1310;
@@ -688,7 +676,6 @@ class f_spec_dialog {
             w = 0.317366 * safezoneW;
             h = 0.375858 * safezoneH;
             text = "";
-           // text = "<br /> Use the mouse or the WASD to control the camera, H to show and close the help window.<br /> Press M for the map.<br /> ";
         };
         class SpecFrame: RscSpectFrame
         {
@@ -697,7 +684,6 @@ class f_spec_dialog {
             y = 0.283882 * safezoneH + safezoneY;
             w = 0.317366 * safezoneW;
             h = 0.375858 * safezoneH;
-           // text = "<br /> Use the mouse or the WASD to control the camera, H to show and close the help window.<br /> Press M for the map.<br /> ";
         };
 
 	};
@@ -715,85 +701,67 @@ class f_spec_dialog {
         class FilterAIButton: RscSpectButton
         {
             idc = 2111;
-            x = 0.00046248 * safezoneW + safezoneX;
-            y = -5.99921e-005 * safezoneH + safezoneY;
-            w = 0.04 * safezoneW;
-            h = 0.02 * safezoneH;
+            x = 0 * safezoneW + safezoneX;
+            y = 0 * safezoneH + safezoneY;
+            w = 0.05 * safezoneW;
+            h = 0.03 * safezoneH;
             text = "All units";
             tooltip = "Toggle AI";
             sizeEx = "(         (           (           ((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
             onButtonClick = "[_this select 0,0] call f_fnc_HandleMenu";
-            onMouseHolding = "f_cam_menuShownTime=time";
-            onMouseMoving = "f_cam_menuShownTime=time";
 
         };
         class SideFilterButton: RscSpectButton
         {
             idc = 2112;
-            x = 0.0425375 * safezoneW + safezoneX;
-            y = -5.99921e-005 * safezoneH + safezoneY;
-            w = 0.04 * safezoneW;
-            h = 0.02 * safezoneH;
+            x = 0.05 * safezoneW + safezoneX;
+            y = 0 * safezoneH + safezoneY;
+            w = 0.05 * safezoneW;
+            h = 0.03 * safezoneH;
             text = "All Sides";
             tooltip = "Filter by side";
             sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
             onButtonClick = "[_this select 0,1] call f_fnc_HandleMenu";
-            onMouseHolding = "f_cam_menuShownTime=time";
-            onMouseMoving = "f_cam_menuShownTime=time";
         };
         class TagsNameButton: RscSpectButton
         {
             idc = 2113;
-            x = 0.0846125 * safezoneW + safezoneX;
-            y = -5.99921e-005 * safezoneH + safezoneY;
-            w = 0.04 * safezoneW;
-            h = 0.02 * safezoneH;
+            x = 0.1 * safezoneW + safezoneX;
+            y = 0 * safezoneH + safezoneY;
+            w = 0.05 * safezoneW;
+            h = 0.03 * safezoneH;
             text = "Tags";
             tooltip = "Toggle tags";
             sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
             onButtonClick = "[_this select 0,2] call f_fnc_HandleMenu";
-            onMouseHolding = "f_cam_menuShownTime=time";
-            onMouseMoving = "f_cam_menuShownTime=time";
         };
         class FirstPersonButton: RscSpectButton
         {
             idc = 2114;
-            x = 0.12679 * safezoneW + safezoneX;
-            y = -5.99921e-005 * safezoneH + safezoneY;
+            x = 0.15 * safezoneW + safezoneX;
+            y = 0 * safezoneH + safezoneY;
             w = 0.05 * safezoneW;
-            h = 0.02 * safezoneH;
+            h = 0.03 * safezoneH;
             text = "First Person";
             tooltip = "Switch between First Person or Third person";
             sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
             onButtonClick = "[_this select 0,3] call f_fnc_HandleMenu";
-            onMouseHolding = "f_cam_menuShownTime=time";
-            onMouseMoving = "f_cam_menuShownTime=time";
         };
         class SpecUnitBox: RscSpectList
         {
             idc = 2100;
             x = 0 * safezoneW + safezoneX;
-            y = 0.03 * safezoneH + safezoneY;
+            y = 0.04 * safezoneH + safezoneY;
             w = 0.1 * safezoneW;
             h = 0.9 * safezoneH;
             onLBSelChanged = "[""LBListSelChanged"",_this] call F_fnc_EventHandler";
-        };
-        class SpecModes: RscSpectCombo
-        {
-            idc = 2101;
-            x = 0.178999 * safezoneW + safezoneX;
-            y = -5.99921e-005 * safezoneH + safezoneY;
-            w = 0.07 * safezoneW;
-            h = 0.02 * safezoneH;
-            sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
-            onLBSelChanged = "[""LBListSelChanged_modes"",_this] call F_fnc_EventHandler";
-            onMouseHolding = "f_cam_menuShownTime=time";
-            onMouseMoving = "f_cam_menuShownTime=time";
+			shadow = 0;
+			font = "PuristaBold";
         };
         class SpecText: RscSpectText
         {
             idc = 1000;
-            text = "Spectating:Unknown"; //--- ToDo: Localize;
+            text = "Spectating:Unknown";
             x = 0.430336 * safezoneW + safezoneX;
             y = 0.00159198 * safezoneH + safezoneY;
             w = 0.800 * safezoneW;

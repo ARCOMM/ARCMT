@@ -116,76 +116,6 @@ case "LBListSelChanged":
         };
     };
 };
-case "LBListSelChanged_modes":
-{
-
-    _index =  (_args select 1);
-    switch (_index) do
-    {
-        case f_cam_lb_toggletiWHIndex:
-        {
-            f_cam_tiWHOn = !f_cam_tiWHOn;
-            if(f_cam_tiWHOn) then
-            {
-                f_cam_tiBHOn = false;
-                f_cam_nvOn = false;
-                true setCamUseTi 0;
-            }
-            else
-            {
-                camUseNVG false;
-                false setCamUseTi 0;
-            };
-            call F_fnc_ReloadModes;
-
-        };
-        case f_cam_lb_toggletiBHIndex: // BlackHot
-        {
-            f_cam_tiBHOn = !f_cam_tiBHOn;
-            if(f_cam_tiBHOn) then
-            {
-                camUseNVG false;
-                f_cam_tiWHOn = false;
-                f_cam_nvOn = false;
-                true setCamUseTi 1;
-            }
-            else
-            {
-                camUseNVG false;
-                false setCamUseTi 0;
-            };
-            call F_fnc_ReloadModes;
-
-        };
-        case f_cam_lb_toggleNormal:
-        {
-                false setCamUseTi 0;
-                camUseNVG false;
-                f_cam_tiWHOn = false;
-                f_cam_tiBHOn = false;
-                f_cam_nvOn = false;
-            call F_fnc_ReloadModes;
-        };
-        case f_cam_lb_toggletiNVIndex: // Nightvision
-        {
-            f_cam_nvOn = !f_cam_nvOn;
-            if(f_cam_nvOn) then
-            {
-                false setCamUseTi 0;
-                camUseNVG true;
-                f_cam_tiWHOn = false;
-                f_cam_tiBHOn = false;
-            }
-            else
-            {
-                camUseNVG false;
-                false setCamUseTi 0;
-            };
-            call F_fnc_ReloadModes;
-
-        };
-    };
-};
 // ==================================================================
 // handles keys
 case "KeyDown":
@@ -223,7 +153,7 @@ case "KeyDown":
                     };
                 };
                 // force exit
-                [] call F_fnc_ForceExit;
+                [] call f_fnc_ForceExit;
 
 
                 // black out the screen
@@ -292,9 +222,42 @@ case "KeyDown":
         };
         case 49: // N
         {
-            _index = (lbCurSel 2101)+1;
-            if(_index >= (lbSize 2101 )) then { _index = 0};
-            lbSetCurSel [2101,_index];
+			if (f_cam_nvOn) then {
+				//wh
+				f_cam_tiWHOn = true;
+				f_cam_tiBHOn = false;
+				f_cam_nvOn = false;
+				true setCamUseTi 0;
+				camUseNVG false;
+			} else {
+				if (f_cam_tiWHOn) then {
+					//bh
+					f_cam_tiWHOn = false;
+					f_cam_tiBHOn = true;
+					f_cam_nvOn = false;
+					true setCamUseTi 1;
+					camUseNVG false;
+				} else {
+					if (f_cam_tiBHOn) then {
+						//normal
+						f_cam_tiWHOn = false;
+						f_cam_tiBHOn = false;
+						f_cam_nvOn = false;
+						false setCamUseTi 0;
+						camUseNVG false;
+					} else {
+						if (!f_cam_nvOn) then {
+							//nv
+							camUseNVG true;
+							f_cam_tiWHOn = false;
+							f_cam_tiBHOn = false;
+							f_cam_nvOn = true;
+							false setCamUseTi 0;
+						};
+					};
+				};
+			};
+		
             _handled = true;
         };
         case 16: // Q

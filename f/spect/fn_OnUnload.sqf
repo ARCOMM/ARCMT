@@ -4,7 +4,6 @@ if (f_cam_forcedExit) ExitWith {};
 createDialog "f_spec_dialog";
 
 _displayDialog = (findDisplay 9228);
-call f_fnc_ReloadModes;
 ctrlSetText [2112,(f_cam_sideNames select f_cam_sideButton)];
 if(f_cam_playersOnly) then { ctrlSetText [2111,"Players only"];}
 else { ctrlSetText [2111,"All units"];};

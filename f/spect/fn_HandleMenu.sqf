@@ -37,5 +37,5 @@ switch (_button) do {
 		} else {
 			_control ctrlSetText "First Person";
 		}
-	}
+	};
 };

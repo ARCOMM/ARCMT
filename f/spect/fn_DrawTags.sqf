@@ -35,6 +35,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 		};
 		
 		if (_distToCam > 200) then {_str = "";};
+		_color set [3, 1];
 		
 		drawIcon3D [
 			"\A3\ui_f\data\map\markers\nato\b_inf.paa",
@@ -57,6 +58,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 
 	{
 		if (vehicle _x == _x && alive _x || vehicle _x != _x && (crew vehicle _x) select 0 == _x && alive _x) then {
+			_distToCam = (call f_cam_GetCurrentCam) distance _x;
 			_visPos = getPosATLVisual _x;
 			if (surfaceIsWater _visPos) then { _visPos = getPosASLVisual _x; };
 			_str = "";
@@ -65,6 +67,18 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 			//if (isPlayer _x) then {
 				_str = name _x;
 			//};
+			
+			_color set [3, 1];
+			if (_distToCam > 10) then { _color set [3, 1]; };
+			if (_distToCam > 20) then { _color set [3, 0.9]; };
+			if (_distToCam > 30) then { _color set [3, 0.8]; };
+			if (_distToCam > 40) then { _color set [3, 0.7]; };
+			if (_distToCam > 50) then { _color set [3, 0.6]; };
+			if (_distToCam > 60) then { _color set [3, 0.5]; };
+			if (_distToCam > 70) then { _color set [3, 0.4]; };
+			if (_distToCam > 80) then { _color set [3, 0.3]; };
+			if (_distToCam > 90) then { _color set [3, 0.2]; };
+			if (_distToCam > 100) then { _color set [3, 0.1]; };
 			
 			drawIcon3D [
 				_icon,
