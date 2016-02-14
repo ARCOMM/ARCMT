@@ -34,7 +34,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 			_x setVariable ["f_cam_nicename",_str];
 		};
 		
-		if (_distToCam < 200) then {_str = "";};
+		if (_distToCam > 200) then {_str = "";};
 		
 		drawIcon3D [
 			"\A3\ui_f\data\map\markers\nato\b_inf.paa",
