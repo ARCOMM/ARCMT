@@ -17,4 +17,9 @@ class ARC
 		file = "f\arc\radios";
 		class addMissingRadio {};
 	};
+	class markers
+	{
+		file = "f\arc\markers";
+		class addTrackingMarker {};
+	};
 };
