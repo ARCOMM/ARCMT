@@ -1,5 +1,5 @@
 <p align="center">
-	![Logo](http://i.imgur.com/7nkLRBB.png)
+	<img src="http://i.imgur.com/7nkLRBB.png">
 </p>
 
 # ARCOMM Mission Framework
