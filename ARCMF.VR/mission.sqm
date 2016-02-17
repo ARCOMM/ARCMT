@@ -2560,7 +2560,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={166.62422,5,136.58398};
+					position[]={166.62422,5,157.27051};
 					id=168;
 					side="LOGIC";
 					vehicle="HeadlessClient_F";
