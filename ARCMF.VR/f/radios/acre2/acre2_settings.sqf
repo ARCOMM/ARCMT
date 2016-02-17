@@ -1,7 +1,3 @@
-// F3 - ACRE2 Settings
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// ====================================================================================
-
 // RADIO STRUCTURE
 
 // Whether any radios should be assigned at all, to any units

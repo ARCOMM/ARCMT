@@ -2,7 +2,7 @@
 	ARCOMM Mission Framework
 	Version: 0.1
 	Branch: origin/master
-	test
+	Link: https://github.com/ARCOMM/ARCMF
 */
 
 enableSaving [false, false];
