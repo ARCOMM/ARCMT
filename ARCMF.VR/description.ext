@@ -14,7 +14,7 @@ overviewPicture = "splash.paa";
 loadScreen = "splash.paa";
 enableDebugConsole = 0;
 disabledAI = 1;
-respawn = 4;
+respawn = 3;
 respawndelay = 3;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator"};
@@ -80,7 +80,7 @@ class Params
 		default = 0;
 		code = "f_param_mission_timer = %1";
     };
-	
+
 	class f_param_caching
 	{
 		title = "Cache AI outside distance (m)";
@@ -106,14 +106,44 @@ class Params
 		default = 1;
 		code = "arc_param_duplex = %1";
 	};
-	
-	class arc_param_babel
+
+	class arc_param_babel_west
 	{
-		title = "Babel";
-		values[] = {0,1};
-		texts[] = {"Disabled (all sides understand each other)", "Enabled (all sides speak different languages)"};
+		title = "Babel Language (BLUFOR)";
+		values[] = {0,1,2};
+		texts[] = {"English","Russian","Greek"};
 		default = 0;
-		code = "arc_param_babel = if (%1 == 0) then {false} else {true};";
+		code = "arc_param_babel_west = switch (%1) do {
+			case 0: {'english'};
+			case 1: {'russian'};
+			case 2: {'greek'};
+		};";
+	};
+	
+	class arc_param_babel_east
+	{
+		title = "Babel Language (OPFOR)";
+		values[] = {0,1,2};
+		texts[] = {"English","Russian","Greek"};
+		default = 0;
+		code = "arc_param_babel_east = switch (%1) do {
+			case 0: {'english'};
+			case 1: {'russian'};
+			case 2: {'greek'};
+		};";
+	};
+	
+	class arc_param_babel_resistance
+	{
+		title = "Babel Language (INDFOR)";
+		values[] = {0,1,2};
+		texts[] = {"English","Russian","Greek"};
+		default = 0;
+		code = "arc_param_babel_resistance = switch (%1) do {
+			case 0: {'english'};
+			case 1: {'russian'};
+			case 2: {'greek'};
+		};";
 	};
 };
 
@@ -168,7 +198,7 @@ class CfgRespawnTemplates
 	{
 		onPlayerRespawn = "f_fnc_CamInit";
 	};
-	
+
     class Seagull
     {
         onPlayerRespawn = "";
@@ -247,7 +277,7 @@ class CfgFunctions
 			file = "f\safeStart";
 			class safety{};
 		};
-		
+
 		#include "f\spect\functions.hpp"
 	};
 };

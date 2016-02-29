@@ -5,26 +5,24 @@ _this spawn {
 	_unit = [_this, 0, player,[objNull]] call BIS_fnc_param;
 	_oldUnit = [_this, 1, objNull,[objNull]] call BIS_fnc_param;
 	_forced = [_this, 4, false,[false]] call BIS_fnc_param;
-	
+
+	ARC_cam_preCamGroup = group player;
+	ARC_cam_preCamName = name player;
 	ARC_cam_preCamPos = getPos player;
 	ARC_cam_preCamLoadout = [player, "init", false] call BIS_fnc_exportInventory;
-	
+
 	if (isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
-	// if they are jip, these are null
 	if (isNull _unit) then { _unit = cameraOn; f_cam_isJIP = true; };
-	// escape the script if you are not a seagull unless forced
 	if (typeOf _unit != "seagull" && !_forced || !hasInterface) exitWith {};
-	// disable this to instantly switch to the spectator script.
 	waituntil {missionNamespace getVariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_oldUnit) || f_cam_isJIP || _forced };
 
 	if (!isNil "BIS_fnc_feedback_allowPP") then {
-		// disable effects death effects
 		BIS_fnc_feedback_allowPP = false;
 	};
 
 	if (f_cam_isJIP) then {
 		["F_ScreenSetup",false] call BIS_fnc_blackOut;
-		systemChat "Initilizing Spectator Script";
+		systemChat "Initializing Spectator Script";
 		uiSleep 3;
 		["F_ScreenSetup"] call BIS_fnc_blackIn;
 	};
@@ -59,7 +57,7 @@ _this spawn {
 	lbClear _listBox;
 	// set inital values.
 	#include "macros.hpp"
-	f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_SPECTEXT,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON];
+	f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_SPECTEXT,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTONRESPAWN];
 	f_cam_units = [];
 	f_cam_players = [];
 	f_cam_startX = 0;
@@ -109,10 +107,10 @@ _this spawn {
 	f_cam_menuWorking = false;
 	f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
 	f_cam_sideNames = ["All Sides","BLUFOR","OPFOR","INDFOR","CIV"];
-	
+
 	f_cam_tagsButton = 0;
 	f_cam_tagsNames = ["Tags Off","All Sides","All Players","BLUFOR","OPFOR","INDFOR","CIV"];
-	
+
 	// Colors
 	/*
 	f_cam_blufor_color = [0.278,0.278,0.82,1];
@@ -154,7 +152,7 @@ _this spawn {
 			f_cam_camera cameraEffect ["internal", "BACK"];
 		};
 	};
-	
+
 	f_cam_GetCurrentCam = {
 		_camera = f_cam_camera;
 		switch (f_cam_mode) do {
@@ -181,17 +179,17 @@ _this spawn {
 	// hide big map
 	((findDisplay 9228) displayCtrl 1360) ctrlShow false;
 	((findDisplay 9228) displayCtrl 1360) mapCenterOnCamera false;
-	
+
 	if (!(call ARC_fnc_isRespawnEnabled)) then {
 		((findDisplay 9228) displayCtrl 5532) ctrlEnable false;
 		((findDisplay 9228) displayCtrl 5532) ctrlShow false;
 	};
 
 	f_cam_helptext = "<t align='left'><t color='#FFFFFF'><t size='1.5'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='1.5'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t></t>";
-	
+
 	hintSilent (parseText f_cam_helptext);
 	[] spawn {sleep 10; hintSilent "";};
-	
+
 	// create the camera and set it up.
 	f_cam_camera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
 	f_cam_fakecamera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
@@ -205,16 +203,16 @@ _this spawn {
 	f_cam_camera camSetFov 1.2;
 	f_cam_freecamera camSetFov 1.2;
 	f_cam_zeusKey = 21;
-	
+
 	if ( count (actionKeys "curatorInterface") > 0 ) then {
 		f_cam_zeusKey = (actionKeys "curatorInterface") select 0;
 	};
-	
+
 	f_cam_MouseMoving = false;
 	cameraEffectEnableHUD true;
 	showCinemaBorder false;
 	f_cam_fired = [];
-	
+
 	{
 		_event = _x addEventHandler ["fired", {
 			f_cam_fired = f_cam_fired - [objNull];

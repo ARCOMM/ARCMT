@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=247;
+		nextID=248;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7998.4673,18.23745,193.84273};
-		dir[]={-0.063693866,-0.56398332,-0.82342696};
-		up[]={-0.043501858,0.82574034,-0.56237859};
-		aside[]={-0.99708486,1.3443059e-007,0.077126674};
+		pos[]={7998.5161,18.23745,199.09552};
+		dir[]={-0.027940625,-0.48922184,-0.87180877};
+		up[]={-0.015674548,0.87211567,-0.48906025};
+		aside[]={-0.99954957,1.3985118e-007,0.032034516};
 	};
 };
 binarizationWanted=0;
@@ -29,7 +29,8 @@ addons[]=
 	"a3_characters_f",
 	"A3_Characters_F_OPFOR",
 	"A3_Characters_F_INDEP",
-	"A3_Characters_F_Civil"
+	"A3_Characters_F_Civil",
+	"A3_Modules_F_Multiplayer"
 };
 randomSeed=3124507;
 class Mission
@@ -56,7 +57,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=51;
+		items=52;
 		class Item0
 		{
 			dataType="Group";
@@ -4295,6 +4296,96 @@ class Mission
 			{
 			};
 			id=242;
+		};
+		class Item51
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8000.7231,5,183.442};
+			};
+			id=247;
+			type="ModuleRespawnPosition_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleRespawnPosition_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleRespawnPosition_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleRespawnPosition_F_Side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleRespawnPosition_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 };

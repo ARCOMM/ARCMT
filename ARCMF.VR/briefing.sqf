@@ -1,5 +1,5 @@
 if (!isDedicated && (isNull player)) then {
-    waitUntil {sleep 0.1; !isNull player};
+	waitUntil {sleep 0.1; !isNull player};
 };
 
 private ["_unitfaction"];
@@ -14,6 +14,8 @@ if (_unitfaction != toLower (faction (leader group player))) then {
 if (f_var_debugMode == 1) then {
 	player sideChat format ["DEBUG (briefing.sqf): Player faction: %1", _unitfaction];
 };
+
+#include "f\briefing\f_briefing_arcmf.sqf"
 
 if (serverCommandAvailable "#kick") then {
 	#include "f\briefing\f_briefing_admin.sqf"

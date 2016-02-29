@@ -56,14 +56,17 @@ switch (_button) do {
 		_newUnit enableSimulationGlobal true;
 		selectPlayer _newUnit;
 		waitUntil {player == _newUnit};
+		_newUnit setName ARC_cam_preCamName;
 		if (side _unit == sideLogic) then { deleteVehicle _unit; };
-		
 		_newUnit setPos ARC_cam_preCamPos;
 		this = _newUnit;
-		
 		call compile ARC_cam_preCamLoadout;
-		
 		[] call f_fnc_ForceExit;
 		[false] call acre_api_fnc_setSpectator;
+		[_newUnit] joinSilent ARC_cam_preCamGroup;
+		
+		f_script_briefing = [] execVM "briefing.sqf";
+		[] execVM "f\briefing\f_orbatNotes.sqf";
+		[] execVM "f\briefing\f_loadoutNotes.sqf";
 	};
 };
