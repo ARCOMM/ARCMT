@@ -104,7 +104,7 @@ case "LBListSelChanged":
                 {
                   f_cam_curTarget switchCamera "INTERNAL";
                 };
-                ctrlSetText [1000,format ["Spectating:%1", name f_cam_curTarget]];
+                ctrlSetText [1000,format ["%1", name f_cam_curTarget]];
             };
             if(f_cam_mode == 3) then
             {
@@ -294,13 +294,10 @@ case "KeyDown":
             };
              _handled = true;
         };
-
         case 35: //  H
         {
-            ctrlShow [1315, !ctrlVisible 1315];
-            ctrlShow [1310, !ctrlVisible 1310];
-            ctrlShow [1300, !ctrlVisible 1300];
-            ctrlShow [1305, !ctrlVisible 1305];
+			hintSilent (parseText f_cam_helptext);
+			[] spawn {sleep 10; hintSilent "";};
             _handled = true;
         };
         case 42: // SHIFT

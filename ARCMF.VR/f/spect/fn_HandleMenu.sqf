@@ -38,4 +38,25 @@ switch (_button) do {
 			_control ctrlSetText "First Person";
 		}
 	};
+	case 4: { // Respawn Button
+		_unit = player;
+		createCenter west;
+		_newGrp = createGroup west;
+		_newUnit = _newGrp createUnit ["B_Soldier_F", [0,0,0], [], 0, "FORM"];
+		_newUnit allowDamage true;
+		_newUnit hideObjectGlobal false;
+		_newUnit enableSimulationGlobal true;
+		//_newUnit setPos [0,0,0];
+		selectPlayer _newUnit;
+		waitUntil {player == _newUnit};
+		if (side _unit == sideLogic) then { deleteVehicle _unit; };
+		
+		_newUnit setPos ARC_cam_preCamPos;
+		this = _newUnit;
+		
+		call compile ARC_cam_preCamLoadout;
+		
+		[] call f_fnc_ForceExit;
+		[false] call acre_api_fnc_setSpectator;
+	};
 };

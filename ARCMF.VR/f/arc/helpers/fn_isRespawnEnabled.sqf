@@ -1,0 +1,1 @@
+if ((getNumber (missionConfigFile >> "respawn")) == 3) then {true} else {false};

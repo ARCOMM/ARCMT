@@ -1,4 +1,5 @@
-if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
+if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith {};
+
 {
 	_drawUnits = [];
 	_drawGroup = false;
@@ -27,15 +28,25 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 		_visPos = getPosATLVisual leader _x;
 		if (surfaceIsWater _visPos) then { _visPos = getPosASLVisual leader _x; };
 
-		_str = _x getVariable ["f_cam_nicename",""];
+		_str = _x getVariable ["f_cam_nicename", ""];
 		
 		if (_str == "") then {
 			_str = (toString(toArray(groupID (_x)) - [45]));
-			_x setVariable ["f_cam_nicename",_str];
+			_x setVariable ["f_cam_nicename", _str];
 		};
 		
-		if (_distToCam > 200) then {_str = "";};
 		_color set [3, 1];
+		if (_distToCam > 100) then { _color set [3, 1]; };
+		if (_distToCam > 200) then { _color set [3, 0.9]; };
+		if (_distToCam > 300) then { _color set [3, 0.8]; };
+		if (_distToCam > 400) then { _color set [3, 0.7]; };
+		if (_distToCam > 500) then { _color set [3, 0.6]; };
+		if (_distToCam > 600) then { _color set [3, 0.5]; };
+		if (_distToCam > 700) then { _color set [3, 0.4]; };
+		if (_distToCam > 800) then { _color set [3, 0.3]; };
+		if (_distToCam > 900) then { _color set [3, 0.2]; };
+		if (_distToCam > 1000) then { _color set [3, 0.1]; };
+		if (_distToCam > 2000) then { _color set [3, 0]; _str = ""; };
 		
 		drawIcon3D [
 			"\A3\ui_f\data\map\markers\nato\b_inf.paa",
@@ -43,7 +54,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 			[
 				_visPos select 0,
 				_visPos select 1,
-				(_visPos select 2) + 5
+				(_visPos select 2) + 2
 			],
 			1,
 			1,
@@ -64,21 +75,11 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 			_str = "";
 			_icon = "\A3\ui_f\data\map\markers\military\dot_CA.paa";
 			
-			//if (isPlayer _x) then {
+			if (isPlayer _x) then {
 				_str = name _x;
-			//};
+			};
 			
 			_color set [3, 1];
-			if (_distToCam > 10) then { _color set [3, 1]; };
-			if (_distToCam > 20) then { _color set [3, 0.9]; };
-			if (_distToCam > 30) then { _color set [3, 0.8]; };
-			if (_distToCam > 40) then { _color set [3, 0.7]; };
-			if (_distToCam > 50) then { _color set [3, 0.6]; };
-			if (_distToCam > 60) then { _color set [3, 0.5]; };
-			if (_distToCam > 70) then { _color set [3, 0.4]; };
-			if (_distToCam > 80) then { _color set [3, 0.3]; };
-			if (_distToCam > 90) then { _color set [3, 0.2]; };
-			if (_distToCam > 100) then { _color set [3, 0.1]; };
 			
 			drawIcon3D [
 				_icon,
@@ -86,7 +87,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2 ) exitWith{};
 				[
 					_visPos select 0,
 					_visPos select 1,
-					(_visPos select 2) + 2.15
+					(_visPos select 2) + 2
 				],
 				1,
 				1,

@@ -1,20 +1,21 @@
 // [<newUnit>,<oldUnit>,<respawn>,<respawnDelay>]
+// [player, objNull, 4, 1, true] call f_fnc_CamInit;
 
-// F3 - Spectator Script
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// ====================================================================================
-// params
 _this spawn {
 	_unit = [_this, 0, player,[objNull]] call BIS_fnc_param;
 	_oldUnit = [_this, 1, objNull,[objNull]] call BIS_fnc_param;
 	_forced = [_this, 4, false,[false]] call BIS_fnc_param;
+	
+	ARC_cam_preCamPos = getPos player;
+	ARC_cam_preCamLoadout = [player, "init", false] call BIS_fnc_exportInventory;
+	
 	if (isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
 	// if they are jip, these are null
 	if (isNull _unit) then { _unit = cameraOn; f_cam_isJIP = true; };
 	// escape the script if you are not a seagull unless forced
 	if (typeOf _unit != "seagull" && !_forced || !hasInterface) exitWith {};
 	// disable this to instantly switch to the spectator script.
-	waituntil {missionNamespace getVariable ["BIS_fnc_feedback_allowDeathScreen",true] || isNull (_oldUnit) || f_cam_isJIP || _forced };
+	waituntil {missionNamespace getVariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_oldUnit) || f_cam_isJIP || _forced };
 
 	if (!isNil "BIS_fnc_feedback_allowPP") then {
 		// disable effects death effects
@@ -58,7 +59,7 @@ _this spawn {
 	lbClear _listBox;
 	// set inital values.
 	#include "macros.hpp"
-	f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_SPECTEXT,F_CAM_SPECHELP,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON];
+	f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_SPECTEXT,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON];
 	f_cam_units = [];
 	f_cam_players = [];
 	f_cam_startX = 0;
@@ -117,9 +118,15 @@ _this spawn {
 	f_cam_civ_color = [1,0.376,0.906,1];
 	f_cam_empty_color = [1,0.776,0,1];
 	*/
-	f_cam_blufor_color = [BLUFOR] call BIS_fnc_sideColor;
-	f_cam_opfor_color = [OPFOR] call BIS_fnc_sideColor;
-	f_cam_indep_color = [independent] call BIS_fnc_sideColor;
+	// f_cam_blufor_color = [BLUFOR] call BIS_fnc_sideColor;
+	f_cam_blufor_color = [0.2, 0.2, 1, 1];
+
+	// f_cam_opfor_color = [OPFOR] call BIS_fnc_sideColor;
+	f_cam_opfor_color = [1, 0.2, 0.2, 1];
+
+	// f_cam_indep_color = [independent] call BIS_fnc_sideColor;
+	f_cam_indep_color = [0, 0.702, 0.349, 1];
+
 	f_cam_civ_color = [civilian] call BIS_fnc_sideColor;
 	f_cam_empty_color = [sideUnknown] call BIS_fnc_sideColor;
 
@@ -171,9 +178,16 @@ _this spawn {
 	// hide big map
 	((findDisplay 9228) displayCtrl 1360) ctrlShow false;
 	((findDisplay 9228) displayCtrl 1360) mapCenterOnCamera false;
+	
+	if (!(call ARC_fnc_isRespawnEnabled)) then {
+		((findDisplay 9228) displayCtrl 5532) ctrlEnable false;
+		((findDisplay 9228) displayCtrl 5532) ctrlShow false;
+	};
 
-	f_cam_helptext = "<t color='#FFFFFF'><t size='2'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='2'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t>";
-	((findDisplay 9228) displayCtrl 1310) ctrlSetStructuredText parseText (f_cam_helptext);
+	f_cam_helptext = "<t align='left'><t color='#FFFFFF'><t size='1.5'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='1.5'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t></t>";
+	
+	hintSilent (parseText f_cam_helptext);
+	[] spawn {sleep 10; hintSilent "";};
 	
 	// create the camera and set it up.
 	f_cam_camera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];

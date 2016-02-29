@@ -12,6 +12,7 @@ class ARC
 		class execHC {};
 		class fileExists {};
 		class getFactionFromSide {};
+		class isRespawnEnabled {};
 	};
 	class radios
 	{

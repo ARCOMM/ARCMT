@@ -21,7 +21,7 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 [] spawn f_fnc_SetLocalFTMemberMarkers;
 
 // Group Markers
-[true, false] call ARC_fnc_initTracker;
+[true, true] call ARC_fnc_initTracker;
 
 if (isServer) then {};
 

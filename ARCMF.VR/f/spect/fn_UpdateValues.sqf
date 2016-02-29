@@ -12,9 +12,9 @@ while {true} do {
 	ctrlSetFocus ((findDisplay 9228) displayCtrl 1315);
 
 	if (alive f_cam_curTarget) then {
-		ctrlSetText [1000,format ["Spectating:%1", name f_cam_curTarget]];
+		ctrlSetText [1000,format ["%1", name f_cam_curTarget]];
 	} else {
-		ctrlSetText [1000,format ["Spectating:%1", "Dead"]];
+		ctrlSetText [1000,format ["%1", "Dead"]];
 	};
 
 	_groupArr = call f_fnc_GetPlayers;
