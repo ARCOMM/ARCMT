@@ -700,8 +700,8 @@ class f_spec_dialog {
 			y = 0 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.03 * safezoneH;
-			text = "Tags";
-			tooltip = "Toggle tags";
+			text = "Tags Off";
+			tooltip = "Filter tags by side/players";
 			sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
 			onButtonClick = "[_this select 0,2] call f_fnc_HandleMenu";
 		};

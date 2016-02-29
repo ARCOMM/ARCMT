@@ -27,8 +27,16 @@ switch (_button) do {
 		f_cam_listUnits = [];
 		lbClear 2100;
 	};
-	case 2: {
-		f_cam_toggleTags = !f_cam_toggleTags;
+	case 2: { // Tags
+		// 0 = "Off", 1 = "All Sides", 2 = "All Players", 3 = "BLUFOR", 4 = "OPFOR", 5 = "INDFOR", 6 = "CIV"
+		f_cam_tagsButton = f_cam_tagsButton + 1;
+		if (f_cam_tagsButton > 6) then {f_cam_tagsButton = 0};
+		_control ctrlSetText (f_cam_tagsNames select f_cam_tagsButton);
+		if (f_cam_tagsButton > 0) then {
+			f_cam_toggleTags = true;
+		} else {
+			f_cam_toggleTags = false;
+		};
 	};
 	case 3: { // Third/First Person Button
 		[] call f_cam_ToggleFPCamera;

@@ -72,7 +72,7 @@ _this spawn {
 	f_cam_mode = 0;
 	f_cam_toggleCamera = false;
 	f_cam_playersOnly = false;
-	f_cam_toggleTags = true;
+	f_cam_toggleTags = false;
 	f_cam_ads = false;
 	f_cam_nvOn = false;
 	f_cam_tiBHOn = false;
@@ -108,7 +108,10 @@ _this spawn {
 	f_cam_menuShown = true;
 	f_cam_menuWorking = false;
 	f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
-	f_cam_sideNames = ["All Sides","Blufor","Opfor","Indfor","Civ"];
+	f_cam_sideNames = ["All Sides","BLUFOR","OPFOR","INDFOR","CIV"];
+	
+	f_cam_tagsButton = 0;
+	f_cam_tagsNames = ["Tags Off","All Sides","All Players","BLUFOR","OPFOR","INDFOR","CIV"];
 	
 	// Colors
 	/*
