@@ -413,7 +413,7 @@ class RscSpectPic
 };
 class RscSpectButton {
     access = 0;
-    borderSize = 0.001 * safezoneW;
+    borderSize = 0;
     colorBorder[] = PRIMARYCOLOR;
     colorBackgroundActive[] = {0.314,0.314,0.314,1};
     colorBackgroundDisabled[] = BACKGROUND_COLOR;
@@ -789,7 +789,6 @@ class f_spec_dialog {
             h = 1 * safezoneH;
             onDraw = "_this call F_fnc_DrawMarkers";
             onMouseButtonClick = "_this call F_fnc_OnMapClick";
-
         };
     };
 };
