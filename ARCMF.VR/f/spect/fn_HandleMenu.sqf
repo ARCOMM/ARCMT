@@ -46,7 +46,6 @@ switch (_button) do {
 		_newUnit allowDamage true;
 		_newUnit hideObjectGlobal false;
 		_newUnit enableSimulationGlobal true;
-		//_newUnit setPos [0,0,0];
 		selectPlayer _newUnit;
 		waitUntil {player == _newUnit};
 		if (side _unit == sideLogic) then { deleteVehicle _unit; };

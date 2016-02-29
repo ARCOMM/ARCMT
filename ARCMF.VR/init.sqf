@@ -23,8 +23,6 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 // Group Markers
 [true, true] call ARC_fnc_initTracker;
 
-if (isServer) then {};
-
 // ORBAT Notes
 [] execVM "f\briefing\f_orbatNotes.sqf";
 
