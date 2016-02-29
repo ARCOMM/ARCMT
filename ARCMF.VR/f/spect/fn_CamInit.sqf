@@ -104,7 +104,7 @@ _this spawn {
 	f_cam_muteSpectators = true;
 
 	// Menu (Top left)
-	f_cam_menuControls = [2111,2112,2113,2114];
+	f_cam_menuControls = [2111,2112,2113,2114,5532];
 	f_cam_menuShown = true;
 	f_cam_menuWorking = false;
 	f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
