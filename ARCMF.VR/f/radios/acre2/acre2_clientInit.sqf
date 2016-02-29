@@ -1,4 +1,4 @@
-_presetName = switch(side player) do {
+_presetName = switch (side player) do {
 	case west: {"default2"};
 	case east: {"default3"};
 	case resistance: {"default4"};
@@ -9,11 +9,11 @@ if (f_radios_settings_acre2_disableFrequencySplit) then {
 	_presetName = "default";
 };
 
-_ret = ["ACRE_PRC343", _presetName ] call acre_api_fnc_setPreset;
-_ret = ["ACRE_PRC148", _presetName ] call acre_api_fnc_setPreset;
-_ret = ["ACRE_PRC152", _presetName ] call acre_api_fnc_setPreset;
-_ret = ["ACRE_PRC117F", _presetName ] call acre_api_fnc_setPreset;
-_ret = ["ItemRadio", _presetName ] call acre_api_fnc_setPreset;
+_ret = ["ACRE_PRC343", _presetName] call acre_api_fnc_setPreset;
+_ret = ["ACRE_PRC148", _presetName] call acre_api_fnc_setPreset;
+_ret = ["ACRE_PRC152", _presetName] call acre_api_fnc_setPreset;
+_ret = ["ACRE_PRC117F", _presetName] call acre_api_fnc_setPreset;
+_ret = ["ItemRadio", _presetName] call acre_api_fnc_setPreset;
 
 if (!alive player) exitWith {[true] call acre_api_fnc_setSpectator;};
 
@@ -49,7 +49,7 @@ waitUntil {[] call acre_api_fnc_isInitialized};
 
 if (_typeOfUnit != "NIL") then {
 	if (!f_radios_settings_acre2_disableRadios) then {
-		if (isnil "f_radios_settings_acre2_shortRange") then {
+		if (isNil "f_radios_settings_acre2_shortRange") then {
 			if (_unit canAdd f_radios_settings_acre2_standardSHRadio) then {
 				_unit addItem f_radios_settings_acre2_standardSHRadio;
 			} else {

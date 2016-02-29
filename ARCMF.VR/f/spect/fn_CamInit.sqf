@@ -10,7 +10,7 @@ _this spawn {
 	_forced = [_this, 4, false,[false]] call BIS_fnc_param;
 	if (isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
 	// if they are jip, these are null
-	if (isNull _unit ) then { _unit = cameraOn; f_cam_isJIP = true; };
+	if (isNull _unit) then { _unit = cameraOn; f_cam_isJIP = true; };
 	// escape the script if you are not a seagull unless forced
 	if (typeOf _unit != "seagull" && !_forced || !hasInterface) exitWith {};
 	// disable this to instantly switch to the spectator script.

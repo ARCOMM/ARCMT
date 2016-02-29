@@ -16,10 +16,6 @@ while {true} do {
 				_unit = player;
 				_grp = (_this select 3);
 				[player] joinSilent _grp;
-				["JIP",[format ["You have joined %1 (%2).",name leader _grp,_grp]]] call BIS_fnc_showNotification;
-				{
-					if (isPlayer _x) then {[["JIP",[format ["%1 has joined your group.",name _unit]]],"BIS_fnc_showNotification",_x] call BIS_fnc_MP};
-				} forEach (units _grp - [_unit]);
 				[[_grp, leader _grp], "selectLeader", leader _grp, false] call BIS_fnc_mp;
 				player removeAction f_groupJoinAction;
 				f_groupJoinAction = nil;

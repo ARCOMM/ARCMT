@@ -10,37 +10,23 @@ if (count _this > 2) then {
 
 if !(local _unit) exitWith {};
 
-_unit setVariable ["f_var_assignGear",_typeofUnit,true];
-_unit setVariable ["f_var_assignGear_done",false,true];
+_unit setVariable ["f_var_assignGear", _typeofUnit, true];
+_unit setVariable ["f_var_assignGear_done", false, true];
 
 if (f_var_debugMode == 1) then {
-	_unit sideChat format ["DEBUG (assignGear.sqf): unit faction: %1",_faction];
+	_unit sideChat format ["DEBUG (assignGear.sqf): unit faction: %1", _faction];
 };
 
 if (_faction == "blu_f") then {
-	_file = format ["f\assignGear\nato\%1.sqf", _typeofUnit];
-	_unit execVM _file;
-	_unit unlinkItem "ItemRadioAcreFlagged";
+	#include "f_assignGear_nato.sqf"
 };
 
 if (_faction == "opf_f") then {
-	_file = format ["f\assignGear\csat\%1.sqf", _typeofUnit];
-	_unit execVM _file;
-	_unit unlinkItem "ItemRadioAcreFlagged";
+	#include "f_assignGear_csat.sqf"
 };
 
 if (_faction == "ind_f") then {
-	_file = format ["f\assignGear\aaf\%1.sqf", _typeofUnit];
-	_unit execVM _file;
-	_unit unlinkItem "ItemRadioAcreFlagged";
+	#include "f_assignGear_aaf.sqf";
 };
 
-_unit setVariable ["f_var_assignGear_done",true,true];
-
-if (isNil "_file") then {
-	player globalchat format ["DEBUG (assignGear.sqf): Faction %1 is not defined.",_faction];
-} else {
-	if (f_var_debugMode == 1) then	{
-		player sideChat format ["DEBUG (assignGear.sqf): Gear for %1: %1 slot selected.",_unit,_faction,_typeofUnit];
-	};
-};
+_unit setVariable ["f_var_assignGear_done", true, true];

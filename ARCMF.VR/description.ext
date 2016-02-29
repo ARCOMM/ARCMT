@@ -1,3 +1,5 @@
+#include "f\arc\macros.hpp"
+
 class Header
 {
 	gameType = Coop;
@@ -57,14 +59,6 @@ class CfgNotifications
 		duration = 3;
 		priority = 1;
 	};
-
-	class JIP {
-		title= "REINFORCEMENTS";
-		description= "%1";
-		iconPicture = "\A3\ui_f\data\map\markers\military\flag_ca.paa";
-		duration = 3;
-		priority = 5;
-	};
 };
 
 class Params
@@ -107,7 +101,7 @@ class Params
 	class arc_param_duplex
 	{
 		title = "Duplex Option";
-		values[] = {0, 1};
+		values[] = {0,1};
 		texts[] = {"Half Duplex", "Full Duplex"};
 		default = 1;
 		code = "arc_param_duplex = %1";
@@ -116,7 +110,7 @@ class Params
 	class arc_param_babel
 	{
 		title = "Babel";
-		values[] = {0, 1};
+		values[] = {0,1};
 		texts[] = {"Disabled (all sides understand each other)", "Enabled (all sides speak different languages)"};
 		default = 0;
 		code = "arc_param_babel = if (%1 == 0) then {false} else {true};";
@@ -174,18 +168,13 @@ class CfgRespawnTemplates
 	{
 		onPlayerRespawn = "f_fnc_CamInit";
 	};
+	
     class Seagull
     {
         onPlayerRespawn = "";
     };
-	class f_JIP
-	{
-		onPlayerRespawn = "f\JIP\f_JIP_playerRespawn.sqf";
-	};
 };
 
-#include "f\JIP\f_JIP_kitpicker.h"
-#include "f\JIP\f_JIP_grppicker.h"
 #include "f\spect\config.hpp"
 
 class CfgFunctions
@@ -263,6 +252,7 @@ class CfgFunctions
 			file = "f\safeStart";
 			class safety{};
 		};
+		
 		#include "f\spect\functions.hpp"
 	};
 };

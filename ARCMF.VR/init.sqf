@@ -23,9 +23,7 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 // Group Markers
 f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
 
-if (isServer) then {
-	f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
-};
+if (isServer) then {};
 
 // ORBAT Notes
 [] execVM "f\briefing\f_orbatNotes.sqf";
@@ -38,11 +36,6 @@ if (isServer) then {
 
 // Mission Timer/Safe Start
 [] execVM "f\safeStart\f_safeStart.sqf";
-
-// JIP setup
-f_var_JIP_FirstMenu = false;		// Do players connecting for the first time get the JIP menu? - This only works in missions with respawn.
-f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
-f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
 
 // AI Unit Caching
 [30] spawn f_fnc_cInit;
