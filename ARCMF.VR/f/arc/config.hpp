@@ -11,6 +11,7 @@ class ARC
 		file = "f\arc\helpers";
 		class execHC {};
 		class fileExists {};
+		class getFactionFromSide {};
 	};
 	class radios
 	{
@@ -21,5 +22,12 @@ class ARC
 	{
 		file = "f\arc\markers";
 		class addTrackingMarker {};
+		class getMarkerType {};
+	};
+	class tracker
+	{
+		file = "f\arc\tracker";
+		class initTracker {};
+		class updateTracker {};
 	};
 };

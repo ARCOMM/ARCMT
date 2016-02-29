@@ -10,7 +10,7 @@ class CfgARCMF
 	{
 		class nato
 		{
-			enableGroupMarkers = true;
+			enableGroupMarkers = false;
 			enableFireteamMarkers = true;
 		};
 		class csat

@@ -27,5 +27,10 @@ while {alive _unit && (_unit in f_var_HandlerGroup)} do {
 	sleep 0.1;
 };
 
-deleteMarkerLocal _mkrBorder;
-deleteMarkerLocal _mkr;
+if (!isNil "_mkrBorder") then {
+	deleteMarkerLocal _mkrBorder;
+};
+
+if (!isNil "_mkr") then {
+	deleteMarkerLocal _mkr;
+};
