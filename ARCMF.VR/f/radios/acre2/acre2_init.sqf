@@ -1,7 +1,5 @@
 f_var_radios = 1;
 
-// waitUntil {!isNil "arc_param_babel_west" && !isNil "arc_param_babel_east" && !isNil "arc_param_babel_resistance" && !isNil "arc_param_duplex"};
-
 f_acre2_presetSetup = compile preprocessFileLineNumbers "f\radios\acre2\acre2_setupPresets.sqf";
 f_acre2_clientInit = compile preprocessFileLineNumbers "f\radios\acre2\acre2_clientInit.sqf";
 f_fnc_GiveSideRadio = compile preprocessFileLineNumbers "f\radios\acre2\fn_giveSideRadio.sqf";
