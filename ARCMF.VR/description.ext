@@ -104,7 +104,7 @@ class Params
 		values[] = {0,1};
 		texts[] = {"Half Duplex", "Full Duplex"};
 		default = 1;
-		code = "arc_param_duplex = %1";
+		code = "arc_param_duplex = if (%1 == 1) then {true} else {false};";
 	};
 
 	class arc_param_babel_west
@@ -113,11 +113,7 @@ class Params
 		values[] = {0,1,2};
 		texts[] = {"English","Russian","Greek"};
 		default = 0;
-		code = "arc_param_babel_west = switch (%1) do {
-			case 0: {'english'};
-			case 1: {'russian'};
-			case 2: {'greek'};
-		};";
+		code = "arc_param_babel_west = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
 	};
 	
 	class arc_param_babel_east
@@ -126,11 +122,7 @@ class Params
 		values[] = {0,1,2};
 		texts[] = {"English","Russian","Greek"};
 		default = 0;
-		code = "arc_param_babel_east = switch (%1) do {
-			case 0: {'english'};
-			case 1: {'russian'};
-			case 2: {'greek'};
-		};";
+		code = "arc_param_babel_east = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
 	};
 	
 	class arc_param_babel_resistance
@@ -139,11 +131,16 @@ class Params
 		values[] = {0,1,2};
 		texts[] = {"English","Russian","Greek"};
 		default = 0;
-		code = "arc_param_babel_resistance = switch (%1) do {
-			case 0: {'english'};
-			case 1: {'russian'};
-			case 2: {'greek'};
-		};";
+		code = "arc_param_babel_resistance = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
+	};
+	
+	class arc_param_babel_civ
+	{
+		title = "Babel Language (CIVILIAN)";
+		values[] = {0,1,2};
+		texts[] = {"English","Russian","Greek"};
+		default = 0;
+		code = "arc_param_babel_civ = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
 	};
 };
 

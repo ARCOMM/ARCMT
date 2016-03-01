@@ -1061,7 +1061,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={183.84668,5.0014391,8026.7378};
+						position[]={183.847,5.0014391,8026.7378};
 					};
 					side="East";
 					flags=2;
@@ -1073,6 +1073,7 @@ class Mission
 						init="GrpCSAT_CO = group this; [""co"",this] call f_fnc_assignGear;";
 						name="UnitCSAT_CO";
 						description="CSAT Commander";
+						isPlayable=1;
 					};
 					id=55;
 					type="O_officer_F";

@@ -8,6 +8,7 @@ _presetName = switch (side player) do {
 	case west: {"default2"};
 	case east: {"default3"};
 	case resistance: {"default4"};
+	case civilian: {"default5"};
 	default {"default"};
 };
 
@@ -37,6 +38,10 @@ switch (side _unit) do {
 	case resistance: {
 		f_radios_settings_acre2_language_indfor call acre_api_fnc_babelSetSpokenLanguages;
 		[f_radios_settings_acre2_language_indfor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+	};
+	case civilian: {
+		f_radios_settings_acre2_language_civ call acre_api_fnc_babelSetSpokenLanguages;
+		[f_radios_settings_acre2_language_civ select 0] call acre_api_fnc_babelSetSpeakingLanguage;
 	};
 	default {
 		f_radios_settings_acre2_language_indfor call acre_api_fnc_babelSetSpokenLanguages;

@@ -3,13 +3,13 @@ f_acre2_clientInit = compile preprocessFileLineNumbers "f\radios\acre2\acre2_cli
 f_fnc_GiveSideRadio = compile preprocessFileLineNumbers "f\radios\acre2\fn_giveSideRadio.sqf";
 
 f_radios_acre2_giveRadioAction = {
-	private["_x"];
+	private ["_x"];
 	_x = _this;
 	_unit = player;
     
 	[_x] spawn {
 		waitUntil {time > 3};
-		systemChat format["[F3 ACRE2] Warning: No room to add radio '%1', report this to the mission maker. You now have a scroll-wheel action to get this radio.",_this select 0];
+		systemChat format ["[ARCMF] Warning: No room to add radio '%1', report this to the mission maker. You now have a scroll-wheel action to get this radio.", _this select 0];
 	};
 	
 	_radioName = getText (configfile >> "CfgWeapons" >> _x >> "displayName");
@@ -20,7 +20,7 @@ f_radios_acre2_giveRadioAction = {
 			_unit addItem _radioToGive;
 			_unit removeAction (_this select 2);
 		} else {
-			systemChat format["[F3 ACRE2] Warning: No room to add radio '%1', remove more stuff and try again", _radioToGive];
+			systemChat format ["[ARCMF] Warning: No room to add radio '%1', remove more stuff and try again.", _radioToGive];
 		};
 	}, [_x], 0, false, false, "", "(_target == _this)"];
 	
@@ -32,7 +32,6 @@ f_radios_acre2_giveRadioAction = {
 	};
 };
 
-// JIP Check
 if (!isDedicated && (isNull player)) then {
 	waitUntil {sleep 0.1; !isNull player};
 };
