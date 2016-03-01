@@ -57,13 +57,5 @@ class CfgARCMF
 			AN_PRC_117F[] = {};
 			AN_PRC_77[] = {};
 		};
-		class civ
-		{
-			AN_PRC_343[] = {"all"};
-			AN_PRC_148[] = {};
-			AN_PRC_152[] = {};
-			AN_PRC_117F[] = {};
-			AN_PRC_77[] = {};
-		};
 	};
 };

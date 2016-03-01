@@ -12,7 +12,6 @@ f_radios_settings_acre2_language_civ = [arc_param_babel_civ];
 f_radios_settings_acre2_groups_blufor = ["ALPHA SQUAD","BRAVO SQUAD","CHARLIE SQUAD","COMMAND","AIR","ARMOR","SPEC"];
 f_radios_settings_acre2_groups_opfor = ["ALPHA SQUAD","BRAVO SQUAD","CHARLIE SQUAD","COMMAND","AIR","ARMOR","SPEC"];
 f_radios_settings_acre2_groups_indfor = ["ALPHA SQUAD","BRAVO SQUAD","CHARLIE SQUAD","COMMAND","AIR","ARMOR","SPEC"];
-f_radios_settings_acre2_groups_civ = ["COMM 1","COMM 2","COMM 3","COMM 4","COMM 5","COMM 6","COMM 7"];
 
 [1] call acre_api_fnc_setLossModelScale;
 

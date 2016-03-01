@@ -8,7 +8,6 @@ _presetName = switch (side player) do {
 	case west: {"preset_blufor"};
 	case east: {"preset_opfor"};
 	case resistance: {"preset_indfor"};
-	case civilian: {"preset_civ"};
 	default {"default"};
 };
 
@@ -62,7 +61,6 @@ _AN_PRC_343 = switch (side _unit) do {
 	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_343")};
 	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_343")};
 	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_343")};
-	case civilian: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "civ" >> "AN_PRC_343")};
 	default {[]};
 };
 
@@ -70,7 +68,6 @@ _AN_PRC_148 = switch (side _unit) do {
 	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_148")};
 	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_148")};
 	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_148")};
-	case civilian: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "civ" >> "AN_PRC_148")};
 	default {[]};
 };
 
@@ -78,7 +75,6 @@ _AN_PRC_152 = switch (side _unit) do {
 	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_152")};
 	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_152")};
 	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_152")};
-	case civilian: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "civ" >> "AN_PRC_152")};
 	default {[]};
 };
 
@@ -86,7 +82,6 @@ _AN_PRC_117F = switch (side _unit) do {
 	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_117F")};
 	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_117F")};
 	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_117F")};
-	case civilian: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "civ" >> "AN_PRC_117F")};
 	default {[]};
 };
 
@@ -94,7 +89,6 @@ _AN_PRC_77 = switch (side _unit) do {
 	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_77")};
 	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_77")};
 	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_77")};
-	case civilian: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "civ" >> "AN_PRC_77")};
 	default {[]};
 };
 

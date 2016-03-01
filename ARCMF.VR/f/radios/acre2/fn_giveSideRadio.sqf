@@ -6,7 +6,6 @@ _presetName = switch (_side) do {
 	case west: {"preset_blufor"};
 	case east: {"preset_opfor"};
 	case resistance: {"preset_indfor"};
-	case civilian: {"preset_civ"};
 	default {"default"};
 };
 
