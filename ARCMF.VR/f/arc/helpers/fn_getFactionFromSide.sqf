@@ -1,6 +1,7 @@
 switch (_this) do {
-	case west: {"nato"};
-	case east: {"csat"};
-	case resistance: {"aaf"};
+	case west: {"blufor"};
+	case east: {"opfor"};
+	case resistance: {"indfor"};
+	case civilian: {"civilian"};
 	default {"unknown"};
 };

@@ -1,5 +1,3 @@
-// ADMIN BRIEFING
-// This is a generic section displayed only to the ADMIN
 _briefing = "
 <br/>
 <font size='18'>Admin Section</font><br/>
@@ -7,8 +5,6 @@ This briefing section can only be seen by the current admin.
 <br/><br/>
 ";
 
-// ENDINGS
-// This block of code collects all valid endings and formats them properly
 _briefing = _briefing + "<font size='18'>Ending Controllers</font><br/>";
 
 {
@@ -22,7 +18,6 @@ _briefing = _briefing + "<font size='18'>Ending Controllers</font><br/>";
 	%3<br/>", _index, _title, _description]);
 } forEach ("true" configClasses (missionConfigFile >> "CfgDebriefing"));
 
-// SAFE START SECTION
 _briefing = _briefing + "<br/>
 <font size='18'>Safe Start Control</font><br/>
 <execute expression=""f_var_mission_timer = f_var_mission_timer + 1; publicVariable 'f_var_mission_timer'; hintSilent format ['Mission Timer: %1', f_var_mission_timer];"">
@@ -50,7 +45,6 @@ hintSilent 'Safety Off!' "">
 Force safety off for all players</execute><br/><br/>
 ";
 
-// ADD ZEUS SUPPORT SECTION
 _briefing = _briefing + "
 <font size='18'>Zeus Support</font><br/>
 <execute expression=""

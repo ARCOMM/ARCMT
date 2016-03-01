@@ -2,23 +2,93 @@ class CfgARCMF
 {
 	/*
 -----------------------------------------------------------------------------------------------------------------
+		BRIEFING CONFIGURATION
+		Description: This is the section where you define the text content for the briefing on each team.
+		Note: Each text element gets placed on its own line.
+-----------------------------------------------------------------------------------------------------------------
+	*/
+	class briefing
+	{
+		class blufor
+		{
+			administration[] = {"This is mission doesn't have an ending controller."};
+			commandersIntent[] = {"Insert very short summary here."};
+			movementPlan[] = {"Insert very short summary here."};
+			fireSupportPlan[] = {"Insert very short summary here."};
+			specialTasks[] = {"Insert very short summary here."};
+			mission[] = {"Secure the crash site and search for survivors."};
+			situation[] = {"Insert general information about the situation here."};
+			enemyForces[] = {"Insert information about enemy forces here."};
+			friendlyForces[] = {"Insert information about friendly forces here."};
+		};
+		class opfor
+		{
+			administration[] = {"This is mission doesn't have an ending controller."};
+			commandersIntent[] = {"Insert very short summary here."};
+			movementPlan[] = {"Insert very short summary here."};
+			fireSupportPlan[] = {"Insert very short summary here."};
+			specialTasks[] = {"Insert very short summary here."};
+			mission[] = {"Secure the crash site and search for survivors."};
+			situation[] = {"Insert general information about the situation here."};
+			enemyForces[] = {"Insert information about enemy forces here."};
+			friendlyForces[] = {"Insert information about friendly forces here."};
+		};
+		class indfor
+		{
+			administration[] = {"This is mission doesn't have an ending controller."};
+			commandersIntent[] = {"Insert very short summary here."};
+			movementPlan[] = {"Insert very short summary here."};
+			fireSupportPlan[] = {"Insert very short summary here."};
+			specialTasks[] = {"Insert very short summary here."};
+			mission[] = {"Secure the crash site and search for survivors."};
+			situation[] = {"Insert general information about the situation here."};
+			enemyForces[] = {"Insert information about enemy forces here."};
+			friendlyForces[] = {"Insert information about friendly forces here."};
+		};
+		class civilian
+		{
+			administration[] = {"This is mission doesn't have an ending controller."};
+			commandersIntent[] = {"Insert very short summary here."};
+			movementPlan[] = {"Insert very short summary here."};
+			fireSupportPlan[] = {"Insert very short summary here."};
+			specialTasks[] = {"Insert very short summary here."};
+			mission[] = {"Secure the crash site and search for survivors."};
+			situation[] = {"Insert general information about the situation here."};
+			enemyForces[] = {"Insert information about enemy forces here."};
+			friendlyForces[] = {"Insert information about friendly forces here."};
+		};
+		class zeus
+		{
+			administration[] = {"This is mission doesn't have an ending controller."};
+			commandersIntent[] = {"Insert very short summary here."};
+			movementPlan[] = {"Insert very short summary here."};
+			fireSupportPlan[] = {"Insert very short summary here."};
+			specialTasks[] = {"Insert very short summary here."};
+			mission[] = {"Secure the crash site and search for survivors."};
+			situation[] = {"Insert general information about the situation here."};
+			enemyForces[] = {"Insert information about enemy forces here."};
+			friendlyForces[] = {"Insert information about friendly forces here."};
+		};
+	};
+	/*
+-----------------------------------------------------------------------------------------------------------------
 		MARKER CONFIGURATION
-		Description: This is the section where you define the settings for group and fireteam map markers
+		Description: This is the section where you define the settings for group and fireteam map markers.
 -----------------------------------------------------------------------------------------------------------------
 	*/
 	class markers
 	{
-		class nato
+		class blufor
 		{
 			enableGroupMarkers = true;
 			enableFireteamMarkers = true;
 		};
-		class csat
+		class opfor
 		{
 			enableGroupMarkers = true;
 			enableFireteamMarkers = true;
 		};
-		class aaf
+		class indfor
 		{
 			enableGroupMarkers = true;
 			enableFireteamMarkers = true;
@@ -33,7 +103,7 @@ class CfgARCMF
 	*/
 	class acre
 	{
-		class nato
+		class blufor
 		{
 			AN_PRC_343[] = {"all"};
 			AN_PRC_148[] = {"co", "dc", "ftl"};
@@ -41,7 +111,7 @@ class CfgARCMF
 			AN_PRC_117F[] = {};
 			AN_PRC_77[] = {};
 		};
-		class csat
+		class opfor
 		{
 			AN_PRC_343[] = {"all"};
 			AN_PRC_148[] = {"co", "dc", "ftl"};
@@ -49,7 +119,7 @@ class CfgARCMF
 			AN_PRC_117F[] = {};
 			AN_PRC_77[] = {};
 		};
-		class aaf
+		class indfor
 		{
 			AN_PRC_343[] = {"all"};
 			AN_PRC_148[] = {"co", "dc", "ftl"};

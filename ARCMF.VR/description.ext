@@ -32,7 +32,6 @@ class CfgNotifications
 		priority = 0;
 		difficulty[] = {};
 	};
-
 	class Alert
 	{
 		title = "ALERT";
@@ -41,7 +40,6 @@ class CfgNotifications
 		duration = 3;
 		priority = 9;
 	};
-
 	class SafeStart
 	{
 		title = "SAFE START";
@@ -50,7 +48,6 @@ class CfgNotifications
 		duration = 10;
 		priority = 0;
 	};
-
 	class SafeStartMissionStarting
 	{
 		title = "SAFE START";
@@ -71,7 +68,6 @@ class Params
 		default = 0;
 		code = "f_var_debugMode = %1";
     };
-
     class f_param_mission_timer
     {
 		title = "Safe Start (mins)";
@@ -80,7 +76,6 @@ class Params
 		default = 0;
 		code = "f_param_mission_timer = %1";
     };
-
 	class f_param_caching
 	{
 		title = "Cache AI outside distance (m)";
@@ -88,7 +83,6 @@ class Params
 		default = 0;
 		code = "f_param_caching = %1";
 	};
-
 	class f_param_headless_client
 	{
 		title = "Headless Client";
@@ -97,7 +91,6 @@ class Params
 		default = 1;
 		code = "f_param_headless_client = if (%1 == 0) then {false} else {true};";
 	};
-
 	class arc_param_duplex
 	{
 		title = "Duplex Option";
@@ -106,7 +99,6 @@ class Params
 		default = 1;
 		code = "arc_param_duplex = if (%1 == 1) then {true} else {false};";
 	};
-
 	class arc_param_babel_west
 	{
 		title = "Babel Language (BLUFOR)";
@@ -115,7 +107,6 @@ class Params
 		default = 0;
 		code = "arc_param_babel_west = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
 	};
-	
 	class arc_param_babel_east
 	{
 		title = "Babel Language (OPFOR)";
@@ -124,7 +115,6 @@ class Params
 		default = 0;
 		code = "arc_param_babel_east = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
 	};
-	
 	class arc_param_babel_resistance
 	{
 		title = "Babel Language (INDFOR)";
@@ -143,35 +133,30 @@ class CfgDebriefing
 		subtitle = "";
 		description = "*** Insert debriefing #1 here. ***";
 	};
-
 	class End2
 	{
 		title = "Ending #2";
 		subtitle = "";
 		description = "*** Insert debriefing #2 here. ***";
 	};
-
 	class End3
 	{
 		title = "Ending #3";
 		subtitle = "";
 		description = "*** Insert debriefing #3 here. ***";
 	};
-
 	class End4
 	{
 		title = "Ending #4";
 		subtitle = "";
 		description = "*** Insert debriefing #4 here. ***";
 	};
-
 	class End5
 	{
 		title = "Ending #5";
 		subtitle = "";
 		description = "*** Insert debriefing #5 here. ***";
 	};
-
 	class End6
 	{
 		title = "Ending #6";
@@ -186,7 +171,6 @@ class CfgRespawnTemplates
 	{
 		onPlayerRespawn = "f_fnc_CamInit";
 	};
-
     class Seagull
     {
         onPlayerRespawn = "";

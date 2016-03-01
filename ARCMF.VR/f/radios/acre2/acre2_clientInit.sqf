@@ -54,37 +54,37 @@ waitUntil {[] call acre_api_fnc_isInitialized};
 {_unit removeItem _x;} forEach ([] call acre_api_fnc_getCurrentRadioList);
 
 _AN_PRC_343 = switch (side _unit) do {
-	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_343")};
-	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_343")};
-	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_343")};
+	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "blufor" >> "AN_PRC_343")};
+	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "opfor" >> "AN_PRC_343")};
+	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "indfor" >> "AN_PRC_343")};
 	default {[]};
 };
 
 _AN_PRC_148 = switch (side _unit) do {
-	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_148")};
-	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_148")};
-	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_148")};
+	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "blufor" >> "AN_PRC_148")};
+	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "opfor" >> "AN_PRC_148")};
+	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "indfor" >> "AN_PRC_148")};
 	default {[]};
 };
 
 _AN_PRC_152 = switch (side _unit) do {
-	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_152")};
-	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_152")};
-	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_152")};
+	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "blufor" >> "AN_PRC_152")};
+	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "opfor" >> "AN_PRC_152")};
+	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "indfor" >> "AN_PRC_152")};
 	default {[]};
 };
 
 _AN_PRC_117F = switch (side _unit) do {
-	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_117F")};
-	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_117F")};
-	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_117F")};
+	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "blufor" >> "AN_PRC_117F")};
+	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "opfor" >> "AN_PRC_117F")};
+	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "indfor" >> "AN_PRC_117F")};
 	default {[]};
 };
 
 _AN_PRC_77 = switch (side _unit) do {
-	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "nato" >> "AN_PRC_77")};
-	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "csat" >> "AN_PRC_77")};
-	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "aaf" >> "AN_PRC_77")};
+	case west: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "blufor" >> "AN_PRC_77")};
+	case east: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "opfor" >> "AN_PRC_77")};
+	case resistance: {getArray (missionConfigFile >> "CfgARCMF" >> "acre" >> "indfor" >> "AN_PRC_77")};
 	default {[]};
 };
 

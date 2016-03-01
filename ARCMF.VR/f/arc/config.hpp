@@ -13,6 +13,7 @@ class ARC
 		class fileExists {};
 		class getFactionFromSide {};
 		class isRespawnEnabled {};
+		class buildBriefingFromConfig {};
 	};
 	class radios
 	{
