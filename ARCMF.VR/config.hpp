@@ -73,7 +73,7 @@ class CfgARCMF
 	/*
 -----------------------------------------------------------------------------------------------------------------
 		MARKER CONFIGURATION
-		Description: This is the section where you define the settings for group and fireteam map markers.
+		Description: This is the section where you define the settings for group map markers.
 -----------------------------------------------------------------------------------------------------------------
 	*/
 	class markers

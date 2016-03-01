@@ -45,7 +45,7 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 f_var_cachingAggressiveness = 2;
 
 // Radio Systems Support
-[] execVM "f\radios\radio_init.sqf";
+[] execVM "f\radios\acre2\acre2_init.sqf";
 
 // Headless Client Initialization
 waitUntil {!isNil "f_param_headless_client"};

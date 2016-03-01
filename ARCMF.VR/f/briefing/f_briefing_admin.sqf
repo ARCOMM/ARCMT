@@ -8,12 +8,9 @@ This briefing section can only be seen by the current admin.
 _briefing = _briefing + "<font size='18'>Ending Controllers</font><br/>";
 
 {
-	_class = className _x;
 	_title = getText (_x >> "title");
-	_subtitle = getText (_x >> "subtitle");
 	_description = getText (_x >> "description");
 	_index = _forEachIndex + 1;
-	
 	_briefing = _briefing + (format ["<execute expression=""[[%1], 'f_fnc_mpEnd', false] spawn BIS_fnc_MP;"">%2</execute> - %3<br/>
 	%3<br/>", _index, _title, _description]);
 } forEach ("true" configClasses (missionConfigFile >> "CfgDebriefing"));

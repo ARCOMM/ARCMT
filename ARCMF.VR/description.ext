@@ -4,7 +4,7 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 100;
+	maxPlayers = 229;
 };
 
 onLoadName = "ARCMF";
@@ -14,7 +14,7 @@ overviewPicture = "splash.paa";
 loadScreen = "splash.paa";
 enableDebugConsole = 1;
 disabledAI = 1;
-respawn = 4;
+respawn = 3;
 respawndelay = 3;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator"};
@@ -60,22 +60,22 @@ class CfgNotifications
 
 class Params
 {
-    class f_param_debugMode
-    {
+	class f_param_debugMode
+	{
 		title = "Debug Mode";
 		values[] = {0,1};
 		texts[] = {"Off","On"};
 		default = 0;
 		code = "f_var_debugMode = %1";
-    };
-    class f_param_mission_timer
-    {
+	};
+	class f_param_mission_timer
+	{
 		title = "Safe Start (mins)";
 		values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
 		texts[] = {"Off","1","2","3","4","5","6","7","8","9","10","15"};
 		default = 0;
 		code = "f_param_mission_timer = %1";
-    };
+	};
 	class f_param_caching
 	{
 		title = "Cache AI outside distance (m)";
@@ -171,10 +171,10 @@ class CfgRespawnTemplates
 	{
 		onPlayerRespawn = "f_fnc_CamInit";
 	};
-    class Seagull
-    {
-        onPlayerRespawn = "";
-    };
+	class Seagull
+	{
+		onPlayerRespawn = "";
+	};
 };
 
 #include "f\spect\config.hpp"
