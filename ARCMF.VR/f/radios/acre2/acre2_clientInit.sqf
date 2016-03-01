@@ -5,9 +5,9 @@
 #define RADIO_77 "ACRE_PRC77"
 
 _presetName = switch (side player) do {
-	case west: {"preset_blufor"};
-	case east: {"preset_opfor"};
-	case resistance: {"preset_indfor"};
+	case west: {"default2"};
+	case east: {"default3"};
+	case resistance: {"default4"};
 	default {"default"};
 };
 
@@ -38,13 +38,9 @@ switch (side _unit) do {
 		f_radios_settings_acre2_language_indfor call acre_api_fnc_babelSetSpokenLanguages;
 		[f_radios_settings_acre2_language_indfor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
 	};
-	case civilian: {
-		f_radios_settings_acre2_language_civ call acre_api_fnc_babelSetSpokenLanguages;
-		[f_radios_settings_acre2_language_civ select 0] call acre_api_fnc_babelSetSpeakingLanguage;
-	};
 	default {
-		f_radios_settings_acre2_language_indfor call acre_api_fnc_babelSetSpokenLanguages;
-		[f_radios_settings_acre2_language_indfor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+		f_radios_settings_acre2_language_blufor call acre_api_fnc_babelSetSpokenLanguages;
+		[f_radios_settings_acre2_language_blufor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
 	};
 };
 

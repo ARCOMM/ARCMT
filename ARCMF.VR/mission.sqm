@@ -29,7 +29,6 @@ addons[]=
 	"a3_characters_f",
 	"A3_Characters_F_OPFOR",
 	"A3_Characters_F_INDEP",
-	"A3_Characters_F_Civil",
 	"A3_Modules_F_Multiplayer"
 };
 randomSeed=3124507;
@@ -57,7 +56,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=52;
+		items=50;
 		class Item0
 		{
 			dataType="Group";
@@ -3448,70 +3447,6 @@ class Mission
 		class Item36
 		{
 			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={886.22656,5.0014391,150.09012};
-					};
-					side="Civilian";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
-						description="Mission Observer";
-						isPlayable=1;
-					};
-					id=184;
-					type="C_man_polo_1_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=183;
-		};
-		class Item37
-		{
-			dataType="Group";
-			side="Civilian";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={893.41797,5.0014391,149.85184};
-					};
-					side="Civilian";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this addAction [""Start Camera"",""[] call bis_fnc_camera;"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
-						description="Mission Observer";
-						isPlayable=1;
-					};
-					id=186;
-					type="C_man_polo_2_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=185;
-		};
-		class Item38
-		{
-			dataType="Group";
 			side="East";
 			class Entities
 			{
@@ -3562,7 +3497,7 @@ class Mission
 			};
 			id=187;
 		};
-		class Item39
+		class Item37
 		{
 			dataType="Group";
 			side="Independent";
@@ -3616,7 +3551,7 @@ class Mission
 			};
 			id=195;
 		};
-		class Item40
+		class Item38
 		{
 			dataType="Group";
 			side="West";
@@ -3688,7 +3623,7 @@ class Mission
 			};
 			id=203;
 		};
-		class Item41
+		class Item39
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3701,7 +3636,7 @@ class Mission
 			id=212;
 			type="HeadlessClient_F";
 		};
-		class Item42
+		class Item40
 		{
 			dataType="Group";
 			side="West";
@@ -3755,7 +3690,7 @@ class Mission
 			};
 			id=213;
 		};
-		class Item43
+		class Item41
 		{
 			dataType="Group";
 			side="West";
@@ -3809,7 +3744,7 @@ class Mission
 			};
 			id=216;
 		};
-		class Item44
+		class Item42
 		{
 			dataType="Group";
 			side="West";
@@ -3863,7 +3798,7 @@ class Mission
 			};
 			id=219;
 		};
-		class Item45
+		class Item43
 		{
 			dataType="Group";
 			side="West";
@@ -3936,7 +3871,7 @@ class Mission
 			};
 			id=222;
 		};
-		class Item46
+		class Item44
 		{
 			dataType="Group";
 			side="West";
@@ -4009,7 +3944,7 @@ class Mission
 			};
 			id=226;
 		};
-		class Item47
+		class Item45
 		{
 			dataType="Group";
 			side="West";
@@ -4082,7 +4017,7 @@ class Mission
 			};
 			id=230;
 		};
-		class Item48
+		class Item46
 		{
 			dataType="Group";
 			side="West";
@@ -4154,7 +4089,7 @@ class Mission
 			};
 			id=234;
 		};
-		class Item49
+		class Item47
 		{
 			dataType="Group";
 			side="West";
@@ -4226,7 +4161,7 @@ class Mission
 			};
 			id=238;
 		};
-		class Item50
+		class Item48
 		{
 			dataType="Group";
 			side="West";
@@ -4298,7 +4233,7 @@ class Mission
 			};
 			id=242;
 		};
-		class Item51
+		class Item49
 		{
 			dataType="Logic";
 			class PositionInfo
