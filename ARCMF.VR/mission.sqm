@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=248;
+		nextID=352;
 	};
 	class MarkerIDProvider
 	{
@@ -16,20 +16,19 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7998.5161,18.23745,199.09552};
-		dir[]={-0.027940625,-0.48922184,-0.87180877};
-		up[]={-0.015674548,0.87211567,-0.48906025};
-		aside[]={-0.99954957,1.3985118e-007,0.032034516};
+		pos[]={47.298885,43.167782,137.25958};
+		dir[]={-0.0035526645,-0.62773269,-0.77844018};
+		up[]={-0.0028650388,0.7784124,-0.62774515};
+		aside[]={-1.0000029,1.9275194e-007,0.0045636538};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
 	"A3_Characters_F_OPFOR",
+	"a3_characters_f",
 	"A3_Characters_F_INDEP",
-	"A3_Modules_F_Multiplayer"
+	"A3_Characters_F_BLUFOR"
 };
 randomSeed=3124507;
 class Mission
@@ -37,7 +36,7 @@ class Mission
 	class Intel
 	{
 		briefingName="ARCMF";
-		overviewText="ARCOMM mission framework adapted from F3.";
+		overviewText="ARCOMM Mission Framework.";
 		resistanceWest=0;
 		startWeather=0;
 		startWind=0;
@@ -46,9 +45,9 @@ class Mission
 		forecastWaves=0;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
-		month=7;
-		day=6;
+		year=2016;
+		month=2;
+		day=15;
 		hour=12;
 		minute=0;
 		startFogDecay=0;
@@ -56,999 +55,8 @@ class Mission
 	};
 	class Entities
 	{
-		items=50;
+		items=49;
 		class Item0
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2954,5.0014391,181.51163};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="GrpNATO_CO = group this; [""co"",this] call f_fnc_assignGear;";
-						name="UnitNATO_CO";
-						description="NATO Commander";
-						isPlayer=1;
-						isPlayable=1;
-					};
-					id=1;
-					type="B_officer_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.2954,5.0014391,179.86163};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_CO = group this; [""m"",this] call f_fnc_assignGear;";
-						name="UnitNATO_CO_M";
-						description="NATO Medic";
-						isPlayable=1;
-					};
-					id=2;
-					type="B_medic_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=0;
-		};
-		class Item1
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2954,5.0014391,178.12247};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpNATO_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_ASL_SL";
-						description="NATO Alpha Squad Leader";
-						isPlayable=1;
-					};
-					id=4;
-					type="B_Soldier_SL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.2954,5.0014391,176.47247};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_ASL = group this; [""m"",this] call f_fnc_assignGear;";
-						name="UnitNATO_ASL_M";
-						description="NATO Alpha Medic";
-						isPlayable=1;
-					};
-					id=5;
-					type="B_medic_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=3;
-		};
-		class Item2
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.3057,5.0014391,176.22891};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_FTL";
-						description="NATO Alpha 1 Fireteam Leader";
-						isPlayable=1;
-					};
-					id=7;
-					type="B_Soldier_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.3057,5.0014391,174.57892};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_AR";
-						description="NATO Alpha 1 Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=8;
-					type="B_soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7986.3057,5.0014391,174.57892};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_AAR";
-						description="NATO Alpha 1 Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=9;
-					type="B_soldier_AAR_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8001.3057,5.0014391,171.83992};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_AT";
-						description="NATO Alpha 1 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=10;
-					type="B_soldier_LAT_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.3057,5.0014391,176.27892};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A1 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_R_1";
-						description="NATO Alpha 1 Rifleman";
-						isPlayable=1;
-					};
-					id=11;
-					type="B_Soldier_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8006.3057,5.0014391,167.29318};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A1 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A1_R";
-						description="NATO Alpha 1 Rifleman";
-						isPlayable=1;
-					};
-					id=12;
-					type="B_soldier_AAR_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=6;
-		};
-		class Item3
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2549,5.0014391,174.19376};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_FTL";
-						description="NATO Alpha 2 Fireteam Leader";
-						isPlayable=1;
-					};
-					id=14;
-					type="B_Soldier_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.2549,5.0014391,172.54376};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_AR";
-						description="NATO Alpha 2 Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=15;
-					type="B_soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7986.2549,5.0014391,172.54376};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_AAR";
-						description="NATO Alpha 2 Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=16;
-					type="B_soldier_AAR_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8001.2549,5.0014391,169.80476};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_AT";
-						description="NATO Alpha 2 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=17;
-					type="B_soldier_LAT_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2549,5.0014391,174.24376};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A2 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_R_1";
-						description="NATO Alpha 2 Rifleman";
-						isPlayable=1;
-					};
-					id=18;
-					type="B_Soldier_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8006.2549,5.0014391,165.25803};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_A2 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_A2_R";
-						description="NATO Alpha 2 Rifleman";
-						isPlayable=1;
-					};
-					id=19;
-					type="B_soldier_AAR_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=13;
-		};
-		class Item4
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.251,5.0014391,170.95889};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpNATO_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_BSL_SL";
-						description="NATO Bravo Squad Leader";
-						isPlayable=1;
-					};
-					id=21;
-					type="B_Soldier_SL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.251,5.0014391,169.3089};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_BSL = group this; [""m"",this] call f_fnc_assignGear;";
-						name="UnitNATO_BSL_M";
-						description="NATO Bravo Medic";
-						isPlayable=1;
-					};
-					id=22;
-					type="B_medic_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=20;
-		};
-		class Item5
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.248,5.0014391,169.07022};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_B1 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B1_FTL";
-						description="NATO Bravo 1 Fireteam Leader";
-						isPlayable=1;
-					};
-					id=24;
-					type="B_Soldier_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.248,5.0014391,167.42023};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B1_AR";
-						description="NATO Bravo 1 Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=25;
-					type="B_soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7986.248,5.0014391,167.42023};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B1_AAR";
-						description="NATO Bravo 1 Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=26;
-					type="B_soldier_AAR_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8001.248,5.0014391,164.68123};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B1_AT";
-						description="NATO Bravo 1 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=27;
-					type="B_soldier_LAT_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.248,5.0014391,169.12022};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B1 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B1_R_1";
-						description="NATO Bravo 1 Rifleman";
-						isPlayable=1;
-					};
-					id=28;
-					type="B_Soldier_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8006.248,5.0014391,160.13449};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B1 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B1_R";
-						description="NATO Bravo 1 Rifleman";
-						isPlayable=1;
-					};
-					id=29;
-					type="B_soldier_AAR_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=23;
-		};
-		class Item6
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2671,5.0014391,166.98672};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_B2 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B2_FTL";
-						description="NATO Bravo 2 Fireteam Leader";
-						isPlayable=1;
-					};
-					id=31;
-					type="B_Soldier_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.2671,5.0014391,165.33673};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B2_AR";
-						description="NATO Bravo 2 Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=32;
-					type="B_soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7986.2671,5.0014391,165.33673};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B2_AAR";
-						description="NATO Bravo 2 Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=33;
-					type="B_soldier_AAR_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8001.2671,5.0014391,162.59773};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B2_AT";
-						description="NATO Bravo 2 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=34;
-					type="B_soldier_LAT_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2671,5.0014391,167.03673};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B2 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B2_R_1";
-						description="NATO Bravo 2 Rifleman";
-						isPlayable=1;
-					};
-					id=35;
-					type="B_Soldier_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8006.2671,5.0014391,158.05099};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_B2 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_B2_R";
-						description="NATO Bravo 2 Rifleman";
-						isPlayable=1;
-					};
-					id=36;
-					type="B_soldier_AAR_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=30;
-		};
-		class Item7
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2568,5.0014391,163.21768};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpNATO_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_CSL_SL";
-						description="NATO Charlie Squad Leader";
-						isPlayable=1;
-					};
-					id=38;
-					type="B_Soldier_SL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.2568,5.0014391,161.56769};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_CSL = group this; [""m"",this] call f_fnc_assignGear;";
-						name="UnitNATO_CSL_M";
-						description="NATO Charlie Medic";
-						isPlayable=1;
-					};
-					id=39;
-					type="B_medic_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=37;
-		};
-		class Item8
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.25,5.0014391,161.38077};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_C1 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C1_FTL";
-						description="NATO Charlie 1 Fireteam Leader";
-						isPlayable=1;
-					};
-					id=41;
-					type="B_Soldier_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.25,5.0014391,159.73077};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C1_AR";
-						description="NATO Charlie 1 Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=42;
-					type="B_soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7986.25,5.0014391,159.73077};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C1_AAR";
-						description="NATO Charlie 1 Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=43;
-					type="B_soldier_AAR_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8001.25,5.0014391,156.99178};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C1 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C1_AT";
-						description="NATO Charlie 1 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=44;
-					type="B_soldier_LAT_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.25,5.0014391,161.43077};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C1 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C1_R_1";
-						description="NATO Charlie 1 Rifleman";
-						isPlayable=1;
-					};
-					id=45;
-					type="B_Soldier_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8006.25,5.0014391,152.44504};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C1 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C1_R";
-						description="NATO Charlie 1 Rifleman";
-						isPlayable=1;
-					};
-					id=46;
-					type="B_soldier_AAR_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=40;
-		};
-		class Item9
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=6;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2759,5.0014391,159.34708};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_C2 = group this; [""ftl"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C2_FTL";
-						description="NATO Charlie 2 Fireteam Leader";
-						isPlayable=1;
-					};
-					id=48;
-					type="B_Soldier_TL_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7996.2759,5.0014391,157.69708};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C2_AR";
-						description="NATO Charlie 2 Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=49;
-					type="B_soldier_AR_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7986.2759,5.0014391,157.69708};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C2_AAR";
-						description="NATO Charlie 2 Assistant Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=50;
-					type="B_soldier_AAR_F";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8001.2759,5.0014391,154.95808};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C2_AT";
-						description="NATO Charlie 2 Rifleman (AT)";
-						isPlayable=1;
-					};
-					id=51;
-					type="B_soldier_LAT_F";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7991.2759,5.0014391,159.39708};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C2 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C2_R_1";
-						description="NATO Charlie 2 Rifleman";
-						isPlayable=1;
-					};
-					id=52;
-					type="B_Soldier_F";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8006.2759,5.0014391,150.41135};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_C2 = group this; [""r"",this] call f_fnc_assignGear;";
-						name="UnitNATO_C2_R";
-						description="NATO Charlie 2 Rifleman";
-						isPlayable=1;
-					};
-					id=53;
-					type="B_soldier_AAR_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=47;
-		};
-		class Item10
 		{
 			dataType="Group";
 			side="East";
@@ -1103,7 +111,7 @@ class Mission
 			};
 			id=54;
 		};
-		class Item11
+		class Item1
 		{
 			dataType="Group";
 			side="East";
@@ -1159,7 +167,7 @@ class Mission
 			};
 			id=57;
 		};
-		class Item12
+		class Item2
 		{
 			dataType="Group";
 			side="East";
@@ -1294,7 +302,7 @@ class Mission
 			};
 			id=60;
 		};
-		class Item13
+		class Item3
 		{
 			dataType="Group";
 			side="East";
@@ -1429,7 +437,7 @@ class Mission
 			};
 			id=67;
 		};
-		class Item14
+		class Item4
 		{
 			dataType="Group";
 			side="East";
@@ -1485,7 +493,7 @@ class Mission
 			};
 			id=74;
 		};
-		class Item15
+		class Item5
 		{
 			dataType="Group";
 			side="East";
@@ -1620,7 +628,7 @@ class Mission
 			};
 			id=77;
 		};
-		class Item16
+		class Item6
 		{
 			dataType="Group";
 			side="East";
@@ -1755,7 +763,7 @@ class Mission
 			};
 			id=84;
 		};
-		class Item17
+		class Item7
 		{
 			dataType="Group";
 			side="East";
@@ -1811,7 +819,7 @@ class Mission
 			};
 			id=91;
 		};
-		class Item18
+		class Item8
 		{
 			dataType="Group";
 			side="East";
@@ -1946,7 +954,7 @@ class Mission
 			};
 			id=94;
 		};
-		class Item19
+		class Item9
 		{
 			dataType="Group";
 			side="East";
@@ -2081,7 +1089,7 @@ class Mission
 			};
 			id=101;
 		};
-		class Item20
+		class Item10
 		{
 			dataType="Group";
 			side="Independent";
@@ -2133,7 +1141,7 @@ class Mission
 			};
 			id=108;
 		};
-		class Item21
+		class Item11
 		{
 			dataType="Group";
 			side="Independent";
@@ -2185,7 +1193,7 @@ class Mission
 			};
 			id=111;
 		};
-		class Item22
+		class Item12
 		{
 			dataType="Group";
 			side="Independent";
@@ -2314,7 +1322,7 @@ class Mission
 			};
 			id=114;
 		};
-		class Item23
+		class Item13
 		{
 			dataType="Group";
 			side="Independent";
@@ -2443,7 +1451,7 @@ class Mission
 			};
 			id=121;
 		};
-		class Item24
+		class Item14
 		{
 			dataType="Group";
 			side="Independent";
@@ -2495,7 +1503,7 @@ class Mission
 			};
 			id=128;
 		};
-		class Item25
+		class Item15
 		{
 			dataType="Group";
 			side="Independent";
@@ -2624,7 +1632,7 @@ class Mission
 			};
 			id=131;
 		};
-		class Item26
+		class Item16
 		{
 			dataType="Group";
 			side="Independent";
@@ -2753,7 +1761,7 @@ class Mission
 			};
 			id=138;
 		};
-		class Item27
+		class Item17
 		{
 			dataType="Group";
 			side="Independent";
@@ -2805,7 +1813,7 @@ class Mission
 			};
 			id=145;
 		};
-		class Item28
+		class Item18
 		{
 			dataType="Group";
 			side="Independent";
@@ -2934,7 +1942,7 @@ class Mission
 			};
 			id=148;
 		};
-		class Item29
+		class Item19
 		{
 			dataType="Group";
 			side="Independent";
@@ -3063,134 +2071,7 @@ class Mission
 			};
 			id=155;
 		};
-		class Item30
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=3;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8005.1147,5.0014391,171.62198};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpNATO_G1 = group this; [""vc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G1_C";
-						description="NATO Gambler 1 Commander";
-						isPlayable=1;
-					};
-					id=163;
-					type="B_crew_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8010.1147,5.0014391,169.97198};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_G1 = group this; [""vg"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G1_G";
-						description="NATO Gambler 1 Gunner";
-						isPlayable=1;
-					};
-					id=164;
-					type="B_crew_F";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8000.1147,5.0014391,169.97198};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						init="GrpNATO_G1 = group this; [""vd"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G1_D";
-						description="NATO Gambler 1 Driver";
-						isPlayable=1;
-					};
-					id=165;
-					type="B_soldier_repair_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=162;
-		};
-		class Item31
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8005.1187,5.0014391,181.48721};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						init="GrpNATO_PH1 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitNATO_PH1_P";
-						description="NATO Phantom 1 Pilot";
-						isPlayable=1;
-					};
-					id=167;
-					type="B_Helipilot_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8010.1187,5.0014391,179.83722};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="GrpNATO_PH1 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_PH1_CP";
-						description="NATO Phantom 1 Co-Pilot";
-						isPlayable=1;
-					};
-					id=168;
-					type="B_soldier_repair_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=166;
-		};
-		class Item32
+		class Item20
 		{
 			dataType="Group";
 			side="East";
@@ -3263,7 +2144,7 @@ class Mission
 			};
 			id=169;
 		};
-		class Item33
+		class Item21
 		{
 			dataType="Group";
 			side="East";
@@ -3317,7 +2198,7 @@ class Mission
 			};
 			id=173;
 		};
-		class Item34
+		class Item22
 		{
 			dataType="Group";
 			side="Independent";
@@ -3390,7 +2271,7 @@ class Mission
 			};
 			id=176;
 		};
-		class Item35
+		class Item23
 		{
 			dataType="Group";
 			side="Independent";
@@ -3444,7 +2325,7 @@ class Mission
 			};
 			id=180;
 		};
-		class Item36
+		class Item24
 		{
 			dataType="Group";
 			side="East";
@@ -3497,7 +2378,7 @@ class Mission
 			};
 			id=187;
 		};
-		class Item37
+		class Item25
 		{
 			dataType="Group";
 			side="Independent";
@@ -3551,19 +2432,188 @@ class Mission
 			};
 			id=195;
 		};
-		class Item38
+		class Item26
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={0,5,0};
+			};
+			name="HC";
+			isPlayable=1;
+			description="HC";
+			id=212;
+			type="HeadlessClient_F";
+		};
+		class Item27
 		{
 			dataType="Group";
 			side="West";
 			class Entities
 			{
-				items=3;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8005.1533,5.0014391,162.13272};
+						position[]={47.006203,5.0014391,85.335976};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="GrpNATO_CO = group this; [""co"",this] call f_fnc_assignGear;";
+						name="UnitNATO_CO_1";
+						description="NATO Commander";
+						isPlayable=1;
+					};
+					id=255;
+					type="B_officer_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={52.006203,5.0014391,85.385979};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_CO = group this; [""m"",this] call f_fnc_assignGear;";
+						name="UnitNATO_CO_M_1";
+						description="NATO Medic";
+						isPlayable=1;
+					};
+					id=256;
+					type="B_medic_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=254;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CO";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.829252,5.0014391,78.047691};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="GrpNATO_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+						name="UnitNATO_ASL_SL_1";
+						description="NATO Alpha Squad Leader";
+						isPlayable=1;
+					};
+					id=258;
+					type="B_Soldier_SL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.829252,5.0014391,78.097694};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+						name="UnitNATO_ASL_M_1";
+						description="NATO Alpha Medic";
+						isPlayable=1;
+					};
+					id=259;
+					type="B_medic_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=257;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASL";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={32.842991,5.0014391,75.164131};
 					};
 					side="West";
 					flags=2;
@@ -3571,12 +2621,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpNATO_MMG1 = group this; [""mmgtl"",this] call f_fnc_assignGear;      ";
-						name="UnitNATO_MMG1_TL";
-						description="NATO MMG 1 Leader";
+						init="GrpNATO_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A1_FTL_1";
+						description="NATO Alpha 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=204;
+					id=261;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -3584,18 +2634,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8010.1533,5.0014391,160.48273};
+						position[]={37.842991,5.0014391,75.214134};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
-						name="UnitNATO_MMG1_G";
-						description="NATO MMG 1 Gunner";
+						init="GrpNATO_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A1_AR_1";
+						description="NATO Alpha 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=205;
+					id=262;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -3603,38 +2653,1261 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8000.1533,5.0014391,160.48273};
+						position[]={27.842991,5.0014391,75.214134};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_MMG1 = group this; [""mmgab"",this] call f_fnc_assignGear; ";
-						name="UnitNATO_MMG1_AB";
-						description="NATO MMG 1 Ammo Bearer";
+						init="GrpNATO_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A1_AAR_1";
+						description="NATO Alpha 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=206;
-					type="B_Soldier_A_F";
+					id=263;
+					type="B_soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={42.842991,5.0014391,75.264137};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A1_AT_1";
+						description="NATO Alpha 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=264;
+					type="B_soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.842991,5.0014391,75.264137};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_A1 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A1_R_2";
+						description="NATO Alpha 1 Rifleman";
+						isPlayable=1;
+					};
+					id=265;
+					type="B_Soldier_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={47.842991,5.0014391,75.31414};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_A1 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A1_R_1";
+						description="NATO Alpha 1 Rifleman";
+						isPlayable=1;
+					};
+					id=266;
+					type="B_soldier_AAR_F";
 				};
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
-			id=203;
+			id=260;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={32.820263,5.0014391,72.434631};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A2_FTL_1";
+						description="NATO Alpha 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=268;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={37.820263,5.0014391,72.484634};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A2_AR_1";
+						description="NATO Alpha 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=269;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.820263,5.0014391,72.484634};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A2_AAR_1";
+						description="NATO Alpha 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=270;
+					type="B_soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={42.820263,5.0014391,72.534637};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A2_AT_1";
+						description="NATO Alpha 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=271;
+					type="B_soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.820263,5.0014391,72.534637};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_A2 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A2_R_2";
+						description="NATO Alpha 2 Rifleman";
+						isPlayable=1;
+					};
+					id=272;
+					type="B_Soldier_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={47.820263,5.0014391,72.584641};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_A2 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_A2_R_1";
+						description="NATO Alpha 2 Rifleman";
+						isPlayable=1;
+					};
+					id=273;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=267;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="A2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item31
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.814617,5.0014391,65.852859};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="GrpNATO_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
+						name="UnitNATO_BSL_SL_1";
+						description="NATO Bravo Squad Leader";
+						isPlayable=1;
+					};
+					id=275;
+					type="B_Soldier_SL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.814617,5.0014391,65.902863};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_BSL = group this; [""m"",this] call f_fnc_assignGear;";
+						name="UnitNATO_BSL_M_1";
+						description="NATO Bravo Medic";
+						isPlayable=1;
+					};
+					id=276;
+					type="B_medic_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=274;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="BSL";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item32
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={32.793945,5.0014391,63.073303};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_B1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B1_FTL_1";
+						description="NATO Bravo 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=278;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={37.793945,5.0014391,63.123302};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B1_AR_1";
+						description="NATO Bravo 1 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=279;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.793945,5.0014391,63.123302};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B1_AAR_1";
+						description="NATO Bravo 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=280;
+					type="B_soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={42.793945,5.0014391,63.173302};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B1_AT_1";
+						description="NATO Bravo 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=281;
+					type="B_soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.793945,5.0014391,63.173302};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B1 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B1_R_2";
+						description="NATO Bravo 1 Rifleman";
+						isPlayable=1;
+					};
+					id=282;
+					type="B_Soldier_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={47.793945,5.0014391,63.223301};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B1 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B1_R_1";
+						description="NATO Bravo 1 Rifleman";
+						isPlayable=1;
+					};
+					id=283;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=277;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="B1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item33
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={32.771225,5.0014391,60.367737};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_B2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_FTL_1";
+						description="NATO Bravo 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=285;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={37.771225,5.0014391,60.417736};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_AR_1";
+						description="NATO Bravo 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=286;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.771225,5.0014391,60.417736};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_AAR_1";
+						description="NATO Bravo 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=287;
+					type="B_soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={42.771225,5.0014391,60.467735};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_AT_1";
+						description="NATO Bravo 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=288;
+					type="B_soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.771225,5.0014391,60.467735};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B2 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_R_2";
+						description="NATO Bravo 2 Rifleman";
+						isPlayable=1;
+					};
+					id=289;
+					type="B_Soldier_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={47.771225,5.0014391,60.517735};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_B2 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_B2_R_1";
+						description="NATO Bravo 2 Rifleman";
+						isPlayable=1;
+					};
+					id=290;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=284;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="B2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item34
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.75083,5.0014391,53.71907};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="SERGEANT";
+						init="GrpNATO_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
+						name="UnitNATO_CSL_SL_1";
+						description="NATO Charlie Squad Leader";
+						isPlayable=1;
+					};
+					id=292;
+					type="B_Soldier_SL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.75083,5.0014391,53.76907};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_CSL = group this; [""m"",this] call f_fnc_assignGear;";
+						name="UnitNATO_CSL_M_1";
+						description="NATO Charlie Medic";
+						isPlayable=1;
+					};
+					id=293;
+					type="B_medic_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=291;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="CSL";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item35
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={32.712181,5.0014391,51.083073};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_C1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C1_FTL_1";
+						description="NATO Charlie 1 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=295;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={37.712181,5.0014391,51.133072};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C1_AR_1";
+						description="NATO Charlie 1 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=296;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.712181,5.0014391,51.133072};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C1_AAR_1";
+						description="NATO Charlie 1 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=297;
+					type="B_soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={42.712181,5.0014391,51.183071};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C1 = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C1_AT_1";
+						description="NATO Charlie 1 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=298;
+					type="B_soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.712181,5.0014391,51.183071};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C1 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C1_R_2";
+						description="NATO Charlie 1 Rifleman";
+						isPlayable=1;
+					};
+					id=299;
+					type="B_Soldier_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={47.712181,5.0014391,51.23307};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C1 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C1_R_1";
+						description="NATO Charlie 1 Rifleman";
+						isPlayable=1;
+					};
+					id=300;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=294;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="C1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item36
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={32.696327,5.0014391,48.544987};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_C2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C2_FTL_1";
+						description="NATO Charlie 2 Fireteam Leader";
+						isPlayable=1;
+					};
+					id=302;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={37.696327,5.0014391,48.594986};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C2_AR_1";
+						description="NATO Charlie 2 Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=303;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={27.696327,5.0014391,48.594986};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C2_AAR_1";
+						description="NATO Charlie 2 Assistant Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=304;
+					type="B_soldier_AAR_F";
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={42.696327,5.0014391,48.644985};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C2_AT_1";
+						description="NATO Charlie 2 Rifleman (AT)";
+						isPlayable=1;
+					};
+					id=305;
+					type="B_soldier_LAT_F";
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={22.696327,5.0014391,48.644985};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C2 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C2_R_2";
+						description="NATO Charlie 2 Rifleman";
+						isPlayable=1;
+					};
+					id=306;
+					type="B_Soldier_F";
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={47.696327,5.0014391,48.694984};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_C2 = group this; [""r"",this] call f_fnc_assignGear;";
+						name="UnitNATO_C2_R_1";
+						description="NATO Charlie 2 Rifleman";
+						isPlayable=1;
+					};
+					id=307;
+					type="B_soldier_AAR_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=301;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="C2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item37
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={73.134338,5.0014391,75.224449};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						init="GrpNATO_PH1 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitNATO_PH1_P_1";
+						description="NATO Phantom 1 Pilot";
+						isPlayable=1;
+					};
+					id=309;
+					type="B_Helipilot_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={78.134338,5.0014391,75.274452};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="GrpNATO_PH1 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitNATO_PH1_CP_1";
+						description="NATO Phantom 1 Co-Pilot";
+						isPlayable=1;
+					};
+					id=310;
+					type="B_soldier_repair_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=308;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PH1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item38
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={73.121979,5.0014391,72.643883};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						init="GrpNATO_PH2 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitNATO_PH2_P_1";
+						description="NATO Phantom 2 Pilot";
+						isPlayable=1;
+					};
+					id=312;
+					type="B_Helipilot_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={78.121979,5.0014391,72.693886};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="GrpNATO_PH2 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitNATO_PH2_CP_1";
+						description="NATO Phantom 2 Co-Pilot";
+						isPlayable=1;
+					};
+					id=313;
+					type="B_soldier_repair_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=311;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PH2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item39
 		{
-			dataType="Logic";
-			class PositionInfo
+			dataType="Group";
+			side="West";
+			class Entities
 			{
-				position[]={166.62422,5,157.27051};
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={73.104103,5.0014391,70.06868};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CAPTAIN";
+						init="GrpNATO_PH3 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitNATO_PH3_P_1";
+						description="NATO Phantom 3 Pilot";
+						isPlayable=1;
+					};
+					id=315;
+					type="B_Helipilot_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={78.104103,5.0014391,70.118683};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="LIEUTENANT";
+						init="GrpNATO_PH3 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitNATO_PH3_CP_1";
+						description="NATO Phantom 3 Co-Pilot";
+						isPlayable=1;
+					};
+					id=316;
+					type="B_soldier_repair_F";
+				};
 			};
-			name="HC";
-			isPlayable=1;
-			description="HC";
-			id=212;
-			type="HeadlessClient_F";
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=314;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PH3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item40
 		{
@@ -3648,115 +3921,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8005.1348,5.0014391,179.5126};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						init="GrpNATO_PH2 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitNATO_PH2_P";
-						description="NATO Phantom 2 Pilot";
-						isPlayable=1;
-					};
-					id=214;
-					type="B_Helipilot_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8010.1348,5.0014391,177.86261};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="GrpNATO_PH2 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_PH2_CP";
-						description="NATO Phantom 2 Co-Pilot";
-						isPlayable=1;
-					};
-					id=215;
-					type="B_soldier_repair_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=213;
-		};
-		class Item41
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8005.1304,5.0014391,177.54971};
-					};
-					side="West";
-					flags=2;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CAPTAIN";
-						init="GrpNATO_PH3 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitNATO_PH3_P";
-						description="NATO Phantom 3 Pilot";
-						isPlayable=1;
-					};
-					id=217;
-					type="B_Helipilot_F";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8010.1304,5.0014391,175.89972};
-					};
-					side="West";
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="GrpNATO_PH3 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_PH3_CP";
-						description="NATO Phantom 3 Co-Pilot";
-						isPlayable=1;
-					};
-					id=218;
-					type="B_soldier_repair_F";
-				};
-			};
-			class Attributes
-			{
-			};
-			id=216;
-		};
-		class Item42
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={8005.1128,5.0014391,175.61758};
+						position[]={73.104111,5.0014391,67.510086};
 					};
 					side="West";
 					flags=2;
@@ -3765,11 +3930,11 @@ class Mission
 						skill=0.60000002;
 						rank="CAPTAIN";
 						init="GrpNATO_PH4 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitNATO_PH4_P";
+						name="UnitNATO_PH4_P_1";
 						description="NATO Phantom 4 Pilot";
 						isPlayable=1;
 					};
-					id=220;
+					id=318;
 					type="B_Helipilot_F";
 				};
 				class Item1
@@ -3777,7 +3942,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8010.1128,5.0014391,173.96759};
+						position[]={78.104111,5.0014391,67.560089};
 					};
 					side="West";
 					class Attributes
@@ -3785,18 +3950,234 @@ class Mission
 						skill=0.60000002;
 						rank="LIEUTENANT";
 						init="GrpNATO_PH4 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitNATO_PH4_CP";
+						name="UnitNATO_PH4_CP_1";
 						description="NATO Phantom 4 Co-Pilot";
 						isPlayable=1;
 					};
-					id=221;
+					id=319;
 					type="B_soldier_repair_F";
 				};
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
-			id=219;
+			id=317;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="PH4";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item41
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={60.185883,5.0014391,60.899704};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_MMG1 = group this; [""mmgtl"",this] call f_fnc_assignGear;      ";
+						name="UnitNATO_MMG1_TL_1";
+						description="NATO MMG 1 Leader";
+						isPlayable=1;
+					};
+					id=321;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={65.185883,5.0014391,60.949703};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
+						name="UnitNATO_MMG1_G_1";
+						description="NATO MMG 1 Gunner";
+						isPlayable=1;
+					};
+					id=322;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={55.185883,5.0014391,60.949703};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_MMG1 = group this; [""mmgab"",this] call f_fnc_assignGear; ";
+						name="UnitNATO_MMG1_AB_1";
+						description="NATO MMG 1 Ammo Bearer";
+						isPlayable=1;
+					};
+					id=323;
+					type="B_Soldier_A_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=320;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MMG1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item42
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=3;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={60.178307,5.0014391,58.387985};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						skill=0.60000002;
+						rank="CORPORAL";
+						init="GrpNATO_MMG2 = group this; [""mmgtl"",this] call f_fnc_assignGear;      ";
+						name="UnitNATO_MMG2_TL_1";
+						description="NATO MMG 2 Leader";
+						isPlayable=1;
+					};
+					id=325;
+					type="B_Soldier_TL_F";
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={65.178307,5.0014391,58.437984};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_MMG2 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
+						name="UnitNATO_MMG2_G_1";
+						description="NATO MMG 2 Gunner";
+						isPlayable=1;
+					};
+					id=326;
+					type="B_soldier_AR_F";
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={55.178307,5.0014391,58.437984};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.60000002;
+						init="GrpNATO_MMG2 = group this; [""mmgab"",this] call f_fnc_assignGear; ";
+						name="UnitNATO_MMG2_AB_1";
+						description="NATO MMG 2 Ammo Bearer";
+						isPlayable=1;
+					};
+					id=327;
+					type="B_Soldier_A_F";
+				};
+			};
+			class Attributes
+			{
+				formation="LINE";
+			};
+			id=324;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MMG2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item43
 		{
@@ -3810,66 +4191,89 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8005.1235,5.0014391,169.66299};
+						position[]={60.178299,5.0014391,55.905075};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpNATO_G2 = group this; [""vc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G2_C";
-						description="NATO Gambler 2 Commander";
+						rank="CORPORAL";
+						init="GrpNATO_MMG3 = group this; [""mmgtl"",this] call f_fnc_assignGear;      ";
+						name="UnitNATO_MMG3_TL_1";
+						description="NATO MMG 3 Leader";
 						isPlayable=1;
 					};
-					id=223;
-					type="B_crew_F";
+					id=329;
+					type="B_Soldier_TL_F";
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8010.1235,5.0014391,168.013};
+						position[]={65.178299,5.0014391,55.955074};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_G2 = group this; [""vg"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G2_G";
-						description="NATO Gambler 2 Gunner";
+						init="GrpNATO_MMG3 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
+						name="UnitNATO_MMG3_G_1";
+						description="NATO MMG 3 Gunner";
 						isPlayable=1;
 					};
-					id=224;
-					type="B_crew_F";
+					id=330;
+					type="B_soldier_AR_F";
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8000.1235,5.0014391,168.013};
+						position[]={55.178299,5.0014391,55.955074};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_G2 = group this; [""vd"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G2_D";
-						description="NATO Gambler 2 Driver";
+						init="GrpNATO_MMG3 = group this; [""mmgab"",this] call f_fnc_assignGear; ";
+						name="UnitNATO_MMG3_AB_1";
+						description="NATO MMG 3 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=225;
-					type="B_soldier_repair_F";
+					id=331;
+					type="B_Soldier_A_F";
 				};
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
-			id=222;
+			id=328;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MMG3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item44
 		{
@@ -3883,66 +4287,89 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8005.1157,5.0014391,167.69034};
+						position[]={60.178299,5.0014391,53.396774};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="SERGEANT";
-						init="GrpNATO_G3 = group this; [""vc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G3_C";
-						description="NATO Gambler 3 Commander";
+						rank="CORPORAL";
+						init="GrpNATO_MMG4 = group this; [""mmgtl"",this] call f_fnc_assignGear;      ";
+						name="UnitNATO_MMG4_TL_1";
+						description="NATO MMG 4 Leader";
 						isPlayable=1;
 					};
-					id=227;
-					type="B_crew_F";
+					id=333;
+					type="B_Soldier_TL_F";
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8010.1157,5.0014391,166.04034};
+						position[]={65.178299,5.0014391,53.446774};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_G3 = group this; [""vg"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G3_G";
-						description="NATO Gambler 3 Gunner";
+						init="GrpNATO_MMG4 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
+						name="UnitNATO_MMG4_G_1";
+						description="NATO MMG 4 Gunner";
 						isPlayable=1;
 					};
-					id=228;
-					type="B_crew_F";
+					id=334;
+					type="B_soldier_AR_F";
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8000.1157,5.0014391,166.04034};
+						position[]={55.178299,5.0014391,53.446774};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_G3 = group this; [""vd"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G3_D";
-						description="NATO Gambler 3 Driver";
+						init="GrpNATO_MMG4 = group this; [""mmgab"",this] call f_fnc_assignGear; ";
+						name="UnitNATO_MMG4_AB_1";
+						description="NATO MMG 4 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=229;
-					type="B_soldier_repair_F";
+					id=335;
+					type="B_Soldier_A_F";
 				};
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
-			id=226;
+			id=332;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="MMG4";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item45
 		{
@@ -3956,7 +4383,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8005.1313,5.0014391,165.87784};
+						position[]={60.281357,5.0014391,75.142876};
 					};
 					side="West";
 					flags=2;
@@ -3964,12 +4391,12 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="SERGEANT";
-						init="GrpNATO_G4 = group this; [""vc"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G4_C";
-						description="NATO Gambler 4 Commander";
+						init="GrpNATO_G1 = group this; [""vc"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G1_C_1";
+						description="NATO Gambler 1 Commander";
 						isPlayable=1;
 					};
-					id=231;
+					id=337;
 					type="B_crew_F";
 				};
 				class Item1
@@ -3977,19 +4404,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8010.1313,5.0014391,164.22784};
+						position[]={65.281357,5.0014391,75.192879};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
 						rank="CORPORAL";
-						init="GrpNATO_G4 = group this; [""vg"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G4_G";
-						description="NATO Gambler 4 Gunner";
+						init="GrpNATO_G1 = group this; [""vg"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G1_G_1";
+						description="NATO Gambler 1 Gunner";
 						isPlayable=1;
 					};
-					id=232;
+					id=338;
 					type="B_crew_F";
 				};
 				class Item2
@@ -3997,25 +4424,49 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8000.1313,5.0014391,164.22784};
+						position[]={55.281357,5.0014391,75.192879};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_G4 = group this; [""vd"",this] call f_fnc_assignGear;";
-						name="UnitNATO_G4_D";
-						description="NATO Gambler 4 Driver";
+						init="GrpNATO_G1 = group this; [""vd"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G1_D_1";
+						description="NATO Gambler 1 Driver";
 						isPlayable=1;
 					};
-					id=233;
+					id=339;
 					type="B_soldier_repair_F";
 				};
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
-			id=230;
+			id=336;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="G1";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item46
 		{
@@ -4029,65 +4480,90 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8005.1587,5.0014391,160.40128};
+						position[]={60.241718,5.0014391,72.591118};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_MMG2 = group this; [""mmgtl"",this] call f_fnc_assignGear;      ";
-						name="UnitNATO_MMG2_TL";
-						description="NATO MMG 2 Leader";
+						rank="SERGEANT";
+						init="GrpNATO_G2 = group this; [""vc"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G2_C_1";
+						description="NATO Gambler 2 Commander";
 						isPlayable=1;
 					};
-					id=235;
-					type="B_Soldier_TL_F";
+					id=341;
+					type="B_crew_F";
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8010.1587,5.0014391,158.75128};
+						position[]={65.241714,5.0014391,72.641121};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_MMG2 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
-						name="UnitNATO_MMG2_G";
-						description="NATO MMG 2 Gunner";
+						rank="CORPORAL";
+						init="GrpNATO_G2 = group this; [""vg"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G2_G_1";
+						description="NATO Gambler 2 Gunner";
 						isPlayable=1;
 					};
-					id=236;
-					type="B_soldier_AR_F";
+					id=342;
+					type="B_crew_F";
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8000.1587,5.0014391,158.75128};
+						position[]={55.241718,5.0014391,72.641121};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_MMG2 = group this; [""mmgab"",this] call f_fnc_assignGear; ";
-						name="UnitNATO_MMG2_AB";
-						description="NATO MMG 2 Ammo Bearer";
+						init="GrpNATO_G2 = group this; [""vd"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G2_D_1";
+						description="NATO Gambler 2 Driver";
 						isPlayable=1;
 					};
-					id=237;
-					type="B_Soldier_A_F";
+					id=343;
+					type="B_soldier_repair_F";
 				};
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
-			id=234;
+			id=340;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="G2";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item47
 		{
@@ -4101,65 +4577,90 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8005.1709,5.0014391,158.66788};
+						position[]={60.223835,5.0014391,70.033005};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_MMG3 = group this; [""mmgtl"",this] call f_fnc_assignGear;      ";
-						name="UnitNATO_MMG3_TL";
-						description="NATO MMG 3 Leader";
+						rank="SERGEANT";
+						init="GrpNATO_G3 = group this; [""vc"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G3_C_1";
+						description="NATO Gambler 3 Commander";
 						isPlayable=1;
 					};
-					id=239;
-					type="B_Soldier_TL_F";
+					id=345;
+					type="B_crew_F";
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8010.1709,5.0014391,157.01788};
+						position[]={65.223831,5.0014391,70.083008};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_MMG3 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
-						name="UnitNATO_MMG3_G";
-						description="NATO MMG 3 Gunner";
+						rank="CORPORAL";
+						init="GrpNATO_G3 = group this; [""vg"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G3_G_1";
+						description="NATO Gambler 3 Gunner";
 						isPlayable=1;
 					};
-					id=240;
-					type="B_soldier_AR_F";
+					id=346;
+					type="B_crew_F";
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8000.1709,5.0014391,157.01788};
+						position[]={55.223835,5.0014391,70.083008};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_MMG3 = group this; [""mmgab"",this] call f_fnc_assignGear; ";
-						name="UnitNATO_MMG3_AB";
-						description="NATO MMG 3 Ammo Bearer";
+						init="GrpNATO_G3 = group this; [""vd"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G3_D_1";
+						description="NATO Gambler 3 Driver";
 						isPlayable=1;
 					};
-					id=241;
-					type="B_Soldier_A_F";
+					id=347;
+					type="B_soldier_repair_F";
 				};
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
-			id=238;
+			id=344;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="_this setGroupID [_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="G3";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item48
 		{
@@ -4173,81 +4674,73 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8005.1763,5.0014391,156.93643};
+						position[]={60.188087,5.0014391,67.474411};
 					};
 					side="West";
 					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
-						rank="CORPORAL";
-						init="GrpNATO_MMG4 = group this; [""mmgtl"",this] call f_fnc_assignGear;      ";
-						name="UnitNATO_MMG4_TL";
-						description="NATO MMG 4 Leader";
+						rank="SERGEANT";
+						init="GrpNATO_G4 = group this; [""vc"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G4_C_1";
+						description="NATO Gambler 4 Commander";
 						isPlayable=1;
 					};
-					id=243;
-					type="B_Soldier_TL_F";
+					id=349;
+					type="B_crew_F";
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8010.1763,5.0014391,155.28644};
+						position[]={65.188087,5.0014391,67.524414};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_MMG4 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
-						name="UnitNATO_MMG4_G";
-						description="NATO MMG 4 Gunner";
+						rank="CORPORAL";
+						init="GrpNATO_G4 = group this; [""vg"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G4_G_1";
+						description="NATO Gambler 4 Gunner";
 						isPlayable=1;
 					};
-					id=244;
-					type="B_soldier_AR_F";
+					id=350;
+					type="B_crew_F";
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={8000.1763,5.0014391,155.28644};
+						position[]={55.188087,5.0014391,67.524414};
 					};
 					side="West";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="GrpNATO_MMG4 = group this; [""mmgab"",this] call f_fnc_assignGear; ";
-						name="UnitNATO_MMG4_AB";
-						description="NATO MMG 4 Ammo Bearer";
+						init="GrpNATO_G4 = group this; [""vd"",this] call f_fnc_assignGear;";
+						name="UnitNATO_G4_D_1";
+						description="NATO Gambler 4 Driver";
 						isPlayable=1;
 					};
-					id=245;
-					type="B_Soldier_A_F";
+					id=351;
+					type="B_soldier_repair_F";
 				};
 			};
 			class Attributes
 			{
+				formation="LINE";
 			};
-			id=242;
-		};
-		class Item49
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8000.7231,5,183.442};
-			};
-			id=247;
-			type="ModuleRespawnPosition_F";
+			id=348;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="ModuleRespawnPosition_F_Marker";
-					expression="_this setVariable ['Marker',_value,true];";
+					property="groupID";
+					expression="_this setGroupID [_value];";
 					class Value
 					{
 						class data
@@ -4259,68 +4752,11 @@ class Mission
 									"STRING"
 								};
 							};
-							value="0";
+							value="G4";
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="ModuleRespawnPosition_F_Name";
-					expression="_this setVariable ['Name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ModuleRespawnPosition_F_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="1";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ModuleRespawnPosition_F_Type";
-					expression="_this setVariable ['Type',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				nAttributes=4;
+				nAttributes=1;
 			};
 		};
 	};
