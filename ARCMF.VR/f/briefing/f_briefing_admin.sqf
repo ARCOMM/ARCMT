@@ -1,7 +1,3 @@
-// F3 - Briefing
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// ====================================================================================
-
 // ADD MISSION MAKER NOTES SECTIONS
 // All text added below will only be visible to the current admin
 

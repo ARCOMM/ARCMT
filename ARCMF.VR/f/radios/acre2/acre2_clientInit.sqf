@@ -5,10 +5,10 @@
 #define RADIO_77 "ACRE_PRC77"
 
 _presetName = switch (side player) do {
-	case west: {"default2"};
-	case east: {"default3"};
-	case resistance: {"default4"};
-	case civilian: {"default5"};
+	case west: {"preset_blufor"};
+	case east: {"preset_opfor"};
+	case resistance: {"preset_indfor"};
+	case civilian: {"preset_civ"};
 	default {"default"};
 };
 
