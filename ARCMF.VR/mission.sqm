@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={41.93433,15.895878,8191.0254};
-		dir[]={0.020962382,-0.46489349,-0.88513899};
-		up[]={0.011006833,0.8853575,-0.46478188};
-		aside[]={-0.99973452,-2.5902409e-009,-0.023675995};
+		pos[]={58.482899,30,49.511662};
+		dir[]={-0.098406553,-0.70717913,0.70016474};
+		up[]={-0.098424986,0.70703256,0.70029837};
+		aside[]={0.99027449,-3.7014252e-007,0.13918124};
 	};
 };
 binarizationWanted=0;
@@ -62,7 +62,7 @@ class Mission
 			name="HC";
 			isPlayable=1;
 			description="HC";
-			id=212;
+			id=1;
 			type="HeadlessClient_F";
 		};
 		class Item1
@@ -91,7 +91,7 @@ class Mission
 						isPlayer=1;
 						isPlayable=1;
 					};
-					id=255;
+					id=2;
 					type="B_officer_F";
 				};
 				class Item1
@@ -111,7 +111,7 @@ class Mission
 						description="BLUFOR Medic";
 						isPlayable=1;
 					};
-					id=256;
+					id=3;
 					type="B_medic_F";
 				};
 			};
@@ -119,7 +119,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=254;
+			id=4;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -169,7 +169,7 @@ class Mission
 						description="BLUFOR Alpha Squad Leader";
 						isPlayable=1;
 					};
-					id=258;
+					id=5;
 					type="B_Soldier_SL_F";
 				};
 				class Item1
@@ -189,7 +189,7 @@ class Mission
 						description="BLUFOR Alpha Medic";
 						isPlayable=1;
 					};
-					id=259;
+					id=6;
 					type="B_medic_F";
 				};
 			};
@@ -197,7 +197,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=257;
+			id=7;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -247,7 +247,7 @@ class Mission
 						description="BLUFOR Alpha 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=261;
+					id=8;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -266,7 +266,7 @@ class Mission
 						description="BLUFOR Alpha 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=262;
+					id=9;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -285,7 +285,7 @@ class Mission
 						description="BLUFOR Alpha 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=263;
+					id=10;
 					type="B_soldier_AAR_F";
 				};
 				class Item3
@@ -304,7 +304,7 @@ class Mission
 						description="BLUFOR Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=264;
+					id=11;
 					type="B_soldier_LAT_F";
 				};
 				class Item4
@@ -323,7 +323,7 @@ class Mission
 						description="BLUFOR Alpha 1 Rifleman";
 						isPlayable=1;
 					};
-					id=265;
+					id=12;
 					type="B_Soldier_F";
 				};
 				class Item5
@@ -342,7 +342,7 @@ class Mission
 						description="BLUFOR Alpha 1 Rifleman";
 						isPlayable=1;
 					};
-					id=266;
+					id=13;
 					type="B_soldier_AAR_F";
 				};
 			};
@@ -350,7 +350,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=260;
+			id=14;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -400,7 +400,7 @@ class Mission
 						description="BLUFOR Alpha 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=268;
+					id=15;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -419,7 +419,7 @@ class Mission
 						description="BLUFOR Alpha 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=269;
+					id=16;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -438,7 +438,7 @@ class Mission
 						description="BLUFOR Alpha 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=270;
+					id=17;
 					type="B_soldier_AAR_F";
 				};
 				class Item3
@@ -457,7 +457,7 @@ class Mission
 						description="BLUFOR Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=271;
+					id=18;
 					type="B_soldier_LAT_F";
 				};
 				class Item4
@@ -476,7 +476,7 @@ class Mission
 						description="BLUFOR Alpha 2 Rifleman";
 						isPlayable=1;
 					};
-					id=272;
+					id=19;
 					type="B_Soldier_F";
 				};
 				class Item5
@@ -495,7 +495,7 @@ class Mission
 						description="BLUFOR Alpha 2 Rifleman";
 						isPlayable=1;
 					};
-					id=273;
+					id=20;
 					type="B_soldier_AAR_F";
 				};
 			};
@@ -503,7 +503,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=267;
+			id=22;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -553,7 +553,7 @@ class Mission
 						description="BLUFOR Bravo Squad Leader";
 						isPlayable=1;
 					};
-					id=275;
+					id=23;
 					type="B_Soldier_SL_F";
 				};
 				class Item1
@@ -573,7 +573,7 @@ class Mission
 						description="BLUFOR Bravo Medic";
 						isPlayable=1;
 					};
-					id=276;
+					id=24;
 					type="B_medic_F";
 				};
 			};
@@ -581,7 +581,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=274;
+			id=25;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -631,7 +631,7 @@ class Mission
 						description="BLUFOR Bravo 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=278;
+					id=26;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -650,7 +650,7 @@ class Mission
 						description="BLUFOR Bravo 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=279;
+					id=27;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -669,7 +669,7 @@ class Mission
 						description="BLUFOR Bravo 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=280;
+					id=28;
 					type="B_soldier_AAR_F";
 				};
 				class Item3
@@ -688,7 +688,7 @@ class Mission
 						description="BLUFOR Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=281;
+					id=29;
 					type="B_soldier_LAT_F";
 				};
 				class Item4
@@ -707,7 +707,7 @@ class Mission
 						description="BLUFOR Bravo 1 Rifleman";
 						isPlayable=1;
 					};
-					id=282;
+					id=30;
 					type="B_Soldier_F";
 				};
 				class Item5
@@ -726,7 +726,7 @@ class Mission
 						description="BLUFOR Bravo 1 Rifleman";
 						isPlayable=1;
 					};
-					id=283;
+					id=31;
 					type="B_soldier_AAR_F";
 				};
 			};
@@ -734,7 +734,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=277;
+			id=32;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -784,7 +784,7 @@ class Mission
 						description="BLUFOR Bravo 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=285;
+					id=33;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -803,7 +803,7 @@ class Mission
 						description="BLUFOR Bravo 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=286;
+					id=34;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -822,7 +822,7 @@ class Mission
 						description="BLUFOR Bravo 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=287;
+					id=35;
 					type="B_soldier_AAR_F";
 				};
 				class Item3
@@ -841,7 +841,7 @@ class Mission
 						description="BLUFOR Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=288;
+					id=36;
 					type="B_soldier_LAT_F";
 				};
 				class Item4
@@ -860,7 +860,7 @@ class Mission
 						description="BLUFOR Bravo 2 Rifleman";
 						isPlayable=1;
 					};
-					id=289;
+					id=37;
 					type="B_Soldier_F";
 				};
 				class Item5
@@ -879,7 +879,7 @@ class Mission
 						description="BLUFOR Bravo 2 Rifleman";
 						isPlayable=1;
 					};
-					id=290;
+					id=38;
 					type="B_soldier_AAR_F";
 				};
 			};
@@ -887,7 +887,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=284;
+			id=39;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -937,7 +937,7 @@ class Mission
 						description="BLUFOR Charlie Squad Leader";
 						isPlayable=1;
 					};
-					id=292;
+					id=40;
 					type="B_Soldier_SL_F";
 				};
 				class Item1
@@ -957,7 +957,7 @@ class Mission
 						description="BLUFOR Charlie Medic";
 						isPlayable=1;
 					};
-					id=293;
+					id=41;
 					type="B_medic_F";
 				};
 			};
@@ -965,7 +965,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=291;
+			id=42;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1015,7 +1015,7 @@ class Mission
 						description="BLUFOR Charlie 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=295;
+					id=43;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -1034,7 +1034,7 @@ class Mission
 						description="BLUFOR Charlie 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=296;
+					id=44;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -1053,7 +1053,7 @@ class Mission
 						description="BLUFOR Charlie 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=297;
+					id=45;
 					type="B_soldier_AAR_F";
 				};
 				class Item3
@@ -1072,7 +1072,7 @@ class Mission
 						description="BLUFOR Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=298;
+					id=46;
 					type="B_soldier_LAT_F";
 				};
 				class Item4
@@ -1091,7 +1091,7 @@ class Mission
 						description="BLUFOR Charlie 1 Rifleman";
 						isPlayable=1;
 					};
-					id=299;
+					id=47;
 					type="B_Soldier_F";
 				};
 				class Item5
@@ -1110,7 +1110,7 @@ class Mission
 						description="BLUFOR Charlie 1 Rifleman";
 						isPlayable=1;
 					};
-					id=300;
+					id=48;
 					type="B_soldier_AAR_F";
 				};
 			};
@@ -1118,7 +1118,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=294;
+			id=49;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1168,7 +1168,7 @@ class Mission
 						description="BLUFOR Charlie 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=302;
+					id=50;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -1187,7 +1187,7 @@ class Mission
 						description="BLUFOR Charlie 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=303;
+					id=51;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -1206,7 +1206,7 @@ class Mission
 						description="BLUFOR Charlie 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=304;
+					id=52;
 					type="B_soldier_AAR_F";
 				};
 				class Item3
@@ -1225,7 +1225,7 @@ class Mission
 						description="BLUFOR Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=305;
+					id=53;
 					type="B_soldier_LAT_F";
 				};
 				class Item4
@@ -1244,7 +1244,7 @@ class Mission
 						description="BLUFOR Charlie 2 Rifleman";
 						isPlayable=1;
 					};
-					id=306;
+					id=54;
 					type="B_Soldier_F";
 				};
 				class Item5
@@ -1263,7 +1263,7 @@ class Mission
 						description="BLUFOR Charlie 2 Rifleman";
 						isPlayable=1;
 					};
-					id=307;
+					id=55;
 					type="B_soldier_AAR_F";
 				};
 			};
@@ -1271,7 +1271,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=301;
+			id=56;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1321,7 +1321,7 @@ class Mission
 						description="BLUFOR Phantom 1 Pilot";
 						isPlayable=1;
 					};
-					id=309;
+					id=57;
 					type="B_Helipilot_F";
 				};
 				class Item1
@@ -1341,7 +1341,7 @@ class Mission
 						description="BLUFOR Phantom 1 Co-Pilot";
 						isPlayable=1;
 					};
-					id=310;
+					id=58;
 					type="B_soldier_repair_F";
 				};
 			};
@@ -1349,7 +1349,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=308;
+			id=59;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1399,7 +1399,7 @@ class Mission
 						description="BLUFOR Phantom 2 Pilot";
 						isPlayable=1;
 					};
-					id=312;
+					id=60;
 					type="B_Helipilot_F";
 				};
 				class Item1
@@ -1419,7 +1419,7 @@ class Mission
 						description="BLUFOR Phantom 2 Co-Pilot";
 						isPlayable=1;
 					};
-					id=313;
+					id=61;
 					type="B_soldier_repair_F";
 				};
 			};
@@ -1427,7 +1427,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=311;
+			id=62;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1477,7 +1477,7 @@ class Mission
 						description="BLUFOR Phantom 3 Pilot";
 						isPlayable=1;
 					};
-					id=315;
+					id=63;
 					type="B_Helipilot_F";
 				};
 				class Item1
@@ -1497,7 +1497,7 @@ class Mission
 						description="BLUFOR Phantom 3 Co-Pilot";
 						isPlayable=1;
 					};
-					id=316;
+					id=64;
 					type="B_soldier_repair_F";
 				};
 			};
@@ -1505,7 +1505,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=314;
+			id=65;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1555,7 +1555,7 @@ class Mission
 						description="BLUFOR Phantom 4 Pilot";
 						isPlayable=1;
 					};
-					id=318;
+					id=66;
 					type="B_Helipilot_F";
 				};
 				class Item1
@@ -1575,7 +1575,7 @@ class Mission
 						description="BLUFOR Phantom 4 Co-Pilot";
 						isPlayable=1;
 					};
-					id=319;
+					id=67;
 					type="B_soldier_repair_F";
 				};
 			};
@@ -1583,7 +1583,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=317;
+			id=68;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1633,7 +1633,7 @@ class Mission
 						description="BLUFOR MMG 1 Leader";
 						isPlayable=1;
 					};
-					id=321;
+					id=69;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -1652,7 +1652,7 @@ class Mission
 						description="BLUFOR MMG 1 Gunner";
 						isPlayable=1;
 					};
-					id=322;
+					id=70;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -1671,7 +1671,7 @@ class Mission
 						description="BLUFOR MMG 1 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=323;
+					id=71;
 					type="B_Soldier_A_F";
 				};
 			};
@@ -1679,7 +1679,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=320;
+			id=72;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1729,7 +1729,7 @@ class Mission
 						description="BLUFOR MMG 2 Leader";
 						isPlayable=1;
 					};
-					id=325;
+					id=73;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -1748,7 +1748,7 @@ class Mission
 						description="BLUFOR MMG 2 Gunner";
 						isPlayable=1;
 					};
-					id=326;
+					id=74;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -1767,7 +1767,7 @@ class Mission
 						description="BLUFOR MMG 2 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=327;
+					id=75;
 					type="B_Soldier_A_F";
 				};
 			};
@@ -1775,7 +1775,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=324;
+			id=76;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1825,7 +1825,7 @@ class Mission
 						description="BLUFOR MMG 3 Leader";
 						isPlayable=1;
 					};
-					id=329;
+					id=77;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -1844,7 +1844,7 @@ class Mission
 						description="BLUFOR MMG 3 Gunner";
 						isPlayable=1;
 					};
-					id=330;
+					id=78;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -1863,7 +1863,7 @@ class Mission
 						description="BLUFOR MMG 3 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=331;
+					id=79;
 					type="B_Soldier_A_F";
 				};
 			};
@@ -1871,7 +1871,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=328;
+			id=80;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1921,7 +1921,7 @@ class Mission
 						description="BLUFOR MMG 4 Leader";
 						isPlayable=1;
 					};
-					id=333;
+					id=81;
 					type="B_Soldier_TL_F";
 				};
 				class Item1
@@ -1940,7 +1940,7 @@ class Mission
 						description="BLUFOR MMG 4 Gunner";
 						isPlayable=1;
 					};
-					id=334;
+					id=82;
 					type="B_soldier_AR_F";
 				};
 				class Item2
@@ -1959,7 +1959,7 @@ class Mission
 						description="BLUFOR MMG 4 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=335;
+					id=83;
 					type="B_Soldier_A_F";
 				};
 			};
@@ -1967,7 +1967,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=332;
+			id=84;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2017,7 +2017,7 @@ class Mission
 						description="BLUFOR Gambler 1 Commander";
 						isPlayable=1;
 					};
-					id=337;
+					id=85;
 					type="B_crew_F";
 				};
 				class Item1
@@ -2037,7 +2037,7 @@ class Mission
 						description="BLUFOR Gambler 1 Gunner";
 						isPlayable=1;
 					};
-					id=338;
+					id=86;
 					type="B_crew_F";
 				};
 				class Item2
@@ -2056,7 +2056,7 @@ class Mission
 						description="BLUFOR Gambler 1 Driver";
 						isPlayable=1;
 					};
-					id=339;
+					id=87;
 					type="B_soldier_repair_F";
 				};
 			};
@@ -2064,7 +2064,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=336;
+			id=88;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2114,7 +2114,7 @@ class Mission
 						description="BLUFOR Gambler 2 Commander";
 						isPlayable=1;
 					};
-					id=341;
+					id=89;
 					type="B_crew_F";
 				};
 				class Item1
@@ -2134,7 +2134,7 @@ class Mission
 						description="BLUFOR Gambler 2 Gunner";
 						isPlayable=1;
 					};
-					id=342;
+					id=90;
 					type="B_crew_F";
 				};
 				class Item2
@@ -2153,7 +2153,7 @@ class Mission
 						description="BLUFOR Gambler 2 Driver";
 						isPlayable=1;
 					};
-					id=343;
+					id=91;
 					type="B_soldier_repair_F";
 				};
 			};
@@ -2161,7 +2161,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=340;
+			id=92;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2211,7 +2211,7 @@ class Mission
 						description="BLUFOR Gambler 3 Commander";
 						isPlayable=1;
 					};
-					id=345;
+					id=93;
 					type="B_crew_F";
 				};
 				class Item1
@@ -2231,7 +2231,7 @@ class Mission
 						description="BLUFOR Gambler 3 Gunner";
 						isPlayable=1;
 					};
-					id=346;
+					id=94;
 					type="B_crew_F";
 				};
 				class Item2
@@ -2250,7 +2250,7 @@ class Mission
 						description="BLUFOR Gambler 3 Driver";
 						isPlayable=1;
 					};
-					id=347;
+					id=95;
 					type="B_soldier_repair_F";
 				};
 			};
@@ -2258,7 +2258,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=344;
+			id=96;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2308,7 +2308,7 @@ class Mission
 						description="BLUFOR Gambler 4 Commander";
 						isPlayable=1;
 					};
-					id=345;
+					id=97;
 					type="B_crew_F";
 				};
 				class Item1
@@ -2328,7 +2328,7 @@ class Mission
 						description="BLUFOR Gambler 4 Gunner";
 						isPlayable=1;
 					};
-					id=346;
+					id=98;
 					type="B_crew_F";
 				};
 				class Item2
@@ -2347,7 +2347,7 @@ class Mission
 						description="BLUFOR Gambler 4 Driver";
 						isPlayable=1;
 					};
-					id=347;
+					id=99;
 					type="B_soldier_repair_F";
 				};
 			};
@@ -2355,7 +2355,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=344;
+			id=100;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2405,7 +2405,7 @@ class Mission
 						description="OPFOR Commander";
 						isPlayable=1;
 					};
-					id=255;
+					id=101;
 					type="O_officer_F";
 				};
 				class Item1
@@ -2425,7 +2425,7 @@ class Mission
 						description="OPFOR Medic";
 						isPlayable=1;
 					};
-					id=256;
+					id=102;
 					type="O_medic_F";
 				};
 			};
@@ -2433,7 +2433,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=254;
+			id=103;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2483,7 +2483,7 @@ class Mission
 						description="OPFOR Alpha Squad Leader";
 						isPlayable=1;
 					};
-					id=258;
+					id=104;
 					type="O_Soldier_SL_F";
 				};
 				class Item1
@@ -2503,7 +2503,7 @@ class Mission
 						description="OPFOR Alpha Medic";
 						isPlayable=1;
 					};
-					id=259;
+					id=105;
 					type="O_medic_F";
 				};
 			};
@@ -2511,7 +2511,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=257;
+			id=106;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2561,7 +2561,7 @@ class Mission
 						description="OPFOR Alpha 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=261;
+					id=107;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -2580,7 +2580,7 @@ class Mission
 						description="OPFOR Alpha 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=262;
+					id=108;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -2599,7 +2599,7 @@ class Mission
 						description="OPFOR Alpha 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=263;
+					id=109;
 					type="O_Soldier_AAR_F";
 				};
 				class Item3
@@ -2618,7 +2618,7 @@ class Mission
 						description="OPFOR Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=264;
+					id=110;
 					type="O_Soldier_LAT_F";
 				};
 				class Item4
@@ -2637,7 +2637,7 @@ class Mission
 						description="OPFOR Alpha 1 Rifleman";
 						isPlayable=1;
 					};
-					id=265;
+					id=111;
 					type="O_Soldier_F";
 				};
 				class Item5
@@ -2656,7 +2656,7 @@ class Mission
 						description="OPFOR Alpha 1 Rifleman";
 						isPlayable=1;
 					};
-					id=266;
+					id=112;
 					type="O_Soldier_AAR_F";
 				};
 			};
@@ -2664,7 +2664,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=260;
+			id=113;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2714,7 +2714,7 @@ class Mission
 						description="OPFOR Alpha 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=268;
+					id=114;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -2733,7 +2733,7 @@ class Mission
 						description="OPFOR Alpha 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=269;
+					id=115;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -2752,7 +2752,7 @@ class Mission
 						description="OPFOR Alpha 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=270;
+					id=116;
 					type="O_Soldier_AAR_F";
 				};
 				class Item3
@@ -2771,7 +2771,7 @@ class Mission
 						description="OPFOR Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=271;
+					id=117;
 					type="O_Soldier_LAT_F";
 				};
 				class Item4
@@ -2790,7 +2790,7 @@ class Mission
 						description="OPFOR Alpha 2 Rifleman";
 						isPlayable=1;
 					};
-					id=272;
+					id=118;
 					type="O_Soldier_F";
 				};
 				class Item5
@@ -2809,7 +2809,7 @@ class Mission
 						description="OPFOR Alpha 2 Rifleman";
 						isPlayable=1;
 					};
-					id=273;
+					id=119;
 					type="O_Soldier_AAR_F";
 				};
 			};
@@ -2817,7 +2817,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=267;
+			id=120;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2867,7 +2867,7 @@ class Mission
 						description="OPFOR Bravo Squad Leader";
 						isPlayable=1;
 					};
-					id=275;
+					id=121;
 					type="O_Soldier_SL_F";
 				};
 				class Item1
@@ -2887,7 +2887,7 @@ class Mission
 						description="OPFOR Bravo Medic";
 						isPlayable=1;
 					};
-					id=276;
+					id=122;
 					type="O_medic_F";
 				};
 			};
@@ -2895,7 +2895,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=274;
+			id=123;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2945,7 +2945,7 @@ class Mission
 						description="OPFOR Bravo 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=278;
+					id=124;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -2964,7 +2964,7 @@ class Mission
 						description="OPFOR Bravo 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=279;
+					id=125;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -2983,7 +2983,7 @@ class Mission
 						description="OPFOR Bravo 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=280;
+					id=126;
 					type="O_Soldier_AAR_F";
 				};
 				class Item3
@@ -3002,7 +3002,7 @@ class Mission
 						description="OPFOR Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=281;
+					id=127;
 					type="O_Soldier_LAT_F";
 				};
 				class Item4
@@ -3021,7 +3021,7 @@ class Mission
 						description="OPFOR Bravo 1 Rifleman";
 						isPlayable=1;
 					};
-					id=282;
+					id=128;
 					type="O_Soldier_F";
 				};
 				class Item5
@@ -3040,7 +3040,7 @@ class Mission
 						description="OPFOR Bravo 1 Rifleman";
 						isPlayable=1;
 					};
-					id=283;
+					id=129;
 					type="O_Soldier_AAR_F";
 				};
 			};
@@ -3048,7 +3048,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=277;
+			id=130;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3098,7 +3098,7 @@ class Mission
 						description="OPFOR Bravo 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=285;
+					id=131;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -3117,7 +3117,7 @@ class Mission
 						description="OPFOR Bravo 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=286;
+					id=132;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -3136,7 +3136,7 @@ class Mission
 						description="OPFOR Bravo 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=287;
+					id=133;
 					type="O_Soldier_AAR_F";
 				};
 				class Item3
@@ -3155,7 +3155,7 @@ class Mission
 						description="OPFOR Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=288;
+					id=134;
 					type="O_Soldier_LAT_F";
 				};
 				class Item4
@@ -3174,7 +3174,7 @@ class Mission
 						description="OPFOR Bravo 2 Rifleman";
 						isPlayable=1;
 					};
-					id=289;
+					id=135;
 					type="O_Soldier_F";
 				};
 				class Item5
@@ -3193,7 +3193,7 @@ class Mission
 						description="OPFOR Bravo 2 Rifleman";
 						isPlayable=1;
 					};
-					id=290;
+					id=136;
 					type="O_Soldier_AAR_F";
 				};
 			};
@@ -3201,7 +3201,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=284;
+			id=137;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3251,7 +3251,7 @@ class Mission
 						description="OPFOR Charlie Squad Leader";
 						isPlayable=1;
 					};
-					id=292;
+					id=138;
 					type="O_Soldier_SL_F";
 				};
 				class Item1
@@ -3271,7 +3271,7 @@ class Mission
 						description="OPFOR Charlie Medic";
 						isPlayable=1;
 					};
-					id=293;
+					id=139;
 					type="O_medic_F";
 				};
 			};
@@ -3279,7 +3279,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=291;
+			id=140;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3329,7 +3329,7 @@ class Mission
 						description="OPFOR Charlie 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=295;
+					id=141;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -3348,7 +3348,7 @@ class Mission
 						description="OPFOR Charlie 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=296;
+					id=142;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -3367,7 +3367,7 @@ class Mission
 						description="OPFOR Charlie 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=297;
+					id=143;
 					type="O_Soldier_AAR_F";
 				};
 				class Item3
@@ -3386,7 +3386,7 @@ class Mission
 						description="OPFOR Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=298;
+					id=144;
 					type="O_Soldier_LAT_F";
 				};
 				class Item4
@@ -3405,7 +3405,7 @@ class Mission
 						description="OPFOR Charlie 1 Rifleman";
 						isPlayable=1;
 					};
-					id=299;
+					id=145;
 					type="O_Soldier_F";
 				};
 				class Item5
@@ -3424,7 +3424,7 @@ class Mission
 						description="OPFOR Charlie 1 Rifleman";
 						isPlayable=1;
 					};
-					id=300;
+					id=146;
 					type="O_Soldier_AAR_F";
 				};
 			};
@@ -3432,7 +3432,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=294;
+			id=147;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3482,7 +3482,7 @@ class Mission
 						description="OPFOR Charlie 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=302;
+					id=148;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -3501,7 +3501,7 @@ class Mission
 						description="OPFOR Charlie 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=303;
+					id=149;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -3520,7 +3520,7 @@ class Mission
 						description="OPFOR Charlie 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=304;
+					id=150;
 					type="O_Soldier_AAR_F";
 				};
 				class Item3
@@ -3539,7 +3539,7 @@ class Mission
 						description="OPFOR Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=305;
+					id=151;
 					type="O_Soldier_LAT_F";
 				};
 				class Item4
@@ -3558,7 +3558,7 @@ class Mission
 						description="OPFOR Charlie 2 Rifleman";
 						isPlayable=1;
 					};
-					id=306;
+					id=152;
 					type="O_Soldier_F";
 				};
 				class Item5
@@ -3577,7 +3577,7 @@ class Mission
 						description="OPFOR Charlie 2 Rifleman";
 						isPlayable=1;
 					};
-					id=307;
+					id=153;
 					type="O_Soldier_AAR_F";
 				};
 			};
@@ -3585,7 +3585,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=301;
+			id=154;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3635,7 +3635,7 @@ class Mission
 						description="OPFOR Phantom 1 Pilot";
 						isPlayable=1;
 					};
-					id=309;
+					id=155;
 					type="O_helipilot_F";
 				};
 				class Item1
@@ -3655,7 +3655,7 @@ class Mission
 						description="OPFOR Phantom 1 Co-Pilot";
 						isPlayable=1;
 					};
-					id=310;
+					id=156;
 					type="O_soldier_repair_F";
 				};
 			};
@@ -3663,7 +3663,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=308;
+			id=157;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3713,7 +3713,7 @@ class Mission
 						description="OPFOR Phantom 2 Pilot";
 						isPlayable=1;
 					};
-					id=312;
+					id=158;
 					type="O_helipilot_F";
 				};
 				class Item1
@@ -3733,7 +3733,7 @@ class Mission
 						description="OPFOR Phantom 2 Co-Pilot";
 						isPlayable=1;
 					};
-					id=313;
+					id=159;
 					type="O_soldier_repair_F";
 				};
 			};
@@ -3741,7 +3741,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=311;
+			id=160;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3791,7 +3791,7 @@ class Mission
 						description="OPFOR Phantom 3 Pilot";
 						isPlayable=1;
 					};
-					id=315;
+					id=161;
 					type="O_helipilot_F";
 				};
 				class Item1
@@ -3811,7 +3811,7 @@ class Mission
 						description="OPFOR Phantom 3 Co-Pilot";
 						isPlayable=1;
 					};
-					id=316;
+					id=162;
 					type="O_soldier_repair_F";
 				};
 			};
@@ -3819,7 +3819,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=314;
+			id=163;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3869,7 +3869,7 @@ class Mission
 						description="OPFOR Phantom 4 Pilot";
 						isPlayable=1;
 					};
-					id=318;
+					id=164;
 					type="O_helipilot_F";
 				};
 				class Item1
@@ -3889,7 +3889,7 @@ class Mission
 						description="OPFOR Phantom 4 Co-Pilot";
 						isPlayable=1;
 					};
-					id=319;
+					id=165;
 					type="O_soldier_repair_F";
 				};
 			};
@@ -3897,7 +3897,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=317;
+			id=166;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3947,7 +3947,7 @@ class Mission
 						description="OPFOR MMG 1 Leader";
 						isPlayable=1;
 					};
-					id=321;
+					id=167;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -3966,7 +3966,7 @@ class Mission
 						description="OPFOR MMG 1 Gunner";
 						isPlayable=1;
 					};
-					id=322;
+					id=168;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -3985,7 +3985,7 @@ class Mission
 						description="OPFOR MMG 1 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=323;
+					id=169;
 					type="O_Soldier_A_F";
 				};
 			};
@@ -3993,7 +3993,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=320;
+			id=170;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4043,7 +4043,7 @@ class Mission
 						description="OPFOR MMG 2 Leader";
 						isPlayable=1;
 					};
-					id=325;
+					id=171;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -4062,7 +4062,7 @@ class Mission
 						description="OPFOR MMG 2 Gunner";
 						isPlayable=1;
 					};
-					id=326;
+					id=172;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -4081,7 +4081,7 @@ class Mission
 						description="OPFOR MMG 2 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=327;
+					id=173;
 					type="O_Soldier_A_F";
 				};
 			};
@@ -4089,7 +4089,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=324;
+			id=174;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4139,7 +4139,7 @@ class Mission
 						description="OPFOR MMG 3 Leader";
 						isPlayable=1;
 					};
-					id=329;
+					id=175;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -4158,7 +4158,7 @@ class Mission
 						description="OPFOR MMG 3 Gunner";
 						isPlayable=1;
 					};
-					id=330;
+					id=176;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -4177,7 +4177,7 @@ class Mission
 						description="OPFOR MMG 3 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=331;
+					id=177;
 					type="O_Soldier_A_F";
 				};
 			};
@@ -4185,7 +4185,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=328;
+			id=178;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4235,7 +4235,7 @@ class Mission
 						description="OPFOR MMG 4 Leader";
 						isPlayable=1;
 					};
-					id=333;
+					id=179;
 					type="O_Soldier_TL_F";
 				};
 				class Item1
@@ -4254,7 +4254,7 @@ class Mission
 						description="OPFOR MMG 4 Gunner";
 						isPlayable=1;
 					};
-					id=334;
+					id=180;
 					type="O_Soldier_AR_F";
 				};
 				class Item2
@@ -4273,7 +4273,7 @@ class Mission
 						description="OPFOR MMG 4 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=335;
+					id=181;
 					type="O_Soldier_A_F";
 				};
 			};
@@ -4281,7 +4281,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=332;
+			id=182;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4331,7 +4331,7 @@ class Mission
 						description="OPFOR Gambler 1 Commander";
 						isPlayable=1;
 					};
-					id=337;
+					id=183;
 					type="O_crew_F";
 				};
 				class Item1
@@ -4351,7 +4351,7 @@ class Mission
 						description="OPFOR Gambler 1 Gunner";
 						isPlayable=1;
 					};
-					id=338;
+					id=184;
 					type="O_crew_F";
 				};
 				class Item2
@@ -4370,7 +4370,7 @@ class Mission
 						description="OPFOR Gambler 1 Driver";
 						isPlayable=1;
 					};
-					id=339;
+					id=185;
 					type="O_soldier_repair_F";
 				};
 			};
@@ -4378,7 +4378,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=336;
+			id=186;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4428,7 +4428,7 @@ class Mission
 						description="OPFOR Gambler 2 Commander";
 						isPlayable=1;
 					};
-					id=341;
+					id=187;
 					type="O_crew_F";
 				};
 				class Item1
@@ -4448,7 +4448,7 @@ class Mission
 						description="OPFOR Gambler 2 Gunner";
 						isPlayable=1;
 					};
-					id=342;
+					id=188;
 					type="O_crew_F";
 				};
 				class Item2
@@ -4467,7 +4467,7 @@ class Mission
 						description="OPFOR Gambler 2 Driver";
 						isPlayable=1;
 					};
-					id=343;
+					id=189;
 					type="O_soldier_repair_F";
 				};
 			};
@@ -4475,7 +4475,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=340;
+			id=190;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4525,7 +4525,7 @@ class Mission
 						description="OPFOR Gambler 3 Commander";
 						isPlayable=1;
 					};
-					id=341;
+					id=191;
 					type="O_crew_F";
 				};
 				class Item1
@@ -4545,7 +4545,7 @@ class Mission
 						description="OPFOR Gambler 3 Gunner";
 						isPlayable=1;
 					};
-					id=342;
+					id=192;
 					type="O_crew_F";
 				};
 				class Item2
@@ -4564,7 +4564,7 @@ class Mission
 						description="OPFOR Gambler 3 Driver";
 						isPlayable=1;
 					};
-					id=343;
+					id=193;
 					type="O_soldier_repair_F";
 				};
 			};
@@ -4572,7 +4572,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=340;
+			id=194;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4622,7 +4622,7 @@ class Mission
 						description="OPFOR Gambler 4 Commander";
 						isPlayable=1;
 					};
-					id=341;
+					id=195;
 					type="O_crew_F";
 				};
 				class Item1
@@ -4642,7 +4642,7 @@ class Mission
 						description="OPFOR Gambler 4 Gunner";
 						isPlayable=1;
 					};
-					id=342;
+					id=196;
 					type="O_crew_F";
 				};
 				class Item2
@@ -4661,7 +4661,7 @@ class Mission
 						description="OPFOR Gambler 4 Driver";
 						isPlayable=1;
 					};
-					id=343;
+					id=197;
 					type="O_soldier_repair_F";
 				};
 			};
@@ -4669,7 +4669,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=340;
+			id=198;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4719,7 +4719,7 @@ class Mission
 						description="INDFOR Commander";
 						isPlayable=1;
 					};
-					id=255;
+					id=199;
 					type="I_officer_F";
 				};
 				class Item1
@@ -4739,7 +4739,7 @@ class Mission
 						description="INDFOR Medic";
 						isPlayable=1;
 					};
-					id=256;
+					id=200;
 					type="I_medic_F";
 				};
 			};
@@ -4747,7 +4747,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=254;
+			id=201;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4797,7 +4797,7 @@ class Mission
 						description="INDFOR Alpha Squad Leader";
 						isPlayable=1;
 					};
-					id=258;
+					id=202;
 					type="I_Soldier_SL_F";
 				};
 				class Item1
@@ -4817,7 +4817,7 @@ class Mission
 						description="INDFOR Alpha Medic";
 						isPlayable=1;
 					};
-					id=259;
+					id=203;
 					type="I_medic_F";
 				};
 			};
@@ -4825,7 +4825,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=257;
+			id=204;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4875,7 +4875,7 @@ class Mission
 						description="INDFOR Alpha 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=261;
+					id=205;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -4894,7 +4894,7 @@ class Mission
 						description="INDFOR Alpha 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=262;
+					id=206;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -4913,7 +4913,7 @@ class Mission
 						description="INDFOR Alpha 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=263;
+					id=207;
 					type="I_Soldier_AAR_F";
 				};
 				class Item3
@@ -4932,7 +4932,7 @@ class Mission
 						description="INDFOR Alpha 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=264;
+					id=208;
 					type="I_Soldier_LAT_F";
 				};
 				class Item4
@@ -4951,7 +4951,7 @@ class Mission
 						description="INDFOR Alpha 1 Rifleman";
 						isPlayable=1;
 					};
-					id=265;
+					id=209;
 					type="I_soldier_F";
 				};
 				class Item5
@@ -4970,7 +4970,7 @@ class Mission
 						description="INDFOR Alpha 1 Rifleman";
 						isPlayable=1;
 					};
-					id=266;
+					id=210;
 					type="I_Soldier_AAR_F";
 				};
 			};
@@ -4978,7 +4978,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=260;
+			id=211;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5028,7 +5028,7 @@ class Mission
 						description="INDFOR Alpha 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=268;
+					id=212;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -5047,7 +5047,7 @@ class Mission
 						description="INDFOR Alpha 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=269;
+					id=213;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -5066,7 +5066,7 @@ class Mission
 						description="INDFOR Alpha 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=270;
+					id=214;
 					type="I_Soldier_AAR_F";
 				};
 				class Item3
@@ -5085,7 +5085,7 @@ class Mission
 						description="INDFOR Alpha 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=271;
+					id=215;
 					type="I_Soldier_LAT_F";
 				};
 				class Item4
@@ -5104,7 +5104,7 @@ class Mission
 						description="INDFOR Alpha 2 Rifleman";
 						isPlayable=1;
 					};
-					id=272;
+					id=216;
 					type="I_soldier_F";
 				};
 				class Item5
@@ -5123,7 +5123,7 @@ class Mission
 						description="INDFOR Alpha 2 Rifleman";
 						isPlayable=1;
 					};
-					id=273;
+					id=217;
 					type="I_Soldier_AAR_F";
 				};
 			};
@@ -5131,7 +5131,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=267;
+			id=218;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5181,7 +5181,7 @@ class Mission
 						description="INDFOR Bravo Squad Leader";
 						isPlayable=1;
 					};
-					id=275;
+					id=219;
 					type="I_Soldier_SL_F";
 				};
 				class Item1
@@ -5201,7 +5201,7 @@ class Mission
 						description="INDFOR Bravo Medic";
 						isPlayable=1;
 					};
-					id=276;
+					id=220;
 					type="I_medic_F";
 				};
 			};
@@ -5209,7 +5209,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=274;
+			id=221;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5259,7 +5259,7 @@ class Mission
 						description="INDFOR Bravo 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=278;
+					id=222;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -5278,7 +5278,7 @@ class Mission
 						description="INDFOR Bravo 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=279;
+					id=223;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -5297,7 +5297,7 @@ class Mission
 						description="INDFOR Bravo 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=280;
+					id=224;
 					type="I_Soldier_AAR_F";
 				};
 				class Item3
@@ -5316,7 +5316,7 @@ class Mission
 						description="INDFOR Bravo 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=281;
+					id=225;
 					type="I_Soldier_LAT_F";
 				};
 				class Item4
@@ -5335,7 +5335,7 @@ class Mission
 						description="INDFOR Bravo 1 Rifleman";
 						isPlayable=1;
 					};
-					id=282;
+					id=226;
 					type="I_soldier_F";
 				};
 				class Item5
@@ -5354,7 +5354,7 @@ class Mission
 						description="INDFOR Bravo 1 Rifleman";
 						isPlayable=1;
 					};
-					id=283;
+					id=227;
 					type="I_Soldier_AAR_F";
 				};
 			};
@@ -5362,7 +5362,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=277;
+			id=228;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5412,7 +5412,7 @@ class Mission
 						description="INDFOR Bravo 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=285;
+					id=229;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -5431,7 +5431,7 @@ class Mission
 						description="INDFOR Bravo 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=286;
+					id=230;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -5450,7 +5450,7 @@ class Mission
 						description="INDFOR Bravo 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=287;
+					id=231;
 					type="I_Soldier_AAR_F";
 				};
 				class Item3
@@ -5469,7 +5469,7 @@ class Mission
 						description="INDFOR Bravo 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=288;
+					id=232;
 					type="I_Soldier_LAT_F";
 				};
 				class Item4
@@ -5488,7 +5488,7 @@ class Mission
 						description="INDFOR Bravo 2 Rifleman";
 						isPlayable=1;
 					};
-					id=289;
+					id=233;
 					type="I_soldier_F";
 				};
 				class Item5
@@ -5507,7 +5507,7 @@ class Mission
 						description="INDFOR Bravo 2 Rifleman";
 						isPlayable=1;
 					};
-					id=290;
+					id=234;
 					type="I_Soldier_AAR_F";
 				};
 			};
@@ -5515,7 +5515,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=284;
+			id=235;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5565,7 +5565,7 @@ class Mission
 						description="INDFOR Charlie Squad Leader";
 						isPlayable=1;
 					};
-					id=292;
+					id=236;
 					type="I_Soldier_SL_F";
 				};
 				class Item1
@@ -5585,7 +5585,7 @@ class Mission
 						description="INDFOR Charlie Medic";
 						isPlayable=1;
 					};
-					id=293;
+					id=237;
 					type="I_medic_F";
 				};
 			};
@@ -5593,7 +5593,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=291;
+			id=238;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5643,7 +5643,7 @@ class Mission
 						description="INDFOR Charlie 1 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=295;
+					id=239;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -5662,7 +5662,7 @@ class Mission
 						description="INDFOR Charlie 1 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=296;
+					id=240;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -5681,7 +5681,7 @@ class Mission
 						description="INDFOR Charlie 1 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=297;
+					id=241;
 					type="I_Soldier_AAR_F";
 				};
 				class Item3
@@ -5700,7 +5700,7 @@ class Mission
 						description="INDFOR Charlie 1 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=298;
+					id=242;
 					type="I_Soldier_LAT_F";
 				};
 				class Item4
@@ -5719,7 +5719,7 @@ class Mission
 						description="INDFOR Charlie 1 Rifleman";
 						isPlayable=1;
 					};
-					id=299;
+					id=243;
 					type="I_soldier_F";
 				};
 				class Item5
@@ -5738,7 +5738,7 @@ class Mission
 						description="INDFOR Charlie 1 Rifleman";
 						isPlayable=1;
 					};
-					id=300;
+					id=244;
 					type="I_Soldier_AAR_F";
 				};
 			};
@@ -5746,7 +5746,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=294;
+			id=245;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5796,7 +5796,7 @@ class Mission
 						description="INDFOR Charlie 2 Fireteam Leader";
 						isPlayable=1;
 					};
-					id=302;
+					id=246;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -5815,7 +5815,7 @@ class Mission
 						description="INDFOR Charlie 2 Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=303;
+					id=247;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -5834,7 +5834,7 @@ class Mission
 						description="INDFOR Charlie 2 Assistant Automatic Rifleman";
 						isPlayable=1;
 					};
-					id=304;
+					id=248;
 					type="I_Soldier_AAR_F";
 				};
 				class Item3
@@ -5853,7 +5853,7 @@ class Mission
 						description="INDFOR Charlie 2 Rifleman (AT)";
 						isPlayable=1;
 					};
-					id=305;
+					id=249;
 					type="I_Soldier_LAT_F";
 				};
 				class Item4
@@ -5872,7 +5872,7 @@ class Mission
 						description="INDFOR Charlie 2 Rifleman";
 						isPlayable=1;
 					};
-					id=306;
+					id=250;
 					type="I_soldier_F";
 				};
 				class Item5
@@ -5891,7 +5891,7 @@ class Mission
 						description="INDFOR Charlie 2 Rifleman";
 						isPlayable=1;
 					};
-					id=307;
+					id=251;
 					type="I_Soldier_AAR_F";
 				};
 			};
@@ -5899,7 +5899,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=301;
+			id=252;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -5949,7 +5949,7 @@ class Mission
 						description="INDFOR Phantom 1 Pilot";
 						isPlayable=1;
 					};
-					id=309;
+					id=253;
 					type="I_helipilot_F";
 				};
 				class Item1
@@ -5969,7 +5969,7 @@ class Mission
 						description="INDFOR Phantom 1 Co-Pilot";
 						isPlayable=1;
 					};
-					id=310;
+					id=254;
 					type="I_Soldier_repair_F";
 				};
 			};
@@ -5977,7 +5977,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=308;
+			id=255;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6027,7 +6027,7 @@ class Mission
 						description="INDFOR Phantom 2 Pilot";
 						isPlayable=1;
 					};
-					id=312;
+					id=256;
 					type="I_helipilot_F";
 				};
 				class Item1
@@ -6047,7 +6047,7 @@ class Mission
 						description="INDFOR Phantom 2 Co-Pilot";
 						isPlayable=1;
 					};
-					id=313;
+					id=257;
 					type="I_Soldier_repair_F";
 				};
 			};
@@ -6055,7 +6055,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=311;
+			id=258;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6105,7 +6105,7 @@ class Mission
 						description="INDFOR Phantom 3 Pilot";
 						isPlayable=1;
 					};
-					id=315;
+					id=259;
 					type="I_helipilot_F";
 				};
 				class Item1
@@ -6125,7 +6125,7 @@ class Mission
 						description="INDFOR Phantom 3 Co-Pilot";
 						isPlayable=1;
 					};
-					id=316;
+					id=260;
 					type="I_Soldier_repair_F";
 				};
 			};
@@ -6133,7 +6133,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=314;
+			id=261;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6183,7 +6183,7 @@ class Mission
 						description="INDFOR Phantom 4 Pilot";
 						isPlayable=1;
 					};
-					id=318;
+					id=262;
 					type="I_helipilot_F";
 				};
 				class Item1
@@ -6203,7 +6203,7 @@ class Mission
 						description="INDFOR Phantom 4 Co-Pilot";
 						isPlayable=1;
 					};
-					id=319;
+					id=263;
 					type="I_Soldier_repair_F";
 				};
 			};
@@ -6211,7 +6211,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=317;
+			id=264;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6261,7 +6261,7 @@ class Mission
 						description="INDFOR MMG 1 Leader";
 						isPlayable=1;
 					};
-					id=321;
+					id=265;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -6280,7 +6280,7 @@ class Mission
 						description="INDFOR MMG 1 Gunner";
 						isPlayable=1;
 					};
-					id=322;
+					id=266;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -6299,7 +6299,7 @@ class Mission
 						description="INDFOR MMG 1 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=323;
+					id=267;
 					type="I_Soldier_A_F";
 				};
 			};
@@ -6307,7 +6307,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=320;
+			id=268;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6357,7 +6357,7 @@ class Mission
 						description="INDFOR MMG 2 Leader";
 						isPlayable=1;
 					};
-					id=325;
+					id=269;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -6376,7 +6376,7 @@ class Mission
 						description="INDFOR MMG 2 Gunner";
 						isPlayable=1;
 					};
-					id=326;
+					id=270;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -6395,7 +6395,7 @@ class Mission
 						description="INDFOR MMG 2 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=327;
+					id=271;
 					type="I_Soldier_A_F";
 				};
 			};
@@ -6403,7 +6403,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=324;
+			id=272;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6453,7 +6453,7 @@ class Mission
 						description="INDFOR MMG 3 Leader";
 						isPlayable=1;
 					};
-					id=329;
+					id=273;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -6472,7 +6472,7 @@ class Mission
 						description="INDFOR MMG 3 Gunner";
 						isPlayable=1;
 					};
-					id=330;
+					id=274;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -6491,7 +6491,7 @@ class Mission
 						description="INDFOR MMG 3 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=331;
+					id=275;
 					type="I_Soldier_A_F";
 				};
 			};
@@ -6499,7 +6499,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=328;
+			id=276;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6549,7 +6549,7 @@ class Mission
 						description="INDFOR MMG 4 Leader";
 						isPlayable=1;
 					};
-					id=333;
+					id=277;
 					type="I_Soldier_TL_F";
 				};
 				class Item1
@@ -6568,7 +6568,7 @@ class Mission
 						description="INDFOR MMG 4 Gunner";
 						isPlayable=1;
 					};
-					id=334;
+					id=278;
 					type="I_Soldier_AR_F";
 				};
 				class Item2
@@ -6587,7 +6587,7 @@ class Mission
 						description="INDFOR MMG 4 Ammo Bearer";
 						isPlayable=1;
 					};
-					id=335;
+					id=279;
 					type="I_Soldier_A_F";
 				};
 			};
@@ -6595,7 +6595,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=332;
+			id=280;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6645,7 +6645,7 @@ class Mission
 						description="INDFOR Gambler 1 Commander";
 						isPlayable=1;
 					};
-					id=337;
+					id=281;
 					type="I_crew_F";
 				};
 				class Item1
@@ -6665,7 +6665,7 @@ class Mission
 						description="INDFOR Gambler 1 Gunner";
 						isPlayable=1;
 					};
-					id=338;
+					id=282;
 					type="I_crew_F";
 				};
 				class Item2
@@ -6684,7 +6684,7 @@ class Mission
 						description="INDFOR Gambler 1 Driver";
 						isPlayable=1;
 					};
-					id=339;
+					id=283;
 					type="I_Soldier_repair_F";
 				};
 			};
@@ -6692,7 +6692,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=336;
+			id=284;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6742,7 +6742,7 @@ class Mission
 						description="INDFOR Gambler 2 Commander";
 						isPlayable=1;
 					};
-					id=341;
+					id=285;
 					type="I_crew_F";
 				};
 				class Item1
@@ -6762,7 +6762,7 @@ class Mission
 						description="INDFOR Gambler 2 Gunner";
 						isPlayable=1;
 					};
-					id=342;
+					id=286;
 					type="I_crew_F";
 				};
 				class Item2
@@ -6781,7 +6781,7 @@ class Mission
 						description="INDFOR Gambler 2 Driver";
 						isPlayable=1;
 					};
-					id=343;
+					id=287;
 					type="I_Soldier_repair_F";
 				};
 			};
@@ -6789,7 +6789,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=340;
+			id=288;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6839,7 +6839,7 @@ class Mission
 						description="INDFOR Gambler 3 Commander";
 						isPlayable=1;
 					};
-					id=341;
+					id=289;
 					type="I_crew_F";
 				};
 				class Item1
@@ -6859,7 +6859,7 @@ class Mission
 						description="INDFOR Gambler 3 Gunner";
 						isPlayable=1;
 					};
-					id=342;
+					id=290;
 					type="I_crew_F";
 				};
 				class Item2
@@ -6878,7 +6878,7 @@ class Mission
 						description="INDFOR Gambler 3 Driver";
 						isPlayable=1;
 					};
-					id=343;
+					id=291;
 					type="I_Soldier_repair_F";
 				};
 			};
@@ -6886,7 +6886,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=340;
+			id=292;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6936,7 +6936,7 @@ class Mission
 						description="INDFOR Gambler 4 Commander";
 						isPlayable=1;
 					};
-					id=341;
+					id=293;
 					type="I_crew_F";
 				};
 				class Item1
@@ -6956,7 +6956,7 @@ class Mission
 						description="INDFOR Gambler 4 Gunner";
 						isPlayable=1;
 					};
-					id=342;
+					id=294;
 					type="I_crew_F";
 				};
 				class Item2
@@ -6975,7 +6975,7 @@ class Mission
 						description="INDFOR Gambler 4 Driver";
 						isPlayable=1;
 					};
-					id=343;
+					id=295;
 					type="I_Soldier_repair_F";
 				};
 			};
@@ -6983,7 +6983,7 @@ class Mission
 			{
 				formation="LINE";
 			};
-			id=340;
+			id=296;
 			class CustomAttributes
 			{
 				class Attribute0
