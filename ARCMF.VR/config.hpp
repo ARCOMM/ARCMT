@@ -81,17 +81,14 @@ class CfgARCMF
 		class blufor
 		{
 			enableGroupMarkers = true;
-			enableFireteamMarkers = true;
 		};
 		class opfor
 		{
 			enableGroupMarkers = true;
-			enableFireteamMarkers = true;
 		};
 		class indfor
 		{
 			enableGroupMarkers = true;
-			enableFireteamMarkers = true;
 		};
 	};
 	/*
