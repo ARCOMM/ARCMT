@@ -451,7 +451,7 @@ switch (_typeofUnit) do
    default
    {
 		["r", _unit] call f_fnc_assignGear;
-		if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_nato.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", _unit, _typeofunit]};
+		if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_indfor.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", _unit, _typeofunit]};
    };
 };
 
