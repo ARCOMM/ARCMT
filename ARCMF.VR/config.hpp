@@ -11,7 +11,7 @@ class CfgARCMF
 	{
 		class blufor
 		{
-			administration[] = {"This is mission doesn't have an ending controller."};
+			administration[] = {"This mission doesn't have an ending controller."};
 			commandersIntent[] = {"Insert very short summary here."};
 			movementPlan[] = {"Insert very short summary here."};
 			fireSupportPlan[] = {"Insert very short summary here."};
@@ -23,7 +23,7 @@ class CfgARCMF
 		};
 		class opfor
 		{
-			administration[] = {"This is mission doesn't have an ending controller."};
+			administration[] = {"This mission doesn't have an ending controller."};
 			commandersIntent[] = {"Insert very short summary here."};
 			movementPlan[] = {"Insert very short summary here."};
 			fireSupportPlan[] = {"Insert very short summary here."};
@@ -35,7 +35,7 @@ class CfgARCMF
 		};
 		class indfor
 		{
-			administration[] = {"This is mission doesn't have an ending controller."};
+			administration[] = {"This mission doesn't have an ending controller."};
 			commandersIntent[] = {"Insert very short summary here."};
 			movementPlan[] = {"Insert very short summary here."};
 			fireSupportPlan[] = {"Insert very short summary here."};
@@ -47,7 +47,7 @@ class CfgARCMF
 		};
 		class civilian
 		{
-			administration[] = {"This is mission doesn't have an ending controller."};
+			administration[] = {"This mission doesn't have an ending controller."};
 			commandersIntent[] = {"Insert very short summary here."};
 			movementPlan[] = {"Insert very short summary here."};
 			fireSupportPlan[] = {"Insert very short summary here."};
@@ -59,7 +59,7 @@ class CfgARCMF
 		};
 		class zeus
 		{
-			administration[] = {"This is mission doesn't have an ending controller."};
+			administration[] = {"This mission doesn't have an ending controller."};
 			commandersIntent[] = {"Insert very short summary here."};
 			movementPlan[] = {"Insert very short summary here."};
 			fireSupportPlan[] = {"Insert very short summary here."};
