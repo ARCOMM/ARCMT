@@ -1,17 +1,11 @@
-_typeofUnit = toLower (_this select 0);
-_unit = _this select 1;
-_isMan = _unit isKindOf "CAManBase";
-
-if (_isMan) then {
-	removeAllWeapons this;
-	removeAllItems this;
-	removeAllAssignedItems this;
-	removeUniform this;
-	removeVest this;
-	removeBackpack this;
-	removeHeadgear this;
-	removeGoggles this;
-};
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
 
 switch (_typeofUnit) do
 {
@@ -448,11 +442,11 @@ switch (_typeofUnit) do
 	};
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
-   default
-   {
-		["r", _unit] call f_fnc_assignGear;
-		if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_blufor.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", _unit, _typeofunit]};
-   };
+	default
+	{
+		["r", this] call f_fnc_assignGear;
+		if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_blufor.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", this, _typeofUnit]};
+	};
 };
 
-_unit selectWeapon primaryWeapon _unit;
+this selectWeapon primaryWeapon this;
