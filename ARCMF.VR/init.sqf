@@ -47,12 +47,6 @@ f_var_cachingAggressiveness = 2;
 // Radio Systems Support
 [] execVM "f\radios\acre2\acre2_init.sqf";
 
-// Headless Client Initialization
-waitUntil {!isNil "f_param_headless_client"};
-if (f_param_headless_client) then {
-	[true, 30, false, false, 30, 3, true, []] execVM "WerthlesHeadless.sqf";
-};
-
 // Disable random button on Virtual Arsenal to prevent breaking ACRE
 [missionNamespace, "arsenalOpened", {
 	disableSerialization;

@@ -83,14 +83,6 @@ class Params
 		default = 0;
 		code = "f_param_caching = %1";
 	};
-	class f_param_headless_client
-	{
-		title = "Headless Client";
-		values[] = {0,1};
-		texts[] = {"Disabled","Enabled"};
-		default = 1;
-		code = "f_param_headless_client = if (%1 == 0) then {false} else {true};";
-	};
 	class arc_param_duplex
 	{
 		title = "Duplex Option";
@@ -195,13 +187,13 @@ class CfgFunctions
 				postInit = 1;
 			};
 
-			class nearPlayer{};
+			class nearPlayer {};
 		};
 		class mpEnd
 		{
 			file = "f\mpEnd";
-			class mpEnd{};
-			class mpEndReceiver{};
+			class mpEnd {};
+			class mpEndReceiver {};
 		};
 		class cache
 		{
@@ -214,32 +206,32 @@ class CfgFunctions
 		class assignGear
 		{
 			file = "f\assignGear";
-			class assignGear{};
+			class assignGear {};
 		};
 		class setGroupID
 		{
 			file = "f\setGroupID";
-			class setGroupID{};
+			class setGroupID {};
 		};
 		class FTMemberMarkers
 		{
 			file = "f\FTMemberMarkers";
-			class SetLocalFTMemberMarkers{};
-			class GetMarkerColor{};
-			class LocalFTMarkerSync{};
-			class GetMarker{};
+			class SetLocalFTMemberMarkers {};
+			class GetMarkerColor {};
+			class LocalFTMarkerSync {};
+			class GetMarker {};
 		};
 		class zeus
 		{
 			file = "f\zeus";
-			class zeusInit{};
-			class zeusAddAddons{};
-			class zeusAddObjects{};
+			class zeusInit {};
+			class zeusAddAddons {};
+			class zeusAddObjects {};
 		};
 		class safeStart
 		{
 			file = "f\safeStart";
-			class safety{};
+			class safety {};
 		};
 
 		#include "f\spect\functions.hpp"
