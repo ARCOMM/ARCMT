@@ -14,6 +14,7 @@ class ARC
 		class getFactionFromSide {};
 		class isRespawnEnabled {};
 		class buildBriefingFromConfig {};
+		class isPlayerReady {};
 	};
 	class radios
 	{

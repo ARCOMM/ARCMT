@@ -1,7 +1,13 @@
 _this spawn {
-	private ["_typeofUnit","_unit"];
-
-	waitUntil {!isNull (_this select 1)};
+	private ["_typeofUnit", "_unit"];
+	
+	_isAI = param [2, false];
+	
+	if (_isAI) then {
+		waitUntil {!isNull (_this select 1)};
+	} else {
+		waitUntil {(call ARC_fnc_isPlayerReady)};
+	};
 
 	_typeofUnit = toLower (_this select 0);
 	_unit = _this select 1;
@@ -20,7 +26,7 @@ _this spawn {
 			#include "f_assignGear_opfor.sqf"
 		};
 		case resistance: {
-			#include "f_assignGear_indfor.sqf";
+			#include "f_assignGear_indfor.sqf"
 		};
 	};
 
