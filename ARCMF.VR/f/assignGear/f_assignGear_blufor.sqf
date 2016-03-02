@@ -7,7 +7,7 @@ removeBackpack this;
 removeHeadgear this;
 removeGoggles this;
 
-switch (_typeofUnit) do
+switch (_typeOfUnit) do
 {
 // LOADOUT: COMMANDER
 	case "co":
@@ -445,7 +445,7 @@ switch (_typeofUnit) do
 	default
 	{
 		["r", this] call f_fnc_assignGear;
-		if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_blufor.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", this, _typeofUnit]};
+		if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_blufor.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", this, _typeOfUnit]};
 	};
 };
 
