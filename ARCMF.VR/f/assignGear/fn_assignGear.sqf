@@ -24,7 +24,7 @@ switch (side _unit) do {
 // Error Checking
 // Check if the unit has been assigned an ACRE radio in the loadout, if so display an error
 {
-	if (_x in (items _this)) then {
+	if (_x in (items _unit)) then {
 		diag_log (format ["[ARCMF] %1 has been added via the loadouts. DO NOT DO THIS! To edit radios use the config.hpp instead!", _x]);
 		hintSilent parseText (format ["<t size='2'>[ARCMF] %1 has been added via the loadouts. DO NOT DO THIS! To edit radios use the config.hpp instead!</t>", _x]);
 		systemChat (format ["[ARCMF] %1 has been added via the loadouts. DO NOT DO THIS! To edit radios use the config.hpp instead!", _x]);
