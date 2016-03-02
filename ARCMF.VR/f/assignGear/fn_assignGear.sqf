@@ -5,6 +5,8 @@ _unit = _this select 1;
 
 if !(local _unit) exitWith {};
 
+waitUntil {!isNull _unit && player == _unit};
+
 _unit setVariable ["f_var_assignGear", _typeofUnit, true];
 _unit setVariable ["f_var_assignGear_done", false, true];
 
