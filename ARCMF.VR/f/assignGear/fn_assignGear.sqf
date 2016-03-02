@@ -21,4 +21,18 @@ switch (side _unit) do {
 	};
 };
 
+// Error Checking
+// Check if the unit has been assigned an ACRE radio in the loadout, if so display an error
+_unit spawn {
+	waitUntil {time > 0};
+	
+	{
+		if (_x in (items _this)) then {
+			diag_log (format ["[ARCMF] %1 has been added via the loadouts. DO NOT DO THIS! To edit radios use the config.hpp instead!", _x]);
+			hintSilent parseText (format ["<t size='2'>[ARCMF] %1 has been added via the loadouts. DO NOT DO THIS! To edit radios use the config.hpp instead!</t>", _x]);
+			systemChat (format ["[ARCMF] %1 has been added via the loadouts. DO NOT DO THIS! To edit radios use the config.hpp instead!", _x]);
+		};
+	} forEach ["ACRE_PRC343","ACRE_PRC148","ACRE_PRC152","ACRE_PRC117F","ACRE_PRC77","ItemRadioAcreFlagged"];
+};
+
 _unit setVariable ["f_var_assignGear_done", true, true];

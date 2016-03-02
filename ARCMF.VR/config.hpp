@@ -11,63 +11,63 @@ class CfgARCMF
 	{
 		class blufor
 		{
-			administration[] = {"This mission doesn't have an ending controller."};
-			commandersIntent[] = {"Insert very short summary here."};
-			movementPlan[] = {"Insert very short summary here."};
-			fireSupportPlan[] = {"Insert very short summary here."};
-			specialTasks[] = {"Insert very short summary here."};
-			mission[] = {"Secure the crash site and search for survivors."};
-			situation[] = {"Insert general information about the situation here."};
-			enemyForces[] = {"Insert information about enemy forces here."};
-			friendlyForces[] = {"Insert information about friendly forces here."};
+			administration[] = {};
+			commandersIntent[] = {};
+			movementPlan[] = {};
+			fireSupportPlan[] = {};
+			specialTasks[] = {};
+			mission[] = {};
+			situation[] = {};
+			enemyForces[] = {};
+			friendlyForces[] = {};
 		};
 		class opfor
 		{
-			administration[] = {"This mission doesn't have an ending controller."};
-			commandersIntent[] = {"Insert very short summary here."};
-			movementPlan[] = {"Insert very short summary here."};
-			fireSupportPlan[] = {"Insert very short summary here."};
-			specialTasks[] = {"Insert very short summary here."};
-			mission[] = {"Secure the crash site and search for survivors."};
-			situation[] = {"Insert general information about the situation here."};
-			enemyForces[] = {"Insert information about enemy forces here."};
-			friendlyForces[] = {"Insert information about friendly forces here."};
+			administration[] = {};
+			commandersIntent[] = {};
+			movementPlan[] = {};
+			fireSupportPlan[] = {};
+			specialTasks[] = {};
+			mission[] = {};
+			situation[] = {};
+			enemyForces[] = {};
+			friendlyForces[] = {};
 		};
 		class indfor
 		{
-			administration[] = {"This mission doesn't have an ending controller."};
-			commandersIntent[] = {"Insert very short summary here."};
-			movementPlan[] = {"Insert very short summary here."};
-			fireSupportPlan[] = {"Insert very short summary here."};
-			specialTasks[] = {"Insert very short summary here."};
-			mission[] = {"Secure the crash site and search for survivors."};
-			situation[] = {"Insert general information about the situation here."};
-			enemyForces[] = {"Insert information about enemy forces here."};
-			friendlyForces[] = {"Insert information about friendly forces here."};
+			administration[] = {};
+			commandersIntent[] = {};
+			movementPlan[] = {};
+			fireSupportPlan[] = {};
+			specialTasks[] = {};
+			mission[] = {};
+			situation[] = {};
+			enemyForces[] = {};
+			friendlyForces[] = {};
 		};
 		class civilian
 		{
-			administration[] = {"This mission doesn't have an ending controller."};
-			commandersIntent[] = {"Insert very short summary here."};
-			movementPlan[] = {"Insert very short summary here."};
-			fireSupportPlan[] = {"Insert very short summary here."};
-			specialTasks[] = {"Insert very short summary here."};
-			mission[] = {"Secure the crash site and search for survivors."};
-			situation[] = {"Insert general information about the situation here."};
-			enemyForces[] = {"Insert information about enemy forces here."};
-			friendlyForces[] = {"Insert information about friendly forces here."};
+			administration[] = {};
+			commandersIntent[] = {};
+			movementPlan[] = {};
+			fireSupportPlan[] = {};
+			specialTasks[] = {};
+			mission[] = {};
+			situation[] = {};
+			enemyForces[] = {};
+			friendlyForces[] = {};
 		};
 		class zeus
 		{
-			administration[] = {"This mission doesn't have an ending controller."};
-			commandersIntent[] = {"Insert very short summary here."};
-			movementPlan[] = {"Insert very short summary here."};
-			fireSupportPlan[] = {"Insert very short summary here."};
-			specialTasks[] = {"Insert very short summary here."};
-			mission[] = {"Secure the crash site and search for survivors."};
-			situation[] = {"Insert general information about the situation here."};
-			enemyForces[] = {"Insert information about enemy forces here."};
-			friendlyForces[] = {"Insert information about friendly forces here."};
+			administration[] = {};
+			commandersIntent[] = {};
+			movementPlan[] = {};
+			fireSupportPlan[] = {};
+			specialTasks[] = {};
+			mission[] = {};
+			situation[] = {};
+			enemyForces[] = {};
+			friendlyForces[] = {};
 		};
 	};
 	/*
