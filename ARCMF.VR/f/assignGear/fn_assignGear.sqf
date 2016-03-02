@@ -1,11 +1,11 @@
 private ["_typeofUnit","_unit"];
 
+waitUntil {!isNull (_this select 1) && player == (_this select 1)};
+
 _typeofUnit = toLower (_this select 0);
 _unit = _this select 1;
 
 if !(local _unit) exitWith {};
-
-waitUntil {!isNull _unit && player == _unit};
 
 _unit setVariable ["f_var_assignGear", _typeofUnit, true];
 _unit setVariable ["f_var_assignGear_done", false, true];
