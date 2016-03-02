@@ -47,26 +47,30 @@ switch (_button) do {
 		}
 	};
 	case 4: { // Respawn Button
-		_unit = player;
-		createCenter west;
-		_newGrp = createGroup west;
-		_newUnit = _newGrp createUnit ["B_Soldier_F", [0,0,0], [], 0, "FORM"];
-		_newUnit allowDamage true;
-		_newUnit hideObjectGlobal false;
-		_newUnit enableSimulationGlobal true;
-		selectPlayer _newUnit;
-		waitUntil {player == _newUnit};
-		_newUnit setName ARC_cam_preCamName;
-		if (side _unit == sideLogic) then { deleteVehicle _unit; };
-		_newUnit setPos ARC_cam_preCamPos;
-		this = _newUnit;
-		call compile ARC_cam_preCamLoadout;
-		[] call f_fnc_ForceExit;
-		[false] call acre_api_fnc_setSpectator;
-		[_newUnit] joinSilent ARC_cam_preCamGroup;
-		
-		f_script_briefing = [] execVM "briefing.sqf";
-		[] execVM "f\briefing\f_orbatNotes.sqf";
-		[] execVM "f\briefing\f_loadoutNotes.sqf";
+		if (call ARC_fnc_isRespawnEnabled) then {
+			_unit = player;
+			createCenter west;
+			_newGrp = createGroup west;
+			_newUnit = _newGrp createUnit ["B_Soldier_F", [0,0,0], [], 0, "FORM"];
+			_newUnit allowDamage true;
+			_newUnit hideObjectGlobal false;
+			_newUnit enableSimulationGlobal true;
+			selectPlayer _newUnit;
+			waitUntil {player == _newUnit};
+			_newUnit setName ARC_cam_preCamName;
+			if (side _unit == sideLogic) then { deleteVehicle _unit; };
+			_newUnit setPos ARC_cam_preCamPos;
+			this = _newUnit;
+			call compile ARC_cam_preCamLoadout;
+			[] call f_fnc_ForceExit;
+			[false] call acre_api_fnc_setSpectator;
+			[_newUnit] joinSilent ARC_cam_preCamGroup;
+			
+			f_script_briefing = [] execVM "briefing.sqf";
+			[] execVM "f\briefing\f_orbatNotes.sqf";
+			[] execVM "f\briefing\f_loadoutNotes.sqf";
+		} else {
+			hint "Respawn is not enabled.";
+		};
 	};
 };

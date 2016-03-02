@@ -179,12 +179,12 @@ _this spawn {
 	// hide big map
 	((findDisplay 9228) displayCtrl 1360) ctrlShow false;
 	((findDisplay 9228) displayCtrl 1360) mapCenterOnCamera false;
-
+	/*
 	if (!(call ARC_fnc_isRespawnEnabled)) then {
 		((findDisplay 9228) displayCtrl 5532) ctrlEnable false;
 		((findDisplay 9228) displayCtrl 5532) ctrlShow false;
 	};
-
+	*/
 	f_cam_helptext = "<t align='left'><t color='#FFFFFF'><t size='1.5'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='1.5'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t></t>";
 
 	hintSilent (parseText f_cam_helptext);
