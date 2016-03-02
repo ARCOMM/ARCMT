@@ -10,6 +10,7 @@ class ARC
 	{
 		file = "f\arc\helpers";
 		class execHC {};
+		class execHC_remote {};
 		class fileExists {};
 		class getFactionFromSide {};
 		class isRespawnEnabled {};
