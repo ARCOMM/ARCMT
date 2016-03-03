@@ -65,10 +65,10 @@ switch (_button) do {
 			[] call f_fnc_ForceExit;
 			[false] call acre_api_fnc_setSpectator;
 			[_newUnit] joinSilent ARC_cam_preCamGroup;
-			
 			f_script_briefing = [] execVM "briefing.sqf";
 			[] execVM "f\briefing\f_orbatNotes.sqf";
 			[] execVM "f\briefing\f_loadoutNotes.sqf";
+			[_newUnit, ARC_cam_preCamPos, ARC_cam_preCamLoadout] execVM "onSpectatorRespawn.sqf";
 		} else {
 			hint "Respawn is not enabled.";
 		};
