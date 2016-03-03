@@ -4,7 +4,9 @@
 #define RADIO_117F "ACRE_PRC117F"
 #define RADIO_77 "ACRE_PRC77"
 
-_presetName = switch (side player) do {
+_unit = param [0, player];
+
+_presetName = switch (side _unit) do {
 	case west: {"default2"};
 	case east: {"default3"};
 	case resistance: {"default4"};
@@ -21,9 +23,7 @@ _ret = ["ACRE_PRC152", _presetName] call acre_api_fnc_setPreset;
 _ret = ["ACRE_PRC117F", _presetName] call acre_api_fnc_setPreset;
 _ret = ["ItemRadio", _presetName] call acre_api_fnc_setPreset;
 
-if (!alive player) exitWith {[true] call acre_api_fnc_setSpectator;};
-
-_unit = player;
+if (!alive _unit) exitWith {[true] call acre_api_fnc_setSpectator;};
 
 switch (side _unit) do {
 	case west: {
@@ -44,7 +44,7 @@ switch (side _unit) do {
 	};
 };
 
-waitUntil {(player getVariable ["f_var_assignGear_done", false])};
+waitUntil {(_unit getVariable ["f_var_assignGear_done", false])};
 _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
 
 waitUntil {uiSleep 0.3; !("ItemRadio" in (items _unit + assignedItems _unit))};

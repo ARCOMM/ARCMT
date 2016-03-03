@@ -18,7 +18,7 @@ class GUI_Gear
 		class Header: RscHeader
 		{
 			idc = 2201;
-			text = "Apply Loadout to Player";
+			text = "Assign Gear to Player";
 			x = 0.417479 * safezoneW + safezoneX;
 			y = 0.3108 * safezoneH + safezoneY;
 			w = 0.154726 * safezoneW;
@@ -42,7 +42,7 @@ class GUI_Gear
 			y = 0.5022 * safezoneH + safezoneY;
 			w = 0.0773631 * safezoneW;
 			h = 0.022 * safezoneH;
-			action = "closeDialog 1";
+			action = "closeDialog 2";
 		};
 		class PlayerList: RscCombo
 		{

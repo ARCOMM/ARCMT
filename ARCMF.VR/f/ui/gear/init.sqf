@@ -17,4 +17,4 @@ _label ctrlSetStructuredText (parseText "<t size='0.8' font='RobotoCondensed'>En
 	if (_x == _caller) then {
 		_unitList lbSetCurSel _index;
 	};
-} forEach (allUnits - entities "HeadlessClient_F");
+} forEach (allPlayers - entities "HeadlessClient_F");
