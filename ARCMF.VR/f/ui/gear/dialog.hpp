@@ -32,7 +32,7 @@ class GUI_Gear
 			y = 0.5022 * safezoneH + safezoneY;
 			w = 0.0763316 * safezoneW;
 			h = 0.022 * safezoneH;
-			action = "null = _this execVM 'f\ui\gear\apply.sqf'";
+			action = "null = [] execVM 'f\ui\gear\apply.sqf'";
 		};
 		class BtnCancel: RscButton
 		{

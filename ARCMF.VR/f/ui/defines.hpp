@@ -88,6 +88,10 @@
 #define MB_BUTTON_CANCEL  2
 #define MB_BUTTON_USER	4
 
+#define FONT_BOLD "RobotoCondensedBold"
+#define FONT_MEDIUM "RobotoCondensed"
+#define FONT_LIGHT "RobotoCondensedLight"
+
 class RscHTML
 {
 	access = 0;
@@ -121,49 +125,49 @@ class RscHTML
 	class H1
 	{
 		align = "left";
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
 	};
 	class H2
 	{
 		align = "right";
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
 	class H3
 	{
 		align = "left";
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
 	class H4
 	{
 		align = "left";
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
 	class H5
 	{
 		align = "left";
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
 	class H6
 	{
 		align = "left";
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
 	class P
 	{
 		align = "left";
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
@@ -203,8 +207,8 @@ class RscMapControl
 	fade = 0;
 	font = "TahomaB";
 	fontGrid = "TahomaB";
-	fontInfo = "PuristaMedium";
-	fontLabel = "PuristaMedium";
+	fontInfo = FONT_MEDIUM;
+	fontLabel = FONT_MEDIUM;
 	fontLevel = "TahomaB";
 	fontNames = "EtelkaNarrowMediumPro";
 	fontUnits = "TahomaB";
@@ -252,7 +256,7 @@ class RscMapControl
 	class Legend {
 		color[] = {0,0,0,1};
 		colorBackground[] = {1,1,1,0.5};
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		h = "3.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 		w = "10 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -575,7 +579,7 @@ class RscToolbox {
 	colorTextDisable[] = {0.4,0.4,0.4,1};
 	colorDisable[] = {0.4,0.4,0.4,1};
 	colorSelectedBg[] = {1,1,1,1};
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	rows = 0;
 	columns = 0;
@@ -596,7 +600,7 @@ class RscButtonSpacer
 		0,
 		0
 	};
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	sizeEx = 0;
 	shadow = 0;
 	x = 0.1;
@@ -647,7 +651,7 @@ class RscText
 		0,
 		0.5
 	};
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	linespacing = 1;
 	tooltipColorText[] = 
@@ -689,7 +693,7 @@ class RscStructuredText
 	};
 	class Attributes
 	{
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		color = "#ffffff";
 		align = "left";
 		shadow = 1;
@@ -798,7 +802,7 @@ class RscEdit
 	text = "";
 	size = 0.2;
 	style = "0x00 + 0x40";
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	shadow = 2;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	canModify = 1;
@@ -977,7 +981,7 @@ class RscCombo
 		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa"; // Dragging element (stretched vertically)
 	};
 	style = "0x10 + 0x200";
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 0;
 	x = 0;
@@ -1017,7 +1021,7 @@ class RscXListBox
 	color[] = {1,1,1,1};
 	colorActive[] = {1,1,1,1};
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	shadow = 0;
 	colorText[] = {1,1,1,1}; // Text color
 	colorSelect[] = {1,1,1,1}; // Selected text color
@@ -1212,7 +1216,7 @@ class RscListBox
 	w = 0.3;
 	h = 0.3;
 	style = 16;
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 0;
 	colorShadow[] = 
@@ -1257,7 +1261,7 @@ class RscButton
 	tooltipColorText[]={1,1,1,1};
 	tooltipColorBox[]={1,1,1,1};
 	tooltipColorShade[]={0,0,0,0.64999998};
-	font="PuristaLight";
+	font=FONT_LIGHT;
 	class TextPos
 	{
 		left="0.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -1267,7 +1271,7 @@ class RscButton
 	};
 	class Attributes
 	{
-		font="PuristaLight";
+		font=FONT_LIGHT;
 		color="#E5E5E5";
 		align="center";
 		shadow="false";
@@ -1313,7 +1317,7 @@ class RscButton
 	};
 	class AttributesImage
 	{
-		font="PuristaMedium";
+		font=FONT_MEDIUM;
 		color="#E5E5E5";
 		align="center";
 	};
@@ -1425,7 +1429,7 @@ class RscShortcutButton
 	};
 	class Attributes
 	{
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		color = "#E5E5E5";
 		align = "left";
 		shadow = "true";
@@ -1466,7 +1470,7 @@ class RscShortcutButton
 		0.25
 	};
 	sizeExSecondary = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	fontSecondary = "PuristaMedium";
+	fontSecondary = FONT_MEDIUM;
 	animTextureDefault = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
 	animTextureNormal = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
 	animTextureDisabled = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButton\normal_ca.paa";
@@ -1476,14 +1480,14 @@ class RscShortcutButton
 	periodFocus = 1.2;
 	periodOver = 0.8;
 	period = 0.4;
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	text = "";
 	action = "";
 	class AttributesImage
 	{
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		color = "#E5E5E5";
 		align = "left";
 	};
@@ -1537,21 +1541,21 @@ class RscShortcutButtonMain
 	animTexturePressed = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\down_ca.paa";
 	animTextureDefault = "\A3\ui_f\data\GUI\RscCommon\RscShortcutButtonMain\normal_ca.paa";
 	period = 0.5;
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
 	text = "";
 	action = "";
 	class Attributes
 	{
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		color = "#E5E5E5";
 		align = "left";
 		shadow = "false";
 	};
 	class AttributesImage
 	{
-		font = "PuristaMedium";
+		font = FONT_MEDIUM;
 		color = "#E5E5E5";
 		align = "false";
 	};
@@ -1576,7 +1580,7 @@ class RscFrame
 		1,
 		1
 	};
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	sizeEx = 0.02;
 	text = "";
 };
@@ -1642,7 +1646,7 @@ class IGUIBack
 		0,
 		0
 	};
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	sizeEx = 0;
 	shadow = 0;
 	x = 0.1;
@@ -1888,7 +1892,7 @@ class RscTextCheckBox
 		0,
 		0.65
 	};
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	rows = 1;
 	columns = 1;
@@ -2004,7 +2008,7 @@ class RscButtonMenu
 		0.25
 	};
 	sizeExSecondary = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	fontSecondary = "PuristaLight";
+	fontSecondary = FONT_LIGHT;
 	period = 1.2;
 	periodFocus = 1.2;
 	periodOver = 1.2;
@@ -2040,7 +2044,7 @@ class RscButtonMenu
 	};
 	class Attributes
 	{
-		font = "PuristaLight";
+		font = FONT_LIGHT;
 		color = "#E5E5E5";
 		align = "left";
 		shadow = "false";
@@ -2154,7 +2158,7 @@ class RscHeader
 	colorText[] = {1,1,1,1};
 	colorShadow[] = {0, 0, 0, 0};
 	colorBorder[] = {0, 0, 0, 0};
-	font = "PuristaMedium";
+	font = FONT_MEDIUM;
 	default = false;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	text = "";
