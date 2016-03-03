@@ -103,24 +103,24 @@ class CfgARCMF
 		class blufor
 		{
 			AN_PRC_343[] = {"all"};
-			AN_PRC_148[] = {"co", "dc", "ftl"};
-			AN_PRC_152[] = {"co", "dc", "cp", "p"};
+			AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl"};
+			AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgtl"};
 			AN_PRC_117F[] = {};
 			AN_PRC_77[] = {};
 		};
 		class opfor
 		{
 			AN_PRC_343[] = {"all"};
-			AN_PRC_148[] = {"co", "dc", "ftl"};
-			AN_PRC_152[] = {"co", "dc", "cp", "p"};
+			AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl"};
+			AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgtl"};
 			AN_PRC_117F[] = {};
 			AN_PRC_77[] = {};
 		};
 		class indfor
 		{
 			AN_PRC_343[] = {"all"};
-			AN_PRC_148[] = {"co", "dc", "ftl"};
-			AN_PRC_152[] = {"co", "dc", "cp", "p"};
+			AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl"};
+			AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgtl"};
 			AN_PRC_117F[] = {};
 			AN_PRC_77[] = {};
 		};

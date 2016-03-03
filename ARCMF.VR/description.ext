@@ -5,6 +5,7 @@ class Header
 	gameType = Coop;
 	minPlayers = 1;
 	maxPlayers = 229;
+	sandbox = 1;
 };
 
 onLoadName = "ARCMF";
@@ -14,7 +15,7 @@ overviewPicture = "splash.paa";
 loadScreen = "splash.paa";
 enableDebugConsole = 1;
 disabledAI = 1;
-respawn = 4;
+respawn = 3;
 respawndelay = 3;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator"};

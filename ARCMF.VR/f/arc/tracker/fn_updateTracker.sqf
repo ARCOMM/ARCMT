@@ -21,9 +21,11 @@ if (ARC_tracker_enabled and {(!isNil "ACE_player") and {alive ACE_player}}) then
 			} count units _x > 0;
 		};
 	};
-
+	
+	_defaultHandled = if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {true} else {false};
+	
 	{
-		if ( _x getVariable ["ARC_groupHandled", false] ) then {
+		if ( _x getVariable ["ARC_groupHandled", _defaultHandled] ) then {
 			private _markerType = _x call ARC_fnc_getMarkerType;
 			private _colour = _x getVariable ["ARC_groupColour", (format ["Color%1", side _x])];
 
