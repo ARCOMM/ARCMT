@@ -1,10 +1,3 @@
-/*
-	ARCOMM Mission Framework
-	Version: 0.1
-	Branch: origin/master
-	Link: https://github.com/ARCOMM/ARCMF
-*/
-
 enableSaving [false, false];
 enableSentences false;
 

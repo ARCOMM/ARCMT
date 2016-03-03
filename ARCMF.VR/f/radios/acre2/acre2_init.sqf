@@ -28,6 +28,10 @@ f_radios_acre2_giveRadioAction = {
 		};
 	}, [_x], 0, false, false, "", "(_target == _this)"];
 	
+	_radioActions = _unit getVariable ["ARC_radioActions", []];
+	_radioActions pushBack _actionID;
+	_unit setVariable ["ARC_radioActions", _radioActions, true];
+	
 	[_actionID, _unit] spawn {
 		sleep 300;
 		if (!isNull (_this select 1)) then {

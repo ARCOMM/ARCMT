@@ -17,7 +17,7 @@ if (f_var_debugMode == 1) then {
 
 #include "f\briefing\f_briefing_arcmf.sqf"
 
-if (serverCommandAvailable "#kick") then {
+if (serverCommandAvailable "#kick" || isServer) then {
 	#include "f\briefing\f_briefing_admin.sqf"
 	if (f_var_debugMode == 1) then {
 		player sideChat format ["DEBUG (briefing.sqf): Briefing for host selected.", _unitfaction];
