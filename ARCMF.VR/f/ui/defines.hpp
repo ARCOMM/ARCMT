@@ -1,109 +1,108 @@
 // Control types
-#define CT_STATIC		   0
-#define CT_BUTTON		   1
-#define CT_EDIT			 2
-#define CT_SLIDER		   3
-#define CT_COMBO			4
-#define CT_LISTBOX		  5
-#define CT_TOOLBOX		  6
-#define CT_CHECKBOXES	   7
-#define CT_PROGRESS		 8
-#define CT_HTML			 9
-#define CT_STATIC_SKEW	  10
-#define CT_ACTIVETEXT	   11
-#define CT_TREE			 12
-#define CT_STRUCTURED_TEXT  13
-#define CT_CONTEXT_MENU	 14
-#define CT_CONTROLS_GROUP   15
-#define CT_SHORTCUTBUTTON   16
-#define CT_XKEYDESC		 40
-#define CT_XBUTTON		  41
-#define CT_XLISTBOX		 42
-#define CT_XSLIDER		  43
-#define CT_XCOMBO		   44
+#define CT_STATIC 0
+#define CT_BUTTON 1
+#define CT_EDIT 2
+#define CT_SLIDER 3
+#define CT_COMBO 4
+#define CT_LISTBOX 5
+#define CT_TOOLBOX 6
+#define CT_CHECKBOXES 7
+#define CT_PROGRESS 8
+#define CT_HTML 9
+#define CT_STATIC_SKEW 10
+#define CT_ACTIVETEXT 11
+#define CT_TREE 12
+#define CT_STRUCTURED_TEXT 13
+#define CT_CONTEXT_MENU 14
+#define CT_CONTROLS_GROUP 15
+#define CT_SHORTCUTBUTTON 16
+#define CT_XKEYDESC 40
+#define CT_XBUTTON 41
+#define CT_XLISTBOX 42
+#define CT_XSLIDER 43
+#define CT_XCOMBO 44
 #define CT_ANIMATED_TEXTURE 45
-#define CT_OBJECT		   80
-#define CT_OBJECT_ZOOM	  81
+#define CT_OBJECT 80
+#define CT_OBJECT_ZOOM 81
 #define CT_OBJECT_CONTAINER 82
 #define CT_OBJECT_CONT_ANIM 83
-#define CT_LINEBREAK		98
-#define CT_USER			 99
-#define CT_MAP			  100
-#define CT_MAP_MAIN		 101
-#define CT_LISTNBOX		 102
-#define CT_CHECKBOX		 77
+#define CT_LINEBREAK 98
+#define CT_USER 99
+#define CT_MAP 100
+#define CT_MAP_MAIN 101
+#define CT_LISTNBOX 102
+#define CT_CHECKBOX 77
 
 // Static styles
-#define ST_POS			0x0F
-#define ST_HPOS		   0x03
-#define ST_VPOS		   0x0C
-#define ST_LEFT		   0x00
-#define ST_RIGHT		  0x01
-#define ST_CENTER		 0x02
-#define ST_DOWN		   0x04
-#define ST_UP			 0x08
-#define ST_VCENTER		0x0C
+#define ST_POS 0x0F
+#define ST_HPOS 0x03
+#define ST_VPOS 0x0C
+#define ST_LEFT 0x00
+#define ST_RIGHT 0x01
+#define ST_CENTER 0x02
+#define ST_DOWN 0x04
+#define ST_UP 0x08
+#define ST_VCENTER 0x0C
 
-#define ST_TYPE		   0xF0
-#define ST_SINGLE		 0x00
-#define ST_MULTI		  0x10
-#define ST_TITLE_BAR	  0x20
-#define ST_PICTURE		0x30
-#define ST_FRAME		  0x40
-#define ST_BACKGROUND	 0x50
-#define ST_GROUP_BOX	  0x60
-#define ST_GROUP_BOX2	 0x70
+#define ST_TYPE 0xF0
+#define ST_SINGLE 0x00
+#define ST_MULTI 0x10
+#define ST_TITLE_BAR 0x20
+#define ST_PICTURE 0x30
+#define ST_FRAME 0x40
+#define ST_BACKGROUND 0x50
+#define ST_GROUP_BOX 0x60
+#define ST_GROUP_BOX2 0x70
 #define ST_HUD_BACKGROUND 0x80
-#define ST_TILE_PICTURE   0x90
-#define ST_WITH_RECT	  0xA0
-#define ST_LINE		   0xB0
+#define ST_TILE_PICTURE 0x90
+#define ST_WITH_RECT 0xA0
+#define ST_LINE 0xB0
 
-#define ST_SHADOW		 0x100
-#define ST_NO_RECT		0x200
-#define ST_KEEP_ASPECT_RATIO  0x800
+#define ST_SHADOW 0x100
+#define ST_NO_RECT 0x200
+#define ST_KEEP_ASPECT_RATIO 0x800
 
-#define ST_TITLE		  ST_TITLE_BAR + ST_CENTER
+#define ST_TITLE ST_TITLE_BAR + ST_CENTER
 
 // Slider styles
-#define SL_DIR			0x400
-#define SL_VERT		   0
-#define SL_HORZ		   0x400
+#define SL_DIR 0x400
+#define SL_VERT 0
+#define SL_HORZ 0x400
 
-#define SL_TEXTURES	   0x10
+#define SL_TEXTURES 0x10
 
-// progress bar 
-#define ST_VERTICAL	   0x01
-#define ST_HORIZONTAL	 0
+// progress bar
+#define ST_VERTICAL 0x01
+#define ST_HORIZONTAL 0
 
 // Listbox styles
-#define LB_TEXTURES	   0x10
-#define LB_MULTI		  0x20
+#define LB_TEXTURES 0x10
+#define LB_MULTI 0x20
 
 // Tree styles
-#define TR_SHOWROOT	   1
-#define TR_AUTOCOLLAPSE   2
+#define TR_SHOWROOT 1
+#define TR_AUTOCOLLAPSE 2
 
 // MessageBox styles
-#define MB_BUTTON_OK	  1
-#define MB_BUTTON_CANCEL  2
-#define MB_BUTTON_USER	4
+#define MB_BUTTON_OK 1
+#define MB_BUTTON_CANCEL 2
+#define MB_BUTTON_USER 4
 
 #define FONT_BOLD "RobotoCondensedBold"
 #define FONT_MEDIUM "RobotoCondensed"
 #define FONT_LIGHT "RobotoCondensedLight"
 
-class RscHTML
-{
+class RscHTML {
 	access = 0;
-	colorBackground[] = {0,0,0,0};
-	colorBold[] = {1,1,1,1};
-	colorLink[] = {1,1,1,0.75};
-	colorLinkActive[] = {1,1,1,1};
-	colorPicture[] = {1,1,1,1};
-	colorPictureBorder[] = {0,0,0,0};
-	colorPictureLink[] = {1,1,1,1};
-	colorPictureSelected[] = {1,1,1,1};
-	colorText[] = {1,1,1,1};
+	colorBackground[] = {0, 0, 0, 0};
+	colorBold[] = {1, 1, 1, 1};
+	colorLink[] = {1, 1, 1, 0.75};
+	colorLinkActive[] = {1, 1, 1, 1};
+	colorPicture[] = {1, 1, 1, 1};
+	colorPictureBorder[] = {0, 0, 0, 0};
+	colorPictureLink[] = {1, 1, 1, 1};
+	colorPictureSelected[] = {1, 1, 1, 1};
+	colorText[] = {1, 1, 1, 1};
 	deletable = 0;
 	fade = 0;
 	filename = "";
@@ -112,107 +111,98 @@ class RscHTML
 	nextPage = "\A3\ui_f\data\gui\rsccommon\rschtml\arrow_right_ca.paa";
 	prevPage = "\A3\ui_f\data\gui\rsccommon\rschtml\arrow_left_ca.paa";
 	shadow = 2;
-	sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	style = 0;
-	tooltipColorBox[] = {0,0,0,0.5};
-	tooltipColorShade[] = {1,1,0.7,1};
-	tooltipColorText[] = {0,0,0,1};
+	tooltipColorBox[] = {0, 0, 0, 0.5};
+	tooltipColorShade[] = {1, 1, 0.7, 1};
+	tooltipColorText[] = {0, 0, 0, 1};
 	type = 9;
 	w = 0.1;
 	x = 0;
 	y = 0;
-	
-	class H1
-	{
+	class H1 {
 		align = "left";
 		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
 	};
-	class H2
-	{
+	class H2 {
 		align = "right";
 		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
-	class H3
-	{
+	class H3 {
 		align = "left";
 		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
-	class H4
-	{
+	class H4 {
 		align = "left";
 		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
-	class H5
-	{
+	class H5 {
 		align = "left";
 		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
-	class H6
-	{
+	class H6 {
 		align = "left";
 		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
-	class P
-	{
+	class P {
 		align = "left";
 		font = FONT_MEDIUM;
 		fontBold = "PuristaSemibold";
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
 };
 
-class RscMapControl 
-{
+class RscMapControl {
 	access = 0;
 	alphaFadeEndScale = 2;
 	alphaFadeStartScale = 2;
-	colorBackground[] = {0.969,0.957,0.949,1};
-	colorCountlines[] = {0.572,0.354,0.188,0.25};
-	colorCountlinesWater[] = {0.491,0.577,0.702,0.3};
-	colorForest[] = {0.624,0.78,0.388,0.5};
-	colorForestBorder[] = {0,0,0,0};
-	colorGrid[] = {0.1,0.1,0.1,0.6};
-	colorGridMap[] = {0.1,0.1,0.1,0.6};
-	colorInactive[] = {1,1,1,0.5};
-	colorLevels[] = {0.286,0.177,0.094,0.5};
-	colorMainCountlines[] = {0.572,0.354,0.188,0.5};
-	colorMainCountlinesWater[] = {0.491,0.577,0.702,0.6};
-	colorMainRoads[] = {0.9,0.5,0.3,1};
-	colorMainRoadsFill[] = {1,0.6,0.4,1};
-	colorNames[] = {0.1,0.1,0.1,0.9};
-	colorOutside[] = {0,0,0,1};
-	colorPowerLines[] = {0.1,0.1,0.1,1};
-	colorRailWay[] = {0.8,0.2,0,1};
-	colorRoads[] = {0.7,0.7,0.7,1};
-	colorRoadsFill[] = {1,1,1,1};
-	colorRocks[] = {0,0,0,0.3};
-	colorRocksBorder[] = {0,0,0,0};
-	colorSea[] = {0.467,0.631,0.851,0.5};
-	colorText[] = {0,0,0,1};
-	colorTracks[] = {0.84,0.76,0.65,0.15};
-	colorTracksFill[] = {0.84,0.76,0.65,1};
+	colorBackground[] = {0.969, 0.957, 0.949, 1};
+	colorCountlines[] = {0.572, 0.354, 0.188, 0.25};
+	colorCountlinesWater[] = {0.491, 0.577, 0.702, 0.3};
+	colorForest[] = {0.624, 0.78, 0.388, 0.5};
+	colorForestBorder[] = {0, 0, 0, 0};
+	colorGrid[] = {0.1, 0.1, 0.1, 0.6};
+	colorGridMap[] = {0.1, 0.1, 0.1, 0.6};
+	colorInactive[] = {1, 1, 1, 0.5};
+	colorLevels[] = {0.286, 0.177, 0.094, 0.5};
+	colorMainCountlines[] = {0.572, 0.354, 0.188, 0.5};
+	colorMainCountlinesWater[] = {0.491, 0.577, 0.702, 0.6};
+	colorMainRoads[] = {0.9, 0.5, 0.3, 1};
+	colorMainRoadsFill[] = {1, 0.6, 0.4, 1};
+	colorNames[] = {0.1, 0.1, 0.1, 0.9};
+	colorOutside[] = {0, 0, 0, 1};
+	colorPowerLines[] = {0.1, 0.1, 0.1, 1};
+	colorRailWay[] = {0.8, 0.2, 0, 1};
+	colorRoads[] = {0.7, 0.7, 0.7, 1};
+	colorRoadsFill[] = {1, 1, 1, 1};
+	colorRocks[] = {0, 0, 0, 0.3};
+	colorRocksBorder[] = {0, 0, 0, 0};
+	colorSea[] = {0.467, 0.631, 0.851, 0.5};
+	colorText[] = {0, 0, 0, 1};
+	colorTracks[] = {0.84, 0.76, 0.65, 0.15};
+	colorTracksFill[] = {0.84, 0.76, 0.65, 1};
 	deletable = 0;
 	fade = 0;
-	font = "TahomaB";
-	fontGrid = "TahomaB";
+	font = FONT_BOLD;
+	fontGrid = FONT_BOLD;
 	fontInfo = FONT_MEDIUM;
 	fontLabel = FONT_MEDIUM;
-	fontLevel = "TahomaB";
+	fontLevel = FONT_BOLD;
 	fontNames = "EtelkaNarrowMediumPro";
-	fontUnits = "TahomaB";
-	h = "SafeZoneH - 1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	fontUnits = FONT_BOLD;
+	h = "SafeZoneH - 1.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 	idc = 51;
 	maxSatelliteAlpha = 0.85;
 	moveOnEdges = 1;
@@ -232,42 +222,39 @@ class RscMapControl
 	showCountourInterval = 0;
 	sizeEx = 0.04;
 	sizeExGrid = 0.02;
-	sizeExInfo = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-	sizeExLabel = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+	sizeExInfo = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+	sizeExLabel = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	sizeExLevel = 0.02;
-	sizeExNames = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
-	sizeExUnits = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-	stickX[] = {0.2,["Gamma",1,1.5]};
-	stickY[] = {0.2,["Gamma",1,1.5]};
+	sizeExNames = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
+	sizeExUnits = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+	stickX[] = {0.2, ["Gamma", 1, 1.5]};
+	stickY[] = {0.2, ["Gamma", 1, 1.5]};
 	style = 48;
 	text = "#(argb,8,8,3)color(1,1,1,1)";
 	type = 101;
 	w = "SafeZoneWAbs";
 	x = "SafeZoneXAbs";
-	y = "SafeZoneY + 1.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+	y = "SafeZoneY + 1.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 	onMouseButtonClick = "";
 	onMouseButtonDblClick = "";
-
 	class ActiveMarker {
-		color[] = {0.3,0.1,0.9,1};
+		color[] = {0.3, 0.1, 0.9, 1};
 		size = 50;
 	};
-
 	class Legend {
-		color[] = {0,0,0,1};
-		colorBackground[] = {1,1,1,0.5};
+		color[] = {0, 0, 0, 1};
+		colorBackground[] = {1, 1, 1, 0.5};
 		font = FONT_MEDIUM;
-		h = "3.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-		sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-		w = "10 * 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-		x = "SafeZoneX + 					(			((safezoneW / safezoneH) min 1.2) / 40)";
-		y = "SafeZoneY + safezoneH - 4.5 * 					(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+		h = "3.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+		sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+		w = "10 * (((safezoneW / safezoneH) min 1.2) / 40)";
+		x = "SafeZoneX + (((safezoneW / safezoneH) min 1.2) / 40)";
+		y = "SafeZoneY + safezoneH - 4.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
 	};
-
 	class Bunker {
 		coefMax = 4;
 		coefMin = 0.25;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		importance = "1.5 * 14 * 0.05";
 		size = 14;
@@ -276,182 +263,163 @@ class RscMapControl
 	class Bush {
 		coefMax = 4;
 		coefMin = 0.25;
-		color[] = {0.45,0.64,0.33,0.4};
+		color[] = {0.45, 0.64, 0.33, 0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.2 * 14 * 0.05 * 0.05";
 		size = "14/2";
 	};
-
 	class BusStop {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\busstop_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Command {
 		coefMax = 1;
 		coefMin = 1;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
 		importance = 1;
 		size = 18;
 	};
-	
 	class CustomMark {
 		coefMax = 1;
 		coefMin = 1;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\custommark_ca.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Cross {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\Cross_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-	
 	class Shipwreck {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\Shipwreck_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Fortress {
 		coefMax = 4;
 		coefMin = 0.25;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\bunker_ca.paa";
 		importance = "2 * 16 * 0.05";
 		size = 16;
 	};
-
 	class Fuelstation {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\fuelstation_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Fountain {
 		coefMax = 4;
 		coefMin = 0.25;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\fountain_ca.paa";
 		importance = "1 * 12 * 0.05";
 		size = 11;
 	};
-
 	class Hospital {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\hospital_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Chapel {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\Chapel_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Church {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\church_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Lighthouse {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\lighthouse_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Quay {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\quay_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Rock {
 		coefMax = 4;
 		coefMin = 0.25;
-		color[] = {0.1,0.1,0.1,0.8};
+		color[] = {0.1, 0.1, 0.1, 0.8};
 		icon = "\A3\ui_f\data\map\mapcontrol\rock_ca.paa";
 		importance = "0.5 * 12 * 0.05";
 		size = 12;
 	};
-
 	class Ruin {
 		coefMax = 4;
 		coefMin = 1;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\ruin_ca.paa";
 		importance = "1.2 * 16 * 0.05";
 		size = 16;
 	};
-
 	class SmallTree {
 		coefMax = 4;
 		coefMin = 0.25;
-		color[] = {0.45,0.64,0.33,0.4};
+		color[] = {0.45, 0.64, 0.33, 0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.6 * 12 * 0.05";
 		size = 12;
 	};
-
 	class Stack {
 		coefMax = 4;
 		coefMin = 0.9;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\stack_ca.paa";
 		importance = "2 * 16 * 0.05";
 		size = 20;
 	};
-
 	class Tree {
 		coefMax = 4;
 		coefMin = 0.25;
-		color[] = {0.45,0.64,0.33,0.4};
+		color[] = {0.45, 0.64, 0.33, 0.4};
 		icon = "\A3\ui_f\data\map\mapcontrol\bush_ca.paa";
 		importance = "0.9 * 16 * 0.05";
 		size = 12;
 	};
-	
 	class Task {
 		coefMax = 1;
 		coefMin = 1;
-		color[] = {"(profilenamespace getvariable ['IGUI_TEXT_RGB_R',0])","(profilenamespace getvariable ['IGUI_TEXT_RGB_G',1])","(profilenamespace getvariable ['IGUI_TEXT_RGB_B',1])","(profilenamespace getvariable ['IGUI_TEXT_RGB_A',0.8])"};
-		colorCanceled[] = {0.7,0.7,0.7,1};
-		colorCreated[] = {1,1,1,1};
-		colorDone[] = {0.7,1,0.3,1};
-		colorFailed[] = {1,0.3,0.2,1};
+		color[] = {"(profilenamespace getvariable ['IGUI_TEXT_RGB_R',0])", "(profilenamespace getvariable ['IGUI_TEXT_RGB_G',1])", "(profilenamespace getvariable ['IGUI_TEXT_RGB_B',1])", "(profilenamespace getvariable ['IGUI_TEXT_RGB_A',0.8])"};
+		colorCanceled[] = {0.7, 0.7, 0.7, 1};
+		colorCreated[] = {1, 1, 1, 1};
+		colorDone[] = {0.7, 1, 0.3, 1};
+		colorFailed[] = {1, 0.3, 0.2, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\taskIcon_CA.paa";
 		iconCanceled = "\A3\ui_f\data\map\mapcontrol\taskIconCanceled_CA.paa";
 		iconCreated = "\A3\ui_f\data\map\mapcontrol\taskIconCreated_CA.paa";
@@ -460,99 +428,89 @@ class RscMapControl
 		importance = 1;
 		size = 27;
 	};
-
 	class Tourism {
 		coefMax = 4;
 		coefMin = 0.7;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\tourism_ca.paa";
 		importance = "1 * 16 * 0.05";
 		size = 16;
 	};
-
 	class Transmitter {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\transmitter_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class ViewTower {
 		coefMax = 4;
 		coefMin = 0.5;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\viewtower_ca.paa";
 		importance = "2.5 * 16 * 0.05";
 		size = 16;
 	};
-
 	class Watertower {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\watertower_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-	
 	class power {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\power_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-	
 	class powersolar {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\powersolar_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-	
 	class powerwave {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\powerwave_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-	
 	class powerwind {
 		coefMax = 1;
 		coefMin = 0.85;
-		color[] = {1,1,1,1};
+		color[] = {1, 1, 1, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\powerwind_CA.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class Waypoint {
 		coefMax = 1;
 		coefMin = 1;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypoint_ca.paa";
 		importance = 1;
 		size = 24;
 	};
-
 	class WaypointCompleted {
 		coefMax = 1;
 		coefMin = 1;
-		color[] = {0,0,0,1};
+		color[] = {0, 0, 0, 1};
 		icon = "\A3\ui_f\data\map\mapcontrol\waypointCompleted_ca.paa";
 		importance = 1;
 		size = 24;
 	};
 };
-class RscMap 
-{
+
+class RscMap {
 	access = 0;
 	class controls {
 		class Map : RscMapControl {
@@ -564,6 +522,7 @@ class RscMap
 		};
 	};
 };
+
 class RscToolbox {
 	idc = -1;
 	type = CT_TOOLBOX;
@@ -572,13 +531,13 @@ class RscToolbox {
 	y = 0.2;
 	w = 0.2;
 	h = 0.15;
-	colorText[] = {1,1,1,1};
-	color[] = {0,0,0,1};
-	colorTextSelect[] = {0,0,0,1};
-	colorSelect[] = {0,0,0,1};
-	colorTextDisable[] = {0.4,0.4,0.4,1};
-	colorDisable[] = {0.4,0.4,0.4,1};
-	colorSelectedBg[] = {1,1,1,1};
+	colorText[] = {1, 1, 1, 1};
+	color[] = {0, 0, 0, 1};
+	colorTextSelect[] = {0, 0, 0, 1};
+	colorSelect[] = {0, 0, 0, 1};
+	colorTextDisable[] = {0.4, 0.4, 0.4, 1};
+	colorDisable[] = {0.4, 0.4, 0.4, 1};
+	colorSelectedBg[] = {1, 1, 1, 1};
 	font = FONT_MEDIUM;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	rows = 0;
@@ -587,19 +546,14 @@ class RscToolbox {
 	values[] = {};
 	onToolBoxSelChanged = "hint format[""Toolbox change:\n%1\nEntry#:%2"",(_this select 0),(_this select 1)];"
 };
-class RscButtonSpacer
-{
+
+class RscButtonSpacer {
 	type = 0;
 	idc = 124;
 	style = 128;
 	text = "";
-	colorText[] = 
-	{
-		0,
-		0,
-		0,
-		0
-	};
+	colorText[] = {0, 0, 0, 0};
+	colorBackground[] = {0, 0, 0, 0.8};
 	font = FONT_MEDIUM;
 	sizeEx = 0;
 	shadow = 0;
@@ -607,35 +561,16 @@ class RscButtonSpacer
 	y = 0.1;
 	w = 0.1;
 	h = 0.1;
-	colorBackground[] = 
-	{
-		0,
-		0,
-		0,
-		0.8
-	};
 };
-class RscText
-{
+
+class RscText {
 	deletable = 0;
 	fade = 0;
 	access = 0;
 	type = 0;
 	idc = -1;
-	colorBackground[] = 
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorText[] = 
-	{
-		1,
-		1,
-		1,
-		1
-	};
+	colorBackground[] = {0, 0, 0, 0};
+	colorText[] = {1, 1, 1, 1};
 	text = "";
 	fixedWidth = 0;
 	x = 0;
@@ -644,60 +579,23 @@ class RscText
 	w = 0.3;
 	style = 0;
 	shadow = 1;
-	colorShadow[] = 
-	{
-		0,
-		0,
-		0,
-		0.5
-	};
+	colorShadow[] = {0, 0, 0, 0.5};
 	font = FONT_MEDIUM;
 	SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	linespacing = 1;
-	tooltipColorText[] = 
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] = 
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] = 
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
+	tooltipColorText[] = {1, 1, 1, 1};
+	tooltipColorBox[] = {1, 1, 1, 1};
+	tooltipColorShade[] = {0, 0, 0, 0.65};
 };
-class RscStructuredText
-{
+
+class RscStructuredText {
 	deletable = 0;
 	fade = 0;
 	access = 0;
 	type = 13;
 	idc = -1;
 	style = "0x02 + 0x0C";
-	colorText[] = 
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	class Attributes
-	{
-		font = FONT_MEDIUM;
-		color = "#ffffff";
-		align = "left";
-		shadow = 1;
-	};
+	colorText[] = {1, 1, 1, 1};
 	x = 0;
 	y = 0;
 	h = 0.035;
@@ -705,30 +603,24 @@ class RscStructuredText
 	text = "";
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 1;
+	class Attributes {
+		font = FONT_MEDIUM;
+		color = "#ffffff";
+		align = "left";
+		shadow = 1;
+	};
 };
-class RscPicture
-{
+
+class RscPicture {
 	deletable = 0;
 	fade = 0;
 	access = 0;
 	type = 0;
 	idc = -1;
 	style = "0x30 + 2048";
-	colorBackground[] = 
-	{
-		0,
-		0,
-		0,
-		0
-	};
-	colorText[] = 
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	font = "TahomaB";
+	colorBackground[] = {0, 0, 0, 0};
+	colorText[] = {1, 1, 1, 1};
+	font = FONT_BOLD;
 	sizeEx = 0;
 	lineSpacing = 0;
 	text = "";
@@ -738,30 +630,11 @@ class RscPicture
 	y = 0;
 	w = 0.2;
 	h = 0.15;
-	tooltipColorText[] = 
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorBox[] = 
-	{
-		1,
-		1,
-		1,
-		1
-	};
-	tooltipColorShade[] = 
-	{
-		0,
-		0,
-		0,
-		0.65
-	};
+	tooltipColorText[] = {1, 1, 1, 1};
+	tooltipColorBox[] = {1, 1, 1, 1};
+	tooltipColorShade[] = {0, 0, 0, 0.65};
 };
-class RscEdit
-{
+class RscEdit {
 	deletable = 0;
 	fade = 0;
 	access = 0;
@@ -770,28 +643,28 @@ class RscEdit
 	y = 0;
 	h = 0.04;
 	w = 0.2;
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorSelection[] = 
+	colorSelection[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])",
@@ -806,21 +679,21 @@ class RscEdit
 	shadow = 2;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	canModify = 1;
-	tooltipColorText[] = 
+	tooltipColorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorBox[] = 
+	tooltipColorBox[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorShade[] = 
+	tooltipColorShade[] =
 	{
 		0,
 		0,
@@ -828,153 +701,151 @@ class RscEdit
 		0.65
 	};
 };
-class RscCombo
-{
+class RscCombo {
 	deletable = 0;
 	fade = 0;
 	access = 0;
 	type = 4;
-	colorSelect[] = 
+	colorSelect[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorScrollbar[] = 
+	colorScrollbar[] =
 	{
 		1,
 		0,
 		0,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorPicture[] = 
+	colorPicture[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPictureSelected[] = 
+	colorPictureSelected[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPictureDisabled[] = 
+	colorPictureDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorPictureRight[] = 
+	colorPictureRight[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPictureRightSelected[] = 
+	colorPictureRightSelected[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPictureRightDisabled[] = 
+	colorPictureRightDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorTextRight[] = 
+	colorTextRight[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorSelectRight[] = 
+	colorSelectRight[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorSelect2Right[] = 
+	colorSelect2Right[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	tooltipColorText[] = 
+	tooltipColorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorBox[] = 
+	tooltipColorBox[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorShade[] = 
+	tooltipColorShade[] =
 	{
 		0,
 		0,
 		0,
 		0.65
 	};
-	soundSelect[] = 
+	soundSelect[] =
 	{
 		"\A3\ui_f\data\sound\RscCombo\soundSelect",
 		0.1,
 		1
 	};
-	soundExpand[] = 
+	soundExpand[] =
 	{
 		"\A3\ui_f\data\sound\RscCombo\soundExpand",
 		0.1,
 		1
 	};
-	soundCollapse[] = 
+	soundCollapse[] =
 	{
 		"\A3\ui_f\data\sound\RscCombo\soundCollapse",
 		0.1,
 		1
 	};
 	maxHistoryDelay = 1;
-	class ComboScrollBar
-	{
-		color[] = {1,1,1,1};
+	class ComboScrollBar {
+		color[] = {1, 1, 1, 1};
 		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa"; // Arrow
 		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa"; // Arrow when clicked on
 		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa"; // Slider background (stretched vertically)
@@ -988,7 +859,7 @@ class RscCombo
 	y = 0;
 	w = 0.12;
 	h = 0.035;
-	colorSelectBackground[] = 
+	colorSelectBackground[] =
 	{
 		1,
 		1,
@@ -998,7 +869,7 @@ class RscCombo
 	arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_ca.paa";
 	arrowFull = "\A3\ui_f\data\GUI\RscCommon\rsccombo\arrow_combo_active_ca.paa";
 	wholeHeight = 0.45;
-	colorActive[] = 
+	colorActive[] =
 	{
 		1,
 		0,
@@ -1006,8 +877,7 @@ class RscCombo
 		1
 	};
 };
-class RscXListBox
-{
+class RscXListBox {
 	access = 0;
 	idc = CT_XLISTBOX;
 	type = CT_XLISTBOX;
@@ -1018,87 +888,86 @@ class RscXListBox
 	y = 17 * GUI_GRID_CENTER_H + GUI_GRID_CENTER_Y;
 	w = 10 * GUI_GRID_CENTER_W;
 	h = 1 * GUI_GRID_CENTER_H;
-	color[] = {1,1,1,1};
-	colorActive[] = {1,1,1,1};
+	color[] = {1, 1, 1, 1};
+	colorActive[] = {1, 1, 1, 1};
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	font = FONT_MEDIUM;
 	shadow = 0;
-	colorText[] = {1,1,1,1}; // Text color
-	colorSelect[] = {1,1,1,1}; // Selected text color
-	colorDisabled[] = {1,1,1,0.5}; // Disabled text color
+	colorText[] = {1, 1, 1, 1}; // Text color
+	colorSelect[] = {1, 1, 1, 1}; // Selected text color
+	colorDisabled[] = {1, 1, 1, 0.5}; // Disabled text color
 	tooltip = ""; // Tooltip text
-	tooltipColorShade[] = {0,0,0,0}; // Tooltip background color
-	tooltipColorText[] = {1,1,1,0}; // Tooltip text color
-	tooltipColorBox[] = {1,1,1,0}; // Tooltip frame color
+	tooltipColorShade[] = {0, 0, 0, 0}; // Tooltip background color
+	tooltipColorText[] = {1, 1, 1, 0}; // Tooltip text color
+	tooltipColorBox[] = {1, 1, 1, 0}; // Tooltip frame color
 	arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa"; // Arrow
 	arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa"; // Arrow when clicked on
 	border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa"; // Fill texture
-	soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1};
+	soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect", 0.09, 1};
 };
-class RscListBox
-{
+class RscListBox {
 	deletable = 0;
 	fade = 0;
 	access = 0;
 	type = 5;
 	rowHeight = 0;
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorScrollbar[] = 
+	colorScrollbar[] =
 	{
 		1,
 		0,
 		0,
 		0
 	};
-	colorSelect[] = 
+	colorSelect[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorSelect2[] = 
+	colorSelect2[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorSelectBackground[] = 
+	colorSelectBackground[] =
 	{
 		0.95,
 		0.95,
 		0.95,
 		1
 	};
-	colorSelectBackground2[] = 
+	colorSelectBackground2[] =
 	{
 		1,
 		1,
 		1,
 		0.5
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		0.3
 	};
-	soundSelect[] = 
+	soundSelect[] =
 	{
 		"\A3\ui_f\data\sound\RscListbox\soundSelect",
 		0.09,
@@ -1109,92 +978,91 @@ class RscListBox
 	autoScrollRewind = 0;
 	arrowEmpty = "#(argb,8,8,3)color(1,1,1,1)";
 	arrowFull = "#(argb,8,8,3)color(1,1,1,1)";
-	colorPicture[] = 
+	colorPicture[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPictureSelected[] = 
+	colorPictureSelected[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPictureDisabled[] = 
+	colorPictureDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorPictureRight[] = 
+	colorPictureRight[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPictureRightSelected[] = 
+	colorPictureRightSelected[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPictureRightDisabled[] = 
+	colorPictureRightDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorTextRight[] = 
+	colorTextRight[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorSelectRight[] = 
+	colorSelectRight[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorSelect2Right[] = 
+	colorSelect2Right[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	tooltipColorText[] = 
+	tooltipColorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorBox[] = 
+	tooltipColorBox[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorShade[] = 
+	tooltipColorShade[] =
 	{
 		0,
 		0,
 		0,
 		0.65
 	};
-	class ListScrollBar
-	{
+	class ListScrollBar {
 		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
 		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
 		autoScrollDelay = 5;
@@ -1202,9 +1070,9 @@ class RscListBox
 		autoScrollRewind = 0;
 		autoScrollSpeed = -1;
 		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
-		color[] = {1,1,1,0.6};
-		colorActive[] = {1,1,1,1};
-		colorDisabled[] = {1,1,1,0.3};
+		color[] = {1, 1, 1, 0.6};
+		colorActive[] = {1, 1, 1, 1};
+		colorDisabled[] = {1, 1, 1, 0.3};
 		height = 0;
 		scrollSpeed = 0.06;
 		shadow = 0;
@@ -1219,7 +1087,7 @@ class RscListBox
 	font = FONT_MEDIUM;
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 0;
-	colorShadow[] = 
+	colorShadow[] =
 	{
 		0,
 		0,
@@ -1229,206 +1097,195 @@ class RscListBox
 	period = 1.2;
 	maxHistoryDelay = 1;
 };
-class RscButton
-{
-	type=16;
-	style="0x02 + 0xC0";
-	default=0;
-	shadow=0;
-	x=0;
-	y=0;
-	w=0.095588997;
-	h=0.039216001;
-	animTextureNormal="#(argb,8,8,3)color(1,1,1,1)";
-	animTextureDisabled="#(argb,8,8,3)color(1,1,1,1)";
-	animTextureOver="#(argb,8,8,3)color(1,1,1,1)";
-	animTextureFocused="#(argb,8,8,3)color(1,1,1,1)";
-	animTexturePressed="#(argb,8,8,3)color(1,1,1,1)";
-	animTextureDefault="#(argb,8,8,3)color(1,1,1,1)";
-	colorBackground[]={0,0,0,0.80000001};
-	colorBackgroundFocused[]={1,1,1,1};
-	colorBackground2[]={0.75,0.75,0.75,1};
-	color[]={1,1,1,1};
-	colorFocused[]={0,0,0,1};
-	color2[]={0,0,0,1};
-	colorText[]={1,1,1,1};
-	colorDisabled[]={1,1,1,0.25};
-	period=1.2;
-	periodFocus=1.2;
-	periodOver=1.2;
-	size="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	sizeEx="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	tooltipColorText[]={1,1,1,1};
-	tooltipColorBox[]={1,1,1,1};
-	tooltipColorShade[]={0,0,0,0.64999998};
-	font=FONT_LIGHT;
-	class TextPos
-	{
-		left="0.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
-		top="(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - 		(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
-		right=0.0049999999;
-		bottom=0;
+class RscButton {
+	type = 16;
+	style = "0x02 + 0xC0";
+	default = 0;
+	shadow = 0;
+	x = 0;
+	y = 0;
+	w = 0.095588997;
+	h = 0.039216001;
+	animTextureNormal = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureDisabled = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureOver = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
+	animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
+	animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
+	colorBackground[] = {0, 0, 0, 0.80000001};
+	colorBackgroundFocused[] = {1, 1, 1, 1};
+	colorBackground2[] = {0.75, 0.75, 0.75, 1};
+	color[] = {1, 1, 1, 1};
+	colorFocused[] = {0, 0, 0, 1};
+	color2[] = {0, 0, 0, 1};
+	colorText[] = {1, 1, 1, 1};
+	colorDisabled[] = {1, 1, 1, 0.25};
+	period = 1.2;
+	periodFocus = 1.2;
+	periodOver = 1.2;
+	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	tooltipColorText[] = {1, 1, 1, 1};
+	tooltipColorBox[] = {1, 1, 1, 1};
+	tooltipColorShade[] = {0, 0, 0, 0.64999998};
+	font = FONT_LIGHT;
+	class TextPos {
+		left = "0.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
+		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - 		(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
+		right = 0.0049999999;
+		bottom = 0;
 	};
-	class Attributes
-	{
-		font=FONT_LIGHT;
-		color="#E5E5E5";
-		align="center";
-		shadow="false";
+	class Attributes {
+		font = FONT_LIGHT;
+		color = "#E5E5E5";
+		align = "center";
+		shadow = "false";
 	};
-	class ShortcutPos
-	{
-		left="(6.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) - 0.0225 - 0.005";
-		top=0.0049999999;
-		w=0.022500001;
-		h=0.029999999;
+	class ShortcutPos {
+		left = "(6.25 * 			(			((safezoneW / safezoneH) min 1.2) / 40)) - 0.0225 - 0.005";
+		top = 0.0049999999;
+		w = 0.022500001;
+		h = 0.029999999;
 	};
-	soundEnter[]=
+	soundEnter[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenu\soundEnter",
 		0.090000004,
 		1
 	};
-	soundPush[]=
+	soundPush[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenu\soundPush",
 		0.090000004,
 		1
 	};
-	soundClick[]=
+	soundClick[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenu\soundClick",
 		0.090000004,
 		1
 	};
-	soundEscape[]=
+	soundEscape[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",
 		0.090000004,
 		1
 	};
-	textureNoShortcut="#(argb,8,8,3)color(0,0,0,0)";
-	class HitZone
-	{
-		left=0;
-		top=0;
-		right=0;
-		bottom=0;
-	};
-	class AttributesImage
-	{
-		font=FONT_MEDIUM;
-		color="#E5E5E5";
-		align="center";
-	};
-};
-class RscShortcutButton
-{
-	deletable = 0;
-	fade = 0;
-	type = 16;
-	x = 0.1;
-	y = 0.1;
-	class HitZone
-	{
+	textureNoShortcut = "#(argb,8,8,3)color(0,0,0,0)";
+	class HitZone {
 		left = 0;
 		top = 0;
 		right = 0;
 		bottom = 0;
 	};
-	class ShortcutPos
-	{
+	class AttributesImage {
+		font = FONT_MEDIUM;
+		color = "#E5E5E5";
+		align = "center";
+	};
+};
+class RscShortcutButton {
+	deletable = 0;
+	fade = 0;
+	type = 16;
+	x = 0.1;
+	y = 0.1;
+	class HitZone {
+		left = 0;
+		top = 0;
+		right = 0;
+		bottom = 0;
+	};
+	class ShortcutPos {
 		left = 0;
 		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
 		w = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1) * (3/4)";
 		h = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	};
-	class TextPos
-	{
+	class TextPos {
 		left = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1) * (3/4)";
 		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
 		right = 0.005;
 		bottom = 0;
 	};
-	shortcuts[] = 
+	shortcuts[] =
 	{
 	};
 	textureNoShortcut = "#(argb,8,8,3)color(0,0,0,0)";
-	color[] = 
+	color[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorFocused[] = 
+	colorFocused[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	color2[] = 
+	color2[] =
 	{
 		0.95,
 		0.95,
 		0.95,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",
 		1
 	};
-	colorBackgroundFocused[] = 
+	colorBackgroundFocused[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",
 		1
 	};
-	colorBackground2[] = 
+	colorBackground2[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	soundEnter[] = 
+	soundEnter[] =
 	{
 		"\A3\ui_f\data\sound\RscButton\soundEnter",
 		0.09,
 		1
 	};
-	soundPush[] = 
+	soundPush[] =
 	{
 		"\A3\ui_f\data\sound\RscButton\soundPush",
 		0.09,
 		1
 	};
-	soundClick[] = 
+	soundClick[] =
 	{
 		"\A3\ui_f\data\sound\RscButton\soundClick",
 		0.09,
 		1
 	};
-	soundEscape[] = 
+	soundEscape[] =
 	{
 		"\A3\ui_f\data\sound\RscButton\soundEscape",
 		0.09,
 		1
 	};
-	class Attributes
-	{
+	class Attributes {
 		font = FONT_MEDIUM;
 		color = "#E5E5E5";
 		align = "left";
@@ -1441,28 +1298,28 @@ class RscShortcutButton
 	w = 0.183825;
 	h = "((((safezoneW / safezoneH) min 1.2) / 1.2) / 20)";
 	textSecondary = "";
-	colorSecondary[] = 
+	colorSecondary[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorFocusedSecondary[] = 
+	colorFocusedSecondary[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	color2Secondary[] = 
+	color2Secondary[] =
 	{
 		0.95,
 		0.95,
 		0.95,
 		1
 	};
-	colorDisabledSecondary[] = 
+	colorDisabledSecondary[] =
 	{
 		1,
 		1,
@@ -1485,50 +1342,45 @@ class RscShortcutButton
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	text = "";
 	action = "";
-	class AttributesImage
-	{
+	class AttributesImage {
 		font = FONT_MEDIUM;
 		color = "#E5E5E5";
 		align = "left";
 	};
 };
-class RscShortcutButtonMain
-{
+class RscShortcutButtonMain {
 	idc = -1;
 	style = 0;
 	default = 0;
 	w = 0.313726;
 	h = 0.104575;
-	color[] = 
+	color[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.25
 	};
-	class HitZone
-	{
+	class HitZone {
 		left = 0;
 		top = 0;
 		right = 0;
 		bottom = 0;
 	};
-	class ShortcutPos
-	{
+	class ShortcutPos {
 		left = 0.0145;
 		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)) / 2";
 		w = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2) * (3/4)";
 		h = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
 	};
-	class TextPos
-	{
+	class TextPos {
 		left = "(((safezoneW / safezoneH) min 1.2) / 32) * 1.5";
 		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 20)*2 - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)) / 2";
 		right = 0.005;
@@ -1546,34 +1398,31 @@ class RscShortcutButtonMain
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2)";
 	text = "";
 	action = "";
-	class Attributes
-	{
+	class Attributes {
 		font = FONT_MEDIUM;
 		color = "#E5E5E5";
 		align = "left";
 		shadow = "false";
 	};
-	class AttributesImage
-	{
+	class AttributesImage {
 		font = FONT_MEDIUM;
 		color = "#E5E5E5";
 		align = "false";
 	};
 };
-class RscFrame
-{
+class RscFrame {
 	type = 0;
 	idc = -1;
 	style = 64;
 	shadow = 2;
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		1,
@@ -1584,8 +1433,7 @@ class RscFrame
 	sizeEx = 0.02;
 	text = "";
 };
-class RscXSlider
-{
+class RscXSlider {
 	access = 0;
 	idc = CT_XSLIDER;
 	type = CT_XSLIDER;
@@ -1596,34 +1444,33 @@ class RscXSlider
 	y = 19 * GUI_GRID_CENTER_H + GUI_GRID_CENTER_Y;
 	w = 10 * GUI_GRID_CENTER_W;
 	h = 1 * GUI_GRID_CENTER_H;
-	color[] = {1,1,1,1};
-	colorDisabled[] = {1,1,1,0.5};
-	colorActive[] = {1,1,1,1};
+	color[] = {1, 1, 1, 1};
+	colorDisabled[] = {1, 1, 1, 0.5};
+	colorActive[] = {1, 1, 1, 1};
 	tooltip = "Rotation";
-	tooltipColorShade[] = {0,0,0,1};
-	tooltipColorText[] = {1,1,1,1};
-	tooltipColorBox[] = {1,1,1,1};
+	tooltipColorShade[] = {0, 0, 0, 1};
+	tooltipColorText[] = {1, 1, 1, 1};
+	tooltipColorBox[] = {1, 1, 1, 1};
 	arrowEmpty = "\A3\ui_f\data\gui\cfg\slider\arrowEmpty_ca.paa";
 	arrowFull = "\A3\ui_f\data\gui\cfg\slider\arrowFull_ca.paa";
 	border = "\A3\ui_f\data\gui\cfg\slider\border_ca.paa";
 	thumb = "#(argb,8,8,3)color(1,1,1,1)";
 };
-class RscSlider
-{
+class RscSlider {
 	deletable = 0;
 	fade = 0;
 	access = 0;
 	type = 3;
 	style = 1024;
 	w = 0.3;
-	color[] = 
+	color[] =
 	{
 		1,
 		1,
 		1,
 		0.8
 	};
-	colorActive[] = 
+	colorActive[] =
 	{
 		1,
 		1,
@@ -1633,13 +1480,12 @@ class RscSlider
 	shadow = 0;
 	h = 0.025;
 };
-class IGUIBack
-{
+class IGUIBack {
 	type = 0;
 	idc = 124;
 	style = 128;
 	text = "";
-	colorText[] = 
+	colorText[] =
 	{
 		0,
 		0,
@@ -1654,7 +1500,7 @@ class IGUIBack
 	w = 0.1;
 	h = 0.1;
 	/*
-	colorbackground[] = 
+	colorbackground[] =
 	{
 		"(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])",
 		"(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])",
@@ -1662,7 +1508,7 @@ class IGUIBack
 		"(profilenamespace getvariable ['IGUI_BCG_RGB_A',1])"
 	};
 	*/
-	colorbackground[] = 
+	colorbackground[] =
 	{
 		0,
 		0,
@@ -1670,8 +1516,7 @@ class IGUIBack
 		0.5
 	};
 };
-class RscCheckBox
-{
+class RscCheckBox {
 	idc = -1;
 	type = 77;
 	style = 0;
@@ -1680,70 +1525,70 @@ class RscCheckBox
 	y = "0.36 * safezoneH + safezoneY";
 	w = "0.025 * safezoneW";
 	h = "0.04 * safezoneH";
-	color[] = 
+	color[] =
 	{
 		1,
 		1,
 		1,
 		0.7
 	};
-	colorFocused[] = 
+	colorFocused[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorHover[] = 
+	colorHover[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorPressed[] = 
+	colorPressed[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
 		1,
 		0.2
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorBackgroundFocused[] = 
+	colorBackgroundFocused[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorBackgroundHover[] = 
+	colorBackgroundHover[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorBackgroundPressed[] = 
+	colorBackgroundPressed[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorBackgroundDisabled[] = 
+	colorBackgroundDisabled[] =
 	{
 		0,
 		0,
@@ -1760,54 +1605,53 @@ class RscCheckBox
 	texturePressedUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
 	textureDisabledChecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_checked_ca.paa";
 	textureDisabledUnchecked = "A3\Ui_f\data\GUI\RscCommon\RscCheckBox\CheckBox_unchecked_ca.paa";
-	tooltipColorText[] = 
+	tooltipColorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorBox[] = 
+	tooltipColorBox[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorShade[] = 
+	tooltipColorShade[] =
 	{
 		0,
 		0,
 		0,
 		0.65
 	};
-	soundEnter[] = 
+	soundEnter[] =
 	{
 		"",
 		0.1,
 		1
 	};
-	soundPush[] = 
+	soundPush[] =
 	{
 		"",
 		0.1,
 		1
 	};
-	soundClick[] = 
+	soundClick[] =
 	{
 		"",
 		0.1,
 		1
 	};
-	soundEscape[] = 
+	soundEscape[] =
 	{
 		"",
 		0.1,
 		1
 	};
 };
-class RscTextCheckBox
-{
+class RscTextCheckBox {
 	idc = -1;
 	type = 7;
 	style = 0;
@@ -1815,77 +1659,77 @@ class RscTextCheckBox
 	y = "0.36 * safezoneH + safezoneY";
 	w = "0.025 * safezoneW";
 	h = "0.04 * safezoneH";
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		0,
 		0,
 		1
 	};
-	color[] = 
+	color[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		0
 	};
-	colorTextSelect[] = 
+	colorTextSelect[] =
 	{
 		0,
 		0.8,
 		0,
 		1
 	};
-	colorSelectedBg[] = 
+	colorSelectedBg[] =
 	{
 		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.77])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.51])",
 		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.08])",
 		1
 	};
-	colorSelect[] = 
+	colorSelect[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorTextDisable[] = 
+	colorTextDisable[] =
 	{
 		0.4,
 		0.4,
 		0.4,
 		1
 	};
-	colorDisable[] = 
+	colorDisable[] =
 	{
 		0.4,
 		0.4,
 		0.4,
 		1
 	};
-	tooltipColorText[] = 
+	tooltipColorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorBox[] = 
+	tooltipColorBox[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorShade[] = 
+	tooltipColorShade[] =
 	{
 		0,
 		0,
@@ -1896,17 +1740,16 @@ class RscTextCheckBox
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 	rows = 1;
 	columns = 1;
-	strings[] = 
+	strings[] =
 	{
 		"UNCHECKED"
 	};
-	checked_strings[] = 
+	checked_strings[] =
 	{
 		"CHECKED"
 	};
 };
-class RscButtonMenu
-{
+class RscButtonMenu {
 	idc = -1;
 	type = 16;
 	style = "0x02 + 0xC0";
@@ -1922,56 +1765,56 @@ class RscButtonMenu
 	animTextureFocused = "#(argb,8,8,3)color(1,1,1,1)";
 	animTexturePressed = "#(argb,8,8,3)color(1,1,1,1)";
 	animTextureDefault = "#(argb,8,8,3)color(1,1,1,1)";
-	colorBackground[] = 
+	colorBackground[] =
 	{
 		0,
 		0,
 		0,
 		0.8
 	};
-	colorBackgroundFocused[] = 
+	colorBackgroundFocused[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorBackground2[] = 
+	colorBackground2[] =
 	{
 		0.75,
 		0.75,
 		0.75,
 		1
 	};
-	color[] = 
+	color[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorFocused[] = 
+	colorFocused[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	color2[] = 
+	color2[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorText[] = 
+	colorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorDisabled[] = 
+	colorDisabled[] =
 	{
 		1,
 		1,
@@ -1979,28 +1822,28 @@ class RscButtonMenu
 		0.25
 	};
 	textSecondary = "";
-	colorSecondary[] = 
+	colorSecondary[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	colorFocusedSecondary[] = 
+	colorFocusedSecondary[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	color2Secondary[] = 
+	color2Secondary[] =
 	{
 		0,
 		0,
 		0,
 		1
 	};
-	colorDisabledSecondary[] = 
+	colorDisabledSecondary[] =
 	{
 		1,
 		1,
@@ -2014,77 +1857,73 @@ class RscButtonMenu
 	periodOver = 1.2;
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-	tooltipColorText[] = 
+	tooltipColorText[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorBox[] = 
+	tooltipColorBox[] =
 	{
 		1,
 		1,
 		1,
 		1
 	};
-	tooltipColorShade[] = 
+	tooltipColorShade[] =
 	{
 		0,
 		0,
 		0,
 		0.65
 	};
-	class TextPos
-	{
+	class TextPos {
 		left = "0.25 * (((safezoneW / safezoneH) min 1.2) / 40)";
 		top = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) - (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)) / 2";
 		right = 0.005;
 		bottom = 0;
 	};
-	class Attributes
-	{
+	class Attributes {
 		font = FONT_LIGHT;
 		color = "#E5E5E5";
 		align = "left";
 		shadow = "false";
 	};
-	class ShortcutPos
-	{
+	class ShortcutPos {
 		left = "(6.25 * (((safezoneW / safezoneH) min 1.2) / 40)) - 0.0225 - 0.005";
 		top = 0.005;
 		w = 0.0225;
 		h = 0.03;
 	};
-	soundEnter[] = 
+	soundEnter[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenu\soundEnter",
 		0.09,
 		1
 	};
-	soundPush[] = 
+	soundPush[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenu\soundPush",
 		0.09,
 		1
 	};
-	soundClick[] = 
+	soundClick[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenu\soundClick",
 		0.09,
 		1
 	};
-	soundEscape[] = 
+	soundEscape[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenu\soundEscape",
 		0.09,
 		1
 	};
 };
-class RscButtonMenuOK
-{
+class RscButtonMenuOK {
 	idc = 1;
-	shortcuts[] = 
+	shortcuts[] =
 	{
 		"0x00050000 + 0",
 		28,
@@ -2093,29 +1932,26 @@ class RscButtonMenuOK
 	};
 	default = 1;
 	text = "OK";
-	soundPush[] = 
+	soundPush[] =
 	{
 		"\A3\ui_f\data\sound\RscButtonMenuOK\soundPush",
 		0.09,
 		1
 	};
 };
-class RscButtonMenuCancel
-{
+class RscButtonMenuCancel {
 	idc = 2;
-	shortcuts[] = 
+	shortcuts[] =
 	{
 		"0x00050000 + 1"
 	};
 	text = "Cancel";
 };
-class RscControlsGroup
-{
+class RscControlsGroup {
 	deletable = 0;
 	fade = 0;
-	class VScrollbar
-	{
-		color[] = 
+	class VScrollbar {
+		color[] =
 		{
 			1,
 			1,
@@ -2125,9 +1961,8 @@ class RscControlsGroup
 		width = 0.021;
 		autoScrollEnabled = 1;
 	};
-	class HScrollbar
-	{
-		color[] = 
+	class HScrollbar {
+		color[] =
 		{
 			1,
 			1,
@@ -2136,9 +1971,7 @@ class RscControlsGroup
 		};
 		height = 0.028;
 	};
-	class Controls
-	{
-	};
+	class Controls {};
 	type = 15;
 	idc = -1;
 	x = 0;
@@ -2148,14 +1981,13 @@ class RscControlsGroup
 	shadow = 0;
 	style = 16;
 };
-class RscHeader
-{
+class RscHeader {
 	type = CT_STATIC;
 	idc = -1;
 	style = ST_LEFT;
 	shadow = 0;
-	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])","(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])","(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])","(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
-	colorText[] = {1,1,1,1};
+	colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+	colorText[] = {1, 1, 1, 1};
 	colorShadow[] = {0, 0, 0, 0};
 	colorBorder[] = {0, 0, 0, 0};
 	font = FONT_MEDIUM;
