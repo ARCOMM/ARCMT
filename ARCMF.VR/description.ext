@@ -239,3 +239,4 @@ class CfgFunctions
 };
 
 #include "config.hpp"
+#include "f\ui\include.hpp"
