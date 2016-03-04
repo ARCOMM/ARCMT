@@ -5,6 +5,7 @@ class Header
 	gameType = Coop;
 	minPlayers = 1;
 	maxPlayers = 229;
+	sandbox = 0;
 };
 
 onLoadName = "ARCMF";
@@ -180,14 +181,12 @@ class CfgFunctions
 		class common
 		{
 			file = "f\common";
-
+			class nearPlayer {};
 			class processParamsArray
 			{
 				preInit = 1;
 				postInit = 1;
 			};
-
-			class nearPlayer {};
 		};
 		class mpEnd
 		{

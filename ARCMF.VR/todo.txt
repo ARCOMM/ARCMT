@@ -1,0 +1,5 @@
+briefing script names
+fix sandbox spawning
+	players spawn as seagulls in some slots (opfor a1 ftl)
+blufor loadouts need updating
+remove morphine from non-medics

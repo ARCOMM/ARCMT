@@ -16,6 +16,7 @@ class ARC
 		class isRespawnEnabled {};
 		class buildBriefingFromConfig {};
 		class isPlayerReady {};
+		class getStartingPos {};
 	};
 	class radios
 	{
@@ -27,6 +28,7 @@ class ARC
 		file = "f\arc\markers";
 		class addTrackingMarker {};
 		class getMarkerType {};
+		class markerExists {};
 	};
 	class tracker
 	{
