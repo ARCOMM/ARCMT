@@ -50,3 +50,5 @@ f_var_cachingAggressiveness = 2;
 	_button ctrlSetTooltip "Random is disabled because it breaks ACRE";
 	_display displayAddEventHandler ["KeyDown", "if ((_this select 1) in [19,29]) then {true}"];
 }] call BIS_fnc_addScriptedEventHandler;
+
+// You are free to add/edit/delete anything below this line.
