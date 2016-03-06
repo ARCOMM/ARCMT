@@ -5,20 +5,20 @@ class Header
 	gameType = Coop;
 	minPlayers = 1;
 	maxPlayers = 229;
-	sandbox = 0;
+	sandbox = 1;
 };
 
-onLoadName = "ARCMF";
-onLoadMission = "ARCOMM Mission Framework.";
+onLoadName = "ARCOMM Sandbox";
+onLoadMission = "Use the ARC_Ares mod for extended Zeus functionality.";
 author = "Kingsley, treyteker";
 overviewPicture = "splash.paa";
 loadScreen = "splash.paa";
 enableDebugConsole = 1;
 disabledAI = 1;
-respawn = 4;
+respawn = 3;
 respawndelay = 3;
 respawnOnStart = 0;
-respawnTemplates[] = {"Seagull","f_spectator"};
+respawnTemplates[] = {"MenuPosition"};
 
 class CfgNotifications
 {
@@ -122,39 +122,39 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
+		title = "BLUFOR WIN";
 		subtitle = "";
-		description = "*** Insert debriefing #1 here. ***";
+		description = "";
 	};
 	class End2
 	{
-		title = "Ending #2";
+		title = "OPFOR WIN";
 		subtitle = "";
-		description = "*** Insert debriefing #2 here. ***";
+		description = "";
 	};
 	class End3
 	{
-		title = "Ending #3";
+		title = "INDFOR WIN";
 		subtitle = "";
-		description = "*** Insert debriefing #3 here. ***";
+		description = "";
 	};
 	class End4
 	{
-		title = "Ending #4";
+		title = "CIVILIANS WIN";
 		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
+		description = "";
 	};
 	class End5
 	{
-		title = "Ending #5";
+		title = "DRAW";
 		subtitle = "";
-		description = "*** Insert debriefing #5 here. ***";
+		description = "";
 	};
 	class End6
 	{
-		title = "Ending #6";
+		title = "ALL TEAMS LOSE";
 		subtitle = "";
-		description = "*** Insert debriefing #6 here. ***";
+		description = "";
 	};
 };
 

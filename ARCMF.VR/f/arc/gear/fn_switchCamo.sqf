@@ -1,14 +1,18 @@
-_unit = param [0, player];
-_camo = param [1, "default"];
+private ["_unit","_camo","_uniformItems","_vestItems","_backpackItems","_hasBackpack","_uniformClass","_vestClass","_backpackClass"];
+
+_unit = _this;
+_camo = getText (missionConfigFile >> "CfgSandbox" >> worldName >> "camouflage");
 _camo = toLower _camo;
 
-if (_camo == "default") exitWith {};
+if (_camo == "default" || side _unit != west) exitWith {};
 
+_unit setVariable ["ARC_switchCamo_done", false, true];
 waitUntil {(_unit getVariable ["f_var_assignGear_done", false])};
 
 _uniformItems = uniformItems _unit;
 _vestItems = vestItems _unit;
 _backpackItems = backpackItems _unit;
+_hasBackpack = if ((backpack _unit) == "") then {false} else {true};
 
 _uniformClass = switch (_camo) do {
 	case "woodland": {"rhs_uniform_FROG01_m81"};
@@ -40,8 +44,10 @@ if (_vestClass != "") then {
 	{_unit addItemToVest _x;} forEach _vestItems;
 };
 
-if (_backpackClass != "") then {
+if (_backpackClass != "" && _hasBackpack) then {
 	removeBackpack _unit;
 	_unit addBackpack _backpackClass;
 	{_unit addItemToBackpack _x;} forEach _backpackItems;
 };
+
+_unit setVariable ["ARC_switchCamo_done", true, true];

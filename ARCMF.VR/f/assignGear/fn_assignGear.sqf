@@ -32,3 +32,9 @@ switch (side _unit) do {
 } forEach ["ACRE_PRC343","ACRE_PRC148","ACRE_PRC152","ACRE_PRC117F","ACRE_PRC77","ItemRadioAcreFlagged"];
 
 _unit setVariable ["f_var_assignGear_done", true, true];
+
+if ((call ARC_fnc_isRespawnEnabled)) then {
+	if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
+		_unit call ARC_fnc_switchCamo;
+	};
+};
