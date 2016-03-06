@@ -1,2 +1,0 @@
-fix sandbox spawning
-	players spawn as seagulls in some slots (opfor a1 ftl)
