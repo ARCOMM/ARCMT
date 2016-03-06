@@ -5,20 +5,20 @@ class Header
 	gameType = Coop;
 	minPlayers = 1;
 	maxPlayers = 229;
-	sandbox = 1;
+	sandbox = 0;
 };
 
-onLoadName = "ARCOMM Sandbox";
-onLoadMission = "Use the ARC_Ares mod for extended Zeus functionality.";
+onLoadName = "ARCMF";
+onLoadMission = "ARCOMM Mission Framework.";
 author = "Kingsley, treyteker";
 overviewPicture = "splash.paa";
 loadScreen = "splash.paa";
 enableDebugConsole = 1;
 disabledAI = 1;
-respawn = 3;
+respawn = 4;
 respawndelay = 3;
 respawnOnStart = 0;
-respawnTemplates[] = {"MenuPosition"};
+respawnTemplates[] = {"Seagull","f_spectator"};
 
 class CfgNotifications
 {
