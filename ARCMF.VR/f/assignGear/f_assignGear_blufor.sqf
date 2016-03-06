@@ -14,7 +14,6 @@ switch (_typeOfUnit) do
 	{
 		this forceAddUniform "MNP_CombatUniform_Scorpion_A";
 		for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-		for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
 		this addItemToUniform "ACE_CableTie";
 		this addItemToUniform "ACE_IR_Strobe_Item";
 		this addItemToUniform "ACE_Flashlight_XL50";
@@ -34,6 +33,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_M433_HEDP";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle_m203";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "rhsusf_weap_m9";
 		this addWeapon "Binocular";
 		this linkItem "ItemMap";
@@ -68,6 +69,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_M433_HEDP";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle_m203";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "rhsusf_weap_m9";
 		this addWeapon "Binocular";
 		this linkItem "ItemMap";
@@ -100,6 +103,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 5 do {this addItemToBackpack "ACE_bloodIV";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "rhsusf_weap_m9";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
@@ -132,6 +137,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_M433_HEDP";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle_m203";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "rhsusf_weap_m9";
 		this addWeapon "Binocular";
 		this linkItem "ItemMap";
@@ -159,6 +166,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "rhsusf_weap_m9";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
@@ -184,6 +193,7 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 4 do {this addItemToBackpack "rhs_200rnd_556x45_T_SAW";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m249_pip_L";
+		this addPrimaryWeaponItem "rhsusf_acc_eotech_552";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
 		this linkItem "ItemWatch";
@@ -210,6 +220,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 4 do {this addItemToBackpack "rhs_200rnd_556x45_T_SAW";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "rhsusf_weap_m9";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
@@ -235,6 +247,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "tf47_at4_HEDP";
 		this addWeapon "rhsusf_weap_m9";
 		this linkItem "ItemMap";
@@ -268,6 +282,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_M433_HEDP";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle_m203";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "rhsusf_weap_m9";
 		this addWeapon "Binocular";
 		this linkItem "ItemMap";
@@ -321,6 +337,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 6 do {this addItemToBackpack "rhsusf_100Rnd_762x51_m62_tracer";};
 		this addHeadgear "H_HelmetSpecB_snakeskin";
 		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "rhsusf_weap_m9";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
@@ -387,6 +405,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
 		this addHeadgear "rhsusf_mich_bare_alt";
 		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "Binocular";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
@@ -412,6 +432,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
 		this addHeadgear "rhsusf_mich_bare_alt";
 		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
 		this linkItem "ItemWatch";
@@ -435,6 +457,8 @@ switch (_typeOfUnit) do
 		for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
 		this addHeadgear "rhsusf_mich_bare_alt";
 		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
 		this linkItem "ItemWatch";

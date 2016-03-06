@@ -237,6 +237,6 @@ class CfgFunctions
 	};
 };
 
-#include "f\arc\terrains.hpp"
+#include "f\arc\sandbox.hpp"
 #include "config.hpp"
 #include "f\ui\include.hpp"

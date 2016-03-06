@@ -25,21 +25,21 @@ if (serverCommandAvailable "#kick" || isServer) then {
 };
 
 if (_unitfaction == "blu_f") exitWith {
-	#include "f\briefing\f_briefing_nato.sqf"
+	#include "f\briefing\f_briefing_blufor.sqf"
 	if (f_var_debugMode == 1) then {
 		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", _unitfaction];
 	};
 };
 
 if (_unitfaction == "opf_f") exitWith {
-	#include "f\briefing\f_briefing_csat.sqf"
+	#include "f\briefing\f_briefing_opfor.sqf"
 	if (f_var_debugMode == 1) then {
 		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", _unitfaction];
 	};
 };
 
 if (_unitfaction == "ind_f") exitWith {
-	#include "f\briefing\f_briefing_aaf.sqf"
+	#include "f\briefing\f_briefing_indfor.sqf"
 	if (f_var_debugMode == 1) then {
 		player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.", _unitfaction];
 	};

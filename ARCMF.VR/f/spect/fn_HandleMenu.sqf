@@ -58,7 +58,7 @@ switch (_button) do {
 			selectPlayer _newUnit;
 			waitUntil {player == _newUnit};
 			_newUnit setName ARC_cam_preCamName;
-			if (side _unit == sideLogic) then { deleteVehicle _unit; };
+			deleteVehicle _unit;
 			_newUnit setPos ARC_cam_preCamPos;
 			this = _newUnit;
 			call compile ARC_cam_preCamLoadout;

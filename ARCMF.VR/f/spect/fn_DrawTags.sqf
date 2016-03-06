@@ -19,7 +19,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
 		{
 			_distToCam = (call f_cam_GetCurrentCam) distance _x;
 			if (isPlayer _x) then {_isPlayerGroup = true};
-			if (_distToCam < 200) then {
+			if (_distToCam < 400) then {
 				_drawUnits pushBack _x;
 			} else {
 				_drawGroup = true;
@@ -49,16 +49,6 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
 			};
 			
 			_color set [3, 1];
-			if (_distToCam > 100) then { _color set [3, 1]; };
-			if (_distToCam > 200) then { _color set [3, 0.9]; };
-			if (_distToCam > 300) then { _color set [3, 0.8]; };
-			if (_distToCam > 400) then { _color set [3, 0.7]; };
-			if (_distToCam > 500) then { _color set [3, 0.6]; };
-			if (_distToCam > 600) then { _color set [3, 0.5]; };
-			if (_distToCam > 700) then { _color set [3, 0.4]; };
-			if (_distToCam > 800) then { _color set [3, 0.3]; };
-			if (_distToCam > 900) then { _color set [3, 0.2]; };
-			if (_distToCam > 1000) then { _color set [3, 0.1]; };
 			if (_distToCam > 2000) then { _color set [3, 0]; _str = ""; };
 			
 			drawIcon3D [

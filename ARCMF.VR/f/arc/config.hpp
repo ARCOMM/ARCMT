@@ -36,4 +36,9 @@ class ARC
 		class initTracker {};
 		class updateTracker {};
 	};
+	class gear
+	{
+		file = "f\arc\gear";
+		class switchCamo {};
+	};
 };

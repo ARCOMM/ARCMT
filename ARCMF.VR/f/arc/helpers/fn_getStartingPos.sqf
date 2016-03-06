@@ -1,1 +1,1 @@
-(getArray (missionConfigFile >> "CfgSandboxTerrains" >> worldName >> "startingPosition"))
+(getArray (missionConfigFile >> "CfgSandbox" >> worldName >> "startingPosition"))
