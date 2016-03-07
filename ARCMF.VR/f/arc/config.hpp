@@ -1,5 +1,13 @@
 class ARC
 {
+	class ai
+	{
+		file = "f\arc\ai";
+		class applyLoadout {};
+		class processConfig {
+			preInit = 1;
+		};
+	};
 	class halo
 	{
 		file = "f\arc\halo";

@@ -125,4 +125,69 @@ class CfgARCMF
 			AN_PRC_77[] = {};
 		};
 	};
+	/*
+-----------------------------------------------------------------------------------------------------------------
+		AI GEAR CONFIGURATION
+		Description: This is the section where you define loadouts for the AI teams.
+		Note: AI loadouts are randomized.
+-----------------------------------------------------------------------------------------------------------------
+	*/
+	class ai
+	{
+		class gear
+		{
+			class blufor {
+				removeMedicalItems = true;
+				prioritizeTracerMags = true;
+				uniforms[] = {};
+				vests[] = {};
+				headgear[] = {};
+				goggles[] = {};
+				backpacks[] = {};
+				rifles[] = {};
+				pistols[] = {};
+				launchers[] = {};
+				items[] = {};
+			};
+			class opfor {
+				removeMedicalItems = true;
+				prioritizeTracerMags = true;
+				uniforms[] = {};
+				vests[] = {};
+				headgear[] = {};
+				goggles[] = {};
+				backpacks[] = {};
+				rifles[] = {};
+				pistols[] = {};
+				launchers[] = {};
+				items[] = {};
+			};
+			class indfor {
+				removeMedicalItems = true;
+				prioritizeTracerMags = true;
+				uniforms[] = {};
+				vests[] = {};
+				headgear[] = {};
+				goggles[] = {};
+				backpacks[] = {};
+				rifles[] = {};
+				pistols[] = {};
+				launchers[] = {};
+				items[] = {};
+			};
+			class civilian {
+				removeMedicalItems = true;
+				prioritizeTracerMags = true;
+				uniforms[] = {};
+				vests[] = {};
+				headgear[] = {};
+				goggles[] = {};
+				backpacks[] = {};
+				rifles[] = {};
+				pistols[] = {};
+				launchers[] = {};
+				items[] = {};
+			};
+		};
+	};
 };
