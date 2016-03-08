@@ -144,15 +144,16 @@ class CfgARCMF
 				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
-				uniforms[] = {"rhs_chdkz_uniform_1","rhs_chdkz_uniform_2","rhs_chdkz_uniform_3","rhs_chdkz_uniform_4","rhs_chdkz_uniform_5"};
-				vests[] = {"LOP_V_6Sh92_OLV"};
+				uniforms[] = {"rhs_uniform_msv_emr"};
+				vests[] = {"rhs_6b23_digi_6sh92_headset"};
 				headgear[] = {""};
-				goggles[] = {"rhs_balaclava1_olive",""};
+				goggles[] = {"rhs_balaclava1_olive"};
 				backpacks[] = {};
 				faces[] = {};
 				voices[] = {};
-				rifles[] = {};
+				rifles[] = {"rhs_weap_ak103"};
 				launchers[] = {};
+				attachments[] = {"rhs_acc_2dpZenit"};
 			};
 			class opfor {
 				removeMedicalItems = true;
