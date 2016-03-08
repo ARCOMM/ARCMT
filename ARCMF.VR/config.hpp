@@ -129,7 +129,10 @@ class CfgARCMF
 -----------------------------------------------------------------------------------------------------------------
 		AI GEAR CONFIGURATION
 		Description: This is the section where you define loadouts for the AI teams.
-		Note: AI loadouts are randomized.
+		Note:
+			1. AI loadouts are randomized.
+			2. This is an array of classnames.
+			3. ARC_AI disables the use of grenades and grenade launchers for AI units
 -----------------------------------------------------------------------------------------------------------------
 	*/
 	class ai
@@ -137,17 +140,19 @@ class CfgARCMF
 		class gear
 		{
 			class blufor {
+				enabled = true;
+				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
-				uniforms[] = {};
-				vests[] = {};
-				headgear[] = {};
-				goggles[] = {};
+				uniforms[] = {"rhs_chdkz_uniform_1","rhs_chdkz_uniform_2","rhs_chdkz_uniform_3","rhs_chdkz_uniform_4","rhs_chdkz_uniform_5"};
+				vests[] = {"LOP_V_6Sh92_OLV"};
+				headgear[] = {""};
+				goggles[] = {"rhs_balaclava1_olive",""};
 				backpacks[] = {};
+				faces[] = {};
+				voices[] = {};
 				rifles[] = {};
-				pistols[] = {};
 				launchers[] = {};
-				items[] = {};
 			};
 			class opfor {
 				removeMedicalItems = true;
@@ -160,7 +165,6 @@ class CfgARCMF
 				rifles[] = {};
 				pistols[] = {};
 				launchers[] = {};
-				items[] = {};
 			};
 			class indfor {
 				removeMedicalItems = true;
@@ -173,7 +177,6 @@ class CfgARCMF
 				rifles[] = {};
 				pistols[] = {};
 				launchers[] = {};
-				items[] = {};
 			};
 			class civilian {
 				removeMedicalItems = true;
@@ -186,7 +189,6 @@ class CfgARCMF
 				rifles[] = {};
 				pistols[] = {};
 				launchers[] = {};
-				items[] = {};
 			};
 		};
 	};

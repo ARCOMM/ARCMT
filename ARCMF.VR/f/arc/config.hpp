@@ -4,9 +4,7 @@ class ARC
 	{
 		file = "f\arc\ai";
 		class applyLoadout {};
-		class processConfig {
-			preInit = 1;
-		};
+		class pickItemFromAIGear {};
 	};
 	class halo
 	{
@@ -25,6 +23,7 @@ class ARC
 		class buildBriefingFromConfig {};
 		class isPlayerReady {};
 		class getStartingPos {};
+		class getCfgBool {};
 	};
 	class radios
 	{
