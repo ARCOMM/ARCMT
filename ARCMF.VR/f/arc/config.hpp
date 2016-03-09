@@ -1,5 +1,13 @@
 class ARC
 {
+	class ai
+	{
+		file = "f\arc\ai";
+		class applyLoadout {};
+		class pickItemFromAIGear {};
+		class pickAttachmentsFromAIGear {};
+		class setupAI {};
+	};
 	class halo
 	{
 		file = "f\arc\halo";
@@ -17,6 +25,7 @@ class ARC
 		class buildBriefingFromConfig {};
 		class isPlayerReady {};
 		class getStartingPos {};
+		class getCfgBool {};
 	};
 	class radios
 	{

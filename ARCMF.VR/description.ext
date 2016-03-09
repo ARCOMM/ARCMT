@@ -237,6 +237,7 @@ class CfgFunctions
 	};
 };
 
-#include "f\arc\sandbox.hpp"
 #include "config.hpp"
+#include "f\arc\xeh.hpp"
+#include "f\arc\sandbox.hpp"
 #include "f\ui\include.hpp"
