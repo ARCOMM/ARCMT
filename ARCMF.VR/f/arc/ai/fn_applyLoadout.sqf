@@ -108,7 +108,8 @@ if (typeName _rifleClass == "STRING") then {
 	_unit addWeapon _rifleClass;
 };
 
-{_unit addPrimaryWeaponItem _x} forEach (getArray (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "attachments"));
+_attachments = [_faction, "attachments"] call ARC_fnc_pickAttachmentsFromAIGear;
+{_unit addPrimaryWeaponItem _x} forEach _attachments;
 
 _launcherClass = [_faction, "launchers"] call ARC_fnc_pickItemFromAIGear;
 if (typeName _launcherClass == "STRING") then {

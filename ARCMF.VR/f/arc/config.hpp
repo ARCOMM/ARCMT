@@ -5,6 +5,7 @@ class ARC
 		file = "f\arc\ai";
 		class applyLoadout {};
 		class pickItemFromAIGear {};
+		class pickAttachmentsFromAIGear {};
 	};
 	class halo
 	{
