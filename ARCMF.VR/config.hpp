@@ -164,8 +164,8 @@ class CfgARCMF
 				faces[] = {};
 				voices[] = {};
 				rifles[] = {
-					{"rhs_weap_ak74m_2mag", 0.25},
-					{"rhs_weap_pkp", 0.75}
+					{"rhs_weap_pkp", 0.25},
+					{"rhs_weap_ak74m_2mag", 0.75}
 				};
 				launchers[] = {
 					{"", 1}
