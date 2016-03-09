@@ -22,7 +22,7 @@ _removeNightVision = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _fact
 _rifleClass = [_faction, "rifles"] call ARC_fnc_pickItemFromAIGear;
 _hasRemovedWeapons = false;
 
-if (typeName _rifleClass == "STRING") then {
+if (count _rifleClass > 0) then {
 	removeAllWeapons _unit;
 	_hasRemovedWeapons = true;
 };
@@ -32,55 +32,55 @@ _vestItems = vestItems _unit;
 _backpackItems = backpackItems _unit;
 
 _uniformClass = [_faction, "uniforms"] call ARC_fnc_pickItemFromAIGear;
-if (typeName _uniformClass == "STRING") then {
+if (count _uniformClass > 0) then {
 	removeUniform _unit;
-	_unit forceAddUniform _uniformClass;
+	_unit forceAddUniform (_uniformClass select 0);
 	{_unit addItemToUniform _x} forEach _uniformItems;
 };
 
 _vestClass = [_faction, "vests"] call ARC_fnc_pickItemFromAIGear;
-if (typeName _vestClass == "STRING") then {
+if (count _vestClass > 0) then {
 	removeVest _unit;
-	_unit addVest _vestClass;
+	_unit addVest (_vestClass select 0);
 	{_unit addItemToVest _x} forEach _vestItems;
 };
 
 _backpackClass = [_faction, "backpacks"] call ARC_fnc_pickItemFromAIGear;
-if (typeName _backpackClass == "STRING") then {
+if (count _backpackClass > 0) then {
 	removeBackpack _unit;
-	_unit addBackpack _backpackClass;
+	_unit addBackpack (_backpackClass select 0);
 	{_unit addItemToBackpack _x} forEach _backpackItems;
 };
 
 _headgearClass = [_faction, "headgear"] call ARC_fnc_pickItemFromAIGear;
-if (typeName _headgearClass == "STRING") then {
+if (count _headgearClass > 0) then {
 	removeHeadgear _unit;
-	_unit addHeadgear _headgearClass;
+	_unit addHeadgear (_headgearClass select 0);
 };
 
 _goggleClass = [_faction, "goggles"] call ARC_fnc_pickItemFromAIGear;
-if (typeName _goggleClass == "STRING") then {
+if (count _goggleClass > 0) then {
 	removeGoggles _unit;
-	_unit addGoggles _goggleClass;
+	_unit addGoggles (_goggleClass select 0);
 };
 
 _faceClass = [_faction, "faces"] call ARC_fnc_pickItemFromAIGear;
-if (typeName _faceClass == "STRING") then {
-	_unit setFace _faceClass;
+if (count _faceClass > 0) then {
+	_unit setFace (_faceClass select 0);
 };
 
 _voiceClass = [_faction, "voices"] call ARC_fnc_pickItemFromAIGear;
-if (typeName _voiceClass == "STRING") then {
-	_unit setSpeaker _voiceClass;
+if (count _voiceClass > 0) then {
+	_unit setSpeaker (_voiceClass select 0);
 };
 
-if (typeName _rifleClass == "STRING") then {
+if (count _rifleClass > 0) then {
 	if (!_hasRemovedWeapons) then {
 		removeAllWeapons _unit;
 		_hasRemovedWeapons = true;
 	};
 	
-	_magazines = getArray (configFile >> "CfgWeapons" >> _rifleClass >> "magazines");
+	_magazines = getArray (configFile >> "CfgWeapons" >> (_rifleClass select 0) >> "magazines");
 	
 	if (count _magazines > 0) then {
 		_standard = [];
@@ -105,20 +105,20 @@ if (typeName _rifleClass == "STRING") then {
 		};
 	};
 	
-	_unit addWeapon _rifleClass;
+	_unit addWeapon (_rifleClass select 0);
 };
 
 _attachments = [_faction, "attachments"] call ARC_fnc_pickAttachmentsFromAIGear;
 {_unit addPrimaryWeaponItem _x} forEach _attachments;
 
 _launcherClass = [_faction, "launchers"] call ARC_fnc_pickItemFromAIGear;
-if (typeName _launcherClass == "STRING") then {
+if (count _launcherClass > 0) then {
 	if (!_hasRemovedWeapons) then {
 		removeAllWeapons _unit;
 		_hasRemovedWeapons = true;
 	};
 	
-	[_unit, _launcherClass, 2] call BIS_fnc_addWeapon;
+	[_unit, (_launcherClass select 0), 2] call BIS_fnc_addWeapon;
 };
 
 if (_removeMedicalItems) then {
