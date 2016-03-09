@@ -53,6 +53,4 @@ if (count _itemarr > 0) then {
 	_result = [(_itemarr call BIS_fnc_selectRandom)];
 };
 
-systemChat (str _result);
-
 _result
