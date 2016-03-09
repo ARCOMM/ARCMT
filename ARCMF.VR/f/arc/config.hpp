@@ -6,6 +6,7 @@ class ARC
 		class applyLoadout {};
 		class pickItemFromAIGear {};
 		class pickAttachmentsFromAIGear {};
+		class setupAI {};
 	};
 	class halo
 	{
