@@ -14,6 +14,11 @@ class ARC
 		class halodrop {};
 		class haloprep {};
 	};
+	class sandbox
+	{
+		file = "f\arc\sandbox";
+		class setupSandbox {};
+	};
 	class helpers
 	{
 		file = "f\arc\helpers";
