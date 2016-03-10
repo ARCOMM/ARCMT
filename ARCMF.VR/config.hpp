@@ -140,7 +140,7 @@ class CfgARCMF
 		class gear
 		{
 			class blufor {
-				enabled = true;
+				enabled = false;
 				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
@@ -156,7 +156,7 @@ class CfgARCMF
 				attachments[] = {};
 			};
 			class opfor {
-				enabled = true;
+				enabled = false;
 				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
@@ -172,7 +172,7 @@ class CfgARCMF
 				attachments[] = {};
 			};
 			class indfor {
-				enabled = true;
+				enabled = false;
 				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
@@ -188,7 +188,7 @@ class CfgARCMF
 				attachments[] = {};
 			};
 			class civilian {
-				enabled = true;
+				enabled = false;
 				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
