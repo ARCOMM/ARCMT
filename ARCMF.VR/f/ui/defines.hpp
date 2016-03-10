@@ -656,7 +656,7 @@ class RscEdit {
 	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	canModify = 1;
 	tooltipColorText[] = {1, 1, 1, 1};
-	tooltipColorBox[] = { 1, 1, 1, 1};
+	tooltipColorBox[] = {1, 1, 1, 1};
 	tooltipColorShade[] = {0, 0, 0, 0.65};
 };
 class RscCombo {
@@ -678,7 +678,7 @@ class RscCombo {
 	colorTextRight[] = {1, 1, 1, 1};
 	colorSelectRight[] = {0, 0, 0, 1};
 	colorSelect2Right[] = {0, 0, 0, 1};
-	tooltipColorText[] = {1, 1, 1, 1}; 
+	tooltipColorText[] = {1, 1, 1, 1};
 	tooltipColorBox[] = {1, 1, 1, 1};
 	tooltipColorShade[] = {0, 0, 0, 0.65};
 	soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect", 0.1, 1};
@@ -763,38 +763,38 @@ class RscListBox {
 	colorTextRight[] = {1, 1, 1, 1};
 	colorSelectRight[] = {0, 0, 0, 1};
 	colorSelect2Right[] = {0, 0, 0, 1};
-	};
-	tooltipColorText[] = {1, 1, 1, 1};
-	tooltipColorBox[] = {1, 1, 1, 1};
-	tooltipColorShade[] = {0, 0, 0, 0.65};
-	class ListScrollBar {
-		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
-		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
-		autoScrollDelay = 5;
-		autoScrollEnabled = 0;
-		autoScrollRewind = 0;
-		autoScrollSpeed = -1;
-		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
-		color[] = {1, 1, 1, 0.6};
-		colorActive[] = {1, 1, 1, 1};
-		colorDisabled[] = {1, 1, 1, 0.3};
-		height = 0;
-		scrollSpeed = 0.06;
-		shadow = 0;
-		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
-		width = 0;
-	};
-	x = 0;
-	y = 0;
-	w = 0.3;
-	h = 0.3;
-	style = 16;
-	font = FONT_MEDIUM;
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+};
+tooltipColorText[] = {1, 1, 1, 1};
+tooltipColorBox[] = {1, 1, 1, 1};
+tooltipColorShade[] = {0, 0, 0, 0.65};
+class ListScrollBar {
+	arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+	arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+	autoScrollDelay = 5;
+	autoScrollEnabled = 0;
+	autoScrollRewind = 0;
+	autoScrollSpeed = -1;
+	border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+	color[] = {1, 1, 1, 0.6};
+	colorActive[] = {1, 1, 1, 1};
+	colorDisabled[] = {1, 1, 1, 0.3};
+	height = 0;
+	scrollSpeed = 0.06;
 	shadow = 0;
-	colorShadow[] = {0, 0, 0, 0.5};
-	period = 1.2;
-	maxHistoryDelay = 1;
+	thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+	width = 0;
+};
+x = 0;
+y = 0;
+w = 0.3;
+h = 0.3;
+style = 16;
+font = FONT_MEDIUM;
+sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+shadow = 0;
+colorShadow[] = {0, 0, 0, 0.5};
+period = 1.2;
+maxHistoryDelay = 1;
 };
 class RscButton {
 	type = 16;
@@ -911,7 +911,7 @@ class RscShortcutButton {
 	};
 	colorBackground2[] = {1, 1, 1, 1};
 	soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter", 0.09, 1};
-	soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush", 0.09, 1 };
+	soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush", 0.09, 1};
 	soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick", 0.09, 1};
 	soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape", 0.09, 1};
 	class Attributes {
@@ -1062,15 +1062,6 @@ class IGUIBack {
 	y = 0.1;
 	w = 0.1;
 	h = 0.1;
-	/*
-	colorbackground[] =
-	{
-		"(profilenamespace getvariable ['IGUI_BCG_RGB_R',0])",
-		"(profilenamespace getvariable ['IGUI_BCG_RGB_G',1])",
-		"(profilenamespace getvariable ['IGUI_BCG_RGB_B',1])",
-		"(profilenamespace getvariable ['IGUI_BCG_RGB_A',1])"
-	};
-	*/
 	colorbackground[] = {0, 0, 0, 0.5};
 };
 class RscCheckBox {
