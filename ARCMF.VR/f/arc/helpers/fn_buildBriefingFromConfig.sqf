@@ -27,8 +27,4 @@ private _output = "";
 	};
 } forEach (getArray (missionConfigFile >> "CfgARCMF" >> "briefing" >> _faction >> _category));
 
-if (_output == "") then {
-	_output = "Insert text here using the config.hpp.";
-};
-
 _output

@@ -544,7 +544,7 @@ class RscToolbox {
 	columns = 0;
 	strings[] = {};
 	values[] = {};
-	onToolBoxSelChanged = "hint format[""Toolbox change:\n%1\nEntry#:%2"",(_this select 0),(_this select 1)];"
+	onToolBoxSelChanged = "hint format[""Toolbox change:\n%1\nEntry#:%2"",(_this select 0),(_this select 1)];";
 };
 
 class RscButtonSpacer {

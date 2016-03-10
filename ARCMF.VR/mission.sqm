@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={35.264935,15.001612,63.90657};
-		dir[]={-0.024453716,-0.43962023,-0.89795792};
-		up[]={-0.01196844,0.89815325,-0.43952197};
-		aside[]={-0.99970686,-6.0486491e-007,0.027224574};
+		pos[]={37.574871,32.534225,75.011505};
+		dir[]={-0.0086968131,-0.55660188,-0.83085901};
+		up[]={-0.0058255899,0.83074433,-0.55662185};
+		aside[]={-1.0000287,-7.425806e-007,0.010468275};
 	};
 };
 binarizationWanted=0;
@@ -28,8 +28,7 @@ addons[]=
 	"A3_Characters_F_BLUFOR",
 	"a3_characters_f",
 	"A3_Characters_F_OPFOR",
-	"A3_Characters_F_INDEP",
-	"ace_headless"
+	"A3_Characters_F_INDEP"
 };
 randomSeed=3124507;
 class ScenarioData
@@ -87,7 +86,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=70;
+		items=69;
 		class Item0
 		{
 			dataType="Group";
@@ -7036,77 +7035,6 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={1,5,0};
-			};
-			id=356;
-			type="ace_headless_module";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_headless_module_Log";
-					expression="_this setVariable ['Log',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_headless_module_Enabled";
-					expression="_this setVariable ['Enabled',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_headless_module_Delay";
-					expression="_this setVariable ['Delay',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=15;
-						};
-					};
-				};
-				nAttributes=3;
-			};
-		};
-		class Item67
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
 				position[]={0,5,0};
 			};
 			name="HC1";
@@ -7115,7 +7043,7 @@ class Mission
 			id=363;
 			type="HeadlessClient_F";
 		};
-		class Item68
+		class Item67
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7128,7 +7056,7 @@ class Mission
 			id=364;
 			type="HeadlessClient_F";
 		};
-		class Item69
+		class Item68
 		{
 			dataType="Logic";
 			class PositionInfo
