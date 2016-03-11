@@ -1,32 +1,35 @@
+private ["_items","_itemarr","_result","_proarr","_proportion","_total","_probl","_probu"];
+
 _faction = param [0, "blufor"];
 _category = param [1, "uniforms"];
+_items = getArray (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> _category);
+if (count _items <= 0) exitWith {[]};
 _itemarr = [];
 _result = [];
 _proarr = [];
 _proportion = [];
-_tot = 0;
+_total = 0;
 _probl = 0;
 _probu = 0;
-_items = getArray (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> _category);
 
 if (count _items > 0) then {
 	_rand = random 1;
 
-	{
-		_prob = _x select 1;
-		_proportion pushBack _prob;
-	} forEach _items;
+	{_proportion pushBack (_x select 1)} forEach _items;
+	{_total = _total + _x} forEach _proportion;
 	
-	{_tot = _tot + _x} forEach _proportion;
-	
-	{
-		if (_tot != 0) then {
-			_proarr pushBack (_x / _tot);
-		} else {
-			_proarr pushBack _x;
-		};
-	} forEach _proportion;
-	 
+	if (count _items > 1) then {
+		{
+			if (_total != 0) then {
+				_proarr pushBack (_x / _total);
+			} else {
+				_proarr pushBack _x;
+			};
+		} forEach _proportion;
+	} else {
+		_proarr = _proportion;
+	};
+
 	{
 		_class = _x select 0;
 		

@@ -74,6 +74,12 @@ if (count _voiceClass > 0) then {
 	_unit setSpeaker (_voiceClass select 0);
 };
 
+_whileAddMagazine = {
+	while {(_this select 0) canAdd (_this select 1)} do {
+		(_this select 0) addMagazine (_this select 1);
+	};
+};
+
 if (count _rifleClass > 0) then {
 	if (!_hasRemovedWeapons) then {
 		removeAllWeapons _unit;
@@ -83,6 +89,7 @@ if (count _rifleClass > 0) then {
 	_magazines = getArray (configFile >> "CfgWeapons" >> (_rifleClass select 0) >> "magazines");
 	
 	if (count _magazines > 0) then {
+		_useMagazine = "";
 		_standard = [];
 		_tracers = [];
 		
@@ -94,18 +101,13 @@ if (count _rifleClass > 0) then {
 			};
 		} forEach _magazines;
 		
-		if (_prioritizeTracerMags && ((count _tracers) > 0)) then {
-			while {_unit canAdd (_tracers select 0)} do {
-				_unit addMagazine (_tracers select 0);
-			};
-		} else {
-			while {_unit canAdd (_standard select 0)} do {
-				_unit addMagazine (_standard select 0);
-			};
-		};
+		_useMagazine = if (_prioritizeTracerMags && ((count _tracers) > 0)) then {(_tracers select 0)} else {(_standard select 0)};
+		[_unit, _useMagazine] call _whileAddMagazine;
+		_unit addWeapon (_rifleClass select 0);
+		[_unit, _useMagazine] call _whileAddMagazine;
+	} else {
+		diag_log (format ["[ARCMF] No magazines found for %1.", (_rifleClass select 0)]);
 	};
-	
-	_unit addWeapon (_rifleClass select 0);
 };
 
 _attachments = [_faction, "attachments"] call ARC_fnc_pickAttachmentsFromAIGear;
