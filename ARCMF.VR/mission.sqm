@@ -33,7 +33,7 @@ addons[]=
 randomSeed=3124507;
 class ScenarioData
 {
-	author="Kingsley, tryteyker";
+	author="Kingsley, tryteyker, Nelson";
 };
 class CustomAttributes
 {
