@@ -140,52 +140,109 @@ class CfgARCMF
 		class gear
 		{
 			class blufor {
-				enabled = false;
+				enabled = true;
 				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
-				uniforms[] = {};
-				vests[] = {};
-				headgear[] = {};
-				goggles[] = {};
-				backpacks[] = {};
+				uniforms[] = {
+					{"rhs_uniform_msv_emr", 1}
+				};
+				vests[] = {
+					{"rhs_6b23_digi_6sh92", 1}
+				};
+				headgear[] = {
+					{"", 1}
+				};
+				goggles[] = {
+					{"rhs_balaclava1_olive", 0.33},
+					{"rhs_balaclava", 0.33},
+					{"rhs_scarf", 0.33}
+				};
+				backpacks[] = {
+					{"", 1}
+				};
 				faces[] = {};
 				voices[] = {};
-				rifles[] = {};
-				launchers[] = {};
-				attachments[] = {};
+				rifles[] = {
+					{"rhs_weap_pkp", 0.25},
+					{"rhs_weap_ak74m_2mag", 0.75}
+				};
+				launchers[] = {
+					{"", 1}
+				};
+				attachments[] = {
+					{"rhs_acc_2dpZenit", 1}
+				};
 			};
 			class opfor {
-				enabled = false;
+				enabled = true;
 				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
-				uniforms[] = {};
-				vests[] = {};
-				headgear[] = {};
-				goggles[] = {};
-				backpacks[] = {};
+				uniforms[] = {
+					{"rhs_uniform_msv_emr", 1}
+				};
+				vests[] = {
+					{"rhs_6b23_digi_6sh92", 1}
+				};
+				headgear[] = {
+					{"", 1}
+				};
+				goggles[] = {
+					{"rhs_balaclava1_olive", 0.33},
+					{"rhs_balaclava", 0.33},
+					{"rhs_scarf", 0.33}
+				};
+				backpacks[] = {
+					{"", 1}
+				};
 				faces[] = {};
 				voices[] = {};
-				rifles[] = {};
-				launchers[] = {};
-				attachments[] = {};
+				rifles[] = {
+					{"rhs_weap_pkp", 0.25},
+					{"rhs_weap_ak74m_2mag", 0.75}
+				};
+				launchers[] = {
+					{"launch_RPG32_F", 0.25}
+				};
+				attachments[] = {
+					{"rhs_acc_2dpZenit", 1}
+				};
 			};
 			class indfor {
-				enabled = false;
+				enabled = true;
 				removeNightVision = true;
 				removeMedicalItems = true;
 				prioritizeTracerMags = true;
-				uniforms[] = {};
-				vests[] = {};
-				headgear[] = {};
-				goggles[] = {};
-				backpacks[] = {};
+				uniforms[] = {
+					{"rhs_uniform_msv_emr", 1}
+				};
+				vests[] = {
+					{"rhs_6b23_digi_6sh92", 1}
+				};
+				headgear[] = {
+					{"", 1}
+				};
+				goggles[] = {
+					{"rhs_balaclava1_olive", 0.33},
+					{"rhs_balaclava", 0.33},
+					{"rhs_scarf", 0.33}
+				};
+				backpacks[] = {
+					{"", 1}
+				};
 				faces[] = {};
 				voices[] = {};
-				rifles[] = {};
-				launchers[] = {};
-				attachments[] = {};
+				rifles[] = {
+					{"rhs_weap_pkp", 0.25},
+					{"rhs_weap_ak74m_2mag", 0.75}
+				};
+				launchers[] = {
+					{"rhs_weap_rpg26", 0.25}
+				};
+				attachments[] = {
+					{"rhs_acc_2dpZenit", 1}
+				};
 			};
 			class civilian {
 				enabled = false;

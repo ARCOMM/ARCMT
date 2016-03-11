@@ -19,7 +19,7 @@ _unit setVariable ["ARC_assignedAIGear", false, true];
 _prioritizeTracerMags = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "prioritizeTracerMags") call ARC_fnc_getCfgBool;
 _removeMedicalItems = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "removeMedicalItems") call ARC_fnc_getCfgBool;
 _removeNightVision = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "removeNightVision") call ARC_fnc_getCfgBool;
-_rifleClass = [_faction, "rifles"] call ARC_fnc_pickItemFromAIGear;
+_rifleClass = [_unit, _faction, "rifles"] call ARC_fnc_pickItemFromAIGear;
 _hasRemovedWeapons = false;
 
 if (count _rifleClass > 0) then {
@@ -31,45 +31,45 @@ _uniformItems = uniformItems _unit;
 _vestItems = vestItems _unit;
 _backpackItems = backpackItems _unit;
 
-_uniformClass = [_faction, "uniforms"] call ARC_fnc_pickItemFromAIGear;
+_uniformClass = [_unit, _faction, "uniforms"] call ARC_fnc_pickItemFromAIGear;
 if (count _uniformClass > 0) then {
 	removeUniform _unit;
 	_unit forceAddUniform (_uniformClass select 0);
 	{_unit addItemToUniform _x} forEach _uniformItems;
 };
 
-_vestClass = [_faction, "vests"] call ARC_fnc_pickItemFromAIGear;
+_vestClass = [_unit, _faction, "vests"] call ARC_fnc_pickItemFromAIGear;
 if (count _vestClass > 0) then {
 	removeVest _unit;
 	_unit addVest (_vestClass select 0);
 	{_unit addItemToVest _x} forEach _vestItems;
 };
 
-_backpackClass = [_faction, "backpacks"] call ARC_fnc_pickItemFromAIGear;
+_backpackClass = [_unit, _faction, "backpacks"] call ARC_fnc_pickItemFromAIGear;
 if (count _backpackClass > 0) then {
 	removeBackpack _unit;
 	_unit addBackpack (_backpackClass select 0);
 	{_unit addItemToBackpack _x} forEach _backpackItems;
 };
 
-_headgearClass = [_faction, "headgear"] call ARC_fnc_pickItemFromAIGear;
+_headgearClass = [_unit, _faction, "headgear"] call ARC_fnc_pickItemFromAIGear;
 if (count _headgearClass > 0) then {
 	removeHeadgear _unit;
 	_unit addHeadgear (_headgearClass select 0);
 };
 
-_goggleClass = [_faction, "goggles"] call ARC_fnc_pickItemFromAIGear;
+_goggleClass = [_unit, _faction, "goggles"] call ARC_fnc_pickItemFromAIGear;
 if (count _goggleClass > 0) then {
 	removeGoggles _unit;
 	_unit addGoggles (_goggleClass select 0);
 };
 
-_faceClass = [_faction, "faces"] call ARC_fnc_pickItemFromAIGear;
+_faceClass = [_unit, _faction, "faces"] call ARC_fnc_pickItemFromAIGear;
 if (count _faceClass > 0) then {
 	_unit setFace (_faceClass select 0);
 };
 
-_voiceClass = [_faction, "voices"] call ARC_fnc_pickItemFromAIGear;
+_voiceClass = [_unit, _faction, "voices"] call ARC_fnc_pickItemFromAIGear;
 if (count _voiceClass > 0) then {
 	_unit setSpeaker (_voiceClass select 0);
 };
@@ -111,7 +111,7 @@ if (count _rifleClass > 0) then {
 _attachments = [_faction, "attachments"] call ARC_fnc_pickAttachmentsFromAIGear;
 {_unit addPrimaryWeaponItem _x} forEach _attachments;
 
-_launcherClass = [_faction, "launchers"] call ARC_fnc_pickItemFromAIGear;
+_launcherClass = [_unit, _faction, "launchers"] call ARC_fnc_pickItemFromAIGear;
 if (count _launcherClass > 0) then {
 	if (!_hasRemovedWeapons) then {
 		removeAllWeapons _unit;
