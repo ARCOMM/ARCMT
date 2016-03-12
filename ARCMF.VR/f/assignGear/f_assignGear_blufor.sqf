@@ -405,6 +405,7 @@ switch (_typeOfUnit) do
 		this addPrimaryWeaponItem "RH_peq15";
 		this addPrimaryWeaponItem "rhsusf_acc_compm4";
 		this addWeapon "tf47_smaw_green";
+		this addSecondaryWeaponItem "tf47_optic_smaw";
 		this linkItem "ItemMap";
 		this linkItem "ItemCompass";
 		this linkItem "ItemWatch";
