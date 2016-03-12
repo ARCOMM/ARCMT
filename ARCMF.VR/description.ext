@@ -124,7 +124,7 @@ class Params
 		title = "ACRE Reveal to AI";
 		values[] = {0,1};
 		texts[] = {"Disabled","Enabled"};
-		default = 1;
+		default = 0;
 		code = "arc_param_acre_reveal = if (%1 == 1) then {true} else {false};";
 	};
 };
