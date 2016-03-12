@@ -285,6 +285,85 @@ switch (_typeOfUnit) do
 		this linkItem "rhsusf_ANPVS_15";
 	};
 
+// LOADOUT: MEDIUM AT TEAM LEADER
+	case "mattl":
+	{
+		this forceAddUniform "MNP_CombatUniform_Germany";
+		for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+		this addItemToUniform "ACE_EarPlugs";
+		this addItemToUniform "ACE_CableTie";
+		this addItemToUniform "ACE_IR_Strobe_Item";
+		this addItemToUniform "ACE_Flashlight_XL50";
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m18_red";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m18_purple";};
+		this addVest "MNP_Vest_Germany_2";
+		for "_i" from 1 to 12 do {this addItemToVest "hlc_100rnd_556x45_EPR_G36";};
+		for "_i" from 1 to 4 do {this addItemToVest "1Rnd_HE_Grenade_shell";};
+		for "_i" from 1 to 4 do {this addItemToVest "1Rnd_Smoke_Grenade_shell";};
+		this addHeadgear "MNP_Helmet_Germany";
+		this addWeapon "hlc_rifle_G36VAG36";
+		this addPrimaryWeaponItem "RH_LTdocterl";
+		this addWeapon "Binocular";
+		this linkItem "ItemMap";
+		this linkItem "ItemCompass";
+		this linkItem "ItemWatch";
+		this linkItem "ItemGPS";
+		this linkItem "rhsusf_ANPVS_15";
+	};
+	
+// LOADOUT: MEDIUM AT MISSILE SPECIALIST
+	case "matg":
+	{
+		this forceAddUniform "MNP_CombatUniform_Germany";
+		for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+		this addItemToUniform "ACE_EarPlugs";
+		this addItemToUniform "ACE_CableTie";
+		this addItemToUniform "ACE_IR_Strobe_Item";
+		this addItemToUniform "ACE_Flashlight_XL50";
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+		this addVest "MNP_Vest_Germany_2";
+		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
+		this addBackpack "B_Kitbag_rgr";
+		for "_i" from 1 to 6 do {this addItemToBackpack "tf47_smaw_SR";};
+		this addItemToBackpack "tf47_smaw_HEAA";
+		this addHeadgear "MNP_Helmet_Germany";
+		this addWeapon "rhs_weap_m240B_CAP";
+		this addWeapon "tf47_smaw_green";
+		this linkItem "ItemMap";
+		this linkItem "ItemCompass";
+		this linkItem "ItemWatch";
+		this linkItem "rhsusf_ANPVS_15";
+	};
+	
+// LOADOUT: MEDIUM AT ASSISTANT MISSILE SPECIALIST
+	case "matab":
+	{
+		this forceAddUniform "MNP_CombatUniform_Germany";
+		for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+		this addItemToUniform "ACE_EarPlugs";
+		this addItemToUniform "ACE_CableTie";
+		this addItemToUniform "ACE_IR_Strobe_Item";
+		this addItemToUniform "ACE_Flashlight_XL50";
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+		this addVest "MNP_Vest_Germany_2";
+		for "_i" from 1 to 12 do {this addItemToVest "hlc_100rnd_556x45_EPR_G36";};
+		this addBackpack "B_Kitbag_rgr";
+		for "_i" from 1 to 2 do {this addItemToBackpack "tf47_smaw_HEAA";};
+		for "_i" from 1 to 6 do {this addItemToBackpack "tf47_smaw_SR";};
+		this addHeadgear "MNP_Helmet_Germany";
+		this addWeapon "hlc_rifle_G36V";
+		this addPrimaryWeaponItem "RH_LTdocterl";
+		this linkItem "ItemMap";
+		this linkItem "ItemCompass";
+		this linkItem "ItemWatch";
+		this linkItem "rhsusf_ANPVS_15";
+	};
+
 // LOADOUT: PILOT
 	case "p":
 	{
