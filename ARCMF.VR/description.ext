@@ -89,7 +89,7 @@ class Params
 	};
 	class arc_param_duplex
 	{
-		title = "Duplex Option";
+		title = "ACRE Duplex Option";
 		values[] = {0,1};
 		texts[] = {"Half Duplex", "Full Duplex"};
 		default = 1;
@@ -97,27 +97,35 @@ class Params
 	};
 	class arc_param_babel_west
 	{
-		title = "Babel Language (BLUFOR)";
-		values[] = {0,1,2};
-		texts[] = {"English","Russian","Greek"};
+		title = "ACRE Babel Language (BLUFOR)";
+		values[] = {0,1,2,3};
+		texts[] = {"English","Russian","Greek","Use Config"};
 		default = 0;
-		code = "arc_param_babel_west = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
+		code = "arc_param_babel_west = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};case 3: {'config'};};";
 	};
 	class arc_param_babel_east
 	{
-		title = "Babel Language (OPFOR)";
-		values[] = {0,1,2};
-		texts[] = {"English","Russian","Greek"};
+		title = "ACRE Babel Language (OPFOR)";
+		values[] = {0,1,2,3};
+		texts[] = {"English","Russian","Greek","Use Config"};
 		default = 0;
-		code = "arc_param_babel_east = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
+		code = "arc_param_babel_east = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};case 3: {'config'};};";
 	};
 	class arc_param_babel_resistance
 	{
-		title = "Babel Language (INDFOR)";
-		values[] = {0,1,2};
-		texts[] = {"English","Russian","Greek"};
+		title = "ACRE Babel Language (INDFOR)";
+		values[] = {0,1,2,3};
+		texts[] = {"English","Russian","Greek","Use Config"};
 		default = 0;
-		code = "arc_param_babel_resistance = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};};";
+		code = "arc_param_babel_resistance = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};case 3: {'config'};};";
+	};
+	class arc_param_acre_reveal
+	{
+		title = "ACRE Reveal to AI";
+		values[] = {0,1};
+		texts[] = {"Disabled","Enabled"};
+		default = 1;
+		code = "arc_param_acre_reveal = if (%1 == 1) then {true} else {false};";
 	};
 };
 

@@ -5,11 +5,11 @@ if (!isDedicated && (isNull player)) then {
 };
 
 _leaders = ["_FTL"];
-_white = [];
+_white = ["_FTL"];
 _red = ["_AR","_AAR"];
-_blue = ["_AT","_FTL"];
+_blue = ["_AT","_R","_R_1"];
 _yellow = [];
-_green = ["_R","_R_1"];
+_green = [];
 
 sleep 10;
 

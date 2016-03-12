@@ -15,11 +15,16 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
 	};
 	
 	// 0 = "Off", 1 = "All Sides", 2 = "All Players", 3 = "BLUFOR", 4 = "OPFOR", 5 = "INDFOR", 6 = "CIV"
+	/*
+		"RobotoCondensedBold"
+		"RobotoCondensed"
+		"RobotoCondensedLight"
+	*/
 	if (_groupSide == _tagsSide || f_cam_tagsButton == 1) then {
 		{
 			_distToCam = (call f_cam_GetCurrentCam) distance _x;
 			if (isPlayer _x) then {_isPlayerGroup = true};
-			if (_distToCam < 400) then {
+			if (_distToCam < 500) then {
 				_drawUnits pushBack _x;
 			} else {
 				_drawGroup = true;
@@ -49,7 +54,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
 			};
 			
 			_color set [3, 1];
-			if (_distToCam > 2000) then { _color set [3, 0]; _str = ""; };
+			if (_distToCam > 5000) then { _color set [3, 0]; _str = ""; };
 			
 			drawIcon3D [
 				"\A3\ui_f\data\map\markers\nato\b_inf.paa",
@@ -96,7 +101,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
 					1,
 					0,
 					_str,
-					1,
+					2,
 					0.03,
 					"PuristaBold",
 					"center"
