@@ -21,7 +21,7 @@ respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator"};
 
 showGroupIndicator = 0;
-showHUD[] = {true, true, true, true, true, false, false, true};
+showHUD[] = {true, true, false, false, true, true, false, true};
 
 class CfgNotifications
 {
