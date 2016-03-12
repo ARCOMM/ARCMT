@@ -23,6 +23,11 @@ _groups = [
 	["GrpNATO_MMG3","MMG3","ColorOrange"],
 	["GrpNATO_MMG4","MMG4","ColorOrange"],
 
+	["GrpNATO_MAT1","MAT1","ColorOrange"],
+	["GrpNATO_MAT2","MAT2","ColorOrange"],
+	["GrpNATO_MAT3","MAT3","ColorOrange"],
+	["GrpNATO_MAT4","MAT4","ColorOrange"],
+
 	["GrpNATO_G1","G1","ColorPink"],
 	["GrpNATO_G2","G2","ColorPink"],
 	["GrpNATO_G3","G3","ColorPink"],
@@ -56,6 +61,11 @@ _groups = [
 	["GrpCSAT_MMG2","MMG2","ColorOrange"],
 	["GrpCSAT_MMG3","MMG3","ColorOrange"],
 	["GrpCSAT_MMG4","MMG4","ColorOrange"],
+	
+	["GrpCSAT_MAT1","MAT1","ColorOrange"],
+	["GrpCSAT_MAT2","MAT2","ColorOrange"],
+	["GrpCSAT_MAT3","MAT3","ColorOrange"],
+	["GrpCSAT_MAT4","MAT4","ColorOrange"],
 
 	["GrpCSAT_G1","G1","ColorPink"],
 	["GrpCSAT_G2","G2","ColorPink"],
@@ -90,6 +100,11 @@ _groups = [
 	["GrpAAF_MMG2","MMG2","ColorOrange"],
 	["GrpAAF_MMG3","MMG3","ColorOrange"],
 	["GrpAAF_MMG4","MMG4","ColorOrange"],
+	
+	["GrpAAF_MAT1","MAT1","ColorOrange"],
+	["GrpAAF_MAT2","MAT2","ColorOrange"],
+	["GrpAAF_MAT3","MAT3","ColorOrange"],
+	["GrpAAF_MAT4","MAT4","ColorOrange"],
 
 	["GrpAAF_G1","G1","ColorPink"],
 	["GrpAAF_G2","G2","ColorPink"],

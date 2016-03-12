@@ -345,6 +345,102 @@ switch (_typeOfUnit) do
 		this linkItem "ItemWatch";
 		this linkItem "rhsusf_ANPVS_15";
 	};
+	
+// LOADOUT: MEDIUM AT TEAM LEADER
+	case "mattl":
+	{
+		this forceAddUniform "MNP_CombatUniform_Scorpion_A";
+		for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+		for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
+		this addItemToUniform "ACE_CableTie";
+		this addItemToUniform "ACE_IR_Strobe_Item";
+		this addItemToUniform "ACE_Flashlight_XL50";
+		this addItemToUniform "ACE_EarPlugs";
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m18_purple";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m18_yellow";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m18_red";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhsusf_mag_15Rnd_9x19_FMJ";};
+		for "_i" from 1 to 4 do {this addItemToUniform "rhs_mag_M433_HEDP";};
+		for "_i" from 1 to 4 do {this addItemToUniform "rhs_mag_m661_green";};
+		this addVest "MNP_Vest_Scorpion_1";
+		for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
+		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_m714_White";};
+		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_M433_HEDP";};
+		this addHeadgear "H_HelmetSpecB_snakeskin";
+		this addWeapon "rhs_weap_m4a1_carryhandle_m203";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
+		this addWeapon "rhsusf_weap_m9";
+		this addWeapon "Binocular";
+		this linkItem "ItemMap";
+		this linkItem "ItemCompass";
+		this linkItem "ItemWatch";
+		this linkItem "ItemGPS";
+		this linkItem "rhsusf_ANPVS_15";
+	};
+	
+// LOADOUT: MEDIUM AT MISSILE SPECIALIST
+	case "matg":
+	{
+		this forceAddUniform "MNP_CombatUniform_Scorpion_A";
+		for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+		for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
+		this addItemToUniform "ACE_CableTie";
+		this addItemToUniform "ACE_IR_Strobe_Item";
+		this addItemToUniform "ACE_Flashlight_XL50";
+		this addItemToUniform "ACE_EarPlugs";
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+		this addVest "MNP_Vest_Scorpion_1";
+		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
+		this addBackpack "B_Kitbag_rgr";
+		for "_i" from 1 to 6 do {this addItemToBackpack "tf47_smaw_SR";};
+		this addItemToBackpack "tf47_smaw_HEAA";
+		this addHeadgear "H_HelmetSpecB_snakeskin";
+		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
+		this addWeapon "tf47_smaw_green";
+		this addSecondaryWeaponItem "tf47_optic_smaw";
+		this linkItem "ItemMap";
+		this linkItem "ItemCompass";
+		this linkItem "ItemWatch";
+		this linkItem "rhsusf_ANPVS_15";
+	};
+	
+// LOADOUT: MEDIUM AT ASSISTANT MISSILE SPECIALIST
+	case "matab":
+	{
+		this forceAddUniform "MNP_CombatUniform_Scorpion_A";
+		for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+		for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
+		this addItemToUniform "ACE_CableTie";
+		this addItemToUniform "ACE_IR_Strobe_Item";
+		this addItemToUniform "ACE_Flashlight_XL50";
+		this addItemToUniform "ACE_EarPlugs";
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+		for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+		for "_i" from 1 to 3 do {this addItemToUniform "rhsusf_mag_15Rnd_9x19_FMJ";};
+		this addVest "MNP_Vest_Scorpion_1";
+		for "_i" from 1 to 8 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+		for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
+		this addBackpack "B_Kitbag_rgr";
+		for "_i" from 1 to 2 do {this addItemToBackpack "tf47_smaw_HEAA";};
+		for "_i" from 1 to 6 do {this addItemToBackpack "tf47_smaw_SR";};
+		this addHeadgear "H_HelmetSpecB_snakeskin";
+		this addWeapon "rhs_weap_m4a1_carryhandle";
+		this addPrimaryWeaponItem "RH_peq15";
+		this addPrimaryWeaponItem "rhsusf_acc_compm4";
+		this addWeapon "rhsusf_weap_m9";
+		this linkItem "ItemMap";
+		this linkItem "ItemCompass";
+		this linkItem "ItemWatch";
+		this linkItem "rhsusf_ANPVS_15";
+	};
 
 // LOADOUT: PILOT
 	case "p":
