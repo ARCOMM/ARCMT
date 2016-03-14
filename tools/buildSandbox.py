@@ -12,6 +12,7 @@ def copy_folder(src, dst):
 			shutil.copy(src, dst)
 		else: raise
 
+build_dir = "../build"
 sandbox_dir = "../build/ARCMF_Sandbox.VR"
 orig_sqm = "../build/ARCMF_Sandbox.VR/mission.sqm"
 new_sqm = "../build/ARCMF_Sandbox.VR/new_mission.sqm"
@@ -68,10 +69,9 @@ for t in terrains:
 		subprocess.check_output([
 			"makepbo",
 			"-JNP",
-			"-{}".format( os.path.abspath(sandbox_dir) ),
-			t,
-			"ARCMF_Sandbox.{}.pbo".format(t)
-		])
+			"{}".format( os.path.abspath(sandbox_dir) ),
+			"{}/ARCMF_Sandbox.{}.pbo".format(build_dir, t)
+		], stderr=subprocess.STDOUT)
 	except:
 		print("Failed to make ARCMF_Sandbox.{}.pbo".format(t))
 	else:
