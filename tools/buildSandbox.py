@@ -76,3 +76,6 @@ for t in terrains:
 		print("Failed to make ARCMF_Sandbox.{}.pbo".format(t))
 	else:
 		print("Successfully made ARCMF_Sandbox.{}.pbo".format(t))
+
+if os.path.isdir(sandbox_dir):
+	shutil.rmtree(sandbox_dir)
