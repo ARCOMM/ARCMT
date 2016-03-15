@@ -117,22 +117,9 @@ _this spawn {
 	f_cam_unitListShow = true;
 
 	// Colors
-	/*
-	f_cam_blufor_color = [0.278,0.278,0.82,1];
-	f_cam_opfor_color = [1,0.102,0.102,1];
-	f_cam_indep_color = [0,0.8,0.4,1];
-	f_cam_civ_color = [1,0.376,0.906,1];
-	f_cam_empty_color = [1,0.776,0,1];
-	*/
-	// f_cam_blufor_color = [BLUFOR] call BIS_fnc_sideColor;
 	f_cam_blufor_color = [0.2, 0.2, 1, 1];
-
-	// f_cam_opfor_color = [OPFOR] call BIS_fnc_sideColor;
 	f_cam_opfor_color = [1, 0.2, 0.2, 1];
-
-	// f_cam_indep_color = [independent] call BIS_fnc_sideColor;
 	f_cam_indep_color = [0, 0.702, 0.349, 1];
-
 	f_cam_civ_color = [civilian] call BIS_fnc_sideColor;
 	f_cam_empty_color = [sideUnknown] call BIS_fnc_sideColor;
 

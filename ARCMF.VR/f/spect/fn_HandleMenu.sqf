@@ -69,6 +69,8 @@ switch (_button) do {
 			f_script_briefing = [] execVM "briefing.sqf";
 			[] execVM "f\briefing\f_orbatNotes.sqf";
 			[] execVM "f\briefing\f_loadoutNotes.sqf";
+			{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;
+			[] spawn {uiSleep 2;{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;};
 			[_newUnit, ARC_cam_preCamPos, ARC_cam_preCamLoadout] execVM "onSpectatorRespawn.sqf";
 		} else {
 			systemChat "Respawn is not enabled.";
@@ -84,6 +86,12 @@ switch (_button) do {
 			case 0: {
 				// Off
 				{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;
+				
+				// Make sure it has removed all tracers if some left over
+				[] spawn {
+					uiSleep 2;
+					{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;
+				};
 			};
 			case 1: {
 				// Players
@@ -99,7 +107,7 @@ switch (_button) do {
 							case sideUnknown: {[sideUnknown] call BIS_fnc_sideColor};
 						};
 						
-						[_x, _color, 2, 0, -1, -1, false] call hyp_fnc_traceFire;
+						[_x, _color, 1, 4, 800, 1, false] call hyp_fnc_traceFire;
 					};
 				} forEach (allPlayers - entities "HeadlessClient_F");
 			};
@@ -117,7 +125,7 @@ switch (_button) do {
 							case sideUnknown: {[sideUnknown] call BIS_fnc_sideColor};
 						};
 						
-						[_x, _color, 2, 0, -1, -1, false] call hyp_fnc_traceFire;
+						[_x, _color, 1, 4, 800, 1, false] call hyp_fnc_traceFire;
 					};
 				} forEach (allUnits - (allPlayers - entities "HeadlessClient_F"));
 			};
@@ -135,7 +143,7 @@ switch (_button) do {
 							case sideUnknown: {[sideUnknown] call BIS_fnc_sideColor};
 						};
 						
-						[_x, _color, 2, 0, -1, -1, false] call hyp_fnc_traceFire;
+						[_x, _color, 1, 4, 800, 1, false] call hyp_fnc_traceFire;
 					};
 				} forEach (allUnits - (entities "HeadlessClient_F"));
 			};

@@ -279,6 +279,7 @@ switch (_type) do
 						ctrlShow [2110, true];
 						ctrlShow [2010, true];
 						ctrlShow [5534, true];
+						ctrlShow [2236, true];
 						ctrlShow [1350, false];
 						ctrlShow [1360, false];
 					};
@@ -287,6 +288,7 @@ switch (_type) do
 						ctrlShow [2010, true];
 						ctrlShow [1350, true];
 						ctrlShow [5534, true];
+						ctrlShow [2236, true];
 						ctrlShow [1360, false];
 					};
 					case 2: {
@@ -294,6 +296,7 @@ switch (_type) do
 						ctrlShow [2010, false];
 						ctrlShow [1350, false];
 						ctrlShow [5534, false];
+						ctrlShow [2236, false];
 						ctrlShow [1360, true];
 						
 						_displayDialog = (findDisplay 9228);
