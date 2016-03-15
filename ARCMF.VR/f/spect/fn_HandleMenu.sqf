@@ -6,10 +6,11 @@ switch (_button) do {
 		f_cam_playersOnly = !f_cam_playersOnly;
 		f_cam_listUnits = [];
 		lbClear 2100;
+		
 		if (f_cam_playersOnly) then {
-			_control ctrlSetText "Players only";
+			_control ctrlSetText "SHOW AI (NO)";
 		} else {
-			_control ctrlSetText "All units";
+			_control ctrlSetText "SHOW AI (YES)";
 		};
 	};
 	case 1: { // Side Filter
@@ -41,9 +42,9 @@ switch (_button) do {
 	case 3: { // Third/First Person Button
 		[] call f_cam_ToggleFPCamera;
 		if (f_cam_toggleCamera) then {
-			_control ctrlSetText "Third Person";
+			_control ctrlSetText "VIEW (THIRD PERSON)";
 		} else {
-			_control ctrlSetText "First Person";
+			_control ctrlSetText "VIEW (FIRST PERSON)";
 		}
 	};
 	case 4: { // Respawn Button
@@ -70,7 +71,90 @@ switch (_button) do {
 			[] execVM "f\briefing\f_loadoutNotes.sqf";
 			[_newUnit, ARC_cam_preCamPos, ARC_cam_preCamLoadout] execVM "onSpectatorRespawn.sqf";
 		} else {
-			hint "Respawn is not enabled.";
+			systemChat "Respawn is not enabled.";
+		};
+	};
+	case 5: { // 3D Tracers
+		// 0="Off", 1="Players", 2="AI", 3="Both"
+		f_cam_tracersButton = f_cam_tracersButton + 1;
+		if (f_cam_tracersButton > 3) then {f_cam_tracersButton = 0};
+		_control ctrlSetText (f_cam_tracersNames select f_cam_tracersButton);
+		
+		switch (f_cam_tracersButton) do {
+			case 0: {
+				// Off
+				{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;
+			};
+			case 1: {
+				// Players
+				{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;
+				
+				{
+					if (alive _x) then {
+						_color = switch (side _x) do {
+							case west: {f_cam_blufor_color};
+							case east: {f_cam_opfor_color};
+							case resistance: {f_cam_indep_color};
+							case civilian: {[civilian] call BIS_fnc_sideColor};
+							case sideUnknown: {[sideUnknown] call BIS_fnc_sideColor};
+						};
+						
+						[_x, _color, 2, 0, -1, -1, false] call hyp_fnc_traceFire;
+					};
+				} forEach (allPlayers - entities "HeadlessClient_F");
+			};
+			case 2: {
+				// AI
+				{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;
+				
+				{
+					if (alive _x) then {
+						_color = switch (side _x) do {
+							case west: {f_cam_blufor_color};
+							case east: {f_cam_opfor_color};
+							case resistance: {f_cam_indep_color};
+							case civilian: {[civilian] call BIS_fnc_sideColor};
+							case sideUnknown: {[sideUnknown] call BIS_fnc_sideColor};
+						};
+						
+						[_x, _color, 2, 0, -1, -1, false] call hyp_fnc_traceFire;
+					};
+				} forEach (allUnits - (allPlayers - entities "HeadlessClient_F"));
+			};
+			case 3: {
+				// Both
+				{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;
+				
+				{
+					if (alive _x) then {
+						_color = switch (side _x) do {
+							case west: {f_cam_blufor_color};
+							case east: {f_cam_opfor_color};
+							case resistance: {f_cam_indep_color};
+							case civilian: {[civilian] call BIS_fnc_sideColor};
+							case sideUnknown: {[sideUnknown] call BIS_fnc_sideColor};
+						};
+						
+						[_x, _color, 2, 0, -1, -1, false] call hyp_fnc_traceFire;
+					};
+				} forEach (allUnits - (entities "HeadlessClient_F"));
+			};
+		};
+	};
+	case 6: {
+		f_cam_unitListShow = !f_cam_unitListShow;
+		if (f_cam_unitListShow) then {
+			_control ctrlSetText "<<";
+			_control ctrlSetPosition [(0.15 * safeZoneW + safeZoneX), (0.041 * safeZoneH + safeZoneY), (0.02 * safeZoneW), (0.03 * safeZoneH)];
+			_control ctrlCommit 0.15;
+			((findDisplay 9228) displayCtrl 2100) ctrlSetPosition [(0 * safeZoneW + safeZoneX), (0.03 * safeZoneH + safeZoneY), (0.15 * safeZoneW), (0.97 * safeZoneH)];
+			((findDisplay 9228) displayCtrl 2100) ctrlCommit 0.15;
+		} else {
+			_control ctrlSetText ">>";
+			_control ctrlSetPosition [(0 * safeZoneW + safeZoneX), (0.041 * safeZoneH + safeZoneY), (0.02 * safeZoneW), (0.03 * safeZoneH)];
+			_control ctrlCommit 0.15;
+			((findDisplay 9228) displayCtrl 2100) ctrlSetPosition [((0 * safeZoneW + safeZoneX) - (0.15 * safeZoneW)), (0.03 * safeZoneH + safeZoneY), (0.15 * safeZoneW), (0.97 * safeZoneH)];
+			((findDisplay 9228) displayCtrl 2100) ctrlCommit 0.15;
 		};
 	};
 };

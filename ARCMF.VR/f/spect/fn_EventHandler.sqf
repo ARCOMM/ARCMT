@@ -71,7 +71,7 @@ switch (_type) do
 				if (f_cam_mode == 0 || f_cam_mode == 1) then {
 					f_cam_curTarget = _unit;
 					if (f_cam_toggleCamera) then {f_cam_curTarget switchCamera "INTERNAL";};
-					ctrlSetText [1000,format ["%1", name f_cam_curTarget]];
+					//ctrlSetText [1000,format ["%1", name f_cam_curTarget]];
 				};
 				
 				if (f_cam_mode == 3) then {
@@ -278,6 +278,7 @@ switch (_type) do
 					case 0: {
 						ctrlShow [2110, true];
 						ctrlShow [2010, true];
+						ctrlShow [5534, true];
 						ctrlShow [1350, false];
 						ctrlShow [1360, false];
 					};
@@ -285,12 +286,14 @@ switch (_type) do
 						ctrlShow [2110, true];
 						ctrlShow [2010, true];
 						ctrlShow [1350, true];
+						ctrlShow [5534, true];
 						ctrlShow [1360, false];
 					};
 					case 2: {
 						ctrlShow [2110, false];
 						ctrlShow [2010, false];
 						ctrlShow [1350, false];
+						ctrlShow [5534, false];
 						ctrlShow [1360, true];
 						
 						_displayDialog = (findDisplay 9228);

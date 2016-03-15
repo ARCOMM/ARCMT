@@ -424,14 +424,13 @@ class RscSpectButton {
 	colorText[] = PRIMARYCOLOR;
 	color[] = {1,1,1,1};
 	colorBackground[] = BACKGROUND_COLOR;
-	font = "PuristaLight";
-	h = 0.039216;
+	font = "RobotoCondensed";
 	offsetPressedX = 0;
 	offsetPressedY = 0;
 	offsetX = 0;
 	offsetY = 0;
 	shadow = 0;
-	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+	sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.005)";
 	soundClick[] = {"\A3\ui_f\data\sound\RscSpectButton\soundClick",0.09,1};
 	soundEnter[] = {"\A3\ui_f\data\sound\RscSpectButton\soundEnter",0.09,1};
 	soundEscape[] = {"\A3\ui_f\data\sound\RscSpectButton\soundEscape",0.09,1};
@@ -443,6 +442,7 @@ class RscSpectButton {
 	tooltipColorShade[] = BACKGROUND_COLOR; // Tooltip background color
 	tooltipColorText[] = PRIMARYCOLOR; // Tooltip text color
 	tooltipColorBox[] = BACKGROUND_COLOR; // Tooltip frame color
+	h = 0.039216;
 	w = 0.095589;
 	x = 0;
 	y = 0;
@@ -536,37 +536,37 @@ class RscSpectList
 	arrowEmpty = "";
 	arrowFull = "";
 	color[] = {1,1,1,1};
-	colorActive[] = {1,0,0,0.8};
-	colorBackground[] = {0,0,0,0.5};
-	colorDisabled[] = {1,1,1,0.25};
+	colorActive[] = {0.2,0.2,0.2,1};
+	colorBackground[] = {0.1,0.1,0.1,1};
+	colorDisabled[] = {0.1,0.1,0.1,0.5};
 	colorScrollbar[] = {1,0,0,0};
-	colorSelect[] = {1,1,1,0.8};
-	colorSelectBackground[] = {1,1,1,0.7};
+	colorSelect[] = {1,1,1,1};
+	colorSelectBackground[] = {0.2,0.2,0.2,1};
 	colorText[] = {1,1,1,1};
 	font = "PuristaMedium";
-	h = 0.035;
 	maxHistoryDelay = 1;
 	shadow = 1;
-	sizeEx = "(		 (		   (		   ((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+	sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
 	soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1};
 	soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1};
 	soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1};
 	type = 5;
 	style = 528;
-	w = 0.12;
 	wholeHeight = 0.45;
+	h = 0.035;
+	w = 0.12;
 	x = 0;
 	y = 0;
 	class ListScrollBar
 	{
-		arrowEmpty = "";
-		arrowFull = "";
-		border = "";
-		color[] = {1,1,1,0};
-		colorActive[] = {1,1,1,0};
-		colorDisabled[] = {1,1,1,0.1};
+		color[] = {1,1,1,0.75};
+		colorActive[] = {1,1,1,1};
+		colorDisabled[] = {1,1,1,0.5};
 		shadow = 0;
-		thumb = "";
+		arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+		arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+		border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+		thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
 	};
 	autoScrollSpeed = 0;
 	autoScrollDelay = 0;
@@ -668,6 +668,37 @@ class f_spec_dialog {
 		};
 	};
 	class controls {
+		class SpecUnitBox: RscSpectList
+		{
+			idc = 2100;
+			x = 0 * safezoneW + safezoneX;
+			y = 0.03 * safezoneH + safezoneY;
+			w = 0.15 * safezoneW;
+			h = 0.97 * safezoneH;
+			onLBSelChanged = "[""LBListSelChanged"",_this] call f_fnc_EventHandler";
+			shadow = 0;
+			font = "RobotoCondensed";
+			sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.001)";
+		};
+		class ToggleUnitListButton: RscSpectButton
+        {
+            idc = 5534;
+            x = 0.15 * safezoneW + safezoneX;
+            y = 0.041 * safezoneH + safezoneY;
+            w = 0.02 * safezoneW;
+            h = 0.03 * safezoneH;
+			colorBorder[] = {1,1,1,1};
+			colorBackgroundActive[] = ARCRED;
+			colorBackgroundDisabled[] = {0.1,0.1,0.1,0.75};
+			colorDisabled[] = {0.4,0.4,0.4,1};
+			colorFocused[] = {0.1,0.1,0.1,1};
+			colorShadow[] = {1,1,1,1};
+			colorText[] = {1,1,1,1};
+			color[] = {1,1,1,1};
+			colorBackground[] = {0.1,0.1,0.1,1};
+            text = "<<";
+            onButtonClick = "[_this select 0,6] call f_fnc_HandleMenu";
+        };
 		class FilterAIButton: RscSpectButton
 		{
 			idc = 2111;
@@ -675,10 +706,10 @@ class f_spec_dialog {
 			y = 0 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.03 * safezoneH;
-			text = "All units";
-			tooltip = "Toggle AI";
-			sizeEx = "(		 (		   (		   ((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+			text = "SHOW AI (YES)";
 			onButtonClick = "[_this select 0,0] call f_fnc_HandleMenu";
+			onMouseEnter = "[_this select 0, true] call f_fnc_AnimButton";
+			onMouseExit = "[_this select 0, false] call f_fnc_AnimButton";
 
 		};
 		class SideFilterButton: RscSpectButton
@@ -688,67 +719,63 @@ class f_spec_dialog {
 			y = 0 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.03 * safezoneH;
-			text = "All Sides";
-			tooltip = "Filter by side";
-			sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+			text = "UNIT LIST (ALL SIDES)";
+			tooltip = "Filter unit list by side";
 			onButtonClick = "[_this select 0,1] call f_fnc_HandleMenu";
+			onMouseEnter = "[_this select 0, true] call f_fnc_AnimButton";
+			onMouseExit = "[_this select 0, false] call f_fnc_AnimButton";
 		};
 		class TagsNameButton: RscSpectButton
 		{
 			idc = 2113;
 			x = 0.1 * safezoneW + safezoneX;
 			y = 0 * safezoneH + safezoneY;
-			w = 0.05 * safezoneW;
+			w = 0.07 * safezoneW;
 			h = 0.03 * safezoneH;
-			text = "Tags Off";
+			text = "TAGS (OFF)";
 			tooltip = "Filter tags by side/players";
-			sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
 			onButtonClick = "[_this select 0,2] call f_fnc_HandleMenu";
+			onMouseEnter = "[_this select 0, true] call f_fnc_AnimButton";
+			onMouseExit = "[_this select 0, false] call f_fnc_AnimButton";
+		};
+		class TracersButton: RscSpectButton
+		{
+			idc = 2236;
+			x = 0.17 * safezoneW + safezoneX;
+			y = 0 * safezoneH + safezoneY;
+			w = 0.07 * safezoneW;
+			h = 0.03 * safezoneH;
+			text = "3D TRACERS (OFF)";
+			tooltip = "Warning: May cause major lag";
+			onButtonClick = "[_this select 0,5] call f_fnc_HandleMenu";
+			onMouseEnter = "[_this select 0, true] call f_fnc_AnimButton";
+			onMouseExit = "[_this select 0, false] call f_fnc_AnimButton";
 		};
 		class FirstPersonButton: RscSpectButton
 		{
 			idc = 2114;
-			x = 0.15 * safezoneW + safezoneX;
+			x = 0.22 * safezoneW + safezoneX;
 			y = 0 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;
 			h = 0.03 * safezoneH;
-			text = "First Person";
-			tooltip = "Switch between First Person or Third person";
-			sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+			text = "VIEW (FIRST PERSON)";
 			onButtonClick = "[_this select 0,3] call f_fnc_HandleMenu";
+			onMouseEnter = "[_this select 0, true] call f_fnc_AnimButton";
+			onMouseExit = "[_this select 0, false] call f_fnc_AnimButton";
 		};
 		class RespawnButton: RscSpectButton
         {
             idc = 5532;
-            x = 0.2 * safezoneW + safezoneX;
+            x = 0.25 * safezoneW + safezoneX;
             y = 0 * safezoneH + safezoneY;
             w = 0.05 * safezoneW;
             h = 0.03 * safezoneH;
-            text = "Respawn";
+            text = "RESPAWN";
             tooltip = "Respawn back into the game";
-            sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
             onButtonClick = "[_this select 0,4] call f_fnc_HandleMenu";
+			onMouseEnter = "[_this select 0, true] call f_fnc_AnimButton";
+			onMouseExit = "[_this select 0, false] call f_fnc_AnimButton";
         };
-		class SpecUnitBox: RscSpectList
-		{
-			idc = 2100;
-			x = 0 * safezoneW + safezoneX;
-			y = 0.03 * safezoneH + safezoneY;
-			w = 0.1 * safezoneW;
-			h = 0.97 * safezoneH;
-			onLBSelChanged = "[""LBListSelChanged"",_this] call F_fnc_EventHandler";
-			shadow = 0;
-			font = "PuristaMedium";
-		};
-		class SpecText: RscSpectText
-		{
-			idc = 1000;
-			text = "Unknown";
-			x = 0.430336 * safezoneW + safezoneX;
-			y = 0.00159198 * safezoneH + safezoneY;
-			w = 0.800 * safezoneW;
-			h = 0.0200 * safezoneH;
-		};
 		class SpectMap : RscSpectMapControl
 		{
 			type = 100;
