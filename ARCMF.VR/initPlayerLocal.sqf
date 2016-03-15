@@ -4,4 +4,3 @@
 #include "f\common\f_sandboxHandler_client.sqf"
 
 // You are free to add/edit/delete anything below this line.
-[player, objNull, 4, 3, true] call f_fnc_CamInit;
