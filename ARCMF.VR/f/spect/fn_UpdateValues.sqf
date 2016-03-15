@@ -11,12 +11,6 @@ while {true} do {
 	ctrlMapAnimCommit ((findDisplay 9228) displayCtrl 1350);
 	ctrlSetFocus ((findDisplay 9228) displayCtrl 1315);
 
-	if (alive f_cam_curTarget) then {
-		ctrlSetText [1000,format ["%1", name f_cam_curTarget]];
-	} else {
-		ctrlSetText [1000,format ["%1", "Dead"]];
-	};
-
 	_groupArr = call f_fnc_GetPlayers;
     f_cam_units = ((_groupArr select 0) + (_groupArr select 1));
 	f_cam_players = _groupArr select 0;
@@ -34,7 +28,16 @@ while {true} do {
 			_index = lbAdd [_listBox,_text];
 			_x setVariable ["f_spect_listBoxIndex",_index];
 			f_cam_listUnits pushBack _x;
-			lbSetColor [_listBox,_index,[side _x,false] call BIS_fnc_sideColor];
+			_color = switch (side _x) do {
+				case west: {f_cam_blufor_color};
+				case east: {f_cam_opfor_color};
+				case resistance: {f_cam_indep_color};
+				case civilian: {[civilian] call BIS_fnc_sideColor};
+				case sideUnknown: {[sideUnknown] call BIS_fnc_sideColor};
+			};
+			
+			lbSetColor [_listBox,_index,_color];
+			
 			{
 				if (alive _x) then {
 					if (!(_x in f_cam_listUnits) && !(_x isKindOf "VirtualMan_F")) then {
@@ -77,5 +80,6 @@ while {true} do {
 			};
 		};
 	} forEach f_cam_listUnits;
+	
 	sleep 1;
 };

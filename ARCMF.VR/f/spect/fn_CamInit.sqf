@@ -57,7 +57,7 @@ _this spawn {
 	lbClear _listBox;
 	// set inital values.
 	#include "macros.hpp"
-	f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_SPECTEXT,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTONRESPAWN];
+	f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTONRESPAWN];
 	f_cam_units = [];
 	f_cam_players = [];
 	f_cam_startX = 0;
@@ -102,14 +102,19 @@ _this spawn {
 	f_cam_muteSpectators = true;
 
 	// Menu (Top left)
-	f_cam_menuControls = [2111,2112,2113,2114,5532];
+	f_cam_menuControls = [2111,2112,2113,2236,2114,5532];
 	f_cam_menuShown = true;
 	f_cam_menuWorking = false;
 	f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
-	f_cam_sideNames = ["All Sides","BLUFOR","OPFOR","INDFOR","CIV"];
+	f_cam_sideNames = ["UNIT LIST (ALL SIDES)","UNIT LIST (BLUFOR)","UNIT LIST (OPFOR)","UNIT LIST (INDFOR)","UNIT LIST (CIV)"];
 
 	f_cam_tagsButton = 0;
-	f_cam_tagsNames = ["Tags Off","All Sides","All Players","BLUFOR","OPFOR","INDFOR","CIV"];
+	f_cam_tagsNames = ["TAGS (OFF)","TAGS (ALL SIDES)","TAGS (ALL PLAYERS)","TAGS (BLUFOR)","TAGS (OPFOR)","TAGS (INDFOR)","TAGS (CIV)"];
+	
+	f_cam_tracersButton = 0;
+	f_cam_tracersNames = ["3D TRACERS (OFF)", "3D TRACERS (PLAYERS)", "3D TRACERS (AI)", "3D TRACERS (BOTH)"];
+	
+	f_cam_unitListShow = true;
 
 	// Colors
 	/*
@@ -168,23 +173,33 @@ _this spawn {
 		};
 		_camera
 	};
+	
+	#include "tracers.sqf"
 
-	// create the UI
 	createDialog "f_spec_dialog";
-	// add keyboard events
-	// hide minimap
+
 	((findDisplay 9228) displayCtrl 1350) ctrlShow false;
 	((findDisplay 9228) displayCtrl 1350) mapCenterOnCamera false;
 
-	// hide big map
 	((findDisplay 9228) displayCtrl 1360) ctrlShow false;
 	((findDisplay 9228) displayCtrl 1360) mapCenterOnCamera false;
-	/*
+	
+	// Auto-size controls
+	_btnWidth = safeZoneW / (count f_cam_menuControls);
+	_w = 0 * safeZoneW + safeZoneX;
+	
+	{
+		((findDisplay 9228) displayCtrl _x) ctrlSetPosition [_w, (0 * safeZoneH + safeZoneY), _btnWidth, (0.03 * safeZoneH)];
+		((findDisplay 9228) displayCtrl _x) ctrlCommit 0;
+		_w = _w + _btnWidth;
+	} forEach f_cam_menuControls;
+	
 	if (!(call ARC_fnc_isRespawnEnabled)) then {
-		((findDisplay 9228) displayCtrl 5532) ctrlEnable false;
-		((findDisplay 9228) displayCtrl 5532) ctrlShow false;
+		((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Disabled";
+	} else {
+		((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Respawn back into the game";
 	};
-	*/
+	
 	f_cam_helptext = "<t align='left'><t color='#FFFFFF'><t size='1.5'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='1.5'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t></t>";
 
 	hintSilent (parseText f_cam_helptext);
