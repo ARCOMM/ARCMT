@@ -21,9 +21,9 @@ if (arc_param_babel_resistance == "config") then {
 	f_radios_settings_acre2_language_indfor = [arc_param_babel_resistance];
 };
 
-f_radios_settings_acre2_groups_blufor = ["ALPHA SQUAD","BRAVO SQUAD","CHARLIE SQUAD","COMMAND","AIR","ARMOR","SPEC"];
-f_radios_settings_acre2_groups_opfor = ["ALPHA SQUAD","BRAVO SQUAD","CHARLIE SQUAD","COMMAND","AIR","ARMOR","SPEC"];
-f_radios_settings_acre2_groups_indfor = ["ALPHA SQUAD","BRAVO SQUAD","CHARLIE SQUAD","COMMAND","AIR","ARMOR","SPEC"];
+f_radios_settings_acre2_groups_blufor = ["COMMAND","1ST PLATOON","2ND PLATOON","ALPHA","BRAVO","CHARLIE","DELTA","ECHO","FOXTROT","PHANTOM","RAVEN","GAMBLER","MMG","MAT","BACKUP 1","BACKUP 2"];
+f_radios_settings_acre2_groups_opfor = ["COMMAND","1ST PLATOON","2ND PLATOON","ALPHA","BRAVO","CHARLIE","DELTA","ECHO","FOXTROT","PHANTOM","RAVEN","GAMBLER","MMG","MAT","BACKUP 1","BACKUP 2"];
+f_radios_settings_acre2_groups_indfor = ["COMMAND","1ST PLATOON","2ND PLATOON","ALPHA","BRAVO","CHARLIE","DELTA","ECHO","FOXTROT","PHANTOM","RAVEN","GAMBLER","MMG","MAT","BACKUP 1","BACKUP 2"];
 
 [1] call acre_api_fnc_setLossModelScale;
 [arc_param_duplex] call acre_api_fnc_setFullDuplex;
