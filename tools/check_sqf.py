@@ -1,7 +1,5 @@
-import os
 import re
 import glob
-from shutil import copyfile
 
 count = 0
 
