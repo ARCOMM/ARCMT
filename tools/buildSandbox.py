@@ -18,6 +18,7 @@ orig_sqm = "../build/ARCMF_Sandbox.VR/mission.sqm"
 new_sqm = "../build/ARCMF_Sandbox.VR/new_mission.sqm"
 orig_ext = "../build/ARCMF_Sandbox.VR/description.ext"
 new_ext = "../build/ARCMF_Sandbox.VR/new_description.ext"		
+with open('../ARCMF.VR/.version') as v: version = v.read()
 
 if os.path.isdir(sandbox_dir):
 	shutil.rmtree(sandbox_dir)
@@ -27,55 +28,46 @@ copy_folder("../ARCMF.VR", sandbox_dir)
 copyfile(orig_ext, new_ext)
 with open(new_ext) as infile, open(orig_ext, 'w') as outfile:
 	for line in infile:
-		m_sandbox = re.match(r'^\tsandbox\s=\s0;', line, re.I)
-		if m_sandbox:
-			p = re.sub(r'^\tsandbox\s=\s0;', '\tsandbox = 1;', line)
-			outfile.write(p)
+		if re.match(r'^\tsandbox\s=\s0;', line, re.I):
+			outfile.write(re.sub(r'^\tsandbox\s=\s0;', '\tsandbox = 1;', line))
 		else:
-			m_name = re.match(r'^onLoadName\s=\s"ARCMF";', line, re.I)
-			if m_name:
-				p = re.sub(r'^onLoadName\s=\s"ARCMF";', 'onLoadName = "ARCOMM Sandbox";', line)
-				outfile.write(p)
+			if re.match(r'^onLoadName\s=\s"ARCMF";', line, re.I):
+				outfile.write(re.sub(r'^onLoadName\s=\s"ARCMF";', 'onLoadName = "Sandbox {}";'.format(version), line))
 			else:
-				m_respawn = re.match(r'^respawn\s=\s4;', line, re.I)
-				if m_respawn:
-					p = re.sub(r'^respawn\s=\s4;', 'respawn = 3;', line)
-					outfile.write(p)
+				if re.match(r'^onLoadMission\s=\s"ARCOMM Mission Framework\.";', line, re.I):
+					outfile.write(re.sub(r'^onLoadMission\s=\s"ARCOMM Mission Framework\.";', 'onLoadMission = "For extended functionality use the ARC_Ares mod available on our forums and at GitHub.com/ARCOMM.";', line))
 				else:
-					m_templates = re.match(r'^respawnTemplates\[\]\s=\s{"Seagull","f_spectator"};', line, re.I)
-					if m_templates:
-						p = re.sub(r'^respawnTemplates\[\]\s=\s{"Seagull","f_spectator"};', 'respawnTemplates[] = {"MenuPosition"};', line)
-						outfile.write(p)
+					if re.match(r'^respawn\s=\s4;', line, re.I):
+						outfile.write(re.sub(r'^respawn\s=\s4;', 'respawn = 3;', line))
 					else:
-						outfile.write(line)
+						if re.match(r'^respawnTemplates\[\]\s=\s{"Seagull","f_spectator"};', line, re.I):
+							outfile.write(re.sub(r'^respawnTemplates\[\]\s=\s{"Seagull","f_spectator"};', 'respawnTemplates[] = {"MenuPosition"};', line))
+						else:
+							outfile.write(line)
 
 copyfile(orig_sqm, new_sqm)
 with open(new_sqm) as infile, open(orig_sqm, 'w') as outfile:
 	for line in infile:
-		m_name = re.match(r'^\t\tbriefingName="ARCMF";', line, re.I)
-		if m_name:
-			p = re.sub(r'^\t\tbriefingName="ARCMF";', '\t\tbriefingName="ARCOMM Sandbox";', line)
-			outfile.write(p)
+		if re.match(r'^\t\tbriefingName="ARCMF";', line, re.I):
+			outfile.write(re.sub(r'^\t\tbriefingName="ARCMF";', '\t\tbriefingName="Sandbox {}";'.format(version), line))
 		else:
 			outfile.write(line)
 
 os.remove(new_ext);
 os.remove(new_sqm);
 
-terrains = ["utes","Sara","fallujah","Chernarus","Chernarus_Summer","Caribou","Takistan","Zargabad","Desert_E","ProvingGrounds_PMC","Shapur_BAF","mbg_celle2","Stratis","bozcaada","Lost","LostW","Kunduz","Altis","lingor3","panthera3","vt5","mske"]
-
-for t in terrains:
+for t in ["utes","Sara","fallujah","Chernarus","Chernarus_Summer","Caribou","Takistan","Zargabad","Desert_E","ProvingGrounds_PMC","Shapur_BAF","mbg_celle2","Stratis","bozcaada","Lost","LostW","Kunduz","Altis","lingor3","panthera3","vt5","mske"]:
 	try:
 		subprocess.check_output([
 			"makepbo",
 			"-JNP",
-			"{}".format( os.path.abspath(sandbox_dir) ),
-			"{}/ARCMF_Sandbox.{}.pbo".format(build_dir, t)
+			"{}".format(os.path.abspath(sandbox_dir)),
+			"{}/Sandbox_{}.{}.pbo".format(build_dir, version, t)
 		], stderr=subprocess.STDOUT)
 	except:
-		print("Failed to make ARCMF_Sandbox.{}.pbo".format(t))
+		print("Failed to make Sandbox_{}.{}.pbo".format(version, t))
 	else:
-		print("Successfully made ARCMF_Sandbox.{}.pbo".format(t))
+		print("Successfully made Sandbox_{}.{}.pbo".format(version, t))
 
 if os.path.isdir(sandbox_dir):
 	shutil.rmtree(sandbox_dir)
