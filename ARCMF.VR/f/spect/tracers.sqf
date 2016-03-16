@@ -71,7 +71,7 @@ hyp_fnc_traceFire = {
     }];
     _unit setVariable ["hyp_var_tracer_eventHandle", _eventHandle];
     hyp_var_tracer_tracedUnits set [count hyp_var_tracer_tracedUnits, _unit];
-};  
+};
  
 hyp_fnc_traceFireEvent = {
     private["_this","_params","_initialPos","_unit","_projectile","_color","_lifetime","_interval","_maxDistance",

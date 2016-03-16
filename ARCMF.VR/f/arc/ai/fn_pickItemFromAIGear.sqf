@@ -43,7 +43,7 @@ if (count _items > 0) then {
 			} else {
 				_probl = _probu;
 				_probu = _probl + (_proarr select _forEachIndex);
-			};					   
+			};
 		};
 
 		if (_rand > _probl && _rand <= _probu) then {

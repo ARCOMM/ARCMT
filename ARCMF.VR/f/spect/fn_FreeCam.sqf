@@ -8,7 +8,7 @@ if (f_cam_mode == 0) then {
 	_zLevel = sin(f_cam_angleY)*(2*(0.3 max f_cam_zoom));
 	//_pos = getpos f_cam_curTarget;
 	_visPos = visiblePositionASL f_cam_curTarget;
-	if(!(surfaceIsWater _visPos)) then {_visPos = ASLtoATL (_visPos)};
+	if (!(surfaceIsWater _visPos)) then {_visPos = ASLtoATL (_visPos)};
 	f_cam_fakecamera camSetPos [_visPos select 0,_visPos select 1,(_visPos select 2) + 1.5];
 	f_cam_fakecamera camCommit _commitTime;
 	f_cam_camera camSetRelPos[(sin(f_cam_angleX)*_delta)*cos(f_cam_angleY), (cos(f_cam_angleX)*_delta)*cos(f_cam_angleY), _zLevel];
