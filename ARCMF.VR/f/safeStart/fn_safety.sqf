@@ -1,4 +1,4 @@
-if(isDedicated) exitwith {};
+if (isDedicated) exitwith {};
 
 switch (_this select 0) do
 {
