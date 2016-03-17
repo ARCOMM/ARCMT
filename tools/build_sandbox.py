@@ -62,7 +62,7 @@ for t in ["utes","Sara","fallujah","Chernarus","Chernarus_Summer","Caribou","Tak
 			"makepbo",
 			"-JNP",
 			"{}".format(os.path.abspath(sandbox_dir)),
-			"{}/Sandbox_{}.{}.pbo".format(build_dir, version, t)
+			"{}/Sandbox.{}.pbo".format(build_dir, t)
 		], stderr=subprocess.STDOUT)
 	except:
 		print("Failed to make Sandbox_{}.{}.pbo".format(version, t))
