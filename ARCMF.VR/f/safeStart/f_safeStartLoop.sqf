@@ -11,6 +11,6 @@ while {f_var_mission_timer > 0} do {
 };
 
 if (f_var_mission_timer == 0) then {
-		[["SafeStartMissionStarting",["Mission starting now!"]],"bis_fnc_showNotification",true] call BIS_fnc_MP;
+		[["SafeStartMissionStarting",["Weapons are live!"]],"bis_fnc_showNotification",true] call BIS_fnc_MP;
 		[[false],"f_fnc_safety",playableUnits + switchableUnits] call BIS_fnc_MP;
 };

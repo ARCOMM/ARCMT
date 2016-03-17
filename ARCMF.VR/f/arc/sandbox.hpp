@@ -96,4 +96,16 @@ class CfgSandbox
 		startingPosition[] = {8062.16,9936.9,0};
 		camouflage = "woodland";
 	};
+	class vtr_porquerolles {
+		startingPosition[] = {7345.26,4937.52,0};
+		camouflage = "woodland";
+	};
+	class torabora {
+		startingPosition[] = {10060.9,9922.96,0};
+		camouflage = "mtp";
+	};
+	class FDF_Isle1_a {
+		startingPosition[] = {7945.72,4166.32,0};
+		camouflage = "woodland";
+	};
 };
