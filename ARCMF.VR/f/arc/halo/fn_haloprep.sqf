@@ -6,6 +6,8 @@
 	Example _done = west call ARC_fnc_haloPrep;
 */
 
+private ["_units"];
+
 _units = switch (typeName _this) do {
 	case "GROUP": {units _this};
 	case "OBJECT": {[_this]};
@@ -18,11 +20,9 @@ _processUnit = {
 	_unit = _this;
 	_backpackItems = backpackItems _unit;
 	_backpackType = backpack _unit;
-
 	_emptyShell = createVehicle ["GroundWeaponHolder", getPosATL _unit, [], 0, "CAN_COLLIDE"];
 	_emptyShell addBackpackCargoGlobal [_backpackType,1];
 	removeBackpack _unit;
-
 	_emptyShell attachTo [_unit, [-0.1, 0.8, 0.8]];
 	_emptyShell setVectorDirAndUp [[0,0,-1], [0,1,0]];
 	_unit addBackpack "B_Parachute";
@@ -36,6 +36,7 @@ _processUnit = {
 		_unit = _this select 3;
 		
 		while {(backpack _unit) == "B_Parachute"} do {
+			sleep 1;
 			switch (stance _unit) do {
 				case "STAND": {
 					_emptyShell attachTo [_unit, [-0.1, 0.8, 0.8]];
@@ -48,8 +49,6 @@ _processUnit = {
 					_emptyShell attachTo [_unit, [-0.1, -0.1, -0.6]];
 				};
 			};
-			
-			sleep 1;
 		};
 
 		_unit addBackpack _backpackType;
