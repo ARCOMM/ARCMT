@@ -3,6 +3,6 @@ _forbiddenControls = [F_CAM_MOUSEHANDLER,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_HELPC
 
 {
 	if (!(_x in _forbiddenControls)) then {
-		ctrlShow [_x,!f_cam_hideUI];
+		ctrlShow [_x, !f_cam_hideUI];
 	};
 } forEach f_cam_controls;

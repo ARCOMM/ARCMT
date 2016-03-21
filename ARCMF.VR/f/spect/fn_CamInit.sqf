@@ -52,6 +52,9 @@ _this spawn {
 
 	// ACRE
 	[true] call acre_api_fnc_setSpectator;
+    
+    // Chat
+    call ARC_fnc_disableAllChannels;
 
 	_listBox = 2100;
 	lbClear _listBox;

@@ -20,14 +20,14 @@ if (f_cam_mode == 1) then {
 	// player setpos (getpos cameraOn);
 	if (vehicle cameraOn != cameraOn) then {
 		_mode = "internal";
-		if (gunner (vehicle cameraon) == cameraon) then {_mode = "gunner"};
-		if (driver (vehicle cameraon) == cameraon) then {_mode = "gunner"};
-		if (commander (vehicle cameraon) == cameraon) then {_mode = "gunner"};
+		if (gunner (vehicle cameraOn) == cameraOn) then {_mode = "gunner"};
+		if (driver (vehicle cameraOn) == cameraOn) then {_mode = "gunner"};
+		if (commander (vehicle cameraOn) == cameraOn) then {_mode = "gunner"};
 		vehicle cameraOn switchCamera _mode;
 	};
 	
 	if (vehicle cameraOn == cameraOn && !f_cam_ads) then {
-		cameraon switchCamera "internal";
+		cameraOn switchCamera "internal";
 	};
 };
 

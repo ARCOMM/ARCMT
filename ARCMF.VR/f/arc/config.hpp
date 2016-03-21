@@ -1,5 +1,11 @@
 class ARC
 {
+    class chat
+    {
+        file = "f\arc\chat";
+        class disableAllChannels {};
+        class enableAllChannels {};
+    };
 	class ai
 	{
 		file = "f\arc\ai";
