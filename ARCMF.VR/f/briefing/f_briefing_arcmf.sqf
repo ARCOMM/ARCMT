@@ -6,9 +6,9 @@ Toggling positional audio puts you into the ACRE spectator mode which allows you
 player createDiaryRecord ["ARCMF", ["Zeus", _zeus]];
 
 if ((call ARC_fnc_isRespawnEnabled)) then {
-	_spect = "<br/><font size='18'>Spectator - <execute expression=""[player, player, 3, 1, true] call f_fnc_CamInit"">Forcefully Start Spectator</execute></font><br/>
-	Forcefully starting spectator means your player unit will leave its group and disappear. Exiting the spectator is a complex process and may cause unexpected behaviour.";
-	player createDiaryRecord ["ARCMF", ["Spectator", _spect]];
+    _spect = "<br/><font size='18'>Spectator - <execute expression=""[player, player, 3, 1, true] call f_fnc_CamInit"">Forcefully Start Spectator</execute></font><br/>
+    Forcefully starting spectator means your player unit will leave its group and disappear. Exiting the spectator is a complex process and may cause unexpected behaviour.";
+    player createDiaryRecord ["ARCMF", ["Spectator", _spect]];
 };
 
 _radios = "<br/><font size='18'>Missing Radios</font><br/>
@@ -20,8 +20,8 @@ Do not abuse these functions. They are only to be used if you are missing a radi
 player createDiaryRecord ["ARCMF", ["Radios", _radios]];
 
 if (serverCommandAvailable "#kick" || isServer) then {
-	_gear = "<br/><font size='18'>Assign Gear to Player</font><br/>
-	<font size='16'><execute expression=""openMap false; createDialog 'GUI_Gear';"">Open Gear Manager</execute></font>";
+    _gear = "<br/><font size='18'>Assign Gear to Player</font><br/>
+    <font size='16'><execute expression=""openMap false; createDialog 'GUI_Gear';"">Open Gear Manager</execute></font>";
 
-	player createDiaryRecord ["ARCMF", ["Gear", _gear]];
+    player createDiaryRecord ["ARCMF", ["Gear", _gear]];
 };

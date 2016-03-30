@@ -42,13 +42,13 @@ f_var_cachingAggressiveness = 2;
 
 // Disable random button on Virtual Arsenal to prevent breaking ACRE
 [missionNamespace, "arsenalOpened", {
-	disableSerialization;
-	_display = _this select 0;
-	_button = (_display displayCtrl 44150);
-	_button ctrlRemoveAllEventHandlers "buttonclick";
-	_button ctrlEnable false;
-	_button ctrlSetTooltip "Random is disabled because it breaks ACRE";
-	_display displayAddEventHandler ["KeyDown", "if ((_this select 1) in [19,29]) then {true}"];
+    disableSerialization;
+    _display = _this select 0;
+    _button = (_display displayCtrl 44150);
+    _button ctrlRemoveAllEventHandlers "buttonclick";
+    _button ctrlEnable false;
+    _button ctrlSetTooltip "Random is disabled because it breaks ACRE";
+    _display displayAddEventHandler ["KeyDown", "if ((_this select 1) in [19,29]) then {true}"];
 }] call BIS_fnc_addScriptedEventHandler;
 
 // You are free to add/edit/delete anything below this line.

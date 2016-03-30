@@ -5,11 +5,11 @@ private "_code";
 _code = if (typeName _this == "STRING") then {compile _this} else {_this};
 
 if (!isNil "HC" && isMultiplayer) then {
-	if (!isServer && !hasInterface) then {
-		call _code;
-	};
+    if (!isServer && !hasInterface) then {
+        call _code;
+    };
 } else {
-	if (isServer) then {
-		call _code;
-	};
+    if (isServer) then {
+        call _code;
+    };
 };

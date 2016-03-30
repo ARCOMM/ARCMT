@@ -4,7 +4,7 @@ addMissionEventHandler ["Draw3D", {
     {
         private["_unit"];
         _unit = _x;
-		
+        
         {
             private["_positions","_color","_muzzleVelocity"];
             _positions = _unit getVariable [format["hyp_var_tracer_projectile_%1", _x], []];

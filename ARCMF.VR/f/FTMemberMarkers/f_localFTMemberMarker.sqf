@@ -15,22 +15,22 @@ _mkr setMarkerSizeLocal [0.8, 0.8];
 _mkr setMarkerDirLocal (direction _unit);
 
 while {alive _unit && (_unit in f_var_HandlerGroup)} do {
-	_pos = getPosATL _unit;
-	_dir = (direction _unit);
-	if (alive _unit && {_unit in units group player}) then {
-		_mkr setMarkerPosLocal _pos;
-		_mkr setMarkerDirLocal _dir;
-		_mkr setMarkerColorLocal (_unit getVariable ["assignedTeam", "ColorWhite"]);
-	} else {
-		f_var_HandlerGroup = f_var_HandlerGroup - [_unit];
-	};
-	sleep 0.1;
+    _pos = getPosATL _unit;
+    _dir = (direction _unit);
+    if (alive _unit && {_unit in units group player}) then {
+        _mkr setMarkerPosLocal _pos;
+        _mkr setMarkerDirLocal _dir;
+        _mkr setMarkerColorLocal (_unit getVariable ["assignedTeam", "ColorWhite"]);
+    } else {
+        f_var_HandlerGroup = f_var_HandlerGroup - [_unit];
+    };
+    sleep 0.1;
 };
 
 if (!isNil "_mkrBorder") then {
-	deleteMarkerLocal _mkrBorder;
+    deleteMarkerLocal _mkrBorder;
 };
 
 if (!isNil "_mkr") then {
-	deleteMarkerLocal _mkr;
+    deleteMarkerLocal _mkr;
 };

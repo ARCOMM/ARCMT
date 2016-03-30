@@ -8,11 +8,11 @@ This briefing section can only be seen by the current admin.
 _briefing = _briefing + "<font size='18'>Ending Controllers</font><br/>";
 
 {
-	_title = getText (_x >> "title");
-	_description = getText (_x >> "description");
-	_index = _forEachIndex + 1;
-	_briefing = _briefing + (format ["<execute expression=""[[%1], 'f_fnc_mpEnd', false] spawn BIS_fnc_MP;"">%2</execute> - %3<br/>
-	%3<br/>", _index, _title, _description]);
+    _title = getText (_x >> "title");
+    _description = getText (_x >> "description");
+    _index = _forEachIndex + 1;
+    _briefing = _briefing + (format ["<execute expression=""[[%1], 'f_fnc_mpEnd', false] spawn BIS_fnc_MP;"">%2</execute> - %3<br/>
+    %3<br/>", _index, _title, _description]);
 } forEach ("true" configClasses (missionConfigFile >> "CfgDebriefing"));
 
 _briefing = _briefing + "<br/>
@@ -46,7 +46,7 @@ _briefing = _briefing + "
 <font size='18'>Zeus Support</font><br/>
 <execute expression=""
 if !(isNull (getAssignedCuratorLogic player)) then {hintSilent 'Zeus already assigned!'} else {
-	[[player, true], 'f_fnc_zeusInit', false] spawn BIS_fnc_MP; hintSilent 'Curator assigned.';
+    [[player, true], 'f_fnc_zeusInit', false] spawn BIS_fnc_MP; hintSilent 'Curator assigned.';
 };"">Assign Zeus to host</execute><br/>
 
 <execute expression=""
@@ -54,7 +54,7 @@ if (isNull (getAssignedCuratorLogic player)) then {hintSilent 'Assign Zeus first
 
 <execute expression=""
 if (isNull (getAssignedCuratorLogic player)) then {hintSilent 'Assign Zeus first!'} else {
-	[[player, true, true], 'f_fnc_zeusAddObjects', false] spawn BIS_fnc_MP; hintSilent 'Assigned control over all group leaders and empty vehicles.'};"">
+    [[player, true, true], 'f_fnc_zeusAddObjects', false] spawn BIS_fnc_MP; hintSilent 'Assigned control over all group leaders and empty vehicles.'};"">
 Add all group leaders and empty vehicles</execute><br/>
 
 <execute expression=""

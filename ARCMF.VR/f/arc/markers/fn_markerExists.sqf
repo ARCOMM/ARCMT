@@ -1,5 +1,5 @@
 if (getMarkerColor _this == "") exitWith {
-	false
+    false
 };
 
 true

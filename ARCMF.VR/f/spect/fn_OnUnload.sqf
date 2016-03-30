@@ -12,9 +12,9 @@ ctrlSetText [2113, (f_cam_tagsNames select f_cam_tagsButton)];
 ctrlSetText [2236, (f_cam_tracersNames select f_cam_tracersButton)];
 
 if (f_cam_playersOnly) then {
-	ctrlSetText [2111, "SHOW AI (NO)"];
+    ctrlSetText [2111, "SHOW AI (NO)"];
 } else {
-	ctrlSetText [2111, "SHOW AI (YES)"];
+    ctrlSetText [2111, "SHOW AI (YES)"];
 };
 
 _mapWindow = _displayDialog displayCtrl 1350;
@@ -33,13 +33,13 @@ _btnWidth = safeZoneW / (count f_cam_menuControls);
 _w = 0 * safeZoneW + safeZoneX;
 
 {
-	((findDisplay 9228) displayCtrl _x) ctrlSetPosition [_w, (0 * safeZoneH + safeZoneY), _btnWidth, (0.03 * safeZoneH)];
-	((findDisplay 9228) displayCtrl _x) ctrlCommit 0;
-	_w = _w + _btnWidth;
+    ((findDisplay 9228) displayCtrl _x) ctrlSetPosition [_w, (0 * safeZoneH + safeZoneY), _btnWidth, (0.03 * safeZoneH)];
+    ((findDisplay 9228) displayCtrl _x) ctrlCommit 0;
+    _w = _w + _btnWidth;
 } forEach f_cam_menuControls;
 
 if (!(call ARC_fnc_isRespawnEnabled)) then {
-	((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Disabled";
+    ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Disabled";
 } else {
-	((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Respawn back into the game";
+    ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Respawn back into the game";
 };
