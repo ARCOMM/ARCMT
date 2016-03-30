@@ -48,6 +48,7 @@ class ARC
 		file = "f\arc\markers";
 		class addTrackingMarker {};
 		class getMarkerType {};
+        class getMarkerTexture {};
 		class markerExists {};
 	};
 	class tracker
