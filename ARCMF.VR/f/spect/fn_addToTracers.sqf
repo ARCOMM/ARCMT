@@ -26,7 +26,7 @@ _color = switch (side _unit) do {
     case sideUnknown: {[sideUnknown] call BIS_fnc_sideColor};
 };
 
-[_unit, _color, 1, 4, 800, 1, false] call hyp_fnc_traceFire;
+[_unit, _color, 2, 3, 1000, 2, false] call hyp_fnc_traceFire;
 
 if !(_unit in f_cam_cachedTracers) then {
     f_cam_cachedTracers pushBack _unit;
