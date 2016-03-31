@@ -584,7 +584,7 @@ switch (_typeOfUnit) do
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
     default
     {
-        ["r", this] call f_fnc_assignGear;
+        if (_typeOfUnit != "r") then {["r", this] call f_fnc_assignGear;};
         if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_blufor.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", this, _typeOfUnit]};
     };
 };
