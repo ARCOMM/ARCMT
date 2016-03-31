@@ -25,3 +25,9 @@ if (serverCommandAvailable "#kick" || isServer) then {
 
     player createDiaryRecord ["ARCMF", ["Gear", _gear]];
 };
+
+if (serverCommandAvailable "#kick" || isServer) then {
+    _reinf = "<br/><font size='18'>Reinforcements - <execute expression=""[true] call ARC_fnc_toggleReinforcements"">Enable</execute> / <execute expression=""[false] call ARC_fnc_toggleReinforcements"">Disable</execute></font><br/>Enabling reinforcements will let the current spectating players to rejoin the mission as a new unit by clicking the 'Rejoin Mission' button. Any new spectators will also have that option until you disable reinforcements again.<br/><br/>All reinforcements spawn at the mission starting position with standard rifleman gear. Use the gear manager to assign the appropriate loadout.";
+
+    player createDiaryRecord ["ARCMF", ["Reinforcements", _reinf]];
+};

@@ -15,4 +15,7 @@ class fspectator
     class ForceExit{};
     class HandleMenu{};
     class AnimButton {};
+    class addToTracers {};
+    class removeAllTracers {};
+    class handleTracers {};
 };

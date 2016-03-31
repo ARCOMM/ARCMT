@@ -1,5 +1,7 @@
 if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
 
+#define FADE_DISTANCE 2000
+
 {
     _group = _x;
     _drawUnits = [];
@@ -23,12 +25,14 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
         {
             _distToCam = (call f_cam_GetCurrentCam) distance _x;
             if (isPlayer _x) then {_isPlayerGroup = true};
-            if (_distToCam < 500) then {
+            if (_distToCam < FADE_DISTANCE) then {
                 _drawUnits pushBack _x;
             } else {
                 _drawGroup = true;
             };
-        } forEach units _x;
+            
+            false
+        } count units _x;
         
         if (f_cam_tagsButton == 2 && !_isPlayerGroup) exitWith {};
         
@@ -41,9 +45,9 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
         };
         
         if (_drawGroup) then {
-            if (isPlayer (leader _x)) then {
+            if (isPlayer (leader _x) && ({alive _x} count (units _x)) > 0) then {
                 _distToCam = (call f_cam_GetCurrentCam) distance (leader _x);
-                if (_distToCam > 500) then {
+                if (_distToCam > FADE_DISTANCE) then {
                     _visPos = getPosATLVisual leader _x;
                     if (surfaceIsWater _visPos) then { _visPos = getPosASLVisual leader _x; };
 
@@ -54,9 +58,8 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
                         _x setVariable ["f_cam_nicename", _str];
                     };
                     
-                    _alpha = linearConversion [0, 3000, _distToCam, 1, 0, true];
+                    _alpha = linearConversion [0, FADE_DISTANCE, _distToCam, 1, 0, true];
                     _color set [3, _alpha];
-                    if (_distToCam > 5000) then { _color set [3, 0]; _str = ""; };
                     
                     drawIcon3D [
                         "\A3\ui_f\data\map\markers\nato\b_inf.paa",
@@ -84,18 +87,12 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith {};
                 _distToCam = (call f_cam_GetCurrentCam) distance _x;
                 _visPos = getPosATLVisual _x;
                 if (surfaceIsWater _visPos) then { _visPos = getPosASLVisual _x; };
-                _str = "";
-                _icon = "\A3\ui_f\data\map\markers\military\dot_CA.paa";
-                
-                if (isPlayer _x) then {
-                    _str = name _x;
-                };
-                
-                _alpha = linearConversion [0, 3000, _distToCam, 1, 0, true];
+                _str = if (isPlayer _x) then {name _x} else {""};
+                _alpha = linearConversion [0, FADE_DISTANCE, _distToCam, 1, 0, true];
                 _color set [3, _alpha];
                 
                 drawIcon3D [
-                    _icon,
+                    "\A3\ui_f\data\map\markers\military\dot_CA.paa",
                     _color,
                     [
                         _visPos select 0,

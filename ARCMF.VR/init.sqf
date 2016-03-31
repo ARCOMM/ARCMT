@@ -31,6 +31,11 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 // AI Unit Caching
 [30] spawn f_fnc_cInit;
 
+// Reinforcements
+if (isNil "ARC_reinforcements") then {
+    ARC_reinforcements = false;
+};
+
 // Note: Caching aggressiveness is set using the f_var_cachingAggressiveness variable; possible values:
 // 1 - cache only non-leaders and non-drivers
 // 2 - cache all non-moving units, always exclude vehicle drivers

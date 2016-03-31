@@ -5,3 +5,5 @@ if ((_this select 1) && !(player getVariable ["f_var_assignGear_done", false])) 
     waitUntil {!isNull player};
     ["r", player] call f_fnc_assignGear;
 };
+
+ARC_reinforcementPosition = getPos player;

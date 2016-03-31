@@ -7,6 +7,7 @@ _this spawn {
     _forced = [_this, 4, false,[false]] call BIS_fnc_param;
 
     ARC_cam_preCamGroup = group player;
+    ARC_cam_preCamSide = playerSide;
     ARC_cam_preCamName = name player;
     ARC_cam_preCamPos = getPos player;
     ARC_cam_preCamLoadout = [player, "init", false] call BIS_fnc_exportInventory;
@@ -103,6 +104,9 @@ _this spawn {
 
     f_cam_timestamp = time;
     f_cam_muteSpectators = true;
+    
+    f_cam_cachedTracers = [];
+    f_cam_tracersFinished = true;
 
     // Menu (Top left)
     f_cam_menuControls = [2111,2112,2113,2236,2114,5532];
@@ -184,10 +188,21 @@ _this spawn {
         _w = _w + _btnWidth;
     } forEach f_cam_menuControls;
     
-    if (!(call ARC_fnc_isRespawnEnabled)) then {
-        ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Disabled";
+    if (!(call ARC_fnc_isRespawnEnabled) || !ARC_reinforcements) then {
+        ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Not available";
     } else {
-        ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Respawn back into the game";
+        ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Rejoin the mission";
+    };
+    
+    "ARC_reinforcements" addPublicVariableEventHandler {
+        disableSerialization;
+        if ((_this select 1)) then {
+            ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Rejoin the mission";
+            hint "Reinforcements Enabled";
+            [] spawn {sleep 10; hintSilent "";};
+        } else {
+            ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Not available";
+        };
     };
     
     f_cam_helptext = "<t align='left'><t color='#FFFFFF'><t size='1.5'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='1.5'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t></t>";
@@ -230,4 +245,5 @@ _this spawn {
     f_cam_updatevalues_script = [] spawn f_fnc_UpdateValues;
     ["f_spect_tags", "onEachFrame", {_this call f_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
     ["f_spect_cams", "onEachFrame", {_this call f_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;
+    f_cam_tracerPFH = [] call f_fnc_handleTracers;
 };

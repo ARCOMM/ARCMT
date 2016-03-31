@@ -1,5 +1,7 @@
 f_cam_forcedExit = true;
 // call ARC_fnc_enableAllChannels;
+[] call f_fnc_removeAllTracers;
+if (!isNil "f_cam_tracerPFH") then {[f_cam_tracerPFH] call CBA_fnc_removePerFrameHandler;};
 closeDialog 1;
 ["f_spect_tags", "onEachFrame"] call bis_fnc_removeStackedEventHandler;
 ["f_spect_cams", "onEachFrame"] call bis_fnc_removeStackedEventHandler;

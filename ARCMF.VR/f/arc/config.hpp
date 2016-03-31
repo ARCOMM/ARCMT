@@ -25,6 +25,11 @@ class ARC
         file = "f\arc\sandbox";
         class setupSandbox {};
     };
+    class reinforcements {
+        file = "f\arc\reinforcements";
+        class toggleReinforcements {};
+        class rejoinMission {};
+    };
     class helpers
     {
         file = "f\arc\helpers";

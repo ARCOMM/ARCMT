@@ -6,9 +6,7 @@ createDialog "f_spec_dialog";
 _displayDialog = (findDisplay 9228);
 
 ctrlSetText [2112, (f_cam_sideNames select f_cam_sideButton)];
-
 ctrlSetText [2113, (f_cam_tagsNames select f_cam_tagsButton)];
-
 ctrlSetText [2236, (f_cam_tracersNames select f_cam_tracersButton)];
 
 if (f_cam_playersOnly) then {
