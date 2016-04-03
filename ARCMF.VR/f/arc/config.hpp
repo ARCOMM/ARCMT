@@ -1,5 +1,10 @@
 class ARC
 {
+    class misc
+    {
+        file = "f\arc\misc";
+        class ambientAA {};
+    };
     class chat
     {
         file = "f\arc\chat";
