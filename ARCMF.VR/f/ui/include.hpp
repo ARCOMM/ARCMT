@@ -3,3 +3,4 @@
 
 #include "defines.hpp"
 #include "gear\dialog.hpp"
+#include "groups\dialog.hpp"
