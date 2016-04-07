@@ -14,6 +14,8 @@
  * Public: Yes
  */
 
+if (!isServer) exitWith {};
+
 params ["_vehicle"];
 
 private _driver = driver _vehicle;
@@ -30,9 +32,9 @@ sleep 2 + (random 5);
 while {alive _vehicle} do {
     for "_i" from 0 to (10 + round (random (4))) do {
         _vehicle fire ((weapons _vehicle) select 0);
-        sleep 0.1;
+        uiSleep 0.25;
     };
     
-    sleep ((random 2) + 1);
+    uiSleep (round (random 4) + 2);
     _vehicle setVehicleAmmo 1;
 };

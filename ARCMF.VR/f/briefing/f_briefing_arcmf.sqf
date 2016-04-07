@@ -28,3 +28,5 @@ if (serverCommandAvailable "#kick" || isServer) then {
 
     player createDiaryRecord ["ARCMF", ["Reinforcements", _reinf]];
 };
+
+player createDiaryRecord ["ARCMF", ["Version", (loadFile ".version")]];
