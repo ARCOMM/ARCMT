@@ -3,6 +3,8 @@ private ["_unit","_isMan","_side","_faction","_prioritizeTracerMags","_removeMed
 _unit = _this select 0;
 waitUntil {!isNull _unit};
 
+if (_unit getVariable ["ARC_assignedAIGear", false]) exitWith {};
+
 _isMan = _unit isKindOf "CAManBase";
 _side = side _unit;
 _faction = _side call ARC_fnc_getFactionFromSide;
