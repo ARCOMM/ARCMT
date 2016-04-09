@@ -1,7 +1,6 @@
 private ["_unit","_isMan","_side","_faction","_prioritizeTracerMags","_removeMedicalItems","_uniformItems","_vestItems","_backpackItems","_removeNightVision","_rifleClass","_hasRemovedWeapons","_uniformClass","_vestClass","_backpackClass","_headgearClass","_goggleClass","_faceClass","_voiceClass","_magazines","_standard","_tracers","_launcherClass"];
 
 _unit = _this select 0;
-waitUntil {!isNull _unit};
 
 if (_unit getVariable ["ARC_assignedAIGear", false]) exitWith {};
 

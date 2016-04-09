@@ -1,7 +1,6 @@
 private ["_unit"];
 
 _unit = _this select 0;
-waitUntil {!isNull _unit};
 
 if (isPlayer _unit || !((side _unit) in [west,east,resistance,civilian])) exitWith {};
 
