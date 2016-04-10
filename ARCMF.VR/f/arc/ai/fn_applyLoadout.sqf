@@ -2,6 +2,8 @@ private ["_unit","_isMan","_side","_faction","_prioritizeTracerMags","_removeMed
 
 _unit = _this select 0;
 
+if (!local _unit) exitWith {};
+
 if (_unit getVariable ["ARC_assignedAIGear", false]) exitWith {};
 
 _isMan = _unit isKindOf "CAManBase";
