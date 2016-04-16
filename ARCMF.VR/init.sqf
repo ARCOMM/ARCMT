@@ -36,6 +36,11 @@ if (isNil "ARC_reinforcements") then {
     ARC_reinforcements = false;
 };
 
+// Adversarial Mode
+if (isNil "ARC_adversarialMode") then {
+    ARC_adversarialMode = false;
+};
+
 // Note: Caching aggressiveness is set using the f_var_cachingAggressiveness variable; possible values:
 // 1 - cache only non-leaders and non-drivers
 // 2 - cache all non-moving units, always exclude vehicle drivers

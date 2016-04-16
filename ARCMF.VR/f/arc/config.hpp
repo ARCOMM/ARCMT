@@ -29,6 +29,8 @@ class ARC
     {
         file = "f\arc\sandbox";
         class setupSandbox {};
+        class toggleAdversarial {};
+        class setAdversarialStart {};
     };
     class reinforcements {
         file = "f\arc\reinforcements";
@@ -71,5 +73,6 @@ class ARC
     {
         file = "f\arc\gear";
         class switchCamo {};
+        class reassignGear {};
     };
 };

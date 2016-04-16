@@ -47,10 +47,15 @@ waitUntil {player == _newUnit};
 // Set name, position and turns off safe mode, then deletes old unit
 _newUnit setName ARC_cam_preCamName;
 
-if (isNil "ARC_reinforcementPosition") then {
-    _newUnit setPos ARC_cam_preCamPos;
+if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
+    _startPos = [(call ARC_fnc_getStartingPos), 20] call CBA_fnc_randPos;
+    _newUnit setPos _startPos;
 } else {
-    _newUnit setPos ARC_reinforcementPosition;
+    if (isNil "ARC_reinforcementPosition") then {
+        _newUnit setPos ARC_cam_preCamPos;
+    } else {
+        _newUnit setPos ARC_reinforcementPosition;
+    };
 };
 
 _newUnit allowDamage true;

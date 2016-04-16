@@ -17,19 +17,19 @@ sandbox_dir = "../build/ARCMF_Sandbox.VR"
 orig_sqm = "../build/ARCMF_Sandbox.VR/mission.sqm"
 new_sqm = "../build/ARCMF_Sandbox.VR/new_mission.sqm"
 orig_ext = "../build/ARCMF_Sandbox.VR/description.ext"
-new_ext = "../build/ARCMF_Sandbox.VR/new_description.ext"		
-with open('../ARCMF.VR/.version') as v: version = v.read()
+new_ext = "../build/ARCMF_Sandbox.VR/new_description.ext"
+with open('../ARCMF.VR/version.txt') as v: version = v.read()
 
 if os.path.isdir(sandbox_dir):
 	shutil.rmtree(sandbox_dir)
-	
+
 copy_folder("../ARCMF.VR", sandbox_dir)
 
 copyfile(orig_ext, new_ext)
 with open(new_ext) as infile, open(orig_ext, 'w') as outfile:
 	for line in infile:
-		if re.match(r'^\tsandbox\s=\s0;', line, re.I):
-			outfile.write(re.sub(r'^\tsandbox\s=\s0;', '\tsandbox = 1;', line))
+		if re.match(r'^    sandbox\s=\s0;', line, re.I):
+			outfile.write(re.sub(r'^    sandbox\s=\s0;', '    sandbox = 1;', line))
 		else:
 			if re.match(r'^onLoadName\s=\s"ARCMF";', line, re.I):
 				outfile.write(re.sub(r'^onLoadName\s=\s"ARCMF";', 'onLoadName = "Sandbox {}";'.format(version), line))
