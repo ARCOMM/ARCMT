@@ -62,6 +62,7 @@ class ARC
         class getMarkerType {};
         class getMarkerTexture {};
         class markerExists {};
+        class drawOnMap {};
     };
     class tracker
     {
