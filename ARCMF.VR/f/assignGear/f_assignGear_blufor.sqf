@@ -48,7 +48,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -83,7 +82,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -149,7 +147,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -184,7 +181,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -210,7 +206,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -235,7 +230,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -263,7 +257,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -290,7 +283,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -325,7 +317,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -349,7 +340,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -377,7 +367,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -412,7 +401,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -441,7 +429,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -512,7 +499,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -538,7 +524,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -562,7 +547,6 @@ switch (_typeOfUnit) do
     {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
-        for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_XL50";
