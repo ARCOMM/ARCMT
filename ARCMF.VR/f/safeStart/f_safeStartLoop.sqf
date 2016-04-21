@@ -19,6 +19,6 @@ while {f_var_mission_timer > 0} do {
 };
 
 if (f_var_mission_timer == 0) then {
-    ["Weapons are live!","hint",true] call BIS_fnc_MP;
+    ["WEAPONS ARE LIVE","hint",true] call BIS_fnc_MP;
     [[false],"f_fnc_safety",playableUnits + switchableUnits] call BIS_fnc_MP;
 };

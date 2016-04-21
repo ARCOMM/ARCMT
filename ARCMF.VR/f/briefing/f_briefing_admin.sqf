@@ -28,7 +28,7 @@ hintSilent 'Safe Start Started!';"">
 Begin safe start timer</execute><br/>
 
 <execute expression=""f_var_mission_timer = -1; publicVariable 'f_var_mission_timer';
-hint 'Weapons are live!';
+hint 'WEAPONS ARE LIVE';
 [[false], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;"">
 End safe start timer</execute><br/>
 
