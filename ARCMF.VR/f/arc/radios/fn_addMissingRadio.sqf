@@ -15,6 +15,8 @@ switch (_radio) do {
 if (_unit canAdd _radioClassname) then {
     _unit addItem _radioClassname;
     hint "Radio added";
+    [["ARCMF", ["Log", (format ["%1 (%2) retrieved a %3 from the map.", (name _unit), ([_unit] call ARC_fnc_getUnitType), _radioClassname])]], "ARC_fnc_broadcastDiary", true] call BIS_fnc_MP;
 } else {
     hint "Not enough room in your inventory to add that radio";
+    [["ARCMF", ["Log", (format ["%1 (%2) tried to retrieve a %3 from the map.", (name _unit), ([_unit] call ARC_fnc_getUnitType), _radioClassname])]], "ARC_fnc_broadcastDiary", true] call BIS_fnc_MP;
 };

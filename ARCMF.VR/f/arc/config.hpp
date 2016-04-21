@@ -49,6 +49,8 @@ class ARC
         class isPlayerReady {};
         class getStartingPos {};
         class getCfgBool {};
+        class broadcastDiary {};
+        class getUnitType {};
     };
     class radios
     {

@@ -11,7 +11,7 @@ _zeroPad = {
 while {f_var_mission_timer > 0} do {
     _mins = floor (f_var_mission_timer / 60);
     _secs = f_var_mission_timer mod 60;
-    hintSilent (format ["BRIEFING TIME: %1:%2", [_mins] call _zeroPad, [_secs] call _zeroPad]);
+    [(format ["BRIEFING TIME: %1:%2", [_mins] call _zeroPad, [_secs] call _zeroPad]),"hintSilent",true] call BIS_fnc_MP;
     uiSleep 1;
     if (f_var_mission_timer < 0) exitWith {};
     f_var_mission_timer = f_var_mission_timer - 1;
