@@ -17,28 +17,27 @@ _briefing = _briefing + "<font size='18'>Ending Controllers</font><br/>";
 
 _briefing = _briefing + "<br/>
 <font size='18'>Safe Start Control</font><br/>
-<execute expression=""f_var_mission_timer = f_var_mission_timer + 1; publicVariable 'f_var_mission_timer'; hintSilent format ['Mission Timer: %1', f_var_mission_timer];"">
+<execute expression=""f_var_mission_timer = f_var_mission_timer + 60; publicVariable 'f_var_mission_timer';"">
 Increase safe start timer by 1 minute</execute><br/>
 
-<execute expression=""f_var_mission_timer = f_var_mission_timer - 1; publicVariable 'f_var_mission_timer'; hintSilent format ['Mission Timer: %1', f_var_mission_timer];"">
+<execute expression=""f_var_mission_timer = f_var_mission_timer - 60; publicVariable 'f_var_mission_timer';"">
 Decrease safe start timer by 1 minute</execute><br/>
 
-<execute expression=""[[[], 'f\safeStart\f_safeStart.sqf'], 'BIS_fnc_execVM', true] call BIS_fnc_MP;
+<execute expression=""f_var_mission_timer = 300; publicVariable 'f_var_mission_timer';[[[], 'f\safeStart\f_safeStart.sqf'], 'BIS_fnc_execVM', true] call BIS_fnc_MP;
 hintSilent 'Safe Start Started!';"">
 Begin safe start timer</execute><br/>
 
 <execute expression=""f_var_mission_timer = -1; publicVariable 'f_var_mission_timer';
-[['SafeStartMissionStarting', ['Weapons are live!']], 'BIS_fnc_showNotification', true] call BIS_fnc_MP;
-[[false], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;
-hintSilent 'Safe Start Ended!';"">
+hint 'Weapons are live!';
+[[false], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;"">
 End safe start timer</execute><br/>
 
 <execute expression=""[[true], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;
-hintSilent 'Safety On!' "">
+hint 'Safety On!' "">
 Force safety on for all players</execute><br/>
 
 <execute expression=""[[false], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;
-hintSilent 'Safety Off!' "">
+hint 'Safety Off!' "">
 Force safety off for all players</execute><br/><br/>
 ";
 

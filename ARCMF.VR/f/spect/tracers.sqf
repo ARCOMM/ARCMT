@@ -27,8 +27,10 @@ addMissionEventHandler ["Draw3D", {
                                
                 drawLine3D [_positions select _i select 0, _positions select (_i + 1) select 0, _color];
             };
-        } forEach ( _unit getVariable["hyp_var_tracer_activeIndexes", []] );
-    } forEach hyp_var_tracer_tracedUnits;
+            false
+        } count (_unit getVariable["hyp_var_tracer_activeIndexes", []]);
+        false
+    } count hyp_var_tracer_tracedUnits;
 }];
 
 /*
@@ -138,7 +140,8 @@ hyp_fnc_traceFireClear = {
     _unit = _this select 0;
     {
         _unit setVariable [format["hyp_var_tracer_projectile_%1", _x], nil];
-    } forEach (_unit getVariable ["hyp_var_tracer_activeIndexes", []]);
+        false
+    } count (_unit getVariable ["hyp_var_tracer_activeIndexes", []]);
     _unit setVariable ["hyp_var_tracer_activeIndexes", []];
 };
  
@@ -150,7 +153,8 @@ hyp_fnc_traceFireRemove = {
     _unit removeEventHandler ["fired", (_unit getVariable ["hyp_var_tracer_eventHandle", 0])];
     {
         _unit setVariable [format["hyp_var_tracer_projectile_%1", _x], nil];
-    } forEach (_unit getVariable ["hyp_var_tracer_activeIndexes", []]);
+        false
+    } count (_unit getVariable ["hyp_var_tracer_activeIndexes", []]);
     _unit setVariable ["hyp_var_tracer_color", nil];
     _unit setVariable ["hyp_var_tracer_lifetime", nil];
     _unit setVariable ["hyp_var_tracer_interval", nil];

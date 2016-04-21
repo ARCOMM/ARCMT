@@ -239,7 +239,8 @@ _this spawn {
             f_cam_fired pushBack (_this select 6);
         }];
         _x setVariable ["f_cam_fired_eventid", _event];
-    } forEach (allUnits + vehicles);
+        false
+    } count (allUnits + vehicles);
 
     // spawn sub scripts
     f_cam_updatevalues_script = [] spawn f_fnc_UpdateValues;

@@ -2,15 +2,23 @@ if !(isServer) exitWith {};
 
 sleep 2;
 
+_zeroPad = {
+    params ["_number"];
+    if (count (str _number) == 1) exitWith {format ["0%1", _number]};
+    str _number
+};
+
 while {f_var_mission_timer > 0} do {
-    [["SafeStart",[format["Time Remaining: %1 min",f_var_mission_timer]]],"bis_fnc_showNotification",true] call BIS_fnc_MP;
-    uisleep 60;
+    _mins = floor (f_var_mission_timer / 60);
+    _secs = f_var_mission_timer mod 60;
+    hintSilent (format ["BRIEFING TIME: %1:%2", [_mins] call _zeroPad, [_secs] call _zeroPad]);
+    uiSleep 1;
     if (f_var_mission_timer < 0) exitWith {};
     f_var_mission_timer = f_var_mission_timer - 1;
     publicVariable "f_var_mission_timer";
 };
 
 if (f_var_mission_timer == 0) then {
-        [["SafeStartMissionStarting",["Weapons are live!"]],"bis_fnc_showNotification",true] call BIS_fnc_MP;
-        [[false],"f_fnc_safety",playableUnits + switchableUnits] call BIS_fnc_MP;
+    ["Weapons are live!","hint",true] call BIS_fnc_MP;
+    [[false],"f_fnc_safety",playableUnits + switchableUnits] call BIS_fnc_MP;
 };

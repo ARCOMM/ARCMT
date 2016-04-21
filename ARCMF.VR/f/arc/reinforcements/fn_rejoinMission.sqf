@@ -73,8 +73,8 @@ if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
 // Shutdown spectator
 [] call f_fnc_ForceExit;
 [false] call acre_api_fnc_setSpectator;
-{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;
-[] spawn {uiSleep 2;{[_x] call hyp_fnc_traceFireRemove} forEach allUnits;};
+{[_x] call hyp_fnc_traceFireRemove;false} count allUnits;
+[] spawn {uiSleep 2;{[_x] call hyp_fnc_traceFireRemove;false} count allUnits;};
 
 // Join empty group
 [_newUnit] joinSilent grpNull;

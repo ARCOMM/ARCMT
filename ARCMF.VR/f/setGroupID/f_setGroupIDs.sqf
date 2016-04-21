@@ -213,4 +213,4 @@ _groups = [
     ["GrpINDFOR_PH8","PH8","ColorCIV"]
 ];
 
-{_x call f_fnc_setGroupID} forEach _groups;
+{_x call f_fnc_setGroupID;false} count _groups;

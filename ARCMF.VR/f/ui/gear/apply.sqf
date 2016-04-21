@@ -22,6 +22,7 @@ _gearString = ctrlText _gearTextBox;
         
         closeDialog 1;
     };
-} forEach (allPlayers - entities "HeadlessClient_F");
+    false
+} count (allPlayers - entities "HeadlessClient_F");
 
 closeDialog 1;

@@ -16,7 +16,8 @@ _groupString = ctrlText _groupEdit;
         _grp setGroupIdGlobal [_groupString, "GroupColor0"];
         _grp setVariable ["ARC_groupHandled", true, true];
     };
-} forEach (allPlayers - entities "HeadlessClient_F");
+    false
+} count (allPlayers - entities "HeadlessClient_F");
 
 closeDialog 1;
 createDialog "GUI_Groups";

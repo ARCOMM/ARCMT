@@ -16,7 +16,8 @@ f_fnc_SetTeamValue = {
                 [_x] execVM "f\FTMemberMarkers\f_localFTMemberMarker.sqf";
                 f_var_HandlerGroup pushBack _x;
             };
-        } forEach units (group player);
+            false
+        } count units (group player);
         sleep 5;
     };
 };

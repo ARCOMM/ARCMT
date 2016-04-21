@@ -10,6 +10,7 @@ _ai = [];
             _ai pushBack _x
         };
     };
-} forEach allGroups;
+    false
+} count allGroups;
 
 [_players, _ai]

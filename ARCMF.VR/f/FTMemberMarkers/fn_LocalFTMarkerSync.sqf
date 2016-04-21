@@ -15,7 +15,8 @@ while {_unit == (leader _grp) && alive _unit} do {
                 [[_x, _colorTeam], "f_fnc_SetTeamValue", _grp, false] spawn BIS_fnc_MP;
             };
         };
-    } forEach units _grp;
+        false
+    } count units _grp;
     sleep 3;
 };
 
