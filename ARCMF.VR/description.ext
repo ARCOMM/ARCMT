@@ -16,20 +16,18 @@ enableDebugConsole = 1;
 disabledAI = 1;
 
 class CfgRespawnTemplates {
-    class f_Spectator {
+    class f_spectator {
         onPlayerRespawn = "f_fnc_CamInit";
-        onPlayerKilled = "";
     };
     class Seagull {
-        onPlayerKilled = "";
         onPlayerRespawn = "";
     };
 };
 
-respawn = 1;
+respawn = 4;
 respawndelay = 3;
 respawnOnStart = 0;
-respawnTemplates[] = {"f_spectator"};
+respawnTemplates[] = {"Seagull","f_spectator"};
 
 showGroupIndicator = 0;
 showHUD[] = {true, true, false, false, true, true, false, true};

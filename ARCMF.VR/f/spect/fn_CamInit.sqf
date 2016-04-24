@@ -14,8 +14,7 @@ _this spawn {
 
     if (isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
     if (isNull _unit) then { _unit = cameraOn; f_cam_isJIP = true; };
-    if (typeOf _unit != "seagull" || {!isPlayer}) exitWith {};
-    //if (typeOf _unit != "seagull" && !_forced || !hasInterface) exitWith {};
+    if (typeOf _unit != "seagull" && !_forced || !hasInterface) exitWith {};
     waituntil {missionNamespace getVariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_oldUnit) || f_cam_isJIP || _forced };
 
     if (!isNil "BIS_fnc_feedback_allowPP") then {
