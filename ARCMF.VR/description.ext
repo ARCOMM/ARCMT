@@ -1,7 +1,6 @@
 #include "f\arc\macros.hpp"
 
-class Header
-{
+class Header {
     gameType = Coop;
     minPlayers = 1;
     maxPlayers = 229;
@@ -15,18 +14,28 @@ overviewPicture = "splash.paa";
 loadScreen = "splash.paa";
 enableDebugConsole = 1;
 disabledAI = 1;
-respawn = 4;
+
+class CfgRespawnTemplates {
+    class f_Spectator {
+        onPlayerRespawn = "f_fnc_CamInit";
+        onPlayerKilled = "";
+    };
+    class Seagull {
+        onPlayerKilled = "";
+        onPlayerRespawn = "";
+    };
+};
+
+respawn = 1;
 respawndelay = 3;
 respawnOnStart = 0;
-respawnTemplates[] = {"Seagull","f_spectator"};
+respawnTemplates[] = {"f_spectator"};
 
 showGroupIndicator = 0;
 showHUD[] = {true, true, false, false, true, true, false, true};
 
-class CfgNotifications
-{
-    class Template
-    {
+class CfgNotifications {
+    class Template {
         title = "";
         iconPicture = "";
         iconText = "";
@@ -36,24 +45,21 @@ class CfgNotifications
         priority = 0;
         difficulty[] = {};
     };
-    class Alert
-    {
+    class Alert {
         title = "ALERT";
         description = "%1";
         iconPicture="\A3\ui_f\data\map\markers\military\warning_ca.paa";
         duration = 3;
         priority = 9;
     };
-    class SafeStart
-    {
+    class SafeStart {
         title = "SAFE START";
         description = "%1";
         iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
         duration = 10;
         priority = 0;
     };
-    class SafeStartMissionStarting
-    {
+    class SafeStartMissionStarting {
         title = "SAFE START";
         description = "%1";
         iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
@@ -62,65 +68,56 @@ class CfgNotifications
     };
 };
 
-class Params
-{
-    class f_param_debugMode
-    {
+class Params {
+    class f_param_debugMode {
         title = "Debug Mode";
         values[] = {0,1};
         texts[] = {"Off","On"};
         default = 0;
         code = "f_var_debugMode = %1";
     };
-    class f_param_mission_timer
-    {
+    class f_param_mission_timer {
         title = "Briefing Time (mins)";
         values[] = {0,1,2,3,4,5,6,7,8,9,10,15,30};
         texts[] = {"Off","1","2","3","4","5","6","7","8","9","10","15","30"};
-        default = 30;
+        default = 0;
         code = "f_param_mission_timer = %1 * 60";
     };
-    class f_param_caching
-    {
+    class f_param_caching {
         title = "Cache AI outside distance (m)";
         values[] = {0,600,800,1000,1500,2000,2500,3000,3500,4000,4500,5000};
         default = 0;
         code = "f_param_caching = %1";
     };
-    class arc_param_duplex
-    {
+    class arc_param_duplex {
         title = "ACRE Duplex Option";
         values[] = {0,1};
         texts[] = {"Half Duplex", "Full Duplex"};
         default = 1;
         code = "arc_param_duplex = if (%1 == 1) then {true} else {false};";
     };
-    class arc_param_babel_west
-    {
+    class arc_param_babel_west {
         title = "ACRE Babel Language (BLUFOR)";
         values[] = {0,1,2,3};
         texts[] = {"English","Russian","Greek","Use Config"};
         default = 0;
         code = "arc_param_babel_west = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};case 3: {'config'};};";
     };
-    class arc_param_babel_east
-    {
+    class arc_param_babel_east {
         title = "ACRE Babel Language (OPFOR)";
         values[] = {0,1,2,3};
         texts[] = {"English","Russian","Greek","Use Config"};
         default = 0;
         code = "arc_param_babel_east = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};case 3: {'config'};};";
     };
-    class arc_param_babel_resistance
-    {
+    class arc_param_babel_resistance {
         title = "ACRE Babel Language (INDFOR)";
         values[] = {0,1,2,3};
         texts[] = {"English","Russian","Greek","Use Config"};
         default = 0;
         code = "arc_param_babel_resistance = switch (%1) do {case 0: {'english'};case 1: {'russian'};case 2: {'greek'};case 3: {'config'};};";
     };
-    class arc_param_acre_reveal
-    {
+    class arc_param_acre_reveal {
         title = "ACRE Reveal to AI";
         values[] = {0,1};
         texts[] = {"Disabled","Enabled"};
@@ -129,117 +126,87 @@ class Params
     };
 };
 
-class CfgDebriefing
-{
-    class End1
-    {
-        title = "BLUFOR WIN";
+class CfgDebriefing {
+    class End1 {
+        title = "BLUFOR SUCCESS";
         subtitle = "";
         description = "";
     };
-    class End2
-    {
-        title = "OPFOR WIN";
+    class End2 {
+        title = "OPFOR SUCCESS";
         subtitle = "";
         description = "";
     };
-    class End3
-    {
-        title = "INDFOR WIN";
+    class End3 {
+        title = "INDFOR SUCCESS";
         subtitle = "";
         description = "";
     };
-    class End4
-    {
-        title = "CIVILIANS WIN";
+    class End4 {
+        title = "CIVILIANS SUCCESS";
         subtitle = "";
         description = "";
     };
-    class End5
-    {
+    class End5 {
         title = "DRAW";
         subtitle = "";
         description = "";
     };
-    class End6
-    {
+    class End6 {
         title = "ALL TEAMS LOSE";
         subtitle = "";
         description = "";
     };
 };
 
-class CfgRespawnTemplates
-{
-    class f_Spectator
-    {
-        onPlayerRespawn = "f_fnc_CamInit";
-    };
-    class Seagull
-    {
-        onPlayerRespawn = "";
-    };
-};
-
 #include "f\spect\config.hpp"
 
-class CfgFunctions
-{
+class CfgFunctions {
     #include "f\arc\config.hpp"
 
-    class F
-    {
-        class common
-        {
+    class F {
+        class common {
             file = "f\common";
             class nearPlayer {};
-            class processParamsArray
-            {
+            class processParamsArray {
                 preInit = 1;
                 postInit = 1;
             };
         };
-        class mpEnd
-        {
+        class mpEnd {
             file = "f\mpEnd";
             class mpEnd {};
             class mpEndReceiver {};
         };
-        class cache
-        {
+        class cache {
             file = "f\cache";
             class cInit {};
             class cTracker {};
             class gCache {};
             class gUncache {};
         };
-        class assignGear
-        {
+        class assignGear {
             file = "f\assignGear";
             class assignGear {};
         };
-        class setGroupID
-        {
+        class setGroupID {
             file = "f\setGroupID";
             class setGroupID {};
         };
-        class FTMemberMarkers
-        {
+        class FTMemberMarkers {
             file = "f\FTMemberMarkers";
             class SetLocalFTMemberMarkers {};
             class GetMarkerColor {};
             class LocalFTMarkerSync {};
             class GetMarker {};
         };
-        class zeus
-        {
+        class zeus {
             file = "f\zeus";
             class zeusInit {};
             class zeusAddAddons {};
             class zeusAddObjects {};
         };
-        class safeStart
-        {
+        class safeStart {
             file = "f\safeStart";
             class safety {};
         };
