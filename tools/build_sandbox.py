@@ -37,8 +37,8 @@ with open(new_ext) as infile, open(orig_ext, 'w') as outfile:
 				if re.match(r'^onLoadMission\s=\s"ARCOMM Mission Framework\.";', line, re.I):
 					outfile.write(re.sub(r'^onLoadMission\s=\s"ARCOMM Mission Framework\.";', 'onLoadMission = "For extended functionality use the ARC_Ares mod available on our forums and at GitHub.com/ARCOMM.";', line))
 				else:
-					if re.match(r'^respawn\s=\s4;', line, re.I):
-						outfile.write(re.sub(r'^respawn\s=\s4;', 'respawn = 3;', line))
+					if re.match(r'^respawn\s=\s1;', line, re.I):
+						outfile.write(re.sub(r'^respawn\s=\s1;', 'respawn = 3;', line))
 					else:
 						if re.match(r'^respawnTemplates\[\]\s=\s{"Seagull","f_spectator"};', line, re.I):
 							outfile.write(re.sub(r'^respawnTemplates\[\]\s=\s{"Seagull","f_spectator"};', 'respawnTemplates[] = {"MenuPosition"};', line))

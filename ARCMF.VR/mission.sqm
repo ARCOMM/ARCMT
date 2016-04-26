@@ -33,34 +33,7 @@ addons[]=
 randomSeed=3124507;
 class ScenarioData
 {
-	author="Kingsley, tryteyker, Nelson";
-};
-class CustomAttributes
-{
-	class Category0
-	{
-		name="Scenario";
-		class Attribute0
-		{
-			property="EnableDebugConsole";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
-				};
-			};
-		};
-		nAttributes=1;
-	};
+	author="Kingsley";
 };
 class Mission
 {

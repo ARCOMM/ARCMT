@@ -14,18 +14,9 @@ overviewPicture = "splash.paa";
 loadScreen = "splash.paa";
 enableDebugConsole = 1;
 disabledAI = 1;
-
-class CfgRespawnTemplates {
-    class f_spectator {
-        onPlayerRespawn = "f_fnc_CamInit";
-    };
-    class Seagull {
-        onPlayerRespawn = "";
-    };
-};
-
-respawn = 4;
-respawndelay = 3;
+respawn = 1;
+respawnDelay = 3;
+respawnButton = 1;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator"};
 
@@ -154,6 +145,15 @@ class CfgDebriefing {
         title = "ALL TEAMS LOSE";
         subtitle = "";
         description = "";
+    };
+};
+
+class CfgRespawnTemplates {
+    class f_spectator {
+        onPlayerRespawn = "f_fnc_CamInit";
+    };
+    class Seagull {
+        onPlayerRespawn = "";
     };
 };
 
