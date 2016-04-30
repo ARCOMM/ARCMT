@@ -38,7 +38,6 @@ if ({!isNil _x} count ["f_param_AISkill_BLUFOR","f_param_AISkill_INDP","f_param_
 
 if (_announce) then {
     _curator setVariable ["owner", format ["%1", _unit], true];
-    [["Alert", [format ["%1 has become curator!", name _unit]]], "BIS_fnc_showNotification", true] call BIS_fnc_MP;
 };
 
 _curator

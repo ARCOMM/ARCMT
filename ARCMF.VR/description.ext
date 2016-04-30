@@ -23,40 +23,6 @@ respawnTemplates[] = {"Seagull","f_spectator"};
 showGroupIndicator = 0;
 showHUD[] = {true, true, false, false, true, true, false, true};
 
-class CfgNotifications {
-    class Template {
-        title = "";
-        iconPicture = "";
-        iconText = "";
-        description = "";
-        color[] = {1,1,1,1};
-        duration = 5;
-        priority = 0;
-        difficulty[] = {};
-    };
-    class Alert {
-        title = "ALERT";
-        description = "%1";
-        iconPicture="\A3\ui_f\data\map\markers\military\warning_ca.paa";
-        duration = 3;
-        priority = 9;
-    };
-    class SafeStart {
-        title = "SAFE START";
-        description = "%1";
-        iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
-        duration = 10;
-        priority = 0;
-    };
-    class SafeStartMissionStarting {
-        title = "SAFE START";
-        description = "%1";
-        iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
-        duration = 3;
-        priority = 1;
-    };
-};
-
 class Params {
     class f_param_debugMode {
         title = "Debug Mode";

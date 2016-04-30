@@ -1,5 +1,5 @@
 _groups = [
-    // GROUP IDs: BLUFOR > NATO
+    // GROUP IDs: BLUFOR
     ["GrpBLUFOR_CO_CC","CO","ColorOrange"],
     ["GrpBLUFOR_1PLT_CO","1PLT","ColorYellow"],
     ["GrpBLUFOR_2PLT_CO","2PLT","ColorYellow"],
@@ -61,16 +61,16 @@ _groups = [
     ["GrpBLUFOR_G7","G7","ColorPink"],
     ["GrpBLUFOR_G8","G8","ColorPink"],
 
-    ["GrpBLUFOR_PH1","PH1","ColorCIV"],
-    ["GrpBLUFOR_PH2","PH2","ColorCIV"],
-    ["GrpBLUFOR_PH3","PH3","ColorCIV"],
-    ["GrpBLUFOR_PH4","PH4","ColorCIV"],
-    ["GrpBLUFOR_PH5","PH5","ColorCIV"],
-    ["GrpBLUFOR_PH6","PH6","ColorCIV"],
-    ["GrpBLUFOR_PH7","PH7","ColorCIV"],
-    ["GrpBLUFOR_PH8","PH8","ColorCIV"],
+    ["GrpBLUFOR_PH1","PH1","ColorRed"],
+    ["GrpBLUFOR_PH2","PH2","ColorRed"],
+    ["GrpBLUFOR_PH3","PH3","ColorRed"],
+    ["GrpBLUFOR_PH4","PH4","ColorRed"],
+    ["GrpBLUFOR_PH5","PH5","ColorRed"],
+    ["GrpBLUFOR_PH6","PH6","ColorRed"],
+    ["GrpBLUFOR_PH7","PH7","ColorRed"],
+    ["GrpBLUFOR_PH8","PH8","ColorRed"],
 
-    // GROUP IDs: OPFOR > CSAT
+    // GROUP IDs: OPFOR
     ["GrpOPFOR_CO_CC","CO","ColorOrange"],
     ["GrpOPFOR_1PLT_CO","1PLT","ColorYellow"],
     ["GrpOPFOR_2PLT_CO","2PLT","ColorYellow"],
@@ -132,16 +132,16 @@ _groups = [
     ["GrpOPFOR_G7","G7","ColorPink"],
     ["GrpOPFOR_G8","G8","ColorPink"],
 
-    ["GrpOPFOR_PH1","PH1","ColorCIV"],
-    ["GrpOPFOR_PH2","PH2","ColorCIV"],
-    ["GrpOPFOR_PH3","PH3","ColorCIV"],
-    ["GrpOPFOR_PH4","PH4","ColorCIV"],
-    ["GrpOPFOR_PH5","PH5","ColorCIV"],
-    ["GrpOPFOR_PH6","PH6","ColorCIV"],
-    ["GrpOPFOR_PH7","PH7","ColorCIV"],
-    ["GrpOPFOR_PH8","PH8","ColorCIV"],
+    ["GrpOPFOR_PH1","PH1","ColorRed"],
+    ["GrpOPFOR_PH2","PH2","ColorRed"],
+    ["GrpOPFOR_PH3","PH3","ColorRed"],
+    ["GrpOPFOR_PH4","PH4","ColorRed"],
+    ["GrpOPFOR_PH5","PH5","ColorRed"],
+    ["GrpOPFOR_PH6","PH6","ColorRed"],
+    ["GrpOPFOR_PH7","PH7","ColorRed"],
+    ["GrpOPFOR_PH8","PH8","ColorRed"],
 
-    // GROUP IDs: INDEPENDENT > AAF
+    // GROUP IDs: INDEPENDENT
     ["GrpINDFOR_CO_CC","CO","ColorOrange"],
     ["GrpINDFOR_1PLT_CO","1PLT","ColorYellow"],
     ["GrpINDFOR_2PLT_CO","2PLT","ColorYellow"],
@@ -203,14 +203,14 @@ _groups = [
     ["GrpINDFOR_G7","G7","ColorPink"],
     ["GrpINDFOR_G8","G8","ColorPink"],
 
-    ["GrpINDFOR_PH1","PH1","ColorCIV"],
-    ["GrpINDFOR_PH2","PH2","ColorCIV"],
-    ["GrpINDFOR_PH3","PH3","ColorCIV"],
-    ["GrpINDFOR_PH4","PH4","ColorCIV"],
-    ["GrpINDFOR_PH5","PH5","ColorCIV"],
-    ["GrpINDFOR_PH6","PH6","ColorCIV"],
-    ["GrpINDFOR_PH7","PH7","ColorCIV"],
-    ["GrpINDFOR_PH8","PH8","ColorCIV"]
+    ["GrpINDFOR_PH1","PH1","ColorRed"],
+    ["GrpINDFOR_PH2","PH2","ColorRed"],
+    ["GrpINDFOR_PH3","PH3","ColorRed"],
+    ["GrpINDFOR_PH4","PH4","ColorRed"],
+    ["GrpINDFOR_PH5","PH5","ColorRed"],
+    ["GrpINDFOR_PH6","PH6","ColorRed"],
+    ["GrpINDFOR_PH7","PH7","ColorRed"],
+    ["GrpINDFOR_PH8","PH8","ColorRed"]
 ];
 
 {_x call f_fnc_setGroupID;false} count _groups;

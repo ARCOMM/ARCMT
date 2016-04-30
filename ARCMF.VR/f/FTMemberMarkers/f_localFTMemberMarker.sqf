@@ -18,7 +18,7 @@ while {alive _unit && (_unit in f_var_HandlerGroup)} do {
     _pos = getPosATL _unit;
     _dir = (direction _unit);
     if (alive _unit && {_unit in units group player}) then {
-        _alpha = linearConversion [0, 50, (_unit distance player), 1, 0, true];
+        _alpha = linearConversion [0, (getNumber (missionConfigFile >> "CfgARCMF" >> "markers" >> ((side (group _unit)) call ARC_fnc_getFactionFromSide) >> "fireteamMemberFadeDistance")), (_unit distance player), 1, 0, true];
         _mkr setMarkerPosLocal _pos;
         _mkr setMarkerDirLocal _dir;
         _mkr setMarkerColorLocal (_unit getVariable ["assignedTeam", "ColorWhite"]);

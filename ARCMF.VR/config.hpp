@@ -1,16 +1,14 @@
-class CfgARCMF
-{
+class CfgARCMF {
     /*
 -----------------------------------------------------------------------------------------------------------------
         BRIEFING CONFIGURATION
         Description: This is the section where you define the text content for the briefing on each team.
         Note: Each text element gets placed on its own line.
+        Warning: You must wrap every line in quotes, eg. mission[] = {"This is your mission"};
 -----------------------------------------------------------------------------------------------------------------
     */
-    class briefing
-    {
-        class blufor
-        {
+    class briefing {
+        class blufor {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -21,8 +19,7 @@ class CfgARCMF
             enemyForces[] = {};
             friendlyForces[] = {};
         };
-        class opfor
-        {
+        class opfor {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -33,8 +30,7 @@ class CfgARCMF
             enemyForces[] = {};
             friendlyForces[] = {};
         };
-        class indfor
-        {
+        class indfor {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -45,8 +41,7 @@ class CfgARCMF
             enemyForces[] = {};
             friendlyForces[] = {};
         };
-        class civilian
-        {
+        class civilian {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -57,8 +52,7 @@ class CfgARCMF
             enemyForces[] = {};
             friendlyForces[] = {};
         };
-        class zeus
-        {
+        class zeus {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -76,19 +70,18 @@ class CfgARCMF
         Description: This is the section where you define the settings for group map markers.
 -----------------------------------------------------------------------------------------------------------------
     */
-    class markers
-    {
-        class blufor
-        {
+    class markers {
+        class blufor {
             enableGroupMarkers = true;
+            fireteamMemberFadeDistance = 100;
         };
-        class opfor
-        {
+        class opfor {
             enableGroupMarkers = true;
+            fireteamMemberFadeDistance = 100;
         };
-        class indfor
-        {
+        class indfor {
             enableGroupMarkers = true;
+            fireteamMemberFadeDistance = 100;
         };
     };
     /*
@@ -100,10 +93,8 @@ class CfgARCMF
             2. Possible language values are "english", "greek" and "russian".
 -----------------------------------------------------------------------------------------------------------------
     */
-    class acre
-    {
-        class blufor
-        {
+    class acre {
+        class blufor {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
             AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac"};
@@ -111,8 +102,7 @@ class CfgARCMF
             AN_PRC_117F[] = {};
             AN_PRC_77[] = {};
         };
-        class opfor
-        {
+        class opfor {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
             AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac"};
@@ -120,8 +110,7 @@ class CfgARCMF
             AN_PRC_117F[] = {};
             AN_PRC_77[] = {};
         };
-        class indfor
-        {
+        class indfor {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
             AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac"};
@@ -157,12 +146,9 @@ class CfgARCMF
             };
 -----------------------------------------------------------------------------------------------------------------
     */
-    class ai
-    {
-        class gear
-        {
-            class blufor
-            {
+    class ai {
+        class gear {
+            class blufor {
                 enabled = false;
                 removeNightVision = true;
                 removeMedicalItems = true;
@@ -178,8 +164,7 @@ class CfgARCMF
                 launchers[] = {};
                 attachments[] = {};
             };
-            class opfor
-            {
+            class opfor {
                 enabled = false;
                 removeNightVision = true;
                 removeMedicalItems = true;
@@ -195,8 +180,7 @@ class CfgARCMF
                 launchers[] = {};
                 attachments[] = {};
             };
-            class indfor
-            {
+            class indfor {
                 enabled = false;
                 removeNightVision = true;
                 removeMedicalItems = true;
@@ -212,8 +196,7 @@ class CfgARCMF
                 launchers[] = {};
                 attachments[] = {};
             };
-            class civilian
-            {
+            class civilian {
                 enabled = false;
                 removeNightVision = true;
                 removeMedicalItems = true;
