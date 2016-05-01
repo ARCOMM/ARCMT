@@ -3,6 +3,7 @@ private ["_unit","_isMan","_side","_faction","_prioritizeTracerMags","_removeMed
 _unit = _this select 0;
 
 if (!local _unit) exitWith {};
+if (isPlayer _unit) exitWith {};
 
 if (_unit getVariable ["ARC_assignedAIGear", false]) exitWith {};
 
@@ -13,7 +14,13 @@ _faction = _side call ARC_fnc_getFactionFromSide;
 if (!_isMan || !(_side in [west,east,resistance,civilian])) exitWith {};
 
 _enabled = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "enabled") call ARC_fnc_getCfgBool;
-if (!_enabled || isPlayer _unit) exitWith {};
+
+if (!_enabled) exitWith {
+    // Fix for naked units bug in Zeus
+    [_unit, [_unit, "ARC_SavedInventory"]] call BIS_fnc_saveInventory;
+    [_unit, [_unit, "ARC_SavedInventory"]] call BIS_fnc_loadInventory;
+    _unit setVariable ["ARC_assignedAIGear_dummy", true, true];
+};
 
 _unit setVariable ["ARC_assignedAIGear", false, true];
 
