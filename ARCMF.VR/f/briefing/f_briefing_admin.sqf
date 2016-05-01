@@ -41,30 +41,4 @@ hint 'Safety Off!' "">
 Force safety off for all players</execute><br/><br/>
 ";
 
-_briefing = _briefing + "
-<font size='18'>Zeus Support</font><br/>
-<execute expression=""
-if !(isNull (getAssignedCuratorLogic player)) then {hintSilent 'Zeus already assigned!'} else {
-    [[player, true], 'f_fnc_zeusInit', false] spawn BIS_fnc_MP; hintSilent 'Curator assigned.';
-};"">Assign Zeus to host</execute><br/>
-
-<execute expression=""
-if (isNull (getAssignedCuratorLogic player)) then {hintSilent 'Assign Zeus first!'} else {[[player, playableUnits], 'f_fnc_zeusAddObjects', false] spawn BIS_fnc_MP; hintSilent 'Added playable units.'};"">Add players and playable units to Zeus object list</execute><br/>
-
-<execute expression=""
-if (isNull (getAssignedCuratorLogic player)) then {hintSilent 'Assign Zeus first!'} else {
-    [[player, true, true], 'f_fnc_zeusAddObjects', false] spawn BIS_fnc_MP; hintSilent 'Assigned control over all group leaders and empty vehicles.'};"">
-Add all group leaders and empty vehicles</execute><br/>
-
-<execute expression=""
-if (isNull (getAssignedCuratorLogic player)) then {hintSilent 'Assign Zeus first!'} else {[[player, true], 'f_fnc_zeusAddObjects', false] spawn BIS_fnc_MP; hintSilent 'Add all units.'};"">Add all mission objects</execute> <font color='#FF0000'>(POSSIBLE DESYNC)</font><br/>
-
-<execute expression=""
-if (isNull (getAssignedCuratorLogic player)) then {hintSilent 'Assign Zeus first!'} else {(getAssignedCuratorLogic player) removeCuratorEditableObjects [allDead,true]; hintSilent 'Removed dead units.'};"">Remove all dead units from Zeus</execute><br/>
-
-<execute expression=""
-if (isNull (getAssignedCuratorLogic player)) then {hintSilent 'Assign Zeus first!'} else {[[player, false], 'f_fnc_zeusAddObjects', false] spawn BIS_fnc_MP; [[player, false], 'f_fnc_zeusAddAddons', false] spawn BIS_fnc_MP; hintSilent 'Removed powers and units.'};"">Remove all powers and objects from Zeus</execute><br/>
-<br/>
-";
-
 player createDiaryRecord ["diary", ["Admin", _briefing]];

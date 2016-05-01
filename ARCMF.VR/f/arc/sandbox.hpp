@@ -1,5 +1,4 @@
-class CfgSandbox
-{
+class CfgSandbox {
     class VR {
         startingPosition[] = {1770.84,1782.24,0};
         camouflage = "default";
@@ -22,14 +21,6 @@ class CfgSandbox
     };
     class Chernarus_Summer {
         startingPosition[] = {4784.32,10114.9,0};
-        camouflage = "woodland";
-    };
-    class clafghan {
-        startingPosition[] = {15526.2,805.362,0};
-        camouflage = "desert";
-    };
-    class Caribou {
-        startingPosition[] = {1815.63,3444.9,0};
         camouflage = "woodland";
     };
     class Takistan {
@@ -94,10 +85,6 @@ class CfgSandbox
     };
     class mske {
         startingPosition[] = {8062.16,9936.9,0};
-        camouflage = "woodland";
-    };
-    class vtr_porquerolles {
-        startingPosition[] = {7345.26,4937.52,0};
         camouflage = "woodland";
     };
     class torabora {

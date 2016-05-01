@@ -164,12 +164,6 @@ class CfgFunctions {
             class LocalFTMarkerSync {};
             class GetMarker {};
         };
-        class zeus {
-            file = "f\zeus";
-            class zeusInit {};
-            class zeusAddAddons {};
-            class zeusAddObjects {};
-        };
         class safeStart {
             file = "f\safeStart";
             class safety {};
