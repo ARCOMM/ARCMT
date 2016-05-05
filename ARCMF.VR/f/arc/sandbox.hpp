@@ -95,4 +95,8 @@ class CfgSandbox {
         startingPosition[] = {7945.72,4166.32,0};
         camouflage = "woodland";
     };
+    class favslev25 {
+        startingPosition[] = {7272.48,438.59,0};
+        camouflage = "woodland";
+    };
 };
