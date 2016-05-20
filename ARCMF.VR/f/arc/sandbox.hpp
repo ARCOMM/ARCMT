@@ -95,8 +95,12 @@ class CfgSandbox {
         startingPosition[] = {7945.72,4166.32,0};
         camouflage = "woodland";
     };
-    class favslev25 {
-        startingPosition[] = {7272.48,438.59,0};
+    class Woodland_ACR {
+        startingPosition[] = {850.789,7455.59,0};
+        camouflage = "woodland";
+    };
+    class Bootcamp_ACR {
+        startingPosition[] = {1686.72,102.895,0};
         camouflage = "woodland";
     };
 };
