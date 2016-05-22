@@ -87,8 +87,9 @@ if (count _voiceClass > 0) then {
 };
 
 _whileAddMagazine = {
-    while {(_this select 0) canAdd (_this select 1)} do {
-        (_this select 0) addMagazine (_this select 1);
+    params ["_unit", "_magazine", "_count"];
+    for "_i" from 0 to _count do {
+        _unit addMagazine _magazine;
     };
 };
 
@@ -124,9 +125,8 @@ if (count _rifleClass > 0) then {
         } forEach _magazines;
         
         _useMagazine = if (_prioritizeTracerMags && ((count _tracers) > 0)) then {(_tracers select 0)} else {(_standard select 0)};
-        [_unit, _useMagazine] call _whileAddMagazine;
+        [_unit, _useMagazine, 6] call _whileAddMagazine;
         _unit addWeapon (_rifleClass select 0);
-        [_unit, _useMagazine] call _whileAddMagazine;
     } else {
         diag_log (format ["[ARCMF] No magazines found for %1.", (_rifleClass select 0)]);
     };
