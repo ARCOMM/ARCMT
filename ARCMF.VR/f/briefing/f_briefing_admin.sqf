@@ -16,21 +16,21 @@ _briefing = _briefing + "<font size='18'>Ending Controllers</font><br/>";
 } forEach ("true" configClasses (missionConfigFile >> "CfgDebriefing"));
 
 _briefing = _briefing + "<br/>
-<font size='18'>Safe Start Control</font><br/>
+<font size='18'>Briefing Control</font><br/>
 <execute expression=""f_var_mission_timer = f_var_mission_timer + 60; publicVariable 'f_var_mission_timer';"">
-Increase safe start timer by 1 minute</execute><br/>
+Increase briefing timer by 1 minute</execute><br/>
 
 <execute expression=""f_var_mission_timer = f_var_mission_timer - 60; publicVariable 'f_var_mission_timer';"">
-Decrease safe start timer by 1 minute</execute><br/>
+Decrease briefing timer by 1 minute</execute><br/>
 
 <execute expression=""f_var_mission_timer = 300; publicVariable 'f_var_mission_timer';[[[], 'f\safeStart\f_safeStart.sqf'], 'BIS_fnc_execVM', true] call BIS_fnc_MP;
-hintSilent 'Safe Start Started!';"">
-Begin safe start timer</execute><br/>
+hintSilent 'Briefing Started!';"">
+Begin briefing timer</execute><br/>
 
 <execute expression=""f_var_mission_timer = -1; publicVariable 'f_var_mission_timer';
 hint 'WEAPONS ARE LIVE';
 [[false], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;"">
-End safe start timer</execute><br/>
+End briefing timer</execute><br/>
 
 <execute expression=""[[true], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;
 hint 'Safety On!' "">
