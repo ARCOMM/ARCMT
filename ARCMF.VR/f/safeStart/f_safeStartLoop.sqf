@@ -13,12 +13,12 @@ while {f_var_mission_timer > 0} do {
     _secs = f_var_mission_timer mod 60;
     [(format ["BRIEFING TIME: %1:%2", [_mins] call _zeroPad, [_secs] call _zeroPad]),"hintSilent",true] call BIS_fnc_MP;
     uiSleep 1;
-    if (f_var_mission_timer < 0) exitWith {};
+    if (f_var_mission_timer <= 0) exitWith {};
     f_var_mission_timer = f_var_mission_timer - 1;
     publicVariable "f_var_mission_timer";
 };
 
-if (f_var_mission_timer == 0) then {
+if (f_var_mission_timer <= 0) then {
     ["WEAPONS ARE LIVE","hint",true] call BIS_fnc_MP;
     [[false],"f_fnc_safety",playableUnits + switchableUnits] call BIS_fnc_MP;
 };
