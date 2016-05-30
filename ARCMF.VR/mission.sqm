@@ -17,18 +17,29 @@ class EditorData
 	class Camera
 	{
 		pos[]={89.470169,100.63174,17.556202};
-		dir[]={0.0358086,-0.76635927,0.64143461};
-		up[]={0.042716347,0.6424033,0.76517755};
-		aside[]={0.99846071,-8.4895873e-008,-0.055739515};
+		dir[]={0.10757873,-0.93172836,0.34689862};
+		up[]={0.27597755,0.36315939,0.88991886};
+		aside[]={0.95514244,-1.7695129e-007,-0.2962046};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Characters_F_BLUFOR",
-	"a3_characters_f",
-	"A3_Characters_F_OPFOR",
-	"A3_Characters_F_INDEP"
+	"A3_Characters_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=1;
+		class Item0
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
 };
 randomSeed=3124507;
 class ScenarioData
