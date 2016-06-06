@@ -52,17 +52,6 @@ class CfgARCMF {
             enemyForces[] = {};
             friendlyForces[] = {};
         };
-        class zeus {
-            administration[] = {};
-            commandersIntent[] = {};
-            movementPlan[] = {};
-            fireSupportPlan[] = {};
-            specialTasks[] = {};
-            mission[] = {};
-            situation[] = {};
-            enemyForces[] = {};
-            friendlyForces[] = {};
-        };
     };
     /*
 -----------------------------------------------------------------------------------------------------------------
