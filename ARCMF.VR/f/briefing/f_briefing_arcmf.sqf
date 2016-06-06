@@ -27,4 +27,7 @@ if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
     player createDiaryRecord ["ARCMF", ["Adversarial", _advMode]];
 };
 
-player createDiaryRecord ["ARCMF", ["Version", (loadFile "version.txt")]];
+_debug = "<br/><font size='18'>Client Weapon Safety - <execute expression=""[true] call f_fnc_safety"">Enable</execute> / <execute expression=""[false] call f_fnc_safety"">Disable</execute></font>";
+player createDiaryRecord ["ARCMF", ["Debug", _debug]];
+
+player createDiaryRecord ["ARCMF", ["Version", format ["<br/>%1", (loadFile "version.txt")]]];
