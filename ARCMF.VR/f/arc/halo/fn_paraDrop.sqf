@@ -4,16 +4,16 @@
  *
  * Arguments:
  * 0: Units, groups or side to paradrop <GROUP/OBJECT/SIDE>
- * 1: Position to drop units at <POSITION ATL>
+ * 1: Position to drop units at <POSITION ATL/MARKER NAME>
  * 2: Height to drop units from (meters) <NUMBER>
- * 3: Spacing in meters between each unit <NUMBER>
+ * 3: Radius in meters <NUMBER>
  *
  * Return Value:
  * None
  *
  * Example:
  * [[grpOne, grpTwo, unitOne, unitTwo], [0,0,0], 500] call ARC_fnc_paraDrop;
- * [west, [0,0,0], 250] call ARC_fnc_paraDrop;
+ * [west, [0,0,0], 250, 1000] call ARC_fnc_paraDrop;
  *
  * Public: Yes
  */
@@ -24,14 +24,18 @@ if (!isServer) exitWith {
 
 params [
     ["_objects", [], [[], sideUnknown]],
-    ["_position", [], [[]]],
+    ["_position", [], [[], ""]],
     ["_height", 250, [0]],
-    ["_spacing", 50, [0]]
+    ["_radius", 500, [0]]
 ];
 
+if (_position isEqualType "") then {_position = getMarkerPos _position};
 if (count _position == 0) exitWith {};
 
-_position set [2, _height];
+private _dzMarker = createMarker [format ["ARC_paraDropDZ_%1", _position], _position];
+_dzMarker setMarkerSize [_radius, _radius];
+_dzMarker setMarkerShape "ELLIPSE";
+_dzMarker setMarkerAlpha 0;
 
 private _units = [];
 
@@ -54,7 +58,10 @@ if (_objects isEqualType sideUnknown) then {
 };
 
 {
-    private _parachute = createVehicle ["Steerable_Parachute_F", ([_position, _spacing] call CBA_fnc_randPos), [], 0, "NONE"];
+    private _paraPos = [_dzMarker] call CBA_fnc_randPosArea;
+    private _parachute = createVehicle ["Steerable_Parachute_F", (_paraPos vectorAdd [0, 0, _height]), [], 0, "NONE"];
     _x moveInDriver _parachute;
     false
 } count _units;
+
+deleteMarker _dzMarker;
