@@ -24,6 +24,7 @@ class ARC
         file = "f\arc\halo";
         class halodrop {};
         class haloprep {};
+        class paraDrop {};
     };
     class sandbox
     {
