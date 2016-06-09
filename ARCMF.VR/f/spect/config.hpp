@@ -545,6 +545,7 @@ class RscSpectList
     colorText[] = {1,1,1,1};
     font = "PuristaMedium";
     maxHistoryDelay = 1;
+    disableKeyboardSearch = 1;
     shadow = 1;
     sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
     soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1};
