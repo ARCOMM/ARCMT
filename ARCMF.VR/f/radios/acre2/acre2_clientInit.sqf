@@ -45,7 +45,6 @@ switch (side _unit) do {
 };
 
 [{(player getVariable ["f_var_assignGear_done", false]) && !("ItemRadio" in (items player + assignedItems player)) && [] call acre_api_fnc_isInitialized}, {
-    systemChat str _this;
     params ["_unit"];
 
     _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
