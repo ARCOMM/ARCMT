@@ -2,34 +2,25 @@ enableSaving [false, false];
 enableSentences false;
 
 // Briefing
-f_script_briefing = [] execVM "briefing.sqf";
+#include "briefing.sqf"
 
 // Group IDs
-f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
+#include "f\setGroupID\f_setGroupIDs.sqf"
 
 // Buddy Team Colours
-f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
+#include "f\setTeamColours\f_setTeamColours.sqf"
 
 // Fireteam Member Markers
-[] spawn f_fnc_SetLocalFTMemberMarkers;
+[] call f_fnc_SetLocalFTMemberMarkers;
 
 // Group Markers
 [true, true] call ARC_fnc_initTracker;
 
 // ORBAT Notes
-[] execVM "f\briefing\f_orbatNotes.sqf";
-
-// Loadout Notes
-[] execVM "f\briefing\f_loadoutNotes.sqf";
-
-// Join Group Action
-[false] execVM "f\groupJoin\f_groupJoinAction.sqf";
+#include "f\briefing\f_orbatNotes.sqf"
 
 // Mission Timer/Safe Start
-[] execVM "f\safeStart\f_safeStart.sqf";
-
-// AI Unit Caching
-[30] spawn f_fnc_cInit;
+#include "f\safeStart\f_safeStart.sqf"
 
 // Reinforcements
 if (isNil "ARC_reinforcements") then {
@@ -40,12 +31,6 @@ if (isNil "ARC_reinforcements") then {
 if (isNil "ARC_adversarialMode") then {
     ARC_adversarialMode = false;
 };
-
-// Note: Caching aggressiveness is set using the f_var_cachingAggressiveness variable; possible values:
-// 1 - cache only non-leaders and non-drivers
-// 2 - cache all non-moving units, always exclude vehicle drivers
-// 3 - cache all units, incl. group leaders and vehicle drivers
-f_var_cachingAggressiveness = 2;
 
 // Radio Systems Support
 [] execVM "f\radios\acre2\acre2_init.sqf";

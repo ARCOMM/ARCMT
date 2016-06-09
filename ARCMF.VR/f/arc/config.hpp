@@ -52,6 +52,7 @@ class ARC
         class getCfgBool {};
         class broadcastDiary {};
         class getUnitType {};
+        class zeroPad {};
     };
     class radios
     {

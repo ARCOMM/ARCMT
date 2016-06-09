@@ -36,13 +36,7 @@ class Params {
         values[] = {0,1,2,3,4,5,6,7,8,9,10,15,30};
         texts[] = {"Off","1","2","3","4","5","6","7","8","9","10","15","30"};
         default = 30;
-        code = "f_param_mission_timer = %1 * 60";
-    };
-    class f_param_caching {
-        title = "Cache AI outside distance (m)";
-        values[] = {0,600,800,1000,1500,2000,2500,3000,3500,4000,4500,5000};
-        default = 0;
-        code = "f_param_caching = %1";
+        code = "f_var_mission_timer = %1 * 60";
     };
     class arc_param_duplex {
         title = "ACRE Duplex Option";
@@ -142,13 +136,6 @@ class CfgFunctions {
             class mpEnd {};
             class mpEndReceiver {};
         };
-        class cache {
-            file = "f\cache";
-            class cInit {};
-            class cTracker {};
-            class gCache {};
-            class gUncache {};
-        };
         class assignGear {
             file = "f\assignGear";
             class assignGear {};
@@ -160,8 +147,6 @@ class CfgFunctions {
         class FTMemberMarkers {
             file = "f\FTMemberMarkers";
             class SetLocalFTMemberMarkers {};
-            class GetMarkerColor {};
-            class LocalFTMarkerSync {};
             class GetMarker {};
         };
         class safeStart {
