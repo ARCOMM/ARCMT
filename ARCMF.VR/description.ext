@@ -1,5 +1,3 @@
-#include "f\arc\macros.hpp"
-
 class Header {
     gameType = Coop;
     minPlayers = 1;
