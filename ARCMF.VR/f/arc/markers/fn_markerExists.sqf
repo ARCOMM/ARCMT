@@ -1,5 +1,1 @@
-if (getMarkerColor _this == "") exitWith {
-    false
-};
-
-true
+([false,true] select (_this in allMapMarkers))
