@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={89.470169,100.63174,17.556202};
-		dir[]={0.10757873,-0.93172836,0.34689862};
-		up[]={0.27597755,0.36315939,0.88991886};
-		aside[]={0.95514244,-1.7695129e-007,-0.2962046};
+		pos[]={103.63173,141.03195,-29.328512};
+		dir[]={0.008236832,-0.78485399,0.619654};
+		up[]={0.010431439,0.61966306,0.78480291};
+		aside[]={0.99993205,-5.363836e-008,-0.013291912};
 	};
 };
 binarizationWanted=0;
@@ -70,7 +70,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=180;
+		items=179;
 		class Item0
 		{
 			dataType="Group";
@@ -23697,19 +23697,6 @@ class Mission
 			isPlayable=1;
 			description="HC2";
 			id=1660;
-			type="HeadlessClient_F";
-		};
-		class Item179
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={0,5,2};
-			};
-			name="HC3";
-			isPlayable=1;
-			description="HC3";
-			id=1662;
 			type="HeadlessClient_F";
 		};
 	};
