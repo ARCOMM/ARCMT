@@ -85,10 +85,19 @@ switch (side _unit) do {
         default {[]};
     };
 
+    #define ADD_RADIO(ARR, RADIO)\
+        if (count (ARR select {_x == _typeOfUnit}) == 1 || (count ARR == 1 && toLower (ARR select 0) == "all")) then {\
+            _unit addItem RADIO;\
+        } else {\
+            for "_i" from 1 to count (ARR select {_x == _typeOfUnit}) do {\
+                _unit addItem RADIO;\
+            }\
+        };
+
     if (_typeOfUnit != "NIL") then {
         if (_typeOfUnit in _AN_PRC_343 || (count _AN_PRC_343 == 1 && toLower (_AN_PRC_343 select 0) == "all")) then {
             if (_unit canAdd RADIO_343) then {
-                _unit addItem RADIO_343;
+                ADD_RADIO(_AN_PRC_343, RADIO_343);
             } else {
                 RADIO_343 call f_radios_acre2_giveRadioAction;
             };
@@ -96,7 +105,7 @@ switch (side _unit) do {
         
         if (_typeOfUnit in _AN_PRC_148 || (count _AN_PRC_148 == 1 && toLower (_AN_PRC_148 select 0) == "all")) then {
             if (_unit canAdd RADIO_148) then {
-                _unit addItem RADIO_148;
+                ADD_RADIO(_AN_PRC_148, RADIO_148);
             } else {
                 RADIO_148 call f_radios_acre2_giveRadioAction;
             };
@@ -104,7 +113,7 @@ switch (side _unit) do {
         
         if (_typeOfUnit in _AN_PRC_152 || (count _AN_PRC_152 == 1 && toLower (_AN_PRC_152 select 0) == "all")) then {
             if (_unit canAdd RADIO_152) then {
-                _unit addItem RADIO_152;
+                ADD_RADIO(_AN_PRC_152, RADIO_152);
             } else {
                 RADIO_152 call f_radios_acre2_giveRadioAction;
             };
@@ -112,7 +121,7 @@ switch (side _unit) do {
         
         if (_typeOfUnit in _AN_PRC_117F || (count _AN_PRC_117F == 1 && toLower (_AN_PRC_117F select 0) == "all")) then {
             if (_unit canAdd RADIO_117F) then {
-                _unit addItem RADIO_117F;
+                ADD_RADIO(_AN_PRC_117F, RADIO_117F);
             } else {
                 RADIO_117F call f_radios_acre2_giveRadioAction;
             };
@@ -120,7 +129,7 @@ switch (side _unit) do {
         
         if (_typeOfUnit in _AN_PRC_77 || (count _AN_PRC_77 == 1 && toLower (_AN_PRC_77 select 0) == "all")) then {
             if (_unit canAdd RADIO_77) then {
-                _unit addItem RADIO_77;
+                ADD_RADIO(_AN_PRC_77, RADIO_77);
             } else {
                 RADIO_77 call f_radios_acre2_giveRadioAction;
             };
