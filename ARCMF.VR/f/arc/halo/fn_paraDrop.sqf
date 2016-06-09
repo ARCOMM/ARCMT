@@ -18,9 +18,7 @@
  * Public: Yes
  */
 
-if (!isServer) exitWith {
-    _this remoteExec ["ARC_fnc_paraDrop", 2];
-};
+if (!isServer) exitWith {};
 
 params [
     ["_objects", [], [[], sideUnknown]],
@@ -60,7 +58,7 @@ if (_objects isEqualType sideUnknown) then {
 {
     private _paraPos = [_dzMarker] call CBA_fnc_randPosArea;
     private _parachute = createVehicle ["Steerable_Parachute_F", (_paraPos vectorAdd [0, 0, _height]), [], 0, "NONE"];
-    _x moveInDriver _parachute;
+    [_x, _parachute] remoteExec ["moveInDriver", _x];
     false
 } count _units;
 
