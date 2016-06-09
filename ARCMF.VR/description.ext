@@ -125,7 +125,6 @@ class CfgFunctions {
     class F {
         class common {
             file = "f\common";
-            class nearPlayer {};
             class processParamsArray {
                 preInit = 1;
                 postInit = 1;
