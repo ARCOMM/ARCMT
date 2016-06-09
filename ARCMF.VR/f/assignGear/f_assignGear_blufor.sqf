@@ -260,7 +260,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
         this addWeapon "rhs_weap_m16a4_carryhandle";
         this addPrimaryWeaponItem "RH_peq15";
-        this addWeapon "tf47_at4_HEDP";
+        this addWeapon "rhs_weap_M136";
         this addWeapon "rhsusf_weap_m9";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -401,7 +401,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
         this addWeapon "rhs_weap_m16a4_carryhandle";
         this addPrimaryWeaponItem "RH_peq15";
-        this addWeapon "tf47_smaw_green";
+        this addWeapon "rhs_weap_smaw_green";
         this addSecondaryWeaponItem "tf47_optic_smaw";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";

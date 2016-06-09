@@ -223,7 +223,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "RH_LTdocterl";
-        this addWeapon "tf47_at4_heat";
+        this addWeapon "rhs_weap_M136";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
@@ -345,7 +345,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "RH_LTdocterl";
-        this addWeapon "tf47_smaw_green";
+        this addWeapon "rhs_weap_smaw_green";
         this addSecondaryWeaponItem "tf47_optic_smaw";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
