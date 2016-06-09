@@ -1,4 +1,4 @@
-[{!isNull player && {isNull _x} count units (group player) == 0}, {
+[{isDedicated || !isNull player && {isNull _x} count units (group player) == 0}, {
     private ["_unit","_isFireteam","_white","_red","_blue","_yellow","_green"];
 
     _leaders = ["_FTL"];

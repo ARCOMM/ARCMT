@@ -1,4 +1,4 @@
-[{!isNull player}, {
+[{isDedicated || !isNull player}, {
     private _unitfaction = toLower (faction player);
 
     if (_unitfaction != toLower (faction (leader group player))) then {

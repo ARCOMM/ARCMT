@@ -1,4 +1,4 @@
-[{!isNull player}, {
+[{isDedicated || !isNull player}, {
     [{
         {
             private _unit = _x;

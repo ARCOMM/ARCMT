@@ -33,7 +33,7 @@ if (isNil "ARC_adversarialMode") then {
 };
 
 // Radio Systems Support
-[] execVM "f\radios\acre2\acre2_init.sqf";
+#include "f\radios\acre2\acre2_init.sqf"
 
 // Disable random button on Virtual Arsenal to prevent breaking ACRE
 [missionNamespace, "arsenalOpened", {
