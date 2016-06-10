@@ -103,4 +103,8 @@ class CfgSandbox {
         startingPosition[] = {1686.72,102.895,0};
         camouflage = "woodland";
     };
+    class kerama {
+        startingPosition[] = {13242.7,17007.3,0};
+        camouflage = "mtp";
+    };
 };
