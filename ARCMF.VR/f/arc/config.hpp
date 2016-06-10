@@ -4,6 +4,7 @@ class ARC
     {
         file = "f\arc\misc";
         class ambientAA {};
+        class resetPosition {};
     };
     class chat
     {
