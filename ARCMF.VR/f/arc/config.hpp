@@ -18,6 +18,7 @@ class ARC
         class pickItemFromAIGear {};
         class pickAttachmentsFromAIGear {};
         class setupAI {};
+        class garrisonBuilding {};
     };
     class halo
     {
@@ -52,6 +53,8 @@ class ARC
         class getCfgBool {};
         class broadcastDiary {};
         class getUnitType {};
+        class zeroPad {};
+        class arrayShuffle {};
     };
     class radios
     {

@@ -7,11 +7,9 @@ removeBackpack this;
 removeHeadgear this;
 removeGoggles this;
 
-switch (_typeOfUnit) do
-{
+switch (_typeOfUnit) do {
 // LOADOUT: COMMANDER
-    case "co":
-    {
+    case "co": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -44,8 +42,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
-    case "dc":
-    {
+    case "dc": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -78,8 +75,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: FORWARD AIR CONTROLLER
-    case "fac":
-    {
+    case "fac": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -112,8 +108,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: MEDIC
-    case "m":
-    {
+    case "m": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
@@ -143,8 +138,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: FIRE TEAM LEADER
-    case "ftl":
-    {
+    case "ftl": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -177,8 +171,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: RIFLEMAN
-    case "r":
-    {
+    case "r": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -202,8 +195,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: AUTOMATIC RIFLEMAN
-    case "ar":
-    {
+    case "ar": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -226,8 +218,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
-    case "aar":
-    {
+    case "aar": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -253,8 +244,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: RIFLEMAN (AT)
-    case "rat":
-    {
+    case "rat": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -270,7 +260,7 @@ switch (_typeOfUnit) do
         this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
         this addWeapon "rhs_weap_m16a4_carryhandle";
         this addPrimaryWeaponItem "RH_peq15";
-        this addWeapon "tf47_at4_HEDP";
+        this addWeapon "rhs_weap_M136";
         this addWeapon "rhsusf_weap_m9";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -279,8 +269,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM MG TEAM LEADER
-    case "mmgtl":
-    {
+    case "mmgtl": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -313,8 +302,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM MG GUNNER
-    case "mmgg":
-    {
+    case "mmgg": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -336,8 +324,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM MG AMMO BEARER
-    case "mmgab":
-    {
+    case "mmgab": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -363,8 +350,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM AT TEAM LEADER
-    case "mattl":
-    {
+    case "mattl": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -397,8 +383,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM AT MISSILE SPECIALIST
-    case "matg":
-    {
+    case "matg": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -416,7 +401,7 @@ switch (_typeOfUnit) do
         this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
         this addWeapon "rhs_weap_m16a4_carryhandle";
         this addPrimaryWeaponItem "RH_peq15";
-        this addWeapon "tf47_smaw_green";
+        this addWeapon "rhs_weap_smaw_green";
         this addSecondaryWeaponItem "tf47_optic_smaw";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -425,8 +410,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM AT ASSISTANT MISSILE SPECIALIST
-    case "matab":
-    {
+    case "matab": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -453,8 +437,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: PILOT
-    case "p":
-    {
+    case "p": {
         this forceAddUniform "U_B_HeliPilotCoveralls";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
@@ -474,8 +457,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: CO-PILOT
-    case "cp":
-    {
+    case "cp": {
         this forceAddUniform "U_B_HeliPilotCoveralls";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
@@ -495,8 +477,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: VEHICLE COMMANDER
-    case "vc":
-    {
+    case "vc": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -520,8 +501,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: VEHICLE DRIVER
-    case "vd":
-    {
+    case "vd": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -543,8 +523,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: VEHICLE GUNNER
-    case "vg":
-    {
+    case "vg": {
         this forceAddUniform "rhs_uniform_FROG01_wd";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_CableTie";
@@ -566,8 +545,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
-    default
-    {
+    default {
         if (_typeOfUnit != "r") then {["r", this] call f_fnc_assignGear;};
         if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_blufor.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", this, _typeOfUnit]};
     };

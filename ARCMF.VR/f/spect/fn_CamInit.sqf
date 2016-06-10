@@ -2,9 +2,13 @@
 // [player, objNull, 4, 1, true] call f_fnc_CamInit;
 
 _this spawn {
-    _unit = [_this, 0, player,[objNull]] call BIS_fnc_param;
-    _oldUnit = [_this, 1, objNull,[objNull]] call BIS_fnc_param;
-    _forced = [_this, 4, false,[false]] call BIS_fnc_param;
+    params [
+        ["_unit", objNull],
+        ["_oldUnit", objNull],
+        ["_respawn", 1],
+        ["_respawnDelay", 3],
+        ["_forced", false]
+    ];
 
     ARC_cam_preCamGroup = group player;
     ARC_cam_preCamSide = playerSide;
@@ -12,10 +16,10 @@ _this spawn {
     ARC_cam_preCamPos = getPos player;
     ARC_cam_preCamLoadout = [player, "init", false] call BIS_fnc_exportInventory;
 
-    if (isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
-    if (isNull _unit) then { _unit = cameraOn; f_cam_isJIP = true; };
+    if (isNil "f_cam_isJIP") then {f_cam_isJIP = false};
+    if (isNull _unit) then {_unit = cameraOn; f_cam_isJIP = true};
     if (typeOf _unit != "seagull" && !_forced || !hasInterface) exitWith {};
-    waituntil {missionNamespace getVariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_oldUnit) || f_cam_isJIP || _forced };
+    waituntil {missionNamespace getVariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_oldUnit) || f_cam_isJIP || _forced};
 
     if (!isNil "BIS_fnc_feedback_allowPP") then {
         BIS_fnc_feedback_allowPP = false;
@@ -59,7 +63,6 @@ _this spawn {
 
     _listBox = 2100;
     lbClear _listBox;
-    // set inital values.
     #include "macros.hpp"
     f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTONRESPAWN,F_CAM_TOGGLELIST,F_CAM_TRACERS];
     f_cam_units = [];
@@ -242,7 +245,6 @@ _this spawn {
         false
     } count (allUnits + vehicles);
 
-    // spawn sub scripts
     f_cam_updatevalues_script = [] spawn f_fnc_UpdateValues;
     ["f_spect_tags", "onEachFrame", {_this call f_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
     ["f_spect_cams", "onEachFrame", {_this call f_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;

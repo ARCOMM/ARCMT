@@ -1,4 +1,4 @@
-_groups = [
+{_x call f_fnc_setGroupID;false} count [
     // GROUP IDs: BLUFOR
     ["GrpBLUFOR_CO_CC","CO","ColorOrange"],
     ["GrpBLUFOR_1PLT_CO","1PLT","ColorYellow"],
@@ -212,5 +212,3 @@ _groups = [
     ["GrpINDFOR_PH7","PH7","ColorRed"],
     ["GrpINDFOR_PH8","PH8","ColorRed"]
 ];
-
-{_x call f_fnc_setGroupID;false} count _groups;

@@ -24,20 +24,21 @@ Increase briefing timer by 1 minute</execute><br/>
 Decrease briefing timer by 1 minute</execute><br/>
 
 <execute expression=""f_var_mission_timer = 300; publicVariable 'f_var_mission_timer';[[[], 'f\safeStart\f_safeStart.sqf'], 'BIS_fnc_execVM', true] call BIS_fnc_MP;
-hintSilent 'Briefing Started!';"">
+hintSilent 'BRIEFING STARTED!';"">
 Begin briefing timer</execute><br/>
 
 <execute expression=""f_var_mission_timer = -1; publicVariable 'f_var_mission_timer';
 hint 'WEAPONS ARE LIVE';
-[[false], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;"">
+[{hintSilent ''}, [], 5] call CBA_fnc_waitAndExecute;
+[false] remoteExec ['f_fnc_safety', (playableUnits + switchableUnits)];"">
 End briefing timer</execute><br/>
 
-<execute expression=""[[true], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;
-hint 'Safety On!' "">
+<execute expression=""[true] remoteExec ['f_fnc_safety', (playableUnits + switchableUnits)];
+hint 'SAFETY ON!'; [{hintSilent ''}, [], 5] call CBA_fnc_waitAndExecute;"">
 Force safety on for all players</execute><br/>
 
-<execute expression=""[[false], 'f_fnc_safety', playableUnits + switchableUnits] call BIS_fnc_MP;
-hint 'Safety Off!' "">
+<execute expression=""[false] remoteExec ['f_fnc_safety', (playableUnits + switchableUnits)];
+hint 'SAFETY OFF!'; [{hintSilent ''}, [], 5] call CBA_fnc_waitAndExecute;"">
 Force safety off for all players</execute><br/><br/>
 ";
 

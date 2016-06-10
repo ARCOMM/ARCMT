@@ -7,11 +7,9 @@ removeBackpack this;
 removeHeadgear this;
 removeGoggles this;
 
-switch (_typeOfUnit) do
-{
+switch (_typeOfUnit) do {
 // LOADOUT: COMMANDER
-    case "co":
-    {
+    case "co": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -38,8 +36,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
-    case "dc":
-    {
+    case "dc": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -66,8 +63,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: FORWARD AIR CONTROLLER
-    case "fac":
-    {
+    case "fac": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -94,8 +90,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: MEDIC
-    case "m":
-    {
+    case "m": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -121,8 +116,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: FIRE TEAM LEADER
-    case "ftl":
-    {
+    case "ftl": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -149,8 +143,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: RIFLEMAN
-    case "r":
-    {
+    case "r": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -171,8 +164,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: AUTOMATIC RIFLEMAN
-    case "ar":
-    {
+    case "ar": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -194,8 +186,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
-    case "aar":
-    {
+    case "aar": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -218,8 +209,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: RIFLEMAN (AT)
-    case "rat":
-    {
+    case "rat": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -233,7 +223,7 @@ switch (_typeOfUnit) do
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "RH_LTdocterl";
-        this addWeapon "tf47_at4_heat";
+        this addWeapon "rhs_weap_M136";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
@@ -241,8 +231,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM MG TEAM LEADER
-    case "mmgtl":
-    {
+    case "mmgtl": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -269,8 +258,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM MG GUNNER
-    case "mmgg":
-    {
+    case "mmgg": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -290,8 +278,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM MG AMMO BEARER
-    case "mmgab":
-    {
+    case "mmgab": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -314,8 +301,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: MEDIUM AT TEAM LEADER
-    case "mattl":
-    {
+    case "mattl": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -342,8 +328,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM AT MISSILE SPECIALIST
-    case "matg":
-    {
+    case "matg": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -360,7 +345,7 @@ switch (_typeOfUnit) do
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "RH_LTdocterl";
-        this addWeapon "tf47_smaw_green";
+        this addWeapon "rhs_weap_smaw_green";
         this addSecondaryWeaponItem "tf47_optic_smaw";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -369,8 +354,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: MEDIUM AT ASSISTANT MISSILE SPECIALIST
-    case "matab":
-    {
+    case "matab": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -394,8 +378,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: PILOT
-    case "p":
-    {
+    case "p": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -412,8 +395,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: CO-PILOT
-    case "cp":
-    {
+    case "cp": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_Flashlight_XL50";
@@ -430,8 +412,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: VEHICLE COMMANDER
-    case "vc":
-    {
+    case "vc": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -458,8 +439,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: VEHICLE DRIVER
-    case "vd":
-    {
+    case "vd": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -480,8 +460,7 @@ switch (_typeOfUnit) do
     };
     
 // LOADOUT: VEHICLE GUNNER
-    case "vg":
-    {
+    case "vg": {
         this forceAddUniform "MNP_CombatUniform_Germany";
         for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
         this addItemToUniform "ACE_EarPlugs";
@@ -502,8 +481,7 @@ switch (_typeOfUnit) do
     };
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
-    default
-    {
+    default {
         if (_typeOfUnit != "r") then {["r", this] call f_fnc_assignGear;};
         if (true) exitWith {player globalChat format ["DEBUG (f\assignGear\f_assignGear_indfor.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.", this, _typeOfUnit]};
     };

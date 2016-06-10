@@ -80,9 +80,8 @@ if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
 [_newUnit] joinSilent grpNull;
 
 // Rebuild briefing
-f_script_briefing = [] execVM "briefing.sqf";
-[] execVM "f\briefing\f_orbatNotes.sqf";
-[] execVM "f\briefing\f_loadoutNotes.sqf";
+call compile preprocessFileLineNumbers "briefing.sqf";
+call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
 
 // Execute onSpectatorRespawn script
 [_newUnit, ARC_cam_preCamPos, ARC_cam_preCamLoadout] execVM "onSpectatorRespawn.sqf";

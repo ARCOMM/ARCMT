@@ -29,7 +29,9 @@ if (_specialTasks != "") then {
     _exe = format ["%1<font size='18' font='PuristaBold'>Special Tasks</font><br/>%2<br/>", _exe, _specialTasks];
 };
 
-player createDiaryRecord ["diary", ["Execution", _exe]];
+if (_exe != "") then {
+    player createDiaryRecord ["diary", ["Execution", _exe]];
+};
 
 _mission = [_side, "mission"] call ARC_fnc_buildBriefingFromConfig;
 if (_mission != "") then {
@@ -53,4 +55,6 @@ if (_ff != "") then {
     _situation = format ["%1<font size='18' font='PuristaBold'>Friendly Forces</font><br/>%2<br/>", _situation, _ff];
 };
 
-player createDiaryRecord ["diary", ["Situation", _situation]];
+if (_situation != "") then {
+    player createDiaryRecord ["diary", ["Situation", _situation]];
+};
