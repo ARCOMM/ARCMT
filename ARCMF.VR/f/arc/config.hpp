@@ -31,7 +31,6 @@ class ARC
     class sandbox
     {
         file = "f\arc\sandbox";
-        class setupSandbox {};
         class toggleAdversarial {};
         class setAdversarialStart {};
     };
