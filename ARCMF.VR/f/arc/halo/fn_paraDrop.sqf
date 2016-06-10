@@ -30,6 +30,8 @@ params [
 if (_position isEqualType "") then {_position = getMarkerPos _position};
 if (count _position == 0) exitWith {};
 
+_height = _height + round (random 50);
+
 private _dzMarker = createMarker [format ["ARC_paraDropDZ_%1", _position], _position];
 _dzMarker setMarkerSize [_radius, _radius];
 _dzMarker setMarkerShape "ELLIPSE";
