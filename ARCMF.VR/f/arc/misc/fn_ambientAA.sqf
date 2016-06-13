@@ -18,8 +18,6 @@
  * Public: Yes
  */
 
-if (!isServer) exitWith {};
-
 params [
     ["_vehicle", objNull, [objNull]],
     ["_burstCount", 10, [0]],
@@ -27,6 +25,10 @@ params [
     ["_burstDelay", 5, [0]],
     ["_random", 0, [0]]
 ];
+
+if (!local _vehicle) exitWith {
+    _this remoteExec ["ARC_fnc_ambientAA", _vehicle];
+};
 
 private _driver = driver _vehicle;
 private _gunner = gunner _vehicle;
