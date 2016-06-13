@@ -18,7 +18,9 @@
  * Public: Yes
  */
 
-if (!isServer) exitWith {};
+if (!isServer) exitWith {
+    _this remoteExec ["ARC_fnc_paraDrop", 2];
+};
 
 params [
     ["_objects", [], [[], sideUnknown]],
