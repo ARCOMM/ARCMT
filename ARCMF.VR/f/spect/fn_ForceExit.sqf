@@ -15,3 +15,4 @@ hintSilent "Spectator system has been forcefully closed";
     };
     false
 } count (allunits + vehicles);
+ARC_isSpectating = false;

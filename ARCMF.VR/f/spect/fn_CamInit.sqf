@@ -10,11 +10,16 @@ _this spawn {
         ["_forced", false]
     ];
 
+    ARC_isSpectating = true;
     ARC_cam_preCamGroup = group player;
     ARC_cam_preCamSide = playerSide;
     ARC_cam_preCamName = name player;
     ARC_cam_preCamPos = getPos player;
     ARC_cam_preCamLoadout = [player, "init", false] call BIS_fnc_exportInventory;
+    
+    if (isNil "ARC_reinforcements_joinArray") then {
+        ARC_reinforcements_joinArray = [];
+    };
 
     if (isNil "f_cam_isJIP") then {f_cam_isJIP = false};
     if (isNull _unit) then {_unit = cameraOn; f_cam_isJIP = true};
@@ -43,6 +48,7 @@ _this spawn {
         _newUnit setPos [0,0,5];
         selectPlayer _newUnit;
         waitUntil {player == _newUnit};
+        player setVariable ["ARC_cam_preCamSide", ARC_cam_preCamSide, true];
         deleteVehicle _unit;
         f_cam_VirtualCreated = true;
     };
@@ -191,7 +197,7 @@ _this spawn {
         _w = _w + _btnWidth;
     } forEach f_cam_menuControls;
     
-    if (!(call ARC_fnc_isRespawnEnabled) || !ARC_reinforcements) then {
+    /*if (!(call ARC_fnc_isRespawnEnabled) || !ARC_reinforcements) then {
         ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Not available";
     } else {
         ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Rejoin the mission";
@@ -206,7 +212,7 @@ _this spawn {
         } else {
             ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Not available";
         };
-    };
+    };*/
     
     f_cam_helptext = "<t align='left'><t color='#FFFFFF'><t size='1.5'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='1.5'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t></t>";
 

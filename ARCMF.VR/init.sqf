@@ -23,14 +23,14 @@ enableSentences false;
 #include "f\safeStart\f_safeStart.sqf"
 
 // Reinforcements
-if (isNil "ARC_reinforcements") then {
-    ARC_reinforcements = false;
-};
+#include "f\arc\reinforcements\variables.sqf"
 
 // Adversarial Mode
 if (isNil "ARC_adversarialMode") then {
     ARC_adversarialMode = false;
 };
+
+ARC_isSpectating = false;
 
 // Radio Systems Support
 #include "f\radios\acre2\acre2_init.sqf"

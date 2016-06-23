@@ -16,9 +16,11 @@
  * Public: Yes
  */
 
-if (!(call ARC_fnc_isRespawnEnabled) && !ARC_reinforcements) exitWith {};
-
-hint "Rejoining Mission";
+params [
+    ["_setPos", true],
+    ["_applyLoadout", true],
+    ["_execEH", true]
+];
 
 private ["_unit","_newGrp","_className","_newUnit"];
 
@@ -47,14 +49,16 @@ waitUntil {player == _newUnit};
 // Set name, position and turns off safe mode, then deletes old unit
 _newUnit setName ARC_cam_preCamName;
 
-if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
-    _startPos = [(call ARC_fnc_getStartingPos), 20] call CBA_fnc_randPos;
-    _newUnit setPos _startPos;
-} else {
-    if (isNil "ARC_reinforcementPosition") then {
-        _newUnit setPos ARC_cam_preCamPos;
+if (_setPos) then {
+    if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
+        _startPos = [(call ARC_fnc_getStartingPos), 20] call CBA_fnc_randPos;
+        _newUnit setPos _startPos;
     } else {
-        _newUnit setPos ARC_reinforcementPosition;
+        if (isNil "ARC_reinforcementPosition") then {
+            _newUnit setPos ARC_cam_preCamPos;
+        } else {
+            _newUnit setPos ARC_reinforcementPosition;
+        };
     };
 };
 
@@ -63,11 +67,13 @@ _newUnit hideObjectGlobal false;
 deleteVehicle _unit;
 
 // Apply loadout
-if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
-    this = _newUnit;
-    call compile ARC_cam_preCamLoadout;
-} else {
-    ["r", _newUnit] call f_fnc_assignGear;
+if (_applyLoadout) then {
+    if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
+        this = _newUnit;
+        call compile ARC_cam_preCamLoadout;
+    } else {
+        ["r", _newUnit] call f_fnc_assignGear;
+    };
 };
 
 // Shutdown spectator
@@ -84,4 +90,9 @@ call compile preprocessFileLineNumbers "briefing.sqf";
 call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
 
 // Execute onSpectatorRespawn script
-[_newUnit, ARC_cam_preCamPos, ARC_cam_preCamLoadout] execVM "onSpectatorRespawn.sqf";
+if (_execEH) then {
+    [_newUnit, ARC_cam_preCamPos, ARC_cam_preCamLoadout] execVM "onSpectatorRespawn.sqf";
+};
+
+mars_arcomm_reinforcementUnits pushBackUnique player;
+publicVariable "mars_arcomm_reinforcementUnits";
