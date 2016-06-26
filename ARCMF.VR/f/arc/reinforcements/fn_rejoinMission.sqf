@@ -89,10 +89,5 @@ if (_applyLoadout) then {
 call compile preprocessFileLineNumbers "briefing.sqf";
 call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
 
-// Execute onSpectatorRespawn script
-if (_execEH) then {
-    [_newUnit, ARC_cam_preCamPos, ARC_cam_preCamLoadout] execVM "onSpectatorRespawn.sqf";
-};
-
 mars_arcomm_reinforcementUnits pushBackUnique player;
 publicVariable "mars_arcomm_reinforcementUnits";
