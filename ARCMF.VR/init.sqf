@@ -22,9 +22,6 @@ enableSentences false;
 // Mission Timer/Safe Start
 #include "f\safeStart\f_safeStart.sqf"
 
-// Reinforcements
-#include "f\arc\reinforcements\variables.sqf"
-
 // Adversarial Mode
 if (isNil "ARC_adversarialMode") then {
     ARC_adversarialMode = false;

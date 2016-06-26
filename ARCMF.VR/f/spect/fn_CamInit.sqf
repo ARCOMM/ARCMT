@@ -15,10 +15,13 @@ _this spawn {
     ARC_cam_preCamSide = playerSide;
     ARC_cam_preCamName = name player;
     ARC_cam_preCamPos = getPos player;
+    ARC_cam_preCamClassname = typeOf player;
     ARC_cam_preCamLoadout = [player, "init", false] call BIS_fnc_exportInventory;
+    ARC_cam_preCamLoadout_new = getUnitLoadout player;
     
-    if (isNil "ARC_reinforcements_joinArray") then {
-        ARC_reinforcements_joinArray = [];
+    if (isNil "ARC_spectatorUnits") then {
+        ARC_spectatorUnits = [];
+        publicVariable "ARC_spectatorUnits";
     };
 
     if (isNil "f_cam_isJIP") then {f_cam_isJIP = false};
@@ -32,16 +35,17 @@ _this spawn {
 
     if (f_cam_isJIP) then {
         ["F_ScreenSetup",false] call BIS_fnc_blackOut;
-        systemChat "Initializing Spectator Script";
         uiSleep 3;
         ["F_ScreenSetup"] call BIS_fnc_blackIn;
     };
 
     // Create a Virtual Agent to act as our player to make sure we get to keep Draw3D
     if (isNil "f_cam_VirtualCreated") then {
-        createCenter sideLogic;
-        _newGrp = createGroup sideLogic;
-        _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
+        createCenter ARC_cam_preCamSide;
+        _newGrp = createGroup ARC_cam_preCamSide;
+        _newUnit = _newGrp createUnit [ARC_cam_preCamClassname, [0,0,5], [], 0, "FORM"];
+        _newUnit setName ARC_cam_preCamName;
+        _newUnit setUnitLoadout [ARC_cam_preCamLoadout_new, true];
         _newUnit allowDamage false;
         _newUnit hideObjectGlobal true;
         _newUnit enableSimulationGlobal false;
@@ -49,15 +53,20 @@ _this spawn {
         selectPlayer _newUnit;
         waitUntil {player == _newUnit};
         player setVariable ["ARC_cam_preCamSide", ARC_cam_preCamSide, true];
+        player setVariable ["ARC_cam_isVirtual", true, true];
+        player setVariable ["ARC_wantsToRejoin", false, true];
         deleteVehicle _unit;
         f_cam_VirtualCreated = true;
+        
+        ARC_spectatorUnits pushBack player;
+        publicVariable "ARC_spectatorUnits";
     };
 
-    if (isNull _oldUnit ) then {
+    if (isNull _oldUnit) then {
         if (count playableUnits > 0) then {
-            _oldUnit = (playableUnits select 0)
+            _oldUnit = (playableUnits select 0);
         } else {
-            _oldUnit = (allUnits select 0)
+            _oldUnit = (allUnits select 0);
         };
     };
 
@@ -197,27 +206,10 @@ _this spawn {
         _w = _w + _btnWidth;
     } forEach f_cam_menuControls;
     
-    /*if (!(call ARC_fnc_isRespawnEnabled) || !ARC_reinforcements) then {
-        ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Not available";
-    } else {
-        ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Rejoin the mission";
-    };
-    
-    "ARC_reinforcements" addPublicVariableEventHandler {
-        disableSerialization;
-        if ((_this select 1)) then {
-            ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Rejoin the mission";
-            hint "Reinforcements Enabled";
-            [] spawn {sleep 10; hintSilent "";};
-        } else {
-            ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Not available";
-        };
-    };*/
-    
     f_cam_helptext = "<t align='left'><t color='#FFFFFF'><t size='1.5'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='1.5'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t></t>";
 
     hintSilent (parseText f_cam_helptext);
-    [] spawn {sleep 10; hintSilent "";};
+    [{hintSilent ""}, [], 10] call CBA_fnc_waitAndExecute;
 
     // create the camera and set it up.
     f_cam_camera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
@@ -233,7 +225,7 @@ _this spawn {
     f_cam_freecamera camSetFov 1.2;
     f_cam_zeusKey = 21;
 
-    if ( count (actionKeys "curatorInterface") > 0 ) then {
+    if (count (actionKeys "curatorInterface") > 0) then {
         f_cam_zeusKey = (actionKeys "curatorInterface") select 0;
     };
 

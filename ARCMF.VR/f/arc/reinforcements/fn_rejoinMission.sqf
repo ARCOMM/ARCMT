@@ -19,75 +19,67 @@
 params [
     ["_setPos", true],
     ["_applyLoadout", true],
-    ["_execEH", true]
+    ["_clearGroup", true],
+    ["_removeFromList", true],
+    ["_code", {}],
+    ["_args", []]
 ];
 
-private ["_unit","_newGrp","_className","_newUnit"];
+private _unit = player;
 
-_unit = player;
-_className = switch (ARC_cam_preCamSide) do {
-    case west: {"B_Soldier_F"};
-    case east: {"O_Soldier_F"};
-    case resistance: {"I_Soldier_F"};
-    default {"B_Soldier_F"};
-};
-
-// Create center and group
-createCenter ARC_cam_preCamSide;
-_newGrp = createGroup ARC_cam_preCamSide;
-
-// Create unit in safe mode
-_newUnit = _newGrp createUnit [_className, [0,0,0], [], 0, "FORM"];
-_newUnit allowDamage false;
-_newUnit hideObjectGlobal true;
-_newUnit enableSimulationGlobal true;
-
-// Moves into new unit
-selectPlayer _newUnit;
-waitUntil {player == _newUnit};
-
-// Set name, position and turns off safe mode, then deletes old unit
-_newUnit setName ARC_cam_preCamName;
+_unit allowDamage true;
+_unit hideObjectGlobal false;
+_unit enableSimulationGlobal true;
 
 if (_setPos) then {
     if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
         _startPos = [(call ARC_fnc_getStartingPos), 20] call CBA_fnc_randPos;
-        _newUnit setPos _startPos;
+        _unit setPos _startPos;
     } else {
         if (isNil "ARC_reinforcementPosition") then {
-            _newUnit setPos ARC_cam_preCamPos;
+            _unit setPos ARC_cam_preCamPos;
         } else {
-            _newUnit setPos ARC_reinforcementPosition;
+            _unit setPos ARC_reinforcementPosition;
         };
     };
 };
 
-_newUnit allowDamage true;
-_newUnit hideObjectGlobal false;
-deleteVehicle _unit;
-
 // Apply loadout
 if (_applyLoadout) then {
     if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
-        this = _newUnit;
-        call compile ARC_cam_preCamLoadout;
+        _unit setUnitLoadout [ARC_cam_preCamLoadout_new, true];
     } else {
-        ["r", _newUnit] call f_fnc_assignGear;
+        ["r", _unit] call f_fnc_assignGear;
     };
 };
 
 // Shutdown spectator
-[] call f_fnc_ForceExit;
-[false] call acre_api_fnc_setSpectator;
+[false] call f_fnc_ForceExit;
 {[_x] call hyp_fnc_traceFireRemove;false} count allUnits;
 [] spawn {uiSleep 2;{[_x] call hyp_fnc_traceFireRemove;false} count allUnits;};
+[false] call acre_api_fnc_setSpectator;
 
 // Join empty group
-[_newUnit] joinSilent grpNull;
+if (_clearGroup) then {
+    [_unit] joinSilent grpNull;    
+};
 
 // Rebuild briefing
 call compile preprocessFileLineNumbers "briefing.sqf";
 call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
 
-mars_arcomm_reinforcementUnits pushBackUnique player;
-publicVariable "mars_arcomm_reinforcementUnits";
+[{[false] call acre_api_fnc_setSpectator}, [], 3] call CBA_fnc_waitAndExecute;
+
+[_unit, _args] call _code;
+
+if (_removeFromList) then {
+    private _playerIndex = ARC_spectatorUnits find _unit;
+    if (_playerIndex > -1) then {
+        ARC_spectatorUnits deleteAt _playerIndex;
+        publicVariable "ARC_spectatorUnits";
+    };
+};
+
+f_cam_VirtualCreated = nil;
+
+_unit setVariable ["ARC_rejoinFinished", true, true];

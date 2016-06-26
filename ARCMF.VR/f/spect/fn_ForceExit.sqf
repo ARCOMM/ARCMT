@@ -1,3 +1,5 @@
+params [["_removeFromList", true]];
+
 f_cam_forcedExit = true;
 // call ARC_fnc_enableAllChannels;
 [] call f_fnc_removeAllTracers;
@@ -16,3 +18,13 @@ hintSilent "Spectator system has been forcefully closed";
     false
 } count (allunits + vehicles);
 ARC_isSpectating = false;
+
+if (_removeFromList) then {
+    private _playerIndex = ARC_spectatorUnits find player;
+    if (_playerIndex > -1) then {
+        ARC_spectatorUnits deleteAt _playerIndex;
+        publicVariable "ARC_spectatorUnits";
+    };
+};
+
+[false] call acre_api_fnc_setSpectator;

@@ -48,10 +48,12 @@ switch (_button) do {
         }
     };
     case 4: { // Rejoin mission Button
-        ARC_reinforcements_joinArray pushBackUnique player;
-        publicVariable "ARC_reinforcements_joinArray";
-        hint "Waiting for admin to trigger reinforcement wave.";
-        // [] call ARC_fnc_rejoinMission;
+        if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
+            [] call ARC_fnc_rejoinMission;
+        } else {
+            player setVariable ["ARC_wantsToRejoin", true, true];
+            hint "Waiting for admin to trigger reinforcement wave.";
+        };
     };
     case 5: { // 3D Tracers
         // 0="Off", 1="Players", 2="AI", 3="Both"

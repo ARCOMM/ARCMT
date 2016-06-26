@@ -389,6 +389,13 @@ switch (_type) do
                 f_cam_toggleTags = !f_cam_toggleTags;
                 _handled = true;
             };
+            case 43: {
+                [] call f_fnc_ForceExit;
+
+                [{
+                    [player, objNull, 1, 1, true] call f_fnc_CamInit;
+                }, [], 2] call CBA_fnc_waitAndExecute;
+            };
         };
         
         _handled

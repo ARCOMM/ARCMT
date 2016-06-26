@@ -40,9 +40,9 @@ while {true} do {
             
             {
                 if (alive _x) then {
-                    if (!(_x in f_cam_listUnits) && !(_x isKindOf "VirtualMan_F")) then {
+                    if (!(_x in f_cam_listUnits) && !(_x isKindOf "VirtualMan_F") && !(_x getVariable ["ARC_cam_isVirtual", false])) then {
                         f_cam_listUnits pushBack _x;
-                        _text = "	" + name _x;
+                        _text = name _x;
                         _index = lbAdd [_listBox,_text];
                         _x setVariable ["f_spect_listBoxIndex",_index];
                     };
