@@ -18,16 +18,17 @@
  * Public: Yes
  */
 
-if (!isServer) exitWith {
-    _this remoteExec ["ARC_fnc_paraDrop", 2];
-};
-
 params [
     ["_objects", [], [[], sideUnknown]],
     ["_position", [], [[], ""]],
     ["_height", 250, [0]],
-    ["_radius", 500, [0]]
+    ["_radius", 500, [0]],
+    ["_broadcast", false, [false]]
 ];
+
+if (!isServer && {_broadcast}) exitWith {
+    _this remoteExec ["ARC_fnc_paraDrop", 2];
+};
 
 if (_position isEqualType "") then {_position = getMarkerPos _position};
 if (count _position == 0) exitWith {};

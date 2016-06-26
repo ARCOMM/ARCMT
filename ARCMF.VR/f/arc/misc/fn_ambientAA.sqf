@@ -23,10 +23,11 @@ params [
     ["_burstCount", 10, [0]],
     ["_shotDelay", 0.5, [0]],
     ["_burstDelay", 5, [0]],
-    ["_random", 0, [0]]
+    ["_random", 0, [0]],
+    ["_broadcast", false, [false]]
 ];
 
-if (!local _vehicle) exitWith {
+if (!local _vehicle && {_broadcast}) exitWith {
     _this remoteExec ["ARC_fnc_ambientAA", _vehicle];
 };
 
