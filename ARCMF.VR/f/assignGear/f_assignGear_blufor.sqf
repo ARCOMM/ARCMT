@@ -435,6 +435,87 @@ switch (_typeOfUnit) do {
         this linkItem "ItemWatch";
         this linkItem "rhsusf_ANPVS_15";
     };
+    
+// LOADOUT: MORTAR TEAM LEADER
+    case "mtrl": {
+        this forceAddUniform "rhs_uniform_FROG01_wd";
+        for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_CableTie";
+        this addItemToUniform "ACE_IR_Strobe_Item";
+        this addItemToUniform "ACE_Flashlight_XL50";
+        this addItemToUniform "ACE_EarPlugs";
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m18_purple";};
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m18_yellow";};
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m18_red";};
+        for "_i" from 1 to 2 do {this addItemToUniform "rhsusf_mag_15Rnd_9x19_FMJ";};
+        for "_i" from 1 to 4 do {this addItemToUniform "rhs_mag_M433_HEDP";};
+        for "_i" from 1 to 4 do {this addItemToUniform "rhs_mag_m661_green";};
+        this addVest "rhsusf_spc_squadleader";
+        for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+        for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
+        for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_m714_White";};
+        for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_M433_HEDP";};
+        this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
+        this addWeapon "rhs_weap_m16a4_carryhandle_M203";
+        this addPrimaryWeaponItem "RH_peq15";
+        this addWeapon "rhsusf_weap_m9";
+        this addWeapon "Binocular";
+        this linkItem "ItemMap";
+        this linkItem "ItemCompass";
+        this linkItem "ItemWatch";
+        this linkItem "ItemGPS";
+        this linkItem "rhsusf_ANPVS_15";
+    };
+    
+// LOADOUT: MORTAR GUNNER
+    case "mtrg": {
+        this forceAddUniform "rhs_uniform_FROG01_wd";
+        for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_CableTie";
+        this addItemToUniform "ACE_IR_Strobe_Item";
+        this addItemToUniform "ACE_Flashlight_XL50";
+        this addItemToUniform "ACE_EarPlugs";
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+        for "_i" from 1 to 3 do {this addItemToUniform "rhsusf_mag_15Rnd_9x19_FMJ";};
+        this addVest "rhsusf_spc_rifleman";
+        for "_i" from 1 to 8 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+        for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
+        this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
+        this addWeapon "rhs_weap_m16a4_carryhandle";
+        this addPrimaryWeaponItem "RH_peq15";
+        this addWeapon "rhsusf_weap_m9";
+        this linkItem "ItemMap";
+        this linkItem "ItemCompass";
+        this linkItem "ItemWatch";
+        this linkItem "rhsusf_ANPVS_15";
+    };
+    
+// LOADOUT: MORTAR ASSISTANT
+    case "mtra": {
+        this forceAddUniform "rhs_uniform_FROG01_wd";
+        for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_CableTie";
+        this addItemToUniform "ACE_IR_Strobe_Item";
+        this addItemToUniform "ACE_Flashlight_XL50";
+        this addItemToUniform "ACE_EarPlugs";
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_m67";};
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_an_m8hc";};
+        for "_i" from 1 to 3 do {this addItemToUniform "rhsusf_mag_15Rnd_9x19_FMJ";};
+        this addVest "rhsusf_spc_rifleman";
+        for "_i" from 1 to 8 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
+        for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Green";};
+        this addHeadgear "rhsusf_lwh_helmet_marpatwd_headset";
+        this addWeapon "rhs_weap_m16a4_carryhandle";
+        this addPrimaryWeaponItem "RH_peq15";
+        this addWeapon "rhsusf_weap_m9";
+        this linkItem "ItemMap";
+        this linkItem "ItemCompass";
+        this linkItem "ItemWatch";
+        this linkItem "rhsusf_ANPVS_15";
+    };
 
 // LOADOUT: PILOT
     case "p": {

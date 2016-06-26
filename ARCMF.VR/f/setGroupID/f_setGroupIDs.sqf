@@ -52,6 +52,15 @@
     ["GrpBLUFOR_MAT7","MAT7","ColorOrange"],
     ["GrpBLUFOR_MAT8","MAT8","ColorOrange"],
 
+    ["GrpBLUFOR_MTR1","MTR1","ColorOrange"],
+    ["GrpBLUFOR_MTR2","MTR2","ColorOrange"],
+    ["GrpBLUFOR_MTR3","MTR3","ColorOrange"],
+    ["GrpBLUFOR_MTR4","MTR4","ColorOrange"],
+    ["GrpBLUFOR_MTR5","MTR5","ColorOrange"],
+    ["GrpBLUFOR_MTR6","MTR6","ColorOrange"],
+    ["GrpBLUFOR_MTR7","MTR7","ColorOrange"],
+    ["GrpBLUFOR_MTR8","MTR8","ColorOrange"],
+
     ["GrpBLUFOR_G1","G1","ColorPink"],
     ["GrpBLUFOR_G2","G2","ColorPink"],
     ["GrpBLUFOR_G3","G3","ColorPink"],
@@ -123,6 +132,15 @@
     ["GrpOPFOR_MAT7","MAT7","ColorOrange"],
     ["GrpOPFOR_MAT8","MAT8","ColorOrange"],
 
+    ["GrpOPFOR_MTR1","MTR1","ColorOrange"],
+    ["GrpOPFOR_MTR2","MTR2","ColorOrange"],
+    ["GrpOPFOR_MTR3","MTR3","ColorOrange"],
+    ["GrpOPFOR_MTR4","MTR4","ColorOrange"],
+    ["GrpOPFOR_MTR5","MTR5","ColorOrange"],
+    ["GrpOPFOR_MTR6","MTR6","ColorOrange"],
+    ["GrpOPFOR_MTR7","MTR7","ColorOrange"],
+    ["GrpOPFOR_MTR8","MTR8","ColorOrange"],
+
     ["GrpOPFOR_G1","G1","ColorPink"],
     ["GrpOPFOR_G2","G2","ColorPink"],
     ["GrpOPFOR_G3","G3","ColorPink"],
@@ -193,6 +211,15 @@
     ["GrpINDFOR_MAT6","MAT6","ColorOrange"],
     ["GrpINDFOR_MAT7","MAT7","ColorOrange"],
     ["GrpINDFOR_MAT8","MAT8","ColorOrange"],
+
+    ["GrpINDFOR_MTR1","MTR1","ColorOrange"],
+    ["GrpINDFOR_MTR2","MTR2","ColorOrange"],
+    ["GrpINDFOR_MTR3","MTR3","ColorOrange"],
+    ["GrpINDFOR_MTR4","MTR4","ColorOrange"],
+    ["GrpINDFOR_MTR5","MTR5","ColorOrange"],
+    ["GrpINDFOR_MTR6","MTR6","ColorOrange"],
+    ["GrpINDFOR_MTR7","MTR7","ColorOrange"],
+    ["GrpINDFOR_MTR8","MTR8","ColorOrange"],
 
     ["GrpINDFOR_G1","G1","ColorPink"],
     ["GrpINDFOR_G2","G2","ColorPink"],

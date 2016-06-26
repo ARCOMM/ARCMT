@@ -424,6 +424,85 @@ switch (_typeOfUnit) do {
         this linkItem "rhsusf_ANPVS_15";
     };
 
+// LOADOUT: MORTAR TEAM LEADER
+    case "mtrl": {
+        this forceAddUniform "rhs_uniform_msv_emr";
+        for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_Flashlight_KSF1";
+        this addItemToUniform "ACE_IR_Strobe_Item";
+        this addItemToUniform "ACE_EarPlugs";
+        this addItemToUniform "ACE_CableTie";
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_9x19_17";};
+        this addVest "rhs_6b23_digi_6sh92_headset";
+        for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgo";};
+        for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
+        for "_i" from 1 to 8 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        this addBackpack "rhs_assault_umbts_engineer_empty";
+        for "_i" from 1 to 3 do {this addItemToBackpack "rhs_VOG25";};
+        for "_i" from 1 to 4 do {this addItemToBackpack "rhs_VG40OP_white";};
+        for "_i" from 1 to 4 do {this addItemToBackpack "rhs_VG40OP_red";};
+        for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_nspn_green";};
+        for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_nspn_red";};
+        for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_nspn_yellow";};
+        for "_i" from 1 to 4 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        this addHeadgear "rhs_6b26_bala_green";
+        this addWeapon "rhs_weap_ak103_gp25";
+        this addPrimaryWeaponItem "rhs_acc_1p63";
+        this addWeapon "rhs_weap_pya";
+        this addWeapon "rhs_pdu4";
+        this linkItem "ItemMap";
+        this linkItem "ItemCompass";
+        this linkItem "ItemWatch";
+        this linkItem "ItemGPS";
+        this linkItem "rhsusf_ANPVS_15";
+    };
+    
+// LOADOUT: MORTAR GUNNER
+    case "mtrg": {
+        this forceAddUniform "rhs_uniform_msv_emr";
+        for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_Flashlight_KSF1";
+        this addItemToUniform "ACE_IR_Strobe_Item";
+        this addItemToUniform "ACE_EarPlugs";
+        this addItemToUniform "ACE_CableTie";
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_9x19_17";};
+        this addVest "rhs_6b23_digi_6sh92_headset";
+        for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgo";};
+        for "_i" from 1 to 8 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
+        this addHeadgear "rhs_6b26_bala_green";
+        this addWeapon "rhs_weap_ak103";
+        this addPrimaryWeaponItem "rhs_acc_1p63";
+        this addWeapon "rhs_weap_pya";
+        this linkItem "ItemMap";
+        this linkItem "ItemCompass";
+        this linkItem "ItemWatch";
+        this linkItem "rhsusf_ANPVS_15";
+    };
+    
+// LOADOUT: MORTAR ASSISTANT
+    case "mtra": {
+        this forceAddUniform "rhs_uniform_msv_emr";
+        for "_i" from 1 to 6 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_Flashlight_KSF1";
+        this addItemToUniform "ACE_IR_Strobe_Item";
+        this addItemToUniform "ACE_EarPlugs";
+        this addItemToUniform "ACE_CableTie";
+        for "_i" from 1 to 2 do {this addItemToUniform "rhs_mag_9x19_17";};
+        this addVest "rhs_6b23_digi_6sh92_headset";
+        for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgo";};
+        for "_i" from 1 to 8 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_white";};
+        this addHeadgear "rhs_6b26_bala_green";
+        this addWeapon "rhs_weap_ak103";
+        this addPrimaryWeaponItem "rhs_acc_1p63";
+        this addWeapon "rhs_weap_pya";
+        this linkItem "ItemMap";
+        this linkItem "ItemCompass";
+        this linkItem "ItemWatch";
+        this linkItem "rhsusf_ANPVS_15";
+    };
+
 // LOADOUT: PILOT
     case "p": {
         this forceAddUniform "rhs_uniform_msv_emr";
