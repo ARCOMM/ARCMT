@@ -19,6 +19,10 @@ f_var_radios = 1;
         if (hasInterface) then {
             {_x call acre_api_fnc_babelAddLanguageType; false} count f_radios_settings_acre2_languages;
             [] call f_acre2_clientInit;
+            
+            if (alive player) then {
+                [false] call acre_api_fnc_setSpectator;
+            };
         };
     }, []] call CBA_fnc_waitUntilAndExecute;
 }, []] call CBA_fnc_waitUntilAndExecute;
