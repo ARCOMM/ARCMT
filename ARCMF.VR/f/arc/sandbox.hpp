@@ -107,4 +107,24 @@ class CfgSandbox {
         startingPosition[] = {13242.7,17007.3,0};
         camouflage = "mtp";
     };
+    class eden {
+        startingPosition[] = {4871.1,11800.4,0};
+        camouflage = "mtp";
+    };
+    class abel {
+        startingPosition[] = {8017.67,9710.44,0};
+        camouflage = "mtp";
+    };
+    class cain {
+        startingPosition[] = {6723.41,3681.76,0};
+        camouflage = "mtp";
+    };
+    class noe {
+        startingPosition[] = {9053.75,12546,0};
+        camouflage = "mtp";
+    };
+    class Desert_Island {
+        startingPosition[] = {9733.54,3821.84,0};
+        camouflage = "desert";
+    };
 };
