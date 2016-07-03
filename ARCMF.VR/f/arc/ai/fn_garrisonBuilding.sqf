@@ -120,8 +120,6 @@ switch (_fillingType) do {
 
             } else {
                 private _unit = _unitsArray select 0;
-                _unit disableAI "FSM";
-                _unit disableAI "AUTOCOMBAT";
                 _unit forceSpeed 0;
                 _unit setPos _pos;
                 _unitsArray deleteAt (_unitsArray find _unit);
@@ -154,8 +152,6 @@ switch (_fillingType) do {
 
             } else {
                 private _unit = _unitsArray select 0;
-                _unit disableAI "FSM";
-                _unit disableAI "AUTOCOMBAT";
                 _unit forceSpeed 0;
                 _unit setPos _pos;
                 _unitsArray deleteAt (_unitsArray find _unit);
@@ -186,8 +182,6 @@ switch (_fillingType) do {
 
             } else {
                 private _unit = _unitsArray select 0;
-                _unit disableAI "FSM";
-                _unit disableAI "AUTOCOMBAT";
                 _unit forceSpeed 0;
                 _unit setPos _pos;
                 _unitsArray deleteAt (_unitsArray find _unit);
