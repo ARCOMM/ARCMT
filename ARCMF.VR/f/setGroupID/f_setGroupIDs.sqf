@@ -74,10 +74,10 @@
     ["GrpBLUFOR_PH2","PH2","ColorRed"],
     ["GrpBLUFOR_PH3","PH3","ColorRed"],
     ["GrpBLUFOR_PH4","PH4","ColorRed"],
-    ["GrpBLUFOR_PH5","PH5","ColorRed"],
-    ["GrpBLUFOR_PH6","PH6","ColorRed"],
-    ["GrpBLUFOR_PH7","PH7","ColorRed"],
-    ["GrpBLUFOR_PH8","PH8","ColorRed"],
+    ["GrpBLUFOR_RVN1","RVN1","ColorRed"],
+    ["GrpBLUFOR_RVN2","RVN2","ColorRed"],
+    ["GrpBLUFOR_RVN3","RVN3","ColorRed"],
+    ["GrpBLUFOR_RVN4","RVN4","ColorRed"],
 
     // GROUP IDs: OPFOR
     ["GrpOPFOR_CO_CC","CO","ColorOrange"],
@@ -154,10 +154,10 @@
     ["GrpOPFOR_PH2","PH2","ColorRed"],
     ["GrpOPFOR_PH3","PH3","ColorRed"],
     ["GrpOPFOR_PH4","PH4","ColorRed"],
-    ["GrpOPFOR_PH5","PH5","ColorRed"],
-    ["GrpOPFOR_PH6","PH6","ColorRed"],
-    ["GrpOPFOR_PH7","PH7","ColorRed"],
-    ["GrpOPFOR_PH8","PH8","ColorRed"],
+    ["GrpOPFOR_RVN1","RVN1","ColorRed"],
+    ["GrpOPFOR_RVN2","RVN2","ColorRed"],
+    ["GrpOPFOR_RVN3","RVN3","ColorRed"],
+    ["GrpOPFOR_RVN4","RVN4","ColorRed"],
 
     // GROUP IDs: INDEPENDENT
     ["GrpINDFOR_CO_CC","CO","ColorOrange"],
@@ -234,8 +234,8 @@
     ["GrpINDFOR_PH2","PH2","ColorRed"],
     ["GrpINDFOR_PH3","PH3","ColorRed"],
     ["GrpINDFOR_PH4","PH4","ColorRed"],
-    ["GrpINDFOR_PH5","PH5","ColorRed"],
-    ["GrpINDFOR_PH6","PH6","ColorRed"],
-    ["GrpINDFOR_PH7","PH7","ColorRed"],
-    ["GrpINDFOR_PH8","PH8","ColorRed"]
+    ["GrpINDFOR_RVN1","RVN1","ColorRed"],
+    ["GrpINDFOR_RVN2","RVN2","ColorRed"],
+    ["GrpINDFOR_RVN3","RVN3","ColorRed"],
+    ["GrpINDFOR_RVN4","RVN4","ColorRed"]
 ];
