@@ -7,7 +7,7 @@ class Header {
 
 onLoadName = "ARCMF";
 onLoadMission = "ARCOMM Mission Framework.";
-author = "Kingsley, tryteyker, Nelson";
+author = "Kingsley, tryteyker";
 loadScreen = "splash.paa";
 enableDebugConsole = 1;
 disabledAI = 1;
