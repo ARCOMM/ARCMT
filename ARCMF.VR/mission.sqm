@@ -4283,9 +4283,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpBLUFOR_PH5 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitBLUFOR_PH5_P";
-						description="Phantom 5 Pilot";
+						init="GrpBLUFOR_RVN1 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_RVN1_P";
+						description="Raven 1 Pilot";
 						isPlayable=1;
 					};
 					id=338;
@@ -4304,9 +4304,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpBLUFOR_PH5 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitBLUFOR_PH5_CP";
-						description="Phantom 5 Co-Pilot";
+						init="GrpBLUFOR_RVN1 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_RVN1_CP";
+						description="Raven 1 Co-Pilot";
 						isPlayable=1;
 					};
 					id=340;
@@ -4362,9 +4362,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpBLUFOR_PH6 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitBLUFOR_PH6_P";
-						description="Phantom 6 Pilot";
+						init="GrpBLUFOR_RVN2 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_RVN2_P";
+						description="Raven 2 Pilot";
 						isPlayable=1;
 					};
 					id=344;
@@ -4383,9 +4383,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpBLUFOR_PH6 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitBLUFOR_PH6_CP";
-						description="Phantom 6 Co-Pilot";
+						init="GrpBLUFOR_RVN2 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_RVN2_CP";
+						description="Raven 2 Co-Pilot";
 						isPlayable=1;
 					};
 					id=346;
@@ -4441,9 +4441,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpBLUFOR_PH7 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitBLUFOR_PH7_P";
-						description="Phantom 7 Pilot";
+						init="GrpBLUFOR_RVN3 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_RVN3_P";
+						description="Raven 3 Pilot";
 						isPlayable=1;
 					};
 					id=350;
@@ -4462,9 +4462,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpBLUFOR_PH7 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitBLUFOR_PH7_CP";
-						description="Phantom 7 Co-Pilot";
+						init="GrpBLUFOR_RVN3 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_RVN3_CP";
+						description="Raven 3 Co-Pilot";
 						isPlayable=1;
 					};
 					id=352;
@@ -4520,9 +4520,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpBLUFOR_PH8 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitBLUFOR_PH8_P";
-						description="Phantom 8 Pilot";
+						init="GrpBLUFOR_RVN4 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_RVN4_P";
+						description="Raven 4 Pilot";
 						isPlayable=1;
 					};
 					id=356;
@@ -4541,9 +4541,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpBLUFOR_PH8 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitBLUFOR_PH8_CP";
-						description="Phantom 8 Co-Pilot";
+						init="GrpBLUFOR_RVN4 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitBLUFOR_RVN4_CP";
+						description="Raven 4 Co-Pilot";
 						isPlayable=1;
 					};
 					id=358;
@@ -12150,9 +12150,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpOPFOR_PH5 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitOPFOR_PH5_P";
-						description="Phantom 5 Pilot";
+						init="GrpOPFOR_RVN1 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitOPFOR_RVN1_P";
+						description="Raven 1 Pilot";
 						isPlayable=1;
 					};
 					id=890;
@@ -12171,9 +12171,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpOPFOR_PH5 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitOPFOR_PH5_CP";
-						description="Phantom 5 Co-Pilot";
+						init="GrpOPFOR_RVN1 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitOPFOR_RVN1_CP";
+						description="Raven 1 Co-Pilot";
 						isPlayable=1;
 					};
 					id=892;
@@ -12229,9 +12229,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpOPFOR_PH6 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitOPFOR_PH6_P";
-						description="Phantom 6 Pilot";
+						init="GrpOPFOR_RVN2 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitOPFOR_RVN2_P";
+						description="Raven 2 Pilot";
 						isPlayable=1;
 					};
 					id=896;
@@ -12250,9 +12250,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpOPFOR_PH6 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitOPFOR_PH6_CP";
-						description="Phantom 6 Co-Pilot";
+						init="GrpOPFOR_RVN2 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitOPFOR_RVN2_CP";
+						description="Raven 2 Co-Pilot";
 						isPlayable=1;
 					};
 					id=898;
@@ -12308,9 +12308,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpOPFOR_PH7 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitOPFOR_PH7_P";
-						description="Phantom 7 Pilot";
+						init="GrpOPFOR_RVN3 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitOPFOR_RVN3_P";
+						description="Raven 3 Pilot";
 						isPlayable=1;
 					};
 					id=902;
@@ -12329,9 +12329,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpOPFOR_PH7 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitOPFOR_PH7_CP";
-						description="Phantom 7 Co-Pilot";
+						init="GrpOPFOR_RVN3 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitOPFOR_RVN3_CP";
+						description="Raven 3 Co-Pilot";
 						isPlayable=1;
 					};
 					id=904;
@@ -12387,9 +12387,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpOPFOR_PH8 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitOPFOR_PH8_P";
-						description="Phantom 8 Pilot";
+						init="GrpOPFOR_RVN4 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitOPFOR_RVN4_P";
+						description="Raven 4 Pilot";
 						isPlayable=1;
 					};
 					id=908;
@@ -12408,9 +12408,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpOPFOR_PH8 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitOPFOR_PH8_CP";
-						description="Phantom 8 Co-Pilot";
+						init="GrpOPFOR_RVN4 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitOPFOR_RVN4_CP";
+						description="Raven 4 Co-Pilot";
 						isPlayable=1;
 					};
 					id=910;
@@ -20017,9 +20017,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpINDFOR_PH5 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitINDFOR_PH5_P";
-						description="Phantom 5 Pilot";
+						init="GrpINDFOR_RVN1 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitINDFOR_RVN1_P";
+						description="Raven 1 Pilot";
 						isPlayable=1;
 					};
 					id=1442;
@@ -20038,9 +20038,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpINDFOR_PH5 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitINDFOR_PH5_CP";
-						description="Phantom 5 Co-Pilot";
+						init="GrpINDFOR_RVN1 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitINDFOR_RVN1_CP";
+						description="Raven 1 Co-Pilot";
 						isPlayable=1;
 					};
 					id=1444;
@@ -20096,9 +20096,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpINDFOR_PH6 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitINDFOR_PH6_P";
-						description="Phantom 6 Pilot";
+						init="GrpINDFOR_RVN2 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitINDFOR_RVN2_P";
+						description="Raven 2 Pilot";
 						isPlayable=1;
 					};
 					id=1448;
@@ -20117,9 +20117,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpINDFOR_PH6 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitINDFOR_PH6_CP";
-						description="Phantom 6 Co-Pilot";
+						init="GrpINDFOR_RVN2 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitINDFOR_RVN2_CP";
+						description="Raven 2 Co-Pilot";
 						isPlayable=1;
 					};
 					id=1450;
@@ -20175,9 +20175,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpINDFOR_PH7 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitINDFOR_PH7_P";
-						description="Phantom 7 Pilot";
+						init="GrpINDFOR_RVN3 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitINDFOR_RVN3_P";
+						description="Raven 3 Pilot";
 						isPlayable=1;
 					};
 					id=1454;
@@ -20196,9 +20196,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpINDFOR_PH7 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitINDFOR_PH7_CP";
-						description="Phantom 7 Co-Pilot";
+						init="GrpINDFOR_RVN3 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitINDFOR_RVN3_CP";
+						description="Raven 3 Co-Pilot";
 						isPlayable=1;
 					};
 					id=1456;
@@ -20254,9 +20254,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="CAPTAIN";
-						init="GrpINDFOR_PH8 = group this; [""p"",this] call f_fnc_assignGear;";
-						name="UnitINDFOR_PH8_P";
-						description="Phantom 8 Pilot";
+						init="GrpINDFOR_RVN4 = group this; [""p"",this] call f_fnc_assignGear;";
+						name="UnitINDFOR_RVN4_P";
+						description="Raven 4 Pilot";
 						isPlayable=1;
 					};
 					id=1460;
@@ -20275,9 +20275,9 @@ class Mission
 					{
 						skill=0.60000002;
 						rank="LIEUTENANT";
-						init="GrpINDFOR_PH8 = group this; [""cp"",this] call f_fnc_assignGear;";
-						name="UnitINDFOR_PH8_CP";
-						description="Phantom 8 Co-Pilot";
+						init="GrpINDFOR_RVN4 = group this; [""cp"",this] call f_fnc_assignGear;";
+						name="UnitINDFOR_RVN4_CP";
+						description="Raven 4 Co-Pilot";
 						isPlayable=1;
 					};
 					id=1462;
