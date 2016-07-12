@@ -127,4 +127,8 @@ class CfgSandbox {
         startingPosition[] = {9733.54,3821.84,0};
         camouflage = "desert";
     };
+    class Tanoa {
+        startingPosition[] = {2329.52,13163.9,0};
+        camouflage = "woodland";
+    };
 };
