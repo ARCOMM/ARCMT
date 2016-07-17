@@ -71,7 +71,7 @@ class Mission
 		year=2016;
 		month=2;
 		day=15;
-		hour=9;
+		hour=12;
 		minute=0;
 		startFogDecay=0;
 		forecastFogDecay=0;

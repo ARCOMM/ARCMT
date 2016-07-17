@@ -1,6 +1,4 @@
 class CfgARCMF {
-    enableRandomEnvironment = true;
-    
     /*
 -----------------------------------------------------------------------------------------------------------------
         BRIEFING CONFIGURATION
