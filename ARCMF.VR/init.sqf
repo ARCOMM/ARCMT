@@ -1,6 +1,11 @@
 enableSaving [false, false];
 enableSentences false;
 
+// Environment
+if (isServer && {(getNumber (missionConfigFile >> "CfgARCMF" >> "enableRandomEnvironment") == 1 || getNumber (missionConfigFile >> "Header" >> "sandbox") == 1)}) then {
+    [] call ARC_fnc_randomEnvironment;
+};
+
 // Briefing
 #include "briefing.sqf"
 

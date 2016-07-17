@@ -5,6 +5,8 @@ class ARC
         file = "f\arc\misc";
         class ambientAA {};
         class resetPosition {};
+        class randomEnvironment {};
+        class fullMoonDates {};
     };
     class chat
     {
