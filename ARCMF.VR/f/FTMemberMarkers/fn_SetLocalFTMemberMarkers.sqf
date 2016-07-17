@@ -2,7 +2,7 @@
     [{
         {
             private _unit = _x;
-            private _markerName = format ["ARC_unitMarker_%1", _unit];
+            private _markerName = format ["ARC_unitMarker_%1", name _unit];
 
             if (alive _unit) then {
                 private _markerColor = ["ColorWhite","ColorRed","ColorGreen","ColorBlue","ColorYellow"] select (["MAIN","RED","GREEN","BLUE","YELLOW"] find assignedTeam _unit) max 0;
