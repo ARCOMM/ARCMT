@@ -1,4 +1,6 @@
 class CfgARCMF {
+    enableRandomEnvironment = true;
+    
     /*
 -----------------------------------------------------------------------------------------------------------------
         BRIEFING CONFIGURATION
@@ -7,8 +9,8 @@ class CfgARCMF {
         Warning: You must wrap every line in quotes, eg. mission[] = {"This is your mission"};
 -----------------------------------------------------------------------------------------------------------------
     */
-    class briefing {
-        class blufor {
+    class Briefing {
+        class BLUFOR {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -19,7 +21,7 @@ class CfgARCMF {
             enemyForces[] = {};
             friendlyForces[] = {};
         };
-        class opfor {
+        class OPFOR {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -30,7 +32,7 @@ class CfgARCMF {
             enemyForces[] = {};
             friendlyForces[] = {};
         };
-        class indfor {
+        class INDFOR {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -41,7 +43,7 @@ class CfgARCMF {
             enemyForces[] = {};
             friendlyForces[] = {};
         };
-        class civilian {
+        class CIVILIAN {
             administration[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
@@ -59,16 +61,16 @@ class CfgARCMF {
         Description: This is the section where you define the settings for group map markers.
 -----------------------------------------------------------------------------------------------------------------
     */
-    class markers {
-        class blufor {
+    class Markers {
+        class BLUFOR {
             enableGroupMarkers = true;
             fireteamMemberFadeDistance = 100;
         };
-        class opfor {
+        class OPFOR {
             enableGroupMarkers = true;
             fireteamMemberFadeDistance = 100;
         };
-        class indfor {
+        class INDFOR {
             enableGroupMarkers = true;
             fireteamMemberFadeDistance = 100;
         };
@@ -82,8 +84,8 @@ class CfgARCMF {
             2. Possible language values are "english", "greek" and "russian".
 -----------------------------------------------------------------------------------------------------------------
     */
-    class acre {
-        class blufor {
+    class ACRE {
+        class BLUFOR {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
             AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac"};
@@ -91,7 +93,7 @@ class CfgARCMF {
             AN_PRC_117F[] = {};
             AN_PRC_77[] = {};
         };
-        class opfor {
+        class OPFOR {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
             AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac"};
@@ -99,7 +101,7 @@ class CfgARCMF {
             AN_PRC_117F[] = {};
             AN_PRC_77[] = {};
         };
-        class indfor {
+        class INDFOR {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
             AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac"};
@@ -135,9 +137,9 @@ class CfgARCMF {
             };
 -----------------------------------------------------------------------------------------------------------------
     */
-    class ai {
-        class gear {
-            class blufor {
+    class AI {
+        class Gear {
+            class BLUFOR {
                 enabled = false;
                 removeNightVision = true;
                 removeMedicalItems = true;
@@ -153,7 +155,7 @@ class CfgARCMF {
                 launchers[] = {};
                 attachments[] = {};
             };
-            class opfor {
+            class OPFOR {
                 enabled = false;
                 removeNightVision = true;
                 removeMedicalItems = true;
@@ -169,7 +171,7 @@ class CfgARCMF {
                 launchers[] = {};
                 attachments[] = {};
             };
-            class indfor {
+            class INDFOR {
                 enabled = false;
                 removeNightVision = true;
                 removeMedicalItems = true;
@@ -185,7 +187,7 @@ class CfgARCMF {
                 launchers[] = {};
                 attachments[] = {};
             };
-            class civilian {
+            class CIVILIAN {
                 enabled = false;
                 removeNightVision = true;
                 removeMedicalItems = true;
