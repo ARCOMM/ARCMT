@@ -40,27 +40,24 @@ _this spawn {
     };
 
     // Create a Virtual Agent to act as our player to make sure we get to keep Draw3D
-    if (isNil "f_cam_VirtualCreated") then {
-        createCenter ARC_cam_preCamSide;
-        _newGrp = createGroup ARC_cam_preCamSide;
-        _newUnit = _newGrp createUnit [ARC_cam_preCamClassname, [0,0,5], [], 0, "FORM"];
-        _newUnit setName ARC_cam_preCamName;
-        _newUnit setUnitLoadout [ARC_cam_preCamLoadout_new, true];
-        _newUnit allowDamage false;
-        _newUnit hideObjectGlobal true;
-        _newUnit enableSimulationGlobal false;
-        _newUnit setPos [0,0,5];
-        selectPlayer _newUnit;
-        waitUntil {player == _newUnit};
-        player setVariable ["ARC_cam_preCamSide", ARC_cam_preCamSide, true];
-        player setVariable ["ARC_cam_isVirtual", true, true];
-        player setVariable ["ARC_wantsToRejoin", false, true];
-        deleteVehicle _unit;
-        f_cam_VirtualCreated = true;
-        
-        ARC_spectatorUnits pushBack player;
-        publicVariable "ARC_spectatorUnits";
-    };
+    createCenter ARC_cam_preCamSide;
+    _newGrp = createGroup ARC_cam_preCamSide;
+    _newUnit = _newGrp createUnit [ARC_cam_preCamClassname, [0,0,25], [], 0, "FORM"];
+    _newUnit setName ARC_cam_preCamName;
+    _newUnit setUnitLoadout [ARC_cam_preCamLoadout_new, true];
+    _newUnit allowDamage false;
+    _newUnit hideObjectGlobal true;
+    _newUnit enableSimulationGlobal false;
+    _newUnit setPosASL [0,0,25];
+    selectPlayer _newUnit;
+    waitUntil {player == _newUnit};
+    player setVariable ["ARC_cam_preCamSide", ARC_cam_preCamSide, true];
+    player setVariable ["ARC_cam_isVirtual", true, true];
+    player setVariable ["ARC_wantsToRejoin", false, true];
+    deleteVehicle _unit;
+    ARC_spectatorUnits pushBack player;
+    publicVariable "ARC_spectatorUnits";
+    {player removeItem _x} forEach ["ACRE_PRC343","ACRE_PRC148","ACRE_PRC152","ACRE_PRC117F","ACRE_PRC77","ItemRadioAcreFlagged"];
 
     if (isNull _oldUnit) then {
         if (count playableUnits > 0) then {

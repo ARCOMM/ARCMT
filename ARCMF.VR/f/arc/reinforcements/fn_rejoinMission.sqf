@@ -80,6 +80,4 @@ if (_removeFromList) then {
     };
 };
 
-f_cam_VirtualCreated = nil;
-
 _unit setVariable ["ARC_rejoinFinished", true, true];
