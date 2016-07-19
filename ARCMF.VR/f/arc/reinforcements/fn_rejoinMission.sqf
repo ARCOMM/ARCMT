@@ -28,8 +28,7 @@ params [
 private _unit = player;
 
 _unit allowDamage true;
-_unit hideObjectGlobal false;
-_unit enableSimulationGlobal true;
+_unit enableSimulation true;
 
 if (_setPos) then {
     if ((getNumber (missionConfigFile >> "Header" >> "sandbox")) == 1) then {
