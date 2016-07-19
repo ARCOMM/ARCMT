@@ -46,8 +46,7 @@ _this spawn {
     _newUnit setName ARC_cam_preCamName;
     _newUnit setUnitLoadout [ARC_cam_preCamLoadout_new, true];
     _newUnit allowDamage false;
-    _newUnit hideObjectGlobal true;
-    _newUnit enableSimulationGlobal false;
+    _newUnit enableSimulation false;
     _newUnit setPosASL [0,0,25];
     selectPlayer _newUnit;
     waitUntil {player == _newUnit};
