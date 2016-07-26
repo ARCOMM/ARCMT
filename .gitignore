@@ -1,4 +1,4 @@
 .vscode/
 !build
-build/*.pbo
+# build/*.pbo
 release/
