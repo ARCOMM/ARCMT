@@ -1,3 +1,14 @@
+class ARC_adv {
+    class adversarial
+    {
+        file = "f\arc\adversarial";
+        class setSideStart {};
+        class setupGame {};
+        class setupClient {};
+        class addArsenalActions {};
+    };
+};
+
 class ARC
 {
     class misc
@@ -57,6 +68,7 @@ class ARC
         class getUnitType {};
         class zeroPad {};
         class arrayShuffle {};
+        class isAdv {};
     };
     class radios
     {

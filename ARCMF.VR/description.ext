@@ -3,6 +3,7 @@ class Header {
     minPlayers = 1;
     maxPlayers = 229;
     sandbox = 0;
+    adversarial = 1;
 };
 
 onLoadName = "ARCMF";
@@ -11,7 +12,7 @@ author = "Kingsley, tryteyker";
 loadScreen = "splash.paa";
 enableDebugConsole = 1;
 disabledAI = 1;
-respawn = 1;
+respawn = 3;
 respawnDelay = 3;
 respawnButton = 1;
 respawnOnStart = 0;
@@ -157,5 +158,6 @@ class CfgFunctions {
 #include "config.hpp"
 #include "f\arc\xeh.hpp"
 #include "f\arc\sandbox.hpp"
+#include "f\arc\adversarial\config.hpp"
 #include "f\ui\include.hpp"
 #include "f\arc\attributes.hpp"
