@@ -14,10 +14,12 @@
  * Public: No
  */
 
+#include "script_component.hpp"
+
 private _sides = [west, east, resistance];
 private _worldSize = worldSize;
 private _worldCenter = [_worldSize / 2, _worldSize / 2, 0];
-private _places = selectBestPlaces [_worldCenter, _worldSize, "meadow", 100, 3];
+private _places = selectBestPlaces [_worldCenter, _worldSize / 2, "meadow", 100, 3];
 
 {
     _x params ["_pos", "_expResult"];

@@ -14,6 +14,8 @@
  * Public: No
  */
 
+#include "script_component.hpp"
+
 params [["_arsenal", objNull, [objNull]]];
 
 if (isNull _arsenal) exitWith {};

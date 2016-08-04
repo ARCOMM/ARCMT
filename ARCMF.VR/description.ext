@@ -71,6 +71,27 @@ class Params {
         default = 0;
         code = "arc_param_acre_reveal = if (%1 == 1) then {true} else {false};";
     };
+    class arc_param_adv_totalrounds {
+        title = "Adversarial - Total Rounds";
+        values[] = {3,6,9,12,9999};
+        texts[] = {"3","6","9","12","Unlimited"};
+        default = 12;
+        code = "arc_param_adv_totalrounds = %1";
+    };
+    class arc_param_adv_timelimit {
+        title = "Adversarial - Time Limit Per Round";
+        values[] = {60,300,600,900,1200,1500,1800,-1};
+        texts[] = {"1 Minute","5 Minutes","10 Minutes","15 Minutes","20 Minutes","25 Minutes","30 Minutes","No limit"};
+        default = 10;
+        code = "arc_param_adv_timelimit = %1";
+    };
+    class arc_param_adv_briefingtime {
+        title = "Adversarial - Briefing Time";
+        values[] = {15,30,45,60};
+        texts[] = {"15 Seconds","30 Seconds","45 Seconds","60 Seconds"};
+        default = 5;
+        code = "arc_param_adv_briefingtime = %1";
+    };
 };
 
 class CfgDebriefing {

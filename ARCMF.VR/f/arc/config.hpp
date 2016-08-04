@@ -6,6 +6,12 @@ class ARC_adv {
         class setupGame {};
         class setupClient {};
         class addArsenalActions {};
+        class startRound {};
+        class endRound {};
+        class resetPlayerToStart {};
+        class getObjective {};
+        class startBriefing {};
+        class onPlayerRespawn {};
     };
 };
 

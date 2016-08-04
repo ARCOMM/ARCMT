@@ -14,7 +14,11 @@
  * Public: No
  */
 
+#include "script_component.hpp"
+
 if (!ARC_isAdv) exitWith {};
+
+[player] call FUNC(resetPlayerToStart);
 
 private _markerName = switch (side group player) do {
     case west: {"respawn_west"};
@@ -22,16 +26,18 @@ private _markerName = switch (side group player) do {
     case resistance: {"respawn_guerrila"};
 };
 
-// Position
-private _randPos = [(getMarkerPos _markerName), 5] call CBA_fnc_randPos;
-player setPos _randPos;
-
 // Groups
 ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
 
 // Arsenal crate
 private _arsenal = call compile format ["ARC_adv_%1_arsenal", _markerName];
-[_arsenal] call ARC_adv_fnc_addArsenalActions;
+[_arsenal] call FUNC(addArsenalActions);
 
 // Direction
 player setDir (player getDir _arsenal);
+
+// Disable firing
+[true] call f_fnc_safety;
+
+// Disable ACRE spectator
+[false] call acre_api_fnc_setSpectator;
