@@ -18,7 +18,7 @@ _this spawn {
     ARC_cam_preCamClassname = typeOf player;
     ARC_cam_preCamLoadout = [player, "init", false] call BIS_fnc_exportInventory;
     ARC_cam_preCamLoadout_new = getUnitLoadout player;
-    
+
     if (isNil "ARC_spectatorUnits") then {
         ARC_spectatorUnits = [];
         publicVariable "ARC_spectatorUnits";
@@ -56,7 +56,7 @@ _this spawn {
     deleteVehicle _unit;
     ARC_spectatorUnits pushBack player;
     publicVariable "ARC_spectatorUnits";
-    {player removeItem _x} forEach ["ACRE_PRC343","ACRE_PRC148","ACRE_PRC152","ACRE_PRC117F","ACRE_PRC77","ItemRadioAcreFlagged"];
+    {player removeItem _x} forEach ([] call acre_api_fnc_getCurrentRadioList);
 
     if (isNull _oldUnit) then {
         if (count playableUnits > 0) then {
@@ -68,7 +68,7 @@ _this spawn {
 
     // ACRE
     [true] call acre_api_fnc_setSpectator;
-    
+
     // Chat
     call ARC_fnc_disableAllChannels;
     ARC_spectatorChatID radioChannelAdd [player];
@@ -121,7 +121,7 @@ _this spawn {
 
     f_cam_timestamp = time;
     f_cam_muteSpectators = true;
-    
+
     f_cam_cachedTracers = [];
     f_cam_tracersFinished = true;
 
@@ -134,10 +134,10 @@ _this spawn {
 
     f_cam_tagsButton = 0;
     f_cam_tagsNames = ["TAGS (OFF)","TAGS (ALL SIDES)","TAGS (ALL PLAYERS)","TAGS (BLUFOR)","TAGS (OPFOR)","TAGS (INDFOR)","TAGS (CIV)"];
-    
+
     f_cam_tracersButton = 0;
     f_cam_tracersNames = ["3D TRACERS (OFF)", "3D TRACERS (PLAYERS)", "3D TRACERS (AI)", "3D TRACERS (BOTH)"];
-    
+
     f_cam_unitListShow = true;
 
     // Colors
@@ -184,7 +184,7 @@ _this spawn {
         };
         _camera
     };
-    
+
     #include "tracers.sqf"
 
     createDialog "f_spec_dialog";
@@ -194,17 +194,17 @@ _this spawn {
 
     ((findDisplay 9228) displayCtrl 1360) ctrlShow false;
     ((findDisplay 9228) displayCtrl 1360) mapCenterOnCamera false;
-    
+
     // Auto-size controls
     _btnWidth = safeZoneW / (count f_cam_menuControls);
     _w = 0 * safeZoneW + safeZoneX;
-    
+
     {
         ((findDisplay 9228) displayCtrl _x) ctrlSetPosition [_w, (0 * safeZoneH + safeZoneY), _btnWidth, (0.03 * safeZoneH)];
         ((findDisplay 9228) displayCtrl _x) ctrlCommit 0;
         _w = _w + _btnWidth;
     } forEach f_cam_menuControls;
-    
+
     f_cam_helptext = "<t align='left'><t color='#FFFFFF'><t size='1.5'>Camera</t><br />Hold Right-Click to pan the camera<br />Use the Scroll-Wheel or Numpad +/- to zoom in and out<br />Use Ctrl + Right-Click to change FOV zoom<br />Press Space to toggle freecam<br /><br /><t size='1.5'>Interface</t><br />Press H to toggle the help window<br />Press M to toggle between no map, minimap and full size map<br />Press T to toggle tracers on the map<br />Press I to toggle tags</t></t>";
 
     hintSilent (parseText f_cam_helptext);
