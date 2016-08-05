@@ -29,11 +29,11 @@ class Params {
         code = "f_var_debugMode = %1";
     };
     class f_param_mission_timer {
-        title = "Briefing Time (mins)";
-        values[] = {0,1,2,3,4,5,6,7,8,9,10,15,30};
-        texts[] = {"Off","1","2","3","4","5","6","7","8","9","10","15","30"};
-        default = 30;
-        code = "f_var_mission_timer = %1 * 60";
+        title = "Briefing Time";
+        values[] = {0,1};
+        texts[] = {"Disabled","Enabled"};
+        default = 1;
+        code = "f_var_mission_timer = if (%1 == 1) then {true} else {false};";
     };
     class arc_param_duplex {
         title = "ACRE Duplex Option";
@@ -148,6 +148,7 @@ class CfgFunctions {
         class safeStart {
             file = "f\safeStart";
             class safety {};
+            class safeStartLoop {};
         };
 
         #include "f\spect\functions.hpp"
