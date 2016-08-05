@@ -29,7 +29,7 @@ class Params {
         code = "f_var_debugMode = %1";
     };
     class f_param_mission_timer {
-        title = "Briefing Time";
+        title = "Briefing Stage";
         values[] = {0,1};
         texts[] = {"Disabled","Enabled"};
         default = 1;
