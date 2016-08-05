@@ -7,13 +7,13 @@ if (isServer && {((date select 3) == 12 || getNumber (missionConfigFile >> "Head
 };
 
 // Briefing
-#include "briefing.sqf"
+call compile preprocessFileLineNumbers "briefing.sqf";
 
 // Group IDs
-#include "f\setGroupID\f_setGroupIDs.sqf"
+call compile preprocessFileLineNumbers "f\setGroupID\f_setGroupIDs.sqf";
 
 // Buddy Team Colours
-#include "f\setTeamColours\f_setTeamColours.sqf"
+call compile preprocessFileLineNumbers "f\setTeamColours\f_setTeamColours.sqf";
 
 // Fireteam Member Markers
 [] call f_fnc_SetLocalFTMemberMarkers;
@@ -22,10 +22,10 @@ if (isServer && {((date select 3) == 12 || getNumber (missionConfigFile >> "Head
 [true, true] call ARC_fnc_initTracker;
 
 // ORBAT Notes
-#include "f\briefing\f_orbatNotes.sqf"
+call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
 
 // Mission Timer/Safe Start
-#include "f\safeStart\f_safeStart.sqf"
+call compile preprocessFileLineNumbers "f\safeStart\f_safeStart.sqf";
 
 // Adversarial Mode
 if (isNil "ARC_adversarialMode") then {
@@ -35,13 +35,13 @@ if (isNil "ARC_adversarialMode") then {
 ARC_isSpectating = false;
 
 // Radio Systems Support
-#include "f\radios\acre2\acre2_init.sqf"
+call compile preprocessFileLineNumbers "f\radios\acre2\acre2_init.sqf";
 
 // Disable random button on Virtual Arsenal to prevent breaking ACRE
 [missionNamespace, "arsenalOpened", {
     disableSerialization;
-    _display = _this select 0;
-    _button = (_display displayCtrl 44150);
+    private _display = _this select 0;
+    private _button = (_display displayCtrl 44150);
     _button ctrlRemoveAllEventHandlers "buttonclick";
     _button ctrlEnable false;
     _button ctrlSetTooltip "Random is disabled because it breaks ACRE";
