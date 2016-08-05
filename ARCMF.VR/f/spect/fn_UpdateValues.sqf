@@ -11,7 +11,7 @@ tvClear _ctrlTree;
     {
         private _group = _x;
         private _groupPath = _ctrlTree tvAdd [[_sidePath], toUpper (groupID _group)];
-        private _groupUnits = (units _group) select {!(_x getVariable ["ARC_cam_isVirtual", false])};
+        private _groupUnits = (units _group) select {alive _x && {!(_x getVariable ["ARC_cam_isVirtual", false])}};
         
         _ctrlTree tvSetData [[_sidePath, _groupPath], format ["%1_%2", _side, groupID _group]];
         _ctrlTree tvSetValue [[_sidePath, _groupPath], 0];
