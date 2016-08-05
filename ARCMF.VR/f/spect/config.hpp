@@ -628,8 +628,8 @@ class f_spec_dialog {
     onKeyDown = "[""KeyDown"",_this] call F_fnc_EventHandler";
     onKeyUp= "[""KeyUp"",_this] call F_fnc_EventHandler";
     onUnload = "[] spawn f_fnc_OnUnload";
-    class controlsBackground {
-        class mouseHandler: RscSpectControlsGroup {
+    class ControlsBackground {
+        class MouseHandler: RscSpectControlsGroup {
             class ListScrollBar
             {
                 color[] = {1,1,1,0.6};
@@ -668,39 +668,120 @@ class f_spec_dialog {
             colorBackground[] = {0,0,0,0};
         };
     };
-    class controls {
-        class SpecUnitBox: RscSpectList
+    class Controls {
+        class SpecUnitBox
         {
             idc = 2100;
             x = 0 * safezoneW + safezoneX;
             y = 0.03 * safezoneH + safezoneY;
             w = 0.15 * safezoneW;
             h = 0.97 * safezoneH;
-            onLBSelChanged = "[""LBListSelChanged"",_this] call f_fnc_EventHandler";
-            shadow = 0;
-            font = "RobotoCondensed";
-            sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.001)";
+            access = 0;
+            blinkingPeriod = 0;
+            colorArrow[] = {0,0,0,0};
+            colorBackground[] = BACKGROUND_COLOR;
+            colorBorder[] = {0,0,0,0};
+            colorDisabled[] = {0,0,0,0};
+            colorLines[] = {0,0,0,0};
+            colorMarked[] = ARCRED;
+            colorMarkedSelected[] = ARCRED;
+            colorMarkedText[] = {1,1,1,1};
+            colorPicture[] = {1,1,1,1};
+            colorPictureDisabled[] = {1,1,1,0.25};
+            colorPictureRight[] = {1,1,1,1};
+            colorPictureRightDisabled[] = {1,1,1,0.25};
+            colorPictureRightSelected[] = {1,1,1,1};
+            colorPictureSelected[] = {1,1,1,1};
+            colorSearch[] = ARCRED;
+            colorSelect[] = ARCRED;
+            colorSelectText[] = {1,1,1,1};
+            colorText[] = {1,1,1,1};
+            default = 0;
+            deletable = 0;
+            disableKeyboardSearch = 1;
+            expandedTexture = "\a3\3DEN\Data\Controls\ctrlTree\expandedTexture_ca.paa";
+            expandOnDoubleclick = 1;
+            fade = 0;
+            font = "RobotoCondensedLight";
+            hiddenTexture = "\a3\3DEN\Data\Controls\ctrlTree\hiddenTexture_ca.paa";
+            maxHistoryDelay = 1;
+            multiselectEnabled = 0;
+            onCanDestroy = "";
+            onDestroy = "";
+            onKeyDown = "";
+            onKeyUp = "";
+            onKillFocus = "";
+            onMouseButtonClick = "";
+            onMouseButtonDblClick = "";
+            onMouseButtonDown = "";
+            onMouseButtonUp = "";
+            onMouseEnter = "";
+            onMouseExit = "";
+            onMouseHolding = "";
+            onMouseMoving = "";
+            onMouseZChanged = "";
+            onSetFocus = "";
+            onTreeCollapsed = "";
+            onTreeDblClick = "";
+            onTreeExpanded = "";
+            onTreeLButtonDown = "";
+            onTreeMouseExit = "";
+            onTreeSelChanged = "[""TreeSelChanged"",_this] call f_fnc_EventHandler";
+            shadow = 1;
+            show = 1;
+            sizeEx = "5 * (1 / (getResolution select 3)) * pixelGrid * 0.5";
+            style = 0;
+            tooltip = "";
+            tooltipColorBox[] = {0,0,0,0};
+            tooltipColorShade[] = {0,0,0,1};
+            tooltipColorText[] = {1,1,1,1};
+            tooltipMaxWidth = 0.5;
+            type = 12;
+            class ScrollBar {
+                arrowEmpty = "\a3\3DEN\Data\Controls\ctrlDefault\arrowEmpty_ca.paa";
+                arrowFull = "\a3\3DEN\Data\Controls\ctrlDefault\arrowFull_ca.paa";
+                border = "\a3\3DEN\Data\Controls\ctrlDefault\border_ca.paa";
+                color[] = {1,1,1,1};
+                height = 0;
+                scrollSpeed = 0.05;
+                thumb = "\a3\3DEN\Data\Controls\ctrlDefault\thumb_ca.paa";
+                width = 0;
+            };
         };
         class ToggleUnitListButton: RscSpectButton
         {
             idc = 5534;
             x = 0.15 * safezoneW + safezoneX;
             y = 0.041 * safezoneH + safezoneY;
-            w = 0.02 * safezoneW;
+            w = 0.03 * safezoneH;
             h = 0.03 * safezoneH;
             colorBorder[] = {1,1,1,1};
             colorBackgroundActive[] = ARCRED;
-            colorBackgroundDisabled[] = {0.1,0.1,0.1,0.75};
+            colorBackgroundDisabled[] = {0,0,0,0.75};
             colorDisabled[] = {0.4,0.4,0.4,1};
-            colorFocused[] = {0.1,0.1,0.1,1};
+            colorFocused[] = BACKGROUND_COLOR;
             colorShadow[] = {1,1,1,1};
             colorText[] = {1,1,1,1};
             color[] = {1,1,1,1};
-            colorBackground[] = {0.1,0.1,0.1,1};
+            colorBackground[] = BACKGROUND_COLOR;
             text = "«";
             onButtonClick = "[_this select 0,6] call f_fnc_HandleMenu";
         };
-        class FilterAIButton: RscSpectButton
+        class RefreshUnitList: RscSpectButton
+        {
+            idc = 21111;
+            x = 0 * safezoneW + safezoneX;
+            y = 0 * safezoneH + safezoneY;
+            w = 0.05 * safezoneW;
+            h = 0.03 * safezoneH;
+            text = "REFRESH LIST";
+            onButtonClick = "[] call f_fnc_UpdateValues";
+            onMouseEnter = "[_this select 0, true] call f_fnc_AnimButton";
+            onMouseExit = "[_this select 0, false] call f_fnc_AnimButton";
+            tooltip = "Refresh the unit list below";
+
+        };
+        /*class FilterAIButton: RscSpectButton
         {
             idc = 2111;
             x = 0 * safezoneW + safezoneX;
@@ -725,7 +806,7 @@ class f_spec_dialog {
             onButtonClick = "[_this select 0,1] call f_fnc_HandleMenu";
             onMouseEnter = "[_this select 0, true] call f_fnc_AnimButton";
             onMouseExit = "[_this select 0, false] call f_fnc_AnimButton";
-        };
+        };*/
         class TagsNameButton: RscSpectButton
         {
             idc = 2113;
