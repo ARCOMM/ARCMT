@@ -1,20 +1,17 @@
 [{isDedicated || !isNull player && {isNull _x} count units (group player) == 0}, {
-    private ["_unit","_isFireteam","_white","_red","_blue","_yellow","_green"];
+    private _leaders = ["_FTL"];
+    private _white = ["_FTL"];
+    private _red = ["_AR","_AAR"];
+    private _blue = ["_AT","_R","_R_1"];
+    private _yellow = [];
+    private _green = [];
 
-    _leaders = ["_FTL"];
-    _white = ["_FTL"];
-    _red = ["_AR","_AAR"];
-    _blue = ["_AT","_R","_R_1"];
-    _yellow = [];
-    _green = [];
-
-    _unit = player;
-    _isFireteam = false;
+    private _unit = player;
+    private _isFireteam = false;
 
     {
-        if ([_x, format["%1", (leader (group _unit))]] call BIS_fnc_inString) exitWith {_isFireteam = true};
-        false
-    } count _leaders;
+        if ([_x, str (leader _unit)] call BIS_fnc_inString) exitWith {_isFireteam = true};
+    } forEach _leaders;
 
     if (!_isFireteam) exitWith {};
 
@@ -22,45 +19,33 @@
         private _unit = _x;
 
         {
-            if ([_x, format ["%1", _unit]] call BIS_fnc_inString) then {
+            if ([_x, str _unit] call BIS_fnc_inString) then {
                 _unit assignTeam "RED";
             };
-
-            false
-        } count _red;
+        } forEach _red;
 
         {
-            if ([_x, format ["%1", _unit]] call BIS_fnc_inString) then {
+            if ([_x, str _unit] call BIS_fnc_inString) then {
                 _unit assignTeam "blue";
             };
-
-            false
-        } count _blue;
+        } forEach _blue;
 
         {
-            if ([_x, format ["%1", _unit]] call BIS_fnc_inString) then {
+            if ([_x, str _unit] call BIS_fnc_inString) then {
                 _unit assignTeam "yellow";
             };
-
-            false
-        } count _yellow;
+        } forEach _yellow;
 
         {
-            if ([_x, format ["%1", _unit]] call BIS_fnc_inString) then {
+            if ([_x, str _unit] call BIS_fnc_inString) then {
                 _unit assignTeam "green";
             };
-
-            false
-        } count _green;
+        } forEach _green;
 
         {
-            if ([_x, format ["%1", _unit]] call BIS_fnc_inString) then {
+            if ([_x, str _unit] call BIS_fnc_inString) then {
                 _unit assignTeam "white";
             };
-
-            false
-        } count _white;
-
-        false
-    } count units (group _unit);
+        } forEach _white;
+    } forEach units (group _unit);
 }, []] call CBA_fnc_waitUntilAndExecute;
