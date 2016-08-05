@@ -83,6 +83,25 @@ switch (_type) do
             };
         };
     };
+    case "TreeSelChanged": {
+        _args params ["_ctrlTree", "_path"];
+        private _type = _ctrlTree tvValue _path;
+        if !(_type in [0,1]) exitWith {true};
+        private _key = _ctrlTree tvData _path;
+        private _unit = if (_type == 0) then {leader ((allGroups select {format ["%1_%2", side _x, groupID _x] == _key}) param [0, grpNull])} else {(call compile _key)};
+        
+        if (f_cam_mode == 0 || f_cam_mode == 1) then {
+            f_cam_curTarget = _unit;
+            if (f_cam_toggleCamera) then {f_cam_curTarget switchCamera "INTERNAL"};
+        };
+        
+        if (f_cam_mode == 3) then {
+            _pos = getPos _unit;
+            _x = _pos select 0;
+            _y = _pos select 1;
+            f_cam_freecamera setPosASL [_x, _y, ((getPosASL f_cam_freecamera) select 2 ) max ((getTerrainHeightASL [_x, _y]) + 1)];
+        };
+    };
     case "KeyDown": {
         _key = _args select 1;
         _handled = false;

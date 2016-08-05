@@ -75,7 +75,7 @@ _this spawn {
     _listBox = 2100;
     lbClear _listBox;
     #include "macros.hpp"
-    f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTONRESPAWN,F_CAM_TOGGLELIST,F_CAM_TRACERS];
+    f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTONRESPAWN,F_CAM_TOGGLELIST,F_CAM_TRACERS,F_CAM_REFRESH];
     f_cam_units = [];
     f_cam_players = [];
     f_cam_startX = 0;
@@ -123,7 +123,7 @@ _this spawn {
     f_cam_tracersFinished = true;
 
     // Menu (Top left)
-    f_cam_menuControls = [2111,2112,2113,2236,2114,5532];
+    f_cam_menuControls = [21111,/*2111,2112,*/2113,2236,2114,5532];
     f_cam_menuShown = true;
     f_cam_menuWorking = false;
     f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
@@ -239,7 +239,7 @@ _this spawn {
         false
     } count (allUnits + vehicles);
 
-    f_cam_updatevalues_script = [] spawn f_fnc_UpdateValues;
+    [] call f_fnc_UpdateValues;
     ["f_spect_tags", "onEachFrame", {_this call f_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
     ["f_spect_cams", "onEachFrame", {_this call f_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;
     f_cam_tracerPFH = [] call f_fnc_handleTracers;
