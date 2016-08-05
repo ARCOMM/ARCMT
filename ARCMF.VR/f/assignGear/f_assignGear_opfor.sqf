@@ -12,6 +12,8 @@ switch (_typeOfUnit) do {
     case "co": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -42,6 +44,8 @@ switch (_typeOfUnit) do {
     case "dc": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -72,6 +76,8 @@ switch (_typeOfUnit) do {
     case "fac": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -104,6 +110,8 @@ switch (_typeOfUnit) do {
     case "m": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -116,9 +124,12 @@ switch (_typeOfUnit) do {
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
         for "_i" from 1 to 50 do {this addItemToBackpack "ACE_fieldDressing";};
+        for "_i" from 1 to 5 do {this addItemToBackpack "ACE_tourniquet";};
         for "_i" from 1 to 20 do {this addItemToBackpack "ACE_morphine";};
         for "_i" from 1 to 15 do {this addItemToBackpack "ACE_epinephrine";};
-        for "_i" from 1 to 10 do {this addItemToBackpack "ACE_bloodIV_500";};
+        for "_i" from 1 to 5 do {this addItemToBackpack "ACE_salineIV_500";};
+        for "_i" from 1 to 5 do {this addItemToBackpack "ACE_bloodIV_500";};
+        for "_i" from 1 to 10 do {this addItemToBackpack "ACE_personalAidKit";};
         this addItemToBackpack "rhs_mag_m18_green";
         this addItemToBackpack "rhs_mag_m18_purple";
         this addItemToBackpack "rhs_mag_m18_red";
@@ -136,6 +147,8 @@ switch (_typeOfUnit) do {
     case "ftl": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -166,6 +179,8 @@ switch (_typeOfUnit) do {
     case "r": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -191,6 +206,8 @@ switch (_typeOfUnit) do {
     case "ar": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -215,6 +232,8 @@ switch (_typeOfUnit) do {
     case "aar": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -241,6 +260,8 @@ switch (_typeOfUnit) do {
     case "rat": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -267,6 +288,8 @@ switch (_typeOfUnit) do {
     case "mmgtl": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -298,6 +321,8 @@ switch (_typeOfUnit) do {
     case "mmgg": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -323,6 +348,8 @@ switch (_typeOfUnit) do {
     case "mmgab": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -348,6 +375,8 @@ switch (_typeOfUnit) do {
     case "mattl": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -379,6 +408,8 @@ switch (_typeOfUnit) do {
     case "matg": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -408,6 +439,8 @@ switch (_typeOfUnit) do {
     case "matab": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -436,6 +469,8 @@ switch (_typeOfUnit) do {
     case "mtrl": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -468,6 +503,8 @@ switch (_typeOfUnit) do {
     case "mtrg": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -493,6 +530,8 @@ switch (_typeOfUnit) do {
     case "mtra": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -518,6 +557,8 @@ switch (_typeOfUnit) do {
     case "p": {
         this forceAddUniform "rhs_uniform_gorka_r_g";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_EarPlugs";
@@ -541,6 +582,8 @@ switch (_typeOfUnit) do {
     case "cp": {
         this forceAddUniform "rhs_uniform_gorka_r_g";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_EarPlugs";
@@ -564,6 +607,8 @@ switch (_typeOfUnit) do {
     case "vc": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -588,6 +633,8 @@ switch (_typeOfUnit) do {
     case "vd": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
@@ -610,6 +657,8 @@ switch (_typeOfUnit) do {
     case "vg": {
         this forceAddUniform "rhs_uniform_msv_emr";
         for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+        this addItemToUniform "ACE_tourniquet";
+        this addItemToUniform "ACE_morphine";
         this addItemToUniform "ACE_Flashlight_KSF1";
         this addItemToUniform "ACE_IR_Strobe_Item";
         this addItemToUniform "ACE_EarPlugs";
