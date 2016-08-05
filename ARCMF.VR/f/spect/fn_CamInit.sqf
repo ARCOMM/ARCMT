@@ -70,7 +70,10 @@ _this spawn {
     [true] call acre_api_fnc_setSpectator;
     
     // Chat
-    // call ARC_fnc_disableAllChannels;
+    call ARC_fnc_disableAllChannels;
+    ARC_spectatorChatID radioChannelAdd [player];
+    setCurrentChannel ARC_spectatorChatID;
+    ["Use Spectator Channel to Chat", -1, -1, 3, 0] spawn BIS_fnc_dynamicText;
 
     _listBox = 2100;
     lbClear _listBox;

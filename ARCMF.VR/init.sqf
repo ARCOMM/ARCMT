@@ -48,4 +48,11 @@ call compile preprocessFileLineNumbers "f\radios\acre2\acre2_init.sqf";
     _display displayAddEventHandler ["KeyDown", "if ((_this select 1) in [19,29]) then {true}"];
 }] call BIS_fnc_addScriptedEventHandler;
 
+// Spectator Chat
+setCurrentChannel 1;
+if (isServer) then {
+    ARC_spectatorChatID = radioChannelCreate [[1,0.75,0,1], "Spectator", "%UNIT_NAME", [], true];
+    publicVariable "ARC_spectatorChatID";
+};
+
 // You are free to add/edit/delete anything below this line.

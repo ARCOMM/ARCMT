@@ -1,7 +1,9 @@
 params [["_removeFromList", true]];
 
 f_cam_forcedExit = true;
-// call ARC_fnc_enableAllChannels;
+call ARC_fnc_enableAllChannels;
+ARC_spectatorChatID radioChannelRemove [player];
+setCurrentChannel 1;
 [] call f_fnc_removeAllTracers;
 if (!isNil "f_cam_tracerPFH") then {[f_cam_tracerPFH] call CBA_fnc_removePerFrameHandler;};
 closeDialog 1;
