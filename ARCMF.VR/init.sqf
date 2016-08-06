@@ -24,21 +24,14 @@ if (!ARC_isAdv) then {[] call f_fnc_SetLocalFTMemberMarkers};
 [true, true] call ARC_fnc_initTracker;
 
 // ORBAT Notes
-<<<<<<< HEAD
 if (!ARC_isAdv) then {
-    #include "f\briefing\f_orbatNotes.sqf"
+    call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
 };
 
 // Mission Timer/Safe Start
 if (!ARC_isAdv) then {
-    #include "f\safeStart\f_safeStart.sqf"
+    call compile preprocessFileLineNumbers "f\safeStart\f_safeStart.sqf";
 };
-=======
-call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
-
-// Mission Timer/Safe Start
-call compile preprocessFileLineNumbers "f\safeStart\f_safeStart.sqf";
->>>>>>> master
 
 // Adversarial Mode
 if (isNil "ARC_adversarialMode") then {
