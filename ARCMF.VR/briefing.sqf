@@ -10,6 +10,15 @@
     if (!ARC_isAdv) then {
         if (serverCommandAvailable "#kick" || isServer) then {
             #include "f\briefing\f_briefing_admin.sqf"
+        } else {
+            [{
+                params ["_args","_handlerID"];
+                
+                if (serverCommandAvailable "#kick") then {
+                    call compile preprocessFileLineNumbers "f\briefing\f_briefing_admin.sqf";
+                    [_handlerID] call CBA_fnc_removePerFrameHandler;
+                };
+            }, 5, []] call CBA_fnc_addPerFrameHandler;
         };
 
         if (_unitfaction == "blu_f") exitWith {

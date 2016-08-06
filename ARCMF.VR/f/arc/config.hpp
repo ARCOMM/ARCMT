@@ -24,6 +24,8 @@ class ARC
         class resetPosition {};
         class randomEnvironment {};
         class fullMoonDates {};
+        class displayBriefingTime {};
+        class hint {};
     };
     class chat
     {

@@ -1,3 +1,5 @@
+if (true) exitWith {};
+
 disableSerialization;
 
 private ["_ctrl","_hover"];
