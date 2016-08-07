@@ -15,12 +15,8 @@
  * Public: No
  */
 
-if (isNil "ARC_briefingTimeStart") exitWith {};
+params [["_type", 0, [0]], ["_minutes", 0, [0]]];
 
-params [["_type", 0, [0]]];
-
-private _timeDiff = time - ARC_briefingTimeStart;
-private _minutes = floor (_timeDiff / 60);
 private _text = switch (_type) do {
     case 0: {
         format [

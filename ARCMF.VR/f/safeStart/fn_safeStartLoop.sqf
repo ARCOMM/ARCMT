@@ -9,14 +9,13 @@ if (!isNil "ARC_briefingEndIntervalPFH") then {
 };
 
 [true] remoteExec ["f_fnc_safety", (playableUnits + switchableUnits)];
+["Weapons are cold, waiting for admin to trigger start.", 10] remoteExecCall ["ARC_fnc_hint", 0];
 
 ARC_briefingTimeEnd = false;
 
 [{
-    ARC_briefingTimeStart = time;
+    ARC_briefingTimeMinutes = 0;
     ARC_briefingInterval = 0;
-    
-    ["Weapons are cold, waiting for admin to trigger start.", 10] remoteExecCall ["ARC_fnc_hint", 0];
 
     ARC_briefingIntervalPFH = [{
         params ["_args","_handlerID"];
@@ -45,11 +44,12 @@ ARC_briefingTimeEnd = false;
             }, 1, []] call CBA_fnc_addPerFrameHandler;
         };
         
-        if (ARC_briefingInterval == 60) then {
-            [0] call ARC_fnc_displayBriefingTime;
+        if (ARC_briefingInterval == 60) exitWith {
+            ARC_briefingTimeMinutes = ARC_briefingTimeMinutes + 1;
+            [0, ARC_briefingTimeMinutes] call ARC_fnc_displayBriefingTime;
             ARC_briefingInterval = 0;
         };
         
         ARC_briefingInterval = ARC_briefingInterval + 1;
     }, 1, []] call CBA_fnc_addPerFrameHandler;
-}, [], 2] call CBA_fnc_waitAndExecute;
+}, [], 5] call CBA_fnc_waitAndExecute;
