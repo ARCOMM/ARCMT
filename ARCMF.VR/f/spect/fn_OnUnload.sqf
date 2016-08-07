@@ -36,10 +36,4 @@ _w = 0 * safeZoneW + safeZoneX;
     _w = _w + _btnWidth;
 } forEach f_cam_menuControls;
 
-if (!(call ARC_fnc_isRespawnEnabled)) then {
-    ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Disabled";
-} else {
-    ((findDisplay 9228) displayCtrl 5532) ctrlSetTooltip "Respawn back into the game";
-};
-
 [] call f_fnc_UpdateValues;
