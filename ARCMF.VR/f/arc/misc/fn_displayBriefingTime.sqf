@@ -20,7 +20,7 @@ params [["_type", 0, [0]], ["_minutes", 0, [0]]];
 private _text = switch (_type) do {
     case 0: {
         format [
-            "Weapons are cold, waiting for admin to trigger start. (%1 minute%2 since briefing stage started)",
+            "%1 minute%2 since briefing stage started",
             _minutes,
             ["","s"] select (_minutes > 1)
         ];
