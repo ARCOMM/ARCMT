@@ -29,6 +29,7 @@ if (ARC_tracker_enabled && {(!isNil "ACE_player") && {alive ACE_player}}) then {
             _marker setMarkerTypeLocal _markerType;
             _marker setMarkerColorLocal _colour;
             _marker setMarkerTextLocal (groupId _x);
+            _marker setMarkerSizeLocal [0.88, 0.88];
 
             ARC_tracker_markers pushBack _marker;
             _markerIndex = _markerIndex + 1;
