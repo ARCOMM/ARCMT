@@ -9,7 +9,12 @@ if (!isNil "ARC_briefingEndIntervalPFH") then {
 };
 
 [true] remoteExec ["f_fnc_safety", (playableUnits + switchableUnits)];
-["Weapons are cold, waiting for admin to trigger start.", 10] remoteExecCall ["ARC_fnc_hint", 0];
+
+if (f_var_mission_timer > 0) then {
+    format ["Weapons are cold, briefing stage will end in %1 minute%2.", f_var_mission_timer, ["","s"] select (f_var_mission_timer > 1)] remoteExecCall ["hintSilent", 0];
+} else {
+    "Weapons are cold, waiting for admin to trigger start." remoteExecCall ["hintSilent", 0];
+};
 
 ARC_briefingTimeEnd = false;
 
@@ -19,6 +24,10 @@ ARC_briefingTimeEnd = false;
 
     ARC_briefingIntervalPFH = [{
         params ["_args","_handlerID"];
+        
+        if (f_var_mission_timer > 0 && {ARC_briefingTimeMinutes >= f_var_mission_timer}) then {
+            ARC_briefingTimeEnd = true;
+        };
         
         if (ARC_briefingTimeEnd) exitWith {
             [_handlerID] call CBA_fnc_removePerFrameHandler;

@@ -27,4 +27,4 @@ private _text = switch (_type) do {
     };
 };
 
-[_text, 5] remoteExecCall ["ARC_fnc_hint", 0];
+_text remoteExecCall ["hintSilent", 0];

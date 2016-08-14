@@ -30,10 +30,10 @@ class Params {
     };
     class f_param_mission_timer {
         title = "Briefing Stage";
-        values[] = {0,1};
-        texts[] = {"Disabled","Enabled"};
-        default = 1;
-        code = "f_var_mission_timer = if (%1 == 1) then {true} else {false};";
+        values[] = {-1,0,1,2,3,4,5,6,7,8,9,10,15,20,25,30};
+        texts[] = {"Off","Infinite","1 Minute","2 Minutes","3 Minutes","4 Minutes","5 Minutes","6 Minutes","7 Minutes","8 Minutes","9 Minutes","10 Minutes","15 Minutes","20 Minutes","25 Minutes","30 Minutes"};
+        default = 0;
+        code = "f_var_mission_timer = %1";
     };
     class arc_param_duplex {
         title = "ACRE Duplex Option";
