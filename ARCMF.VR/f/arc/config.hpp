@@ -9,6 +9,7 @@ class ARC
         class fullMoonDates {};
         class displayBriefingTime {};
         class hint {};
+        class mapTimer {};
     };
     class chat
     {
