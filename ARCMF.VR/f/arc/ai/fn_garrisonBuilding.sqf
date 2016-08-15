@@ -114,14 +114,14 @@ switch (_fillingType) do {
 
             private _pos = _building select 0;
 
-            if ( count (_pos nearEntities ["CAManBase", 1]) > 0) then {
+            if (count (_pos nearEntities ["CAManBase", 1]) > 0) then {
                 _buildingsIndexes set [0,  _building - [_pos]];
                 breakTo "derp";
-
             } else {
                 private _unit = _unitsArray select 0;
-                _unit forceSpeed 0;
+                _unit disableAI "PATH";
                 _unit setPos _pos;
+                _unit setUnitPos (selectRandom ["MIDDLE","UP"]);
                 _unitsArray deleteAt (_unitsArray find _unit);
                 _building deleteAt 0;
                 _buildingsIndexes deleteAt 0;
@@ -146,14 +146,14 @@ switch (_fillingType) do {
             private _pos = _building select 0;
 
             // Remove building if all pos are used
-            if ( count (_pos nearEntities ["CAManBase", 1]) > 0) then {
+            if (count (_pos nearEntities ["CAManBase", 1]) > 0) then {
                 _buildingsIndexes set [0, _building - [_pos]];
                 breakTo "derp";
-
             } else {
                 private _unit = _unitsArray select 0;
-                _unit forceSpeed 0;
+                _unit disableAI "PATH";
                 _unit setPos _pos;
+                _unit setUnitPos (selectRandom ["MIDDLE","UP"]);
                 _unitsArray deleteAt (_unitsArray find _unit);
                 _buildingsIndexes set [0,  _building - [_pos]];
             };
@@ -176,14 +176,14 @@ switch (_fillingType) do {
             private _pos = selectRandom _building;
 
             // Remove pos if unit nearby
-            if ( count (_pos nearEntities ["CAManBase", 1]) > 0) then {
+            if (count (_pos nearEntities ["CAManBase", 1]) > 0) then {
                 _buildingsIndexes set [(_buildingsIndexes find _building), _building - [_pos]];
                 breakTo "derp";
-
             } else {
                 private _unit = _unitsArray select 0;
-                _unit forceSpeed 0;
+                _unit disableAI "PATH";
                 _unit setPos _pos;
+                _unit setUnitPos (selectRandom ["MIDDLE","UP"]);
                 _unitsArray deleteAt (_unitsArray find _unit);
                 _buildingsIndexes set [(_buildingsIndexes find _building),  _building - [_pos]];
             };
