@@ -20,14 +20,14 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_digi_6sh92_vog_headset";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToVest "rhs_VOG25";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_GRD40_White";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_VOG25";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103_gp25";
@@ -37,7 +37,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -52,14 +52,14 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_digi_6sh92_vog_headset";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToVest "rhs_VOG25";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_GRD40_White";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_VOG25";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103_gp25";
@@ -69,7 +69,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: FORWARD AIR CONTROLLER
@@ -86,14 +86,14 @@ switch (_typeOfUnit) do {
         this addItemToUniform "Laserbatteries";
         this addItemToUniform "ACE_MapTools";
         this addVest "rhs_6b23_digi_6sh92_vog_headset";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToVest "rhs_VOG25";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_GRD40_White";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_VOG25";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103_gp25";
@@ -103,7 +103,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MEDIC
@@ -118,7 +118,7 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 6 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
@@ -140,7 +140,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: FIRE TEAM LEADER
@@ -155,14 +155,14 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_digi_6sh92_vog_headset";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToVest "rhs_VOG25";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_GRD40_White";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_VOG25";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103_gp25";
@@ -172,7 +172,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: RIFLEMAN
@@ -187,19 +187,19 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103";
         this addWeapon "rhs_weap_pya";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: AUTOMATIC RIFLEMAN
@@ -225,7 +225,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
@@ -240,12 +240,12 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 6 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 4 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 7 do {this addItemToBackpack "hlc_45Rnd_545x39_t_rpk";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103";
@@ -253,7 +253,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: RIFLEMAN (AT)
@@ -268,12 +268,12 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103";
         this addWeapon "rhs_weap_rpg26";
@@ -281,7 +281,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MEDIUM MG TEAM LEADER
@@ -297,14 +297,14 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_EntrenchingTool";
         this addItemToUniform "ACE_MapTools";
         this addVest "rhs_6b23_digi_6sh92_vog_headset";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToVest "rhs_VOG25";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_GRD40_White";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_VOG25";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103_gp25";
@@ -314,7 +314,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MEDIUM MG GUNNER
@@ -341,7 +341,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MEDIUM MG AMMO BEARER
@@ -356,19 +356,19 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103";
         this addWeapon "rhs_weap_pya";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MEDIUM AT TEAM LEADER
@@ -384,14 +384,14 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_EntrenchingTool";
         this addItemToUniform "ACE_MapTools";
         this addVest "rhs_6b23_digi_6sh92_vog_headset";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToVest "rhs_VOG25";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_GRD40_White";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_VOG25";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103_gp25";
@@ -401,7 +401,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MEDIUM AT MISSILE SPECIALIST
@@ -416,11 +416,11 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 3 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 3 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "B_Carryall_oli";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_rpg7_PG7VL_mag";};
         this addItemToBackpack "rhs_rpg7_OG7V_mag";
         this addItemToBackpack "rhs_rpg7_TBG7V_mag";
@@ -432,7 +432,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MEDIUM AT ASSISTANT MISSILE SPECIALIST
@@ -447,12 +447,12 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_CableTie";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "B_Carryall_oli";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_rpg7_PG7VL_mag";};
         this addItemToBackpack "rhs_rpg7_OG7V_mag";
         this addItemToBackpack "rhs_rpg7_TBG7V_mag";
@@ -462,7 +462,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MORTAR TEAM LEADER
@@ -479,14 +479,14 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_MapTools";
         this addItemToUniform "ACE_RangeTable_82mm";
         this addVest "rhs_6b23_digi_6sh92_vog_headset";
-        for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToVest "rhs_VOG25";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_GRD40_White";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         this addItemToVest "rhs_mag_9x19_17";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_assault_umbts";
-        for "_i" from 1 to 6 do {this addItemToBackpack "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToBackpack "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 3 do {this addItemToBackpack "rhs_VOG25";};
         this addHeadgear "rhs_6b7_1m_emr_ess_bala";
         this addWeapon "rhs_weap_ak103_gp25";
@@ -496,7 +496,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MORTAR GUNNER
@@ -513,7 +513,7 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_RangeTable_82mm";
         this addItemToUniform "rhs_mag_9x19_17";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 7 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 7 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_M252_Gun_Bag";
@@ -523,7 +523,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: MORTAR ASSISTANT
@@ -540,7 +540,7 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_RangeTable_82mm";
         this addItemToUniform "rhs_mag_9x19_17";
         this addVest "rhs_6b23_6sh116_od";
-        for "_i" from 1 to 7 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 7 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rdg2_black";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_rgd5";};
         this addBackpack "rhs_M252_Bipod_Bag";
@@ -550,7 +550,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: PILOT
@@ -575,7 +575,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: CO-PILOT
@@ -600,7 +600,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: VEHICLE COMMANDER
@@ -614,7 +614,7 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_EarPlugs";
         this addItemToUniform "ACE_CableTie";
         this addVest "rhs_6b23_crew";
-        for "_i" from 1 to 6 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         this addItemToVest "rhs_mag_m18_green";
         this addItemToVest "rhs_mag_m18_red";
         this addItemToVest "rhs_mag_9x19_17";
@@ -626,7 +626,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
         this linkItem "ItemGPS";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: VEHICLE DRIVER
@@ -640,7 +640,7 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_EarPlugs";
         this addItemToUniform "ACE_CableTie";
         this addVest "rhs_6b23_crew";
-        for "_i" from 1 to 6 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         this addItemToVest "rhs_mag_m18_green";
         this addItemToVest "rhs_mag_m18_red";
         this addItemToVest "rhs_mag_9x19_17";
@@ -650,7 +650,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: VEHICLE GUNNER
@@ -664,7 +664,7 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_EarPlugs";
         this addItemToUniform "ACE_CableTie";
         this addVest "rhs_6b23_crew";
-        for "_i" from 1 to 6 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+        for "_i" from 1 to 6 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
         this addItemToVest "rhs_mag_m18_green";
         this addItemToVest "rhs_mag_m18_red";
         this addItemToVest "rhs_mag_9x19_17";
@@ -674,7 +674,7 @@ switch (_typeOfUnit) do {
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
-        this linkItem "rhsusf_ANPVS_15";
+        this linkItem "rhs_1PN138";
     };
 
 // LOADOUT: DEFAULT/UNDEFINED (use RIFLEMAN)
