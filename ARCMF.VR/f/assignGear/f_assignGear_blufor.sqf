@@ -132,7 +132,7 @@ switch (_typeOfUnit) do {
         this addItemToVest "rhsusf_mag_7x45acp_MHP";
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
         for "_i" from 1 to 6 do {this addItemToVest "rhs_mag_an_m8hc";};
-        this addBackpack "rhsusf_assault_eagleaiii_coy";
+        this addBackpack "B_Carryall_khk";
         for "_i" from 1 to 50 do {this addItemToBackpack "ACE_fieldDressing";};
         for "_i" from 1 to 5 do {this addItemToBackpack "ACE_tourniquet";};
         for "_i" from 1 to 20 do {this addItemToBackpack "ACE_morphine";};
