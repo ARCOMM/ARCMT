@@ -2,8 +2,7 @@ _type = _this select 0;
 _args = _this select 1;
 _handled = true;
 
-switch (_type) do
-{
+switch (_type) do {
     case "MouseButtonDown": {
         if (_args select 1 == 1 && f_cam_mode != 1) then {
             _button = _args select 1;
@@ -150,8 +149,7 @@ switch (_type) do
                 };
             };
             // Numpad -
-            case 74:
-            {
+            case 74: {
                 f_cam_zoom = f_cam_zoom + 1;
                 f_cam_zoom = 0.3 max f_cam_zoom;
                 _handled = true;
