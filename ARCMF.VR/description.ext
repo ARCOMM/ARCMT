@@ -14,7 +14,7 @@ disabledAI = 1;
 respawn = 1;
 respawnDelay = 3;
 respawnButton = 1;
-respawnOnStart = 0;
+respawnOnStart = -1;
 respawnTemplates[] = {"Seagull","f_spectator"};
 
 showGroupIndicator = 0;
