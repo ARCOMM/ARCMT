@@ -16,15 +16,15 @@ class CfgSandbox {
         camouflage = "desert";
     };
     class Chernarus {
-        startingPosition[] = {4784.32,10114.9,0};
+        startingPosition[] = {4696.44,2600.68,0};
         camouflage = "woodland";
     };
     class Chernarus_Summer {
-        startingPosition[] = {4784.32,10114.9,0};
+        startingPosition[] = {4696.44,2600.68,0};
         camouflage = "woodland";
     };
     class Takistan {
-        startingPosition[] = {8257.67,2138.92,0};
+        startingPosition[] = {5798.65,11209.9,0};
         camouflage = "desert";
     };
     class Zargabad {
@@ -52,39 +52,19 @@ class CfgSandbox {
         camouflage = "mtp";
     };
     class bozcaada {
-        startingPosition[] = {7794.15,12454.1,0};
+        startingPosition[] = {8052.82,10815.7,0};
         camouflage = "mtp";
-    };
-    class Lost {
-        startingPosition[] = {7736.76,6453.64,0};
-        camouflage = "woodland";
-    };
-    class LostW {
-        startingPosition[] = {7736.76,6453.64,0};
-        camouflage = "winter";
     };
     class Kunduz {
         startingPosition[] = {2497.57,127.747,0};
         camouflage = "mtp";
     };
     class Altis {
-        startingPosition[] = {9181.4,21649,0};
+        startingPosition[] = {20788,7196.91,0};
         camouflage = "mtp";
-    };
-    class lingor3 {
-        startingPosition[] = {4161.52,1641.84,0};
-        camouflage = "woodland";
-    };
-    class panthera3 {
-        startingPosition[] = {8604.66,4826.6,0};
-        camouflage = "woodland";
     };
     class vt5 {
         startingPosition[] = {238.369,457.755,0};
-        camouflage = "woodland";
-    };
-    class mske {
-        startingPosition[] = {8062.16,9936.9,0};
         camouflage = "woodland";
     };
     class torabora {
