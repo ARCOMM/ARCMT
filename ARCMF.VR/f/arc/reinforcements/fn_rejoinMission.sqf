@@ -60,7 +60,7 @@ if (_applyLoadout) then {
 
 // Join empty group
 if (_clearGroup) then {
-    [_unit] joinSilent grpNull;    
+    [_unit] joinSilent grpNull;
 };
 
 // Rebuild briefing
