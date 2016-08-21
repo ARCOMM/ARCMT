@@ -14,9 +14,11 @@
  * Public: No
  */
 
+disableSerialization;
+
 #define GRID_W (pixelW * 1.25 * pixelGrid)
 #define GRID_H (pixelH * 1.25 * pixelGrid)
-disableSerialization;
+
 private _ctrlMapDisplay = findDisplay 12;
 
 ctrlDelete (_ctrlMapDisplay displayCtrl 65632);
