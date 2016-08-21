@@ -1,10 +1,8 @@
 if (isDedicated) exitwith {};
 
-switch (_this select 0) do
-{
+switch (_this select 0) do {
     //Turn safety on
-    case true:
-    {
+    case true: {
         // Delete bullets from fired weapons
         if (isNil "f_eh_safetyMan") then {
             f_eh_safetyMan = player addEventHandler["Fired", {deletevehicle (_this select 6);}];
