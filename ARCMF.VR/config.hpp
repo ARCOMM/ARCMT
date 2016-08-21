@@ -52,6 +52,17 @@ class CfgARCMF {
             enemyForces[] = {};
             friendlyForces[] = {};
         };
+        class GAME_MASTER {
+            administration[] = {};
+            commandersIntent[] = {};
+            movementPlan[] = {};
+            fireSupportPlan[] = {};
+            specialTasks[] = {};
+            mission[] = {};
+            situation[] = {};
+            enemyForces[] = {};
+            friendlyForces[] = {};
+        };
     };
     /*
 -----------------------------------------------------------------------------------------------------------------

@@ -8,15 +8,17 @@
     Example _missionString = [west, "mission"] call ARC_fnc_buildBriefingFromConfig;
 */
 
-_side = param [0, sideUnknown];
-_category = param [1, ""];
+params [
+    ["_side", sideUnknown, [sideUnknown, ""]],
+    ["_category", "", [""]]
+];
 
 private _faction = switch (_side) do {
     case west: {"blufor"};
     case east: {"opfor"};
     case resistance: {"indfor"};
     case civilian: {"civilian"};
-    default {"zeus"};
+    case "gm": {"game_master"};
 };
 
 private _output = "";
