@@ -24,9 +24,10 @@ if (_side == sideUnknown) exitWith {};
     if (isPlayer _unit && side _unit == _side) then {
         _gearString = _unit getVariable ["f_var_assignGear", "r"];
         [_gearString, _unit] spawn {
-            [_this, "f_fnc_assignGear", (_this select 1), false, true] call BIS_fnc_MP;
-            {(_this select 1) removeAction _x} forEach ((_this select 1) getVariable ["ARC_radioActions", []]);
-            [(_this select 1)] call f_acre2_clientInit;
+            params ["_gearStr", "_unit"];
+            [_gearStr, _unit] remoteExecCall ["f_fnc_assignGear", _unit];
+            {_unit removeAction _x} forEach (_unit getVariable ["ARC_radioActions", []]);
+            [_unit] call f_acre2_clientInit;
         };
     };
 
