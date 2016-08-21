@@ -31,7 +31,7 @@ class RscSpectListBox {
     };
     style = 528;
     font = "PuristaMedium";
-    sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 50) * 1)";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 50) * 1)";
     shadow = 0;
     colorShadow[] = {0, 0, 0, 0.5};
     color[] = {1, 1, 1, 0.1};
@@ -90,7 +90,7 @@ class RscSpectMapControl
     fontLevel = "PuristaMedium";
     fontNames = "PuristaMedium";
     fontUnits = "PuristaMedium";
-    h = "SafeZoneH - 1.5 *				  (		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+    h = "safeZoneH - 1.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
     idc = 51;
     maxSatelliteAlpha = 1;
     moveOnEdges = 1;
@@ -110,11 +110,11 @@ class RscSpectMapControl
     showCountourInterval = 0;
     sizeEx = 0.04;
     sizeExGrid = 0.02;
-    sizeExInfo = "(		 (		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
-    sizeExLabel = "(			(		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    sizeExInfo = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    sizeExLabel = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
     sizeExLevel = 0.02;
-    sizeExNames = "(			(		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
-    sizeExUnits = "(			(		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+    sizeExNames = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8) * 2";
+    sizeExUnits = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
     stickX[] = {0.2,["Gamma",1,1.5]};
     stickY[] = {0.2,["Gamma",1,1.5]};
     style = 48;
@@ -122,16 +122,16 @@ class RscSpectMapControl
     type = 101;
     w = "SafeZoneWAbs";
     x = "SafeZoneXAbs";
-    y = "SafeZoneY + 1.5 *				  (		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+    y = "SafeZoneY + 1.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
     class Legend {
         colorBackground[] = {1, 1, 1, 0.5};
         color[] = {0, 0, 0, 1};
-        x = "SafeZoneX +					(		   ((safezoneW / safezoneH) min 1.2) / 40)";
-        y = "SafeZoneY + safezoneH - 4.5 *				  (		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
-        w = "10 *				   (		   ((safezoneW / safezoneH) min 1.2) / 40)";
-        h = "3.5 *				  (		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+        x = "SafeZoneX + (((safezoneW / safezoneH) min 1.2) / 40)";
+        y = "SafeZoneY + safezoneH - 4.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+        w = "10 * (((safezoneW / safezoneH) min 1.2) / 40)";
+        h = "3.5 * ((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
         font = "PuristaMedium";
-        sizeEx = "(		 (		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
+        sizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
     };
     class ActiveMarker {
         color[] = {0.3, 0.1, 0.9, 1};
@@ -454,7 +454,7 @@ class RscSpectStructuredText {
     shadow = 1;
     color = "#EAA724";
     colorBackground[] = BACKGROUND_COLOR;
-    size = "(		   (		   (		   ((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     style = 0;
     text = "";
     type = 13;
@@ -493,7 +493,7 @@ class RscSpectText {
     shadow = 1;
     colorShadow[] = {0, 0, 0, 0.5};
     font = "PuristaBold";
-    SizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
+    SizeEx = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
     linespacing = 1;
 };
 class RscSpectControlsGroup {
@@ -593,7 +593,7 @@ class RscSpectCombo
     maxHistoryDelay = 1;
     shadow = 0;
     colorBorder[] = PRIMARYCOLOR;
-    sizeEx = "(		 (		   (		   ((safezoneW / safezoneH) min 1.0) / 1.0) / 25) * 1)";
+    sizeEx = "(((((safezoneW / safezoneH) min 1.0) / 1.0) / 25) * 1)";
     soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1};
     soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1};
     soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1};
