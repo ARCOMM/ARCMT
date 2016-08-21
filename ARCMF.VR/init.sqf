@@ -1,9 +1,11 @@
 enableSaving [false, false];
 enableSentences false;
 
+ARC_isAdv = [] call ARC_fnc_isAdv;
+
 // Environment
 if (isServer && {((date select 3) == 12 || getNumber (missionConfigFile >> "Header" >> "sandbox") == 1)}) then {
-    [] call ARC_fnc_randomEnvironment;
+    // [] call ARC_fnc_randomEnvironment;
 };
 
 // Briefing
@@ -16,20 +18,24 @@ call compile preprocessFileLineNumbers "f\setGroupID\f_setGroupIDs.sqf";
 call compile preprocessFileLineNumbers "f\setTeamColours\f_setTeamColours.sqf";
 
 // Fireteam Member Markers
-[] call f_fnc_SetLocalFTMemberMarkers;
+if (!ARC_isAdv) then {[] call f_fnc_SetLocalFTMemberMarkers};
 
 // Group Markers
 [true, true] call ARC_fnc_initTracker;
 
 // ORBAT Notes
-call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
+if (!ARC_isAdv) then {
+    call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
+};
 
 // Mission Timer/Safe Start
-call compile preprocessFileLineNumbers "f\safeStart\f_safeStart.sqf";
+if (!ARC_isAdv) then {
+    call compile preprocessFileLineNumbers "f\safeStart\f_safeStart.sqf";
+};
 
 // Adversarial Mode
 if (isNil "ARC_adversarialMode") then {
-    ARC_adversarialMode = false;
+    ARC_adversarialMode = false; // Depreciated?
 };
 
 ARC_isSpectating = false;

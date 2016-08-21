@@ -2,5 +2,6 @@
 // [<newUnit>, <oldUnit>, <respawn>, <respawnDelay>]
 #include "f\common\f_loadLoadouts.sqf"
 if (ARC_adversarialMode) then {[(_this select 0), (_this select 1), (_this select 2), (_this select 3), true] call f_fnc_CamInit};
+if (ARC_isAdv) then {_this call ARC_adv_fnc_onPlayerRespawn};
 
 // You are free to add/edit/delete anything below this line.
