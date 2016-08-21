@@ -9,14 +9,14 @@ if (_vehicle == _leader) exitWith {
         getNumber (configFile >> "CfgVehicles" >> typeOf _leader >> "camouflage") < 1 ||
         getText   (configFile >> "CfgVehicles" >> typeOf _leader >> "textsingular") == "diver"
     ) then {
-        ["b_recon", "b_recon", "b_recon"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+        "b_recon"
     } else {
-        ["b_inf", "b_inf", "b_inf"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+        "b_inf"
     };
 };
 
 if (getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> "attendant") == 1) exitWith {
-    ["b_med", "b_med", "b_med"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+    "b_med"
 };
 
 if (
@@ -26,39 +26,39 @@ if (
     getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> "ACE_canRepair") > 0 ||
     getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> "ACE_fuelCapacityCargo") > 0
 ) exitWith {
-    ["b_maint", "b_maint", "b_maint"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+    "b_maint"
 };
 
 if (_vehicle isKindOf "Plane") exitWith {
-    ["b_plane", "b_plane", "b_plane"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+    "b_plane"
 };
 
 if (_vehicle isKindOf "Air") exitWith {
-    ["b_air", "b_air", "b_air"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+    "b_air"
 };
 
 if (_vehicle isKindOf "StaticMortar") exitWith {
-    ["b_mortar", "b_mortar", "b_mortar"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+    "b_mortar"
 };
 
 if (getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> "artilleryScanner") == 1) exitWith {
-    ["b_art", "b_art", "b_art"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+    "b_art"
 };
 
 if (_vehicle isKindOf "Car") exitWith {
-    ["b_motor_inf", "b_motor_inf", "b_motor_inf"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+    "b_motor_inf"
 };
 
 if (_vehicle isKindOf "Tank") exitWith {
     if (getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> "transportSoldier") > 0) then {
-        ["b_mech_inf", "b_mech_inf", "b_mech_inf"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+        "b_mech_inf"
     } else {
-        ["b_armor", "b_armor", "b_armor"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+        "b_armor"
     };
 };
 
 if (_vehicle isKindOf "Ship") exitWith {
-    ["b_naval", "b_naval", "b_naval"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+    "b_naval"
 };
 
-["b_unknown", "b_unknown", "b_unknown"] select ((["GUER", "WEST", "EAST"] find str _side) max 0)
+"b_unknown"
