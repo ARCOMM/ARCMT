@@ -1,40 +1,38 @@
-private ["_unit","_camo","_uniformItems","_vestItems","_backpackItems","_hasBackpack","_uniformClass","_vestClass","_backpackClass"];
-
-_unit = _this;
-_camo = getText (missionConfigFile >> "CfgSandbox" >> worldName >> "camouflage");
-_camo = toLower _camo;
+private _unit = _this;
+private _camo = toLower (getText (missionConfigFile >> "CfgSandbox" >> worldName >> "camouflage"));
 
 if (_camo == "default" || side _unit != west) exitWith {};
 
 _unit setVariable ["ARC_switchCamo_done", false, true];
 waitUntil {(_unit getVariable ["f_var_assignGear_done", false])};
 
-_uniformItems = uniformItems _unit;
-_vestItems = vestItems _unit;
-_backpackItems = backpackItems _unit;
-_hasBackpack = if ((backpack _unit) == "") then {false} else {true};
+private _uniformItems = uniformItems _unit;
+private _vestItems = vestItems _unit;
+private _backpackItems = backpackItems _unit;
+private _hasBackpack = [true,false] select ((backpack _unit) == "");
 
-_uniformClass = switch (_camo) do {
+private _uniformClass = switch (_camo) do {
     case "woodland": {"rhs_uniform_FROG01_wd"};
     case "desert": {"rhs_uniform_FROG01_d"};
-    case "mtp": {"MNP_CombatUniform_Scorpion_A"};
+    case "mtp": {"rhs_uniform_g3_mc"};
 };
 
-_vestClass = switch (_camo) do {
+private _vestClass = switch (_camo) do {
     case "woodland": {"rhsusf_spc_rifleman"};
-    case "desert": {"MNP_Vest_USMC_2"};
-    case "mtp": {"MNP_Vest_Scorpion_1"};
+    case "desert": {"rhsusf_spc_rifleman"};
+    case "mtp": {"rhsusf_spcs_ocp_rifleman"};
 };
 
-_backpackClass = switch (_camo) do {
+private _backpackClass = switch (_camo) do {
     case "woodland": {"rhsusf_assault_eagleaiii_coy"};
-    case "desert": {"B_Kitbag_cbr"};
-    case "mtp": {"B_Kitbag_rgr"};
+    case "desert": {"rhsusf_assault_eagleaiii_coy"};
+    case "mtp": {"rhsusf_assault_eagleaiii_ocp"};
 };
 
-_headgearClass = switch (_camo) do {
+private _headgearClass = switch (_camo) do {
     case "woodland": {"rhsusf_lwh_helmet_marpatwd_ess"};
-    default {""};
+    case "mtp": {"rhsusf_ach_helmet_ESS_ocp"};
+    case "desert": {"rhsusf_lwh_helmet_marpatd_ess"};
 };
 
 if (_uniformClass != "") then {
