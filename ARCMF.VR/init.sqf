@@ -56,7 +56,7 @@ if (isServer) then {
 };
 
 // Map Timer
-if (isServer) then {
+/*if (isServer) then {
     [{
         ARC_mapTimerServer = time;
         publicVariable "ARC_mapTimerServer";
@@ -65,6 +65,6 @@ if (isServer) then {
 
 if (hasInterface) then {
     [] call ARC_fnc_mapTimer;
-};
+};*/
 
 // You are free to add/edit/delete anything below this line.
