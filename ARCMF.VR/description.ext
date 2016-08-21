@@ -74,32 +74,32 @@ class Params {
 
 class CfgDebriefing {
     class End1 {
-        title = "BLUFOR SUCCESS";
+        title = "Mission success";
         subtitle = "";
         description = "";
     };
     class End2 {
-        title = "OPFOR SUCCESS";
+        title = "Mission failure";
         subtitle = "";
         description = "";
     };
     class End3 {
-        title = "INDFOR SUCCESS";
+        title = "Stalemate";
         subtitle = "";
         description = "";
     };
     class End4 {
-        title = "CIVILIANS SUCCESS";
+        title = "Everybody loses";
         subtitle = "";
         description = "";
     };
     class End5 {
-        title = "DRAW";
+        title = "Attackers win";
         subtitle = "";
         description = "";
     };
     class End6 {
-        title = "ALL TEAMS LOSE";
+        title = "Defenders win";
         subtitle = "";
         description = "";
     };
