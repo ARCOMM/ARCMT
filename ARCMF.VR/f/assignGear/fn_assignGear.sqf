@@ -8,24 +8,8 @@
     _unit setVariable ["f_var_assignGear", _typeOfUnit, true];
     _unit setVariable ["f_var_assignGear_done", false, true];
 
-    if (arc_param_theme != 0) exitWith {
-        switch (arc_param_theme) do {
-            case 1: {
-                // Vietnam
-                switch (side _unit) do {
-                    case west: {
-                        #include "..\themes\vietnam\f_assignGear_blufor.sqf"
-                    };
-                    case east: {
-                        #include "..\themes\vietnam\f_assignGear_opfor.sqf"
-                    };
-                    case resistance: {
-                        #include "..\themes\vietnam\f_assignGear_indfor.sqf"
-                    };
-                };
-            };
-        };
-        
+    if (arc_param_theme != "Default" && {getNumber (missionConfigFile >> "Header" >> "sandbox") == 1}) exitWith {
+        _unit call compile preprocessFileLineNumbers ([side _unit] call f_fnc_getThemeAssignGear);
         _unit setVariable ["f_var_assignGear_done", false, true];
     };
 

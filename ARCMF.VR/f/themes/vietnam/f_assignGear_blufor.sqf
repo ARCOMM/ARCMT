@@ -1,3 +1,5 @@
+this = _this;
+
 removeAllWeapons this;
 removeAllItems this;
 removeAllAssignedItems this;
@@ -81,8 +83,8 @@ switch (_typeOfUnit) do {
         this addVest "usm_vest_LBE_rmp_m";
         for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_an_m8hc";};
         for "_i" from 1 to 4 do {this addItemToVest "rhs_mag_m67";};
-        for "_i" from 1 to 8 do {this addItemToVest "RH_20Rnd_556x45";};
-        for "_i" from 1 to 6 do {this addItemToVest "RH_20Rnd_556x45_Red";};
+        for "_i" from 1 to 12 do {this addItemToVest "rhsusf_8Rnd_Slug";};
+        for "_i" from 1 to 6 do {this addItemToVest "rhsusf_8Rnd_00Buck";};
         this addBackpack "usm_pack_m5_medic";
         for "_i" from 1 to 20 do {this addItemToBackpack "ACE_fieldDressing";};
         for "_i" from 1 to 5 do {this addItemToBackpack "ACE_tourniquet";};
@@ -92,7 +94,7 @@ switch (_typeOfUnit) do {
         for "_i" from 1 to 1 do {this addItemToBackpack "ACE_bloodIV_500";};
         for "_i" from 1 to 5 do {this addItemToBackpack "ACE_personalAidKit";};
         this addHeadgear "CUP_H_USArmy_Helmet_M1_Olive";
-        this addWeapon "RH_M16a1";
+        this addWeapon "rhs_weap_M590_8RD";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
         this linkItem "ItemWatch";
