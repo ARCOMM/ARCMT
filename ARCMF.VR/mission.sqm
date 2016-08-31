@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={94.9814,169.66193,-41.330551};
-		dir[]={0.003083434,-0.83690304,0.54746485};
-		up[]={0.0047122692,0.54726821,0.83695364};
-		aside[]={1.0000494,-4.3128603e-007,-0.0056301574};
+		pos[]={91.876999,161.3172,76.223511};
+		dir[]={0.000203709,-0.99347162,0.11409807};
+		up[]={0.001773729,0.11401709,0.99347633};
+		aside[]={1.0000001,1.4006218e-010,-0.0017853861};
 	};
 };
 binarizationWanted=0;
@@ -29264,7 +29264,7 @@ class Mission
 			name="HC3";
 			isPlayable=1;
 			description="HC3";
-			id=440;
+			id=1854;
 			type="HeadlessClient_F";
 		};
 		class Item204
@@ -29277,7 +29277,7 @@ class Mission
 			name="UnitGM";
 			isPlayable=1;
 			description="Game Master";
-			id=441;
+			id=1856;
 			type="VirtualCurator_F";
 		};
 	};
