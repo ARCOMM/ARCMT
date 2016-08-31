@@ -74,7 +74,7 @@ class Params {
         title = "Sandbox Theme";
         values[] = {0,1};
         texts[] = {"Default","Vietnam (BLUFOR)"};
-        default = 1;
+        default = 0;
         code = "arc_param_theme = ['Default', 'Vietnam'] select %1";
     };
 };
