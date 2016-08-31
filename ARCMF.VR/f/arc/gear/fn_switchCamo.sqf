@@ -15,24 +15,28 @@ private _uniformClass = switch (_camo) do {
     case "woodland": {"rhs_uniform_FROG01_wd"};
     case "desert": {"rhs_uniform_FROG01_d"};
     case "mtp": {"rhs_uniform_g3_mc"};
+    case "winter": {"usm_bdu_ubn"};
 };
 
 private _vestClass = switch (_camo) do {
     case "woodland": {"rhsusf_spc_rifleman"};
     case "desert": {"rhsusf_spc_rifleman"};
     case "mtp": {"rhsusf_spcs_ocp_rifleman"};
+    case "winter": {"V_PlateCarrier1_blk"};
 };
 
 private _backpackClass = switch (_camo) do {
     case "woodland": {"rhsusf_assault_eagleaiii_coy"};
     case "desert": {"rhsusf_assault_eagleaiii_coy"};
     case "mtp": {"rhsusf_assault_eagleaiii_ocp"};
+    case "winter": {"MNP_B_WB_KB"};
 };
 
 private _headgearClass = switch (_camo) do {
     case "woodland": {"rhsusf_lwh_helmet_marpatwd_ess"};
     case "mtp": {"rhsusf_ach_helmet_ESS_ocp"};
     case "desert": {"rhsusf_lwh_helmet_marpatd_ess"};
+    case "winter": {"usm_bdu_boonie_ubn"};
 };
 
 if (_uniformClass != "") then {

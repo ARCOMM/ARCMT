@@ -56,7 +56,7 @@ with open(new_sqm) as infile, open(orig_sqm, 'w') as outfile:
 os.remove(new_ext);
 os.remove(new_sqm);
 
-for t in ["VR","utes","Sara","fallujah","Chernarus","Chernarus_Summer","Takistan","Zargabad","Desert_E","ProvingGrounds_PMC","Shapur_BAF","mbg_celle2","Stratis","bozcaada","Kunduz","Altis","vt5","mske","torabora","FDF_Isle1_a","Woodland_ACR","Bootcamp_ACR","kerama","eden","abel","cain","noe","Desert_Island","Tanoa"]:
+for t in ["abel","Altis","Bootcamp_ACR","Bozcaada","cain","Chernarus","Chernarus_Summer","Desert_E","Desert_Island","eden","fallujah","FDF_Isle1_a","IsolaDiCapraia","mbg_celle2","MCN_Aliabad","namalsk","noe","Porto","ProvingGrounds_PMC","Sara","Shapur_BAF","Stratis","Takistan","Tanoa","Thirsk","ThirskW","torabora","utes","VR","vt5","WL_WRoute191","Woodland_ACR","Zargabad"]:
 	try:
 		subprocess.check_output([
 			"makepbo",
