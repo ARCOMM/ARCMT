@@ -1,10 +1,11 @@
+if (arc_param_theme != "Default") exitWith {};
+
 private _unit = _this;
 private _camo = toLower (getText (missionConfigFile >> "CfgSandbox" >> worldName >> "camouflage"));
 
 if (_camo == "default" || side _unit != west) exitWith {};
 
 _unit setVariable ["ARC_switchCamo_done", false, true];
-waitUntil {(_unit getVariable ["f_var_assignGear_done", false])};
 
 private _uniformItems = uniformItems _unit;
 private _vestItems = vestItems _unit;
