@@ -33,6 +33,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36VAG36";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this addWeapon "Binocular";
         this linkItem "ItemMap";
@@ -67,6 +68,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36VAG36";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this addWeapon "Binocular";
         this linkItem "ItemMap";
@@ -103,6 +105,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36VAG36";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this addWeapon "Laserdesignator_03";
         this linkItem "ItemMap";
@@ -142,6 +145,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -174,6 +178,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36VAG36";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this addWeapon "Binocular";
         this linkItem "ItemMap";
@@ -202,6 +207,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -221,15 +227,17 @@ switch (_typeOfUnit) do {
         this addItemToUniform "ACE_EarPlugs";
         this addItemToUniform "ACE_EntrenchingTool";
         this addVest "MNP_Vest_Germany_2";
-        for "_i" from 1 to 5 do {this addItemToVest "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
+        for "_i" from 1 to 5 do {this addItemToVest "RH_60Rnd_556x45_M855A1";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_an_m8hc";};
         this addItemToVest "rhsusf_mag_17Rnd_9x19_FMJ";
         this addBackpack "B_Kitbag_rgr";
-        for "_i" from 1 to 5 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
+        for "_i" from 1 to 5 do {this addItemToBackpack "RH_60Rnd_556x45_M855A1";};
         this addHeadgear "MNP_Helmet_Germany";
-        this addWeapon "rhs_weap_m27iar";
+        this addWeapon "RH_M27IAR";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
+        this addPrimaryWeaponItem "RH_HBLM";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -254,10 +262,11 @@ switch (_typeOfUnit) do {
         for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_an_m8hc";};
         this addItemToVest "rhsusf_mag_17Rnd_9x19_FMJ";
         this addBackpack "B_Kitbag_rgr";
-        for "_i" from 1 to 7 do {this addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
+        for "_i" from 1 to 7 do {this addItemToBackpack "RH_60Rnd_556x45_M855A1";};
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -284,6 +293,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhs_weap_M136";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
@@ -318,6 +328,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36VAG36";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this addWeapon "Binocular";
         this linkItem "ItemMap";
@@ -376,6 +387,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -409,6 +421,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36VAG36";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this addWeapon "Binocular";
         this linkItem "ItemMap";
@@ -440,6 +453,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhs_weap_smaw";
         this addSecondaryWeaponItem "rhs_weap_optic_smaw";
         this addWeapon "rhsusf_weap_glock17g4";
@@ -471,6 +485,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -505,6 +520,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36VAG36";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this addWeapon "Binocular";
         this linkItem "ItemMap";
@@ -534,6 +550,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";
@@ -561,6 +578,7 @@ switch (_typeOfUnit) do {
         this addHeadgear "MNP_Helmet_Germany";
         this addWeapon "hlc_rifle_G36V";
         this addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk";
+        this addPrimaryWeaponItem "RH_LTdocterl";
         this addWeapon "rhsusf_weap_glock17g4";
         this linkItem "ItemMap";
         this linkItem "ItemCompass";

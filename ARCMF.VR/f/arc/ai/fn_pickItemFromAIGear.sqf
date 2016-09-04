@@ -1,16 +1,20 @@
-private ["_items","_itemarr","_result","_proarr","_proportion","_total","_probl","_probu"];
+private _faction = param [0, "blufor"];
+private _category = param [1, "uniforms"];
+private _items = if (arc_param_theme != "Default" && {getNumber (missionConfigFile >> "Header" >> "sandbox") == 1}) then {
+    getArray (missionConfigFile >> "CfgSandboxThemes" >> arc_param_theme >> "AIGear" >> _faction >> _category);
+} else {
+    getArray (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> _category);
+};
 
-_faction = param [0, "blufor"];
-_category = param [1, "uniforms"];
-_items = getArray (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> _category);
-if (count _items <= 0) exitWith {[]};
-_itemarr = [];
-_result = [];
-_proarr = [];
-_proportion = [];
-_total = 0;
-_probl = 0;
-_probu = 0;
+if (_items isEqualTo []) exitWith {[]};
+
+private _itemarr = [];
+private _result = [];
+private _proarr = [];
+private _proportion = [];
+private _total = 0;
+private _probl = 0;
+private _probu = 0;
 
 if (count _items > 0) then {
     _rand = random 1;

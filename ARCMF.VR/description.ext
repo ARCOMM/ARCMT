@@ -70,6 +70,13 @@ class Params {
         default = 0;
         code = "arc_param_acre_reveal = if (%1 == 1) then {true} else {false};";
     };
+    class arc_param_theme {
+        title = "Sandbox Theme";
+        values[] = {0,1};
+        texts[] = {"Default","Vietnam (BLUFOR)"};
+        default = 0;
+        code = "arc_param_theme = ['Default', 'Vietnam'] select %1";
+    };
 };
 
 class CfgDebriefing {
@@ -150,6 +157,10 @@ class CfgFunctions {
             class safety {};
             class safeStartLoop {};
         };
+        class Themes {
+            file = "f\themes";
+            class getThemeAssignGear {};
+        };
 
         #include "f\spect\functions.hpp"
     };
@@ -160,3 +171,4 @@ class CfgFunctions {
 #include "f\arc\sandbox.hpp"
 #include "f\ui\include.hpp"
 #include "f\arc\attributes.hpp"
+#include "f\themes\config.hpp"

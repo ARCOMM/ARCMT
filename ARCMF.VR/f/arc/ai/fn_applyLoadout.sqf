@@ -11,7 +11,11 @@ private _faction = _side call ARC_fnc_getFactionFromSide;
 
 if (!_isMan || !(_side in [west,east,resistance,civilian])) exitWith {};
 
-private _enabled = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "enabled") call ARC_fnc_getCfgBool;
+private _enabled = if (arc_param_theme != "Default" && {getNumber (missionConfigFile >> "Header" >> "sandbox") == 1}) then {
+    (missionConfigFile >> "CfgSandboxThemes" >> arc_param_theme >> "AIGear" >> _faction >> "enabled") call ARC_fnc_getCfgBool;
+} else {
+    (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "enabled") call ARC_fnc_getCfgBool;
+};
 
 if (!_enabled) exitWith {
     // Fix for naked units bug in Zeus
@@ -22,9 +26,24 @@ if (!_enabled) exitWith {
 
 _unit setVariable ["ARC_assignedAIGear", false, true];
 
-private _prioritizeTracerMags = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "prioritizeTracerMags") call ARC_fnc_getCfgBool;
-private _removeMedicalItems = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "removeMedicalItems") call ARC_fnc_getCfgBool;
-private _removeNightVision = (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "removeNightVision") call ARC_fnc_getCfgBool;
+private _prioritizeTracerMags = if (arc_param_theme != "Default" && {getNumber (missionConfigFile >> "Header" >> "sandbox") == 1}) then {
+    (missionConfigFile >> "CfgSandboxThemes" >> arc_param_theme >> "AIGear" >> _faction >> "prioritizeTracerMags") call ARC_fnc_getCfgBool;
+} else {
+    (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "prioritizeTracerMags") call ARC_fnc_getCfgBool;
+};
+
+private _removeMedicalItems = if (arc_param_theme != "Default" && {getNumber (missionConfigFile >> "Header" >> "sandbox") == 1}) then {
+    (missionConfigFile >> "CfgSandboxThemes" >> arc_param_theme >> "AIGear" >> _faction >> "removeMedicalItems") call ARC_fnc_getCfgBool;
+} else {
+    (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "removeMedicalItems") call ARC_fnc_getCfgBool;
+};
+
+private _removeNightVision = if (arc_param_theme != "Default" && {getNumber (missionConfigFile >> "Header" >> "sandbox") == 1}) then {
+    (missionConfigFile >> "CfgSandboxThemes" >> arc_param_theme >> "AIGear" >> _faction >> "removeNightVision") call ARC_fnc_getCfgBool;
+} else {
+    (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> "removeNightVision") call ARC_fnc_getCfgBool;
+};
+
 private _rifleClass = [_faction, "rifles"] call ARC_fnc_pickItemFromAIGear;
 private _hasRemovedWeapons = false;
 
