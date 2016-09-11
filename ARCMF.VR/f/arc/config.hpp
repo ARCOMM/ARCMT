@@ -59,6 +59,7 @@ class ARC
         class getUnitType {};
         class zeroPad {};
         class arrayShuffle {};
+        class execAfterSafeStart {};
     };
     class radios
     {

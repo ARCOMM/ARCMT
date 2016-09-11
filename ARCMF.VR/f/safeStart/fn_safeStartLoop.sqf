@@ -17,6 +17,7 @@ if (f_var_mission_timer > 0) then {
 };
 
 ARC_briefingTimeEnd = false;
+publicVariable "ARC_briefingTimeEnd";
 
 [{
     ARC_briefingTimeMinutes = 0;
@@ -27,6 +28,7 @@ ARC_briefingTimeEnd = false;
         
         if (f_var_mission_timer > 0 && {ARC_briefingTimeMinutes >= f_var_mission_timer}) then {
             ARC_briefingTimeEnd = true;
+            publicVariable "ARC_briefingTimeEnd";
         };
         
         if (ARC_briefingTimeEnd) exitWith {
