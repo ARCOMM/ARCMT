@@ -25,7 +25,7 @@ f_radios_settings_acre2_groups_blufor = ["COMMAND","1ST PLATOON","2ND PLATOON","
 f_radios_settings_acre2_groups_opfor = ["COMMAND","1ST PLATOON","2ND PLATOON","ALPHA","BRAVO","CHARLIE","DELTA","ECHO","FOXTROT","PHANTOM","RAVEN","GAMBLER","MMG","MAT","BACKUP 1","BACKUP 2"];
 f_radios_settings_acre2_groups_indfor = ["COMMAND","1ST PLATOON","2ND PLATOON","ALPHA","BRAVO","CHARLIE","DELTA","ECHO","FOXTROT","PHANTOM","RAVEN","GAMBLER","MMG","MAT","BACKUP 1","BACKUP 2"];
 
-[1] call acre_api_fnc_setLossModelScale;
+[0] call acre_api_fnc_setLossModelScale;
 [arc_param_duplex] call acre_api_fnc_setFullDuplex;
 
 [false] call acre_api_fnc_setInterference;
