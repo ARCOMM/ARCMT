@@ -92,7 +92,7 @@ class CfgSandbox {
         camouflage = "desert";
     };
     class Tanoa {
-        startingPosition[] = {2329.52,13163.9,0};
+        startingPosition[] = {6847.11,7292.79,0};
         camouflage = "woodland";
     };
     class Thirsk {
