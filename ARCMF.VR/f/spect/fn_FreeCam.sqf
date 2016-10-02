@@ -44,8 +44,6 @@ if (f_cam_mode == 3) then {
     _height = 0 max (((getPosATL f_cam_freecamera) select 2));
     _accel = 0.1 max (_height / ([10,35] select _inBuilding)); // 0.8
     _accelshift = _accel * 4.25;//2;
-
-    systemChat format ["In Building: %1, Accel: %2", _inBuilding, _accel];
     
     if (f_cam_freecam_buttons select 0) then { // W
         if (f_cam_shift_down) then {
