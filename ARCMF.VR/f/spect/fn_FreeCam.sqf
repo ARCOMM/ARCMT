@@ -38,9 +38,14 @@ if (f_cam_mode == 3) then {
     _mX = 0;
     _mY = 0;
     _mZ = 0;
+
+    private _inBuilding = [_currPos] call f_fnc_inBuilding;
+
     _height = 0 max (((getPosATL f_cam_freecamera) select 2));
-    _accel = 0.2 max (_height/8); // 0.8
-    _accelshift = _accel*4.25;//2;
+    _accel = 0.1 max (_height / ([10,35] select _inBuilding)); // 0.8
+    _accelshift = _accel * 4.25;//2;
+
+    systemChat format ["In Building: %1, Accel: %2", _inBuilding, _accel];
     
     if (f_cam_freecam_buttons select 0) then { // W
         if (f_cam_shift_down) then {
@@ -75,7 +80,7 @@ if (f_cam_mode == 3) then {
     };
     
     if (f_cam_freecam_buttons select 4) then { // Q
-        _scroll = 1*((sqrt _height)/2)*_delta;
+        _scroll = 1 * ((sqrt _height) / 2) * _delta;
         if (abs _scroll < 0.1) then {
             if (_scroll < 0) then {
                 _scroll = -0.1;
@@ -87,7 +92,7 @@ if (f_cam_mode == 3) then {
     };
     
     if (f_cam_freecam_buttons select 5) then { // Z
-        _scroll = -1*((sqrt _height)/2)*_delta;
+        _scroll = -1 * ((sqrt _height) / 2) * _delta;
         if (abs _scroll < 0.1) then {
             if (_scroll < 0) then {
                 _scroll = -0.1;
@@ -98,13 +103,13 @@ if (f_cam_mode == 3) then {
         _mZ = _scroll;
     };
     
-    if (f_cam_scrollHeight <0 || f_cam_scrollHeight > 0) then {
+    if (f_cam_scrollHeight < 0 || f_cam_scrollHeight > 0) then {
         _scroll = -f_cam_scrollHeight * _delta*3;//was 3 and was positive
         f_cam_scrollHeight = _scroll;
         if (f_cam_scrollHeight < 0.2 && f_cam_scrollHeight > -0.2) then {
             f_cam_scrollHeight = 0;
         };
-        _scroll = _scroll*((sqrt _height)/2);
+        _scroll = _scroll * ((sqrt _height) / 2);
         if (abs _scroll < 0.1) then {
             if (_scroll < 0) then {
                 _scroll = -0.1;
@@ -120,12 +125,12 @@ if (f_cam_mode == 3) then {
     _mY = _delta * ((_mY min 50) max -50);
     f_freecam_x_speed = f_freecam_x_speed * 0.5 + _mX;
     f_freecam_y_speed = f_freecam_y_speed * 0.5 + _mY;
-    f_freecam_z_speed = f_freecam_z_speed * 0.5 + _mZ;
+    f_freecam_z_speed = f_freecam_z_speed * 0.5 + (_mZ * (_accel min ([1.5, 5] select f_cam_shift_down)));
     
     _x = (_currPos select 0) + (f_freecam_x_speed * (cos f_cam_angleX)) + (f_freecam_y_speed * (sin f_cam_angleX));
     _y = (_currPos select 1) - (f_freecam_x_speed * (sin f_cam_angleX)) + (f_freecam_y_speed * (cos f_cam_angleX));
     _newHeight = (getTerrainHeightASL [_x,_y]);
-    _z = ((_currPos select 2) + f_freecam_z_speed) min (650 + _newHeight);
+    _z = ((_currPos select 2) + f_freecam_z_speed) min (1000 + _newHeight);
     f_cam_freecamera setPosASL [_x,_y,_z max _newHeight];
     f_cam_freecamera setDir f_cam_angleX;
     [f_cam_freecamera,f_cam_angleY,0] call BIS_fnc_setPitchBank;

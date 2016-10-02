@@ -1,5 +1,5 @@
 // [<newUnit>,<oldUnit>,<respawn>,<respawnDelay>]
-// [player, objNull, 4, 1, true] call f_fnc_CamInit;
+// [player, objNull, 1, 1, true] call f_fnc_CamInit;
 
 _this spawn {
     params [

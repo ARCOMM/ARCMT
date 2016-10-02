@@ -18,4 +18,5 @@ class fspectator
     class addToTracers {};
     class removeAllTracers {};
     class handleTracers {};
+    class inBuilding {};
 };
