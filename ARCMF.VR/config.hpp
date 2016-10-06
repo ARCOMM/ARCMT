@@ -9,7 +9,7 @@ class CfgARCMF {
     */
     class Briefing {
         class BLUFOR {
-            administration[] = {};
+            logistics[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
@@ -20,7 +20,7 @@ class CfgARCMF {
             friendlyForces[] = {};
         };
         class OPFOR {
-            administration[] = {};
+            logistics[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
@@ -31,7 +31,7 @@ class CfgARCMF {
             friendlyForces[] = {};
         };
         class INDFOR {
-            administration[] = {};
+            logistics[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
@@ -42,7 +42,7 @@ class CfgARCMF {
             friendlyForces[] = {};
         };
         class CIVILIAN {
-            administration[] = {};
+            logistics[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
@@ -53,7 +53,7 @@ class CfgARCMF {
             friendlyForces[] = {};
         };
         class GAME_MASTER {
-            administration[] = {};
+            logistics[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};

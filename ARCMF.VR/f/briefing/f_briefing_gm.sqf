@@ -2,9 +2,9 @@ private _side = "gm";
 
 player createDiaryRecord ["diary", ["Credits", (format ["%1<br/>Made with ARCMF (https://github.com/ARCOMM/ARCMF)", getText (missionConfigFile >> "author")])]];
 
-_admin = [_side, "administration"] call ARC_fnc_buildBriefingFromConfig;
+_admin = [_side, "logistics"] call ARC_fnc_buildBriefingFromConfig;
 if (_admin != "") then {
-    player createDiaryRecord ["diary", ["Administration", _admin]];
+    player createDiaryRecord ["diary", ["Logistics", _admin]];
 };
 
 _exe = "";
