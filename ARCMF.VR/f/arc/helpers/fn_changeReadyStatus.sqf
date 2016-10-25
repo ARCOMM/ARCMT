@@ -17,6 +17,8 @@ private _side = side _assignedUnit;
 
 missionNamespace setVariable [format ["ARCMF_%1_RDY_STATUS",_side], true];
 
+format ["%1 has called ready!",_side] remoteExecCall ["systemChat",0];
+
 call ARC_fnc_checkGlobalReadiness;
 
 true

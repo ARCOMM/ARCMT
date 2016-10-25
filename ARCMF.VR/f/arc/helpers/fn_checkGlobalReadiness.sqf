@@ -26,6 +26,7 @@ _sidesReady = missionNamespace getVariable ["ARCMF_SIDES_RDY",0];
 if (_sidesReady == count _sides) then {
 	ARC_briefingTimeEnd = true;
 	publicVariable "ARC_briefingTimeEnd";
+	"ALL SIDES READY - MISSION GO IN 5 SECONDS!" remoteExecCall ["systemChat",0];
 } else {
 	false
 };
