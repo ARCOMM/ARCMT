@@ -60,6 +60,10 @@ class ARC
         class zeroPad {};
         class arrayShuffle {};
         class execAfterSafeStart {};
+        class getLeaderGroup {};
+        class getSideColor {};
+        class changeReadyStatus {};
+        class checkGlobalReadiness {};
     };
     class radios
     {
