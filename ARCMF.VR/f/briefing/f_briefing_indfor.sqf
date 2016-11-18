@@ -4,7 +4,7 @@ player createDiaryRecord ["diary", ["Credits", (format ["%1<br/>Made with ARCMF 
 
 _admin = [_side, "logistics"] call ARC_fnc_buildBriefingFromConfig;
 if (_admin != "") then {
-    player createDiaryRecord ["diary", ["Logisitcs", _admin]];
+    player createDiaryRecord ["diary", ["Logistics", _admin]];
 };
 
 _exe = "";
