@@ -30,5 +30,4 @@ f_radios_settings_acre2_groups_indfor = ["COMMAND","1ST PLATOON","2ND PLATOON","
 
 [false] call acre_api_fnc_setInterference;
 [arc_param_acre_reveal] call acre_api_fnc_setRevealToAI;
-["ACRE_CURVE_MODEL_ORIGINAL"] call acre_api_fnc_setCurveModel;
 [true] call acre_api_fnc_ignoreAntennaDirection;
