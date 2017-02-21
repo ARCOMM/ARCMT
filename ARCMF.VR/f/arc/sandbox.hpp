@@ -4,7 +4,7 @@ class CfgSandbox {
         camouflage = "mtp";
     };
     class Altis {
-        startingPosition[] = {20788,7196.91,0};
+        startingPosition[] = {26779.7,24675.2,0};
         camouflage = "mtp";
     };
     class Bootcamp_ACR {
@@ -92,7 +92,7 @@ class CfgSandbox {
         camouflage = "desert";
     };
     class Tanoa {
-        startingPosition[] = {6847.11,7292.79,0};
+        startingPosition[] = {11813.2,13071.4,0};
         camouflage = "woodland";
     };
     class Thirsk {
