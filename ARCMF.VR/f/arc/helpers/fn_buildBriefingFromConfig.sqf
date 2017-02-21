@@ -22,11 +22,12 @@ private _faction = switch (_side) do {
 };
 
 private _output = "";
+private _lines = getArray (missionConfigFile >> "CfgARCMF" >> "briefing" >> _faction >> _category);
 
 {
     if (_x != "") then {
-        _output = _output + format ["%1<br/><br/>", _x];
+        _output = _output + format ["%1%2", _x, (["", "<br/><br/>"] select (_forEachIndex != (count _lines - 1)))];
     };
-} forEach (getArray (missionConfigFile >> "CfgARCMF" >> "briefing" >> _faction >> _category));
+} forEach _lines;
 
 _output
