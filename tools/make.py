@@ -13,8 +13,13 @@ tempPath = '../release/ARCMF.VR'
 if not os.path.exists(tempPath):
     os.makedirs(tempPath)
 
-copy_folder("../ARCMF.VR", "{}/ARCMF.VR".format(tempPath))
+missionPath = "{}/ARCMF.VR".format(tempPath)
+
+copy_folder("../ARCMF.VR", missionPath)
+
+for subdir, dirs, files in os.walk("{}/f/themes/".format(missionPath)):
+    for d in dirs:
+        shutil.rmtree("{}/f/themes/{}".format(missionPath, d))
 
 shutil.make_archive('../release/ARCMF', 'zip', tempPath)
-
 shutil.rmtree(tempPath)

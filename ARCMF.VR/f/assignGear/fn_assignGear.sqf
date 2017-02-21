@@ -9,7 +9,7 @@
     _unit setVariable ["f_var_assignGear_done", false, true];
 
     if (arc_param_theme != "Default" && {getNumber (missionConfigFile >> "Header" >> "sandbox") == 1}) exitWith {
-        _unit call compile preprocessFileLineNumbers ([side _unit] call f_fnc_getThemeAssignGear);
+        [_unit, _typeOfUnit] call compile preprocessFileLineNumbers ([side _unit] call f_fnc_getThemeAssignGear);
         _unit setVariable ["f_var_assignGear_done", false, true];
     };
 

@@ -1,10 +1,6 @@
 private _faction = param [0, "blufor"];
 private _category = param [1, "uniforms"];
-private _items = if (arc_param_theme != "Default" && {getNumber (missionConfigFile >> "Header" >> "sandbox") == 1}) then {
-    getArray (missionConfigFile >> "CfgSandboxThemes" >> arc_param_theme >> "AIGear" >> _faction >> _category);
-} else {
-    getArray (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> _category);
-};
+private _items = getArray (missionConfigFile >> "CfgARCMF" >> "ai" >> "gear" >> _faction >> _category);
 
 if (_items isEqualTo []) exitWith {[]};
 

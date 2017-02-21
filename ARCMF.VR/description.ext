@@ -70,19 +70,7 @@ class Params {
         default = 0;
         code = "arc_param_acre_reveal = if (%1 == 1) then {true} else {false};";
     };
-    class arc_param_theme {
-        title = "Sandbox Theme";
-        values[] = {0,1,2,3,4};
-        texts[] = {
-            "Default",
-            "Vietnam (BLUFOR) | AI Gear: Yes",
-            "BAF Woodland (BLUFOR) | AI Gear: No",
-            "BAF Winter (BLUFOR) | AI Gear: No",
-            "Gulf War (BLUFOR) | AI Gear: No"
-        };
-        default = 0;
-        code = "arc_param_theme = ['Default', 'Vietnam', 'BAF_Woodland', 'BAF_Winter', 'Gulf_War'] select %1";
-    };
+    #include "f\themes\param.hpp"
 };
 
 class CfgDebriefing {

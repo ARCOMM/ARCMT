@@ -1,8 +1,11 @@
+import sys
 import os
 import re
 import subprocess
 import shutil, errno
+import glob
 from shutil import copyfile
+from subprocess import call
 
 def copy_folder(src, dst):
 	try:
@@ -53,8 +56,51 @@ with open(new_sqm) as infile, open(orig_sqm, 'w') as outfile:
 		else:
 			outfile.write(line)
 
-os.remove(new_ext);
-os.remove(new_sqm);
+os.remove(new_ext)
+os.remove(new_sqm)
+
+call(["git", "clone", "https://github.com/ARCOMM/Loadouts.git"])
+
+configStr = "class CfgSandboxThemes {"
+paramStr = 'class arc_param_theme {title = "Loadout Preset";'
+paramValues = "values[] = {0"
+paramTexts = 'texts[] = {"Default"'
+paramCode = "code = ""arc_param_theme = ['Default'"
+loadoutCounter = 1
+
+for fname in glob.glob("Loadouts/Premade loadouts/*.sqf"):
+	fileName = os.path.splitext(os.path.basename(fname))[0]
+	newFilePath = "{0}/f/themes/{1}/{1}.sqf".format(sandbox_dir, fileName)
+	os.mkdir("{0}/f/themes/{1}".format(sandbox_dir, fileName))
+	copyfile(fname, newFilePath)
+
+	with open(newFilePath, "r+") as f:
+		s = f.read()
+		f.seek(0)
+		f.write("params ['_unit', '_typeOfUnit'];\nthis = _unit;\n" + s)
+		f.close()
+
+	configStr += '{0} = "f\\themes\{0}\{0}.sqf";'.format(fileName)
+	paramValues += ',{0}'.format(loadoutCounter)
+	paramTexts += ', "{0}"'.format(fileName)
+	paramCode += ", '{0}'".format(fileName)
+
+	loadoutCounter += 1
+
+paramValues += "};"
+paramTexts += "};default = 0;"
+paramCode += "] select %1"
+configStr += "};"
+paramStr += paramValues
+paramStr += paramTexts
+paramStr += paramCode
+paramStr += "};"
+
+with open("{0}/f/themes/config.hpp".format(sandbox_dir),'w') as f:
+    f.write(configStr)
+
+with open("{0}/f/themes/param.hpp".format(sandbox_dir),'w') as f:
+    f.write(paramStr)
 
 for t in ["abel","Altis","Bootcamp_ACR","Bozcaada","cain","Chernarus","Chernarus_Summer","Desert_E","Desert_Island","eden","fallujah","FDF_Isle1_a","IsolaDiCapraia","mbg_celle2","MCN_Aliabad","namalsk","noe","Porto","ProvingGrounds_PMC","Sara","Shapur_BAF","Stratis","Takistan","Tanoa","Thirsk","ThirskW","torabora","utes","VR","vt5","WL_WRoute191","Woodland_ACR","Zargabad"]:
 	try:

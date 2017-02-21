@@ -18,4 +18,4 @@ params [["_side", sideUnknown]];
 
 private _faction = _side call ARC_fnc_getFactionFromSide;
 
-(getText (missionConfigFile >> "CfgSandboxThemes" >> arc_param_theme >> "AssignGear" >> _faction))
+(getText (missionConfigFile >> "CfgSandboxThemes" >> arc_param_theme))
