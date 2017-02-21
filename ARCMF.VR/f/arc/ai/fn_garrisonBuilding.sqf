@@ -14,7 +14,7 @@
  * Array of units not garrisoned
  *
  * Example:
- * [position, nil, [unit1, unit2, unit3, unitN], 200, 1, false] call ARC_fnc_garrisonBuilding
+ * [this, nil, this, 200, 0, false] call ARC_fnc_garrisonBuilding;
  */
 
 params [
