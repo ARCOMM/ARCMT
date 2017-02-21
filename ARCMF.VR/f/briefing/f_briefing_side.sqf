@@ -1,12 +1,11 @@
-private _side = east;
-
-player createDiaryRecord ["diary", ["Credits", (format ["%1<br/>Made with ARCMF (https://github.com/ARCOMM/ARCMF)", getText (missionConfigFile >> "author")])]];
+private _side = _this;
 
 _outputText = "";
-_situation = "<font size='22'>Situation</font><br/>";
+_situation = "";
 
 _sit = [_side, "situation"] call ARC_fnc_buildBriefingFromConfig;
 if (_sit != "") then {
+    _situation = format ["%1<font size='22'>Situation</font><br/>", _situation];
     _situation = format ["%1%2<br/><br/>", _situation, _sit];
 };
 
@@ -52,4 +51,6 @@ if (_admin != "") then {
     _outputText = format ["%1<font size='22'>Logistics</font><br/>%2", _outputText, _admin];
 };
 
-player createDiaryRecord ["diary", ["Briefing", _outputText]];
+if (_outputText != "") then {
+    player createDiaryRecord ["diary", ["Briefing", _outputText]];
+};
