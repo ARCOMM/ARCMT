@@ -91,7 +91,7 @@ switch (side _unit) do {
         } else {\
             for "_i" from 1 to count (ARR select {_x == _typeOfUnit}) do {\
                 _unit addItem RADIO;\
-            }\
+            };\
         };
 
     if (_typeOfUnit != "NIL") then {

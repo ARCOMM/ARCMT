@@ -2,3 +2,4 @@
 !build
 # build/*.pbo
 release/
+tools/Loadouts
