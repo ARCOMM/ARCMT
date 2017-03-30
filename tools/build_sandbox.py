@@ -68,7 +68,7 @@ paramTexts = 'texts[] = {"Default"'
 paramCode = "code = ""arc_param_theme = ['Default'"
 loadoutCounter = 1
 
-for fname in glob.glob("Loadouts/Premade loadouts/*.sqf"):
+for fname in glob.glob("Loadouts/**/*.sqf"):
 	fileName = os.path.splitext(os.path.basename(fname))[0]
 	newFilePath = "{0}/f/themes/{1}/{1}.sqf".format(sandbox_dir, fileName)
 	os.mkdir("{0}/f/themes/{1}".format(sandbox_dir, fileName))
