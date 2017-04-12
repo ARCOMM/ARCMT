@@ -21,7 +21,7 @@ orig_sqm = "../build/ARCMF_Sandbox.VR/mission.sqm"
 new_sqm = "../build/ARCMF_Sandbox.VR/new_mission.sqm"
 orig_ext = "../build/ARCMF_Sandbox.VR/description.ext"
 new_ext = "../build/ARCMF_Sandbox.VR/new_description.ext"
-with open('../ARCMF.VR/version.txt') as v: version = v.read()
+with open('../ARCMF.VR/version.txt') as v: version = v.read().strip()
 
 if os.path.isdir(sandbox_dir):
 	shutil.rmtree(sandbox_dir)
