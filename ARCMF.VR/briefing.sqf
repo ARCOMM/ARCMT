@@ -1,13 +1,13 @@
 [{isDedicated || !isNull player}, {
     call compile preprocessFileLineNumbers "f\briefing\f_briefing_arcmf.sqf";
 
-    if (serverCommandAvailable "#kick" || isServer || player == UnitGM) then {
+    if (serverCommandAvailable "#logout" || {isServer} || {player == UnitGM}) then {
         call compile preprocessFileLineNumbers "f\briefing\f_briefing_admin.sqf";
     } else {
         [{
             params ["_args","_handlerID"];
-            
-            if (serverCommandAvailable "#kick") then {
+
+            if (serverCommandAvailable "#logout") then {
                 call compile preprocessFileLineNumbers "f\briefing\f_briefing_admin.sqf";
                 [_handlerID] call CBA_fnc_removePerFrameHandler;
             };
