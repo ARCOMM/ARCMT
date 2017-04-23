@@ -16,6 +16,7 @@ class ARC
         file = "f\arc\chat";
         class disableAllChannels {};
         class enableAllChannels {};
+        class registerCommands {};
     };
     class ai
     {

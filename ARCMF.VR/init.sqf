@@ -55,6 +55,9 @@ if (isServer) then {
     publicVariable "ARC_spectatorChatID";
 };
 
+// Chat Commands
+[] call ARC_fnc_registerCommands;
+
 // Map Timer
 /*if (isServer) then {
     [{
