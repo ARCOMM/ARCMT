@@ -6,12 +6,22 @@
 
 ["groupname", {
     params ["_name"];
+    
+    if (player != leader group player) exitWith {
+        systemChat "You need to be the group leader to do that!";
+    };
+
     group player setGroupId [_name, "GroupColor0"];
     group player setVariable ["ARC_groupHandled", true, true];
 }, "all"] call CBA_fnc_registerChatCommand;
 
 ["groupcolor", {
     params ["_color"];
+    
+    if (player != leader group player) exitWith {
+        systemChat "You need to be the group leader to do that!";
+    };
+
     group player setVariable ["ARC_groupColour", format ["Color%1", _color], true];
     group player setVariable ["ARC_groupHandled", true, true];
 }, "all"] call CBA_fnc_registerChatCommand;
