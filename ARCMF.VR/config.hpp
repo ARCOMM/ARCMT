@@ -214,4 +214,38 @@ class CfgARCMF {
             };
         };
     };
+    /*
+-----------------------------------------------------------------------------------------------------------------
+        FORTIFY CONFIGURATION
+        Description: This is the section where you define fortification settings.
+        Notes:
+            1. Make sure to give units the fortify tool in their loadouts ("ACE_Fortify")
+            2. For no budget at all, use -1
+            3. Objects can only be placed while in briefing stage
+        Example:
+            budget = 5000;
+            objects[] = {
+                {"Land_BagFence_01_long_green_F", 50},
+                {"Land_HBarrier_01_tower_green_F", 500}
+            };
+-----------------------------------------------------------------------------------------------------------------
+    */
+    class Fortify {
+        class BLUFOR {
+            budget = -1;
+            objects[] = {};
+        };
+        class OPFOR {
+            budget = -1;
+            objects[] = {};
+        };
+        class INDFOR {
+            budget = -1;
+            objects[] = {};
+        };
+        class CIVILIAN {
+            budget = -1;
+            objects[] = {};
+        };
+    };
 };

@@ -19,6 +19,9 @@ if (f_var_mission_timer > 0) then {
 ARC_briefingTimeEnd = false;
 publicVariable "ARC_briefingTimeEnd";
 
+acex_fortify_mode = true;
+publicVariable "acex_fortify_mode";
+
 [{
     ARC_briefingTimeMinutes = 0;
     ARC_briefingInterval = 0;
@@ -43,6 +46,8 @@ publicVariable "ARC_briefingTimeEnd";
                     ["Weapons are live!", 5] remoteExecCall ["ARC_fnc_hint", 0];
                     [false] remoteExec ["f_fnc_safety", (playableUnits + switchableUnits)];
                     [_handlerID] call CBA_fnc_removePerFrameHandler;
+                    acex_fortify_mode = false;
+                    publicVariable "acex_fortify_mode";
                 };
                 
                 format [

@@ -27,6 +27,9 @@ call compile preprocessFileLineNumbers "f\briefing\f_orbatNotes.sqf";
 // Mission Timer/Safe Start
 call compile preprocessFileLineNumbers "f\safeStart\f_safeStart.sqf";
 
+// Fortifications
+call compile preprocessFileLineNumbers "f\fortify\register.sqf";
+
 // Adversarial Mode
 if (isNil "ARC_adversarialMode") then {
     ARC_adversarialMode = false;
