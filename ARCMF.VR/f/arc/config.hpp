@@ -55,6 +55,7 @@ class ARC
         class buildBriefingFromConfig {};
         class isPlayerReady {};
         class getStartingPos {};
+        class getCarrierPos {};
         class getCfgBool {};
         class broadcastDiary {};
         class getUnitType {};

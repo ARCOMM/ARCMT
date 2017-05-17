@@ -1,4 +1,4 @@
-[{!isNull player}, {
+[{!isNull player && {!isNil "arc_deployOnCarrier"} && {!isNil "arc_sandbox_arsenal"}}, {
     if (call ARC_fnc_isRespawnEnabled) then {
         if (getNumber (missionConfigFile >> "Header" >> "sandbox") == 1) then {
             ["InitializePlayer", [player, true]] call BIS_fnc_dynamicGroups;
@@ -7,7 +7,8 @@
                 player call ARC_fnc_switchCamo;
             };
 
-            _startPos = [(call ARC_fnc_getStartingPos), 20] call CBA_fnc_randPos;
+            _startPos = [getPos arc_sandbox_arsenal, 10] call CBA_fnc_randPos;
+            _startPos set [2, 24];
             player setPos _startPos;
         };
     };
