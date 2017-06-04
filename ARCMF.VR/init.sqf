@@ -61,4 +61,10 @@ if (isServer) then {
 // Chat Commands
 [] call ARC_fnc_registerCommands;
 
+if (isServer) then {
+    if (getNumber (missionConfigFile >> "CfgARCMF" >> "General" >> "freezeTime") in [1,2]) then {
+        setTimeMultiplier 0.1;
+    };
+};
+
 // You are free to add/edit/delete anything below this line.

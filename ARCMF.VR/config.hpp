@@ -1,6 +1,18 @@
 class CfgARCMF {
     /*
 -----------------------------------------------------------------------------------------------------------------
+        GENERAL CONFIGURATION
+        Description: This is the section where you can define general settings for the mission.
+-----------------------------------------------------------------------------------------------------------------
+    */
+    class General {
+        // 0: Time is not frozen
+        // 1: Time is frozen indefinitely
+        // 2: Time is frozen only during briefing stage
+        freezeTime = 0;
+    };
+    /*
+-----------------------------------------------------------------------------------------------------------------
         BRIEFING CONFIGURATION
         Description: This is the section where you define the text content for the briefing on each team.
         Note: Each text element gets placed on its own line.

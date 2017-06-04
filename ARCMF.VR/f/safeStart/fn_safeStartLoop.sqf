@@ -28,44 +28,48 @@ publicVariable "acex_fortify_mode";
 
     ARC_briefingIntervalPFH = [{
         params ["_args","_handlerID"];
-        
+
         if (f_var_mission_timer > 0 && {ARC_briefingTimeMinutes >= f_var_mission_timer}) then {
             ARC_briefingTimeEnd = true;
             publicVariable "ARC_briefingTimeEnd";
         };
-        
+
         if (ARC_briefingTimeEnd) exitWith {
             [_handlerID] call CBA_fnc_removePerFrameHandler;
-            
+
             ARC_briefingEndInterval = 5;
-            
+
             ARC_briefingEndIntervalPFH = [{
                 params ["_args","_handlerID"];
-                
+
                 if (ARC_briefingEndInterval <= 0) exitWith {
                     ["Weapons are live!", 5] remoteExecCall ["ARC_fnc_hint", 0];
                     [false] remoteExec ["f_fnc_safety", (playableUnits + switchableUnits)];
                     [_handlerID] call CBA_fnc_removePerFrameHandler;
                     acex_fortify_mode = false;
                     publicVariable "acex_fortify_mode";
+
+                    if (getNumber (missionConfigFile >> "CfgARCMF" >> "General" >> "freezeTime") == 2) then {
+                        setTimeMultiplier 1;
+                    };
                 };
-                
+
                 format [
                     "Weapons are live in %1 second%2",
                     ARC_briefingEndInterval,
                     ["s",""] select (ARC_briefingEndInterval == 1)
                 ] remoteExecCall ["hintSilent", 0];
-                
+
                 ARC_briefingEndInterval = ARC_briefingEndInterval - 1;
             }, 1, []] call CBA_fnc_addPerFrameHandler;
         };
-        
+
         if (ARC_briefingInterval == 60) exitWith {
             ARC_briefingTimeMinutes = ARC_briefingTimeMinutes + 1;
             [0, ARC_briefingTimeMinutes] call ARC_fnc_displayBriefingTime;
             ARC_briefingInterval = 0;
         };
-        
+
         ARC_briefingInterval = ARC_briefingInterval + 1;
     }, 1, []] call CBA_fnc_addPerFrameHandler;
 }, [], 5] call CBA_fnc_waitAndExecute;
