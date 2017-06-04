@@ -152,4 +152,28 @@ class CfgSandbox {
         startingPosition[] = {3562.25,4093.43,0};
         camouflage = "desert";
     };
+    class Caribou {
+        startingPosition[] = {1775.55,3528.65,0};
+        camouflage = "woodland";
+    };
+    class pja310 {
+        startingPosition[] = {19010.6,19188.4,0};
+        camouflage = "mtp";
+    };
+    class pja314 {
+        startingPosition[] = {5452.83,17734.5,0};
+        camouflage = "mtp";
+    };
+    class lythium {
+        startingPosition[] = {11872.8,2346.83,0};
+        camouflage = "mtp";
+    };
+    class fata {
+        startingPosition[] = {2098.02,270.743,0};
+        camouflage = "mtp";
+    };
+    class xcam_taunus {
+        startingPosition[] = {5215.13,2033.31,0};
+        camouflage = "mtp";
+    };
 };

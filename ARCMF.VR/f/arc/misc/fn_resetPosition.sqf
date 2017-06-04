@@ -17,6 +17,7 @@
 params [["_unit", objNull, [objNull]]];
 
 if (isNull _unit) exitWith {};
+if (vehicle _unit != _unit) exitWith {};
 
 _unit = vehicle _unit;
 

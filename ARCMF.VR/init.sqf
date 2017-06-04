@@ -61,16 +61,4 @@ if (isServer) then {
 // Chat Commands
 [] call ARC_fnc_registerCommands;
 
-// Map Timer
-/*if (isServer) then {
-    [{
-        ARC_mapTimerServer = time;
-        publicVariable "ARC_mapTimerServer";
-    }, 1, []] call CBA_fnc_addPerFrameHandler;
-};
-
-if (hasInterface) then {
-    [] call ARC_fnc_mapTimer;
-};*/
-
 // You are free to add/edit/delete anything below this line.
