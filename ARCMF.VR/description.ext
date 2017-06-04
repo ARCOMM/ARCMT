@@ -67,7 +67,7 @@ class Params {
         title = "ACRE Reveal to AI";
         values[] = {0,1};
         texts[] = {"Disabled","Enabled"};
-        default = 0;
+        default = 1;
         code = "arc_param_acre_reveal = if (%1 == 1) then {true} else {false};";
     };
     class arc_param_aircraft_carrier {
