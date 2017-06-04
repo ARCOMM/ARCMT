@@ -63,8 +63,7 @@ class ARC
         class execAfterSafeStart {};
         class getLeaderGroup {};
         class getSideColor {};
-        class changeReadyStatus {};
-        class checkGlobalReadiness {};
+        class getPlayerByName {};
     };
     class radios
     {
