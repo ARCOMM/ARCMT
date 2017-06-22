@@ -176,4 +176,8 @@ class CfgSandbox {
         startingPosition[] = {5215.13,2033.31,0};
         camouflage = "mtp";
     };
+    class Malden {
+        startingPosition[] = {8099.26,9998.8,0};
+        camouflage = "mtp";
+    };
 };

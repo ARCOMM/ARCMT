@@ -102,7 +102,7 @@ with open("{0}/f/themes/config.hpp".format(sandbox_dir),'w') as f:
 with open("{0}/f/themes/param.hpp".format(sandbox_dir),'w') as f:
     f.write(paramStr)
 
-for t in ["abel","Altis","Bootcamp_ACR","Bozcaada","cain","Chernarus","Chernarus_Summer","Desert_E","Desert_Island","eden","fallujah","FDF_Isle1_a","IsolaDiCapraia","mbg_celle2","MCN_Aliabad","namalsk","noe","Porto","ProvingGrounds_PMC","Sara","Shapur_BAF","Stratis","Takistan","Tanoa","Thirsk","ThirskW","torabora","utes","VR","vt5","WL_WRoute191","Woodland_ACR","Zargabad","Caribou","pja310","pja314","lythium","fata","xcam_taunus"]:
+for t in ["abel","Altis","Bootcamp_ACR","Bozcaada","cain","Chernarus","Chernarus_Summer","Desert_E","Desert_Island","eden","fallujah","FDF_Isle1_a","IsolaDiCapraia","mbg_celle2","MCN_Aliabad","namalsk","noe","Porto","ProvingGrounds_PMC","Sara","Shapur_BAF","Stratis","Takistan","Tanoa","Thirsk","ThirskW","torabora","utes","VR","vt5","WL_WRoute191","Woodland_ACR","Zargabad","Caribou","pja310","pja314","lythium","fata","xcam_taunus","Malden"]:
 	try:
 		subprocess.check_output([
 			"makepbo",
