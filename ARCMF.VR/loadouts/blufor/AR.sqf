@@ -1,0 +1,17 @@
+this forceAddUniform "rhs_uniform_cu_ucp_10th";
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_fieldDressing";};
+this addItemToUniform "ACE_CableTie";
+this addItemToUniform "ACE_morphine";
+this addItemToUniform "ACE_tourniquet";
+this addVest "rhsusf_iotv_ucp_SAW";
+this addItemToVest "rhs_200rnd_556x45_T_SAW";
+this addWeapon "rhs_weap_m249_pip";
+for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_an_m8hc";};
+for "_i" from 1 to 2 do {this addItemToVest "rhs_mag_m67";};
+for "_i" from 1 to 2 do {this addItemToVest "rhs_200rnd_556x45_T_SAW";};
+this addHeadgear "rhsusf_ach_helmet_headset_ess_ucp";
+this addPrimaryWeaponItem "rhsusf_acc_SFMB556";
+this addPrimaryWeaponItem "rhsusf_acc_eotech_552";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
