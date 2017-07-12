@@ -85,15 +85,12 @@ class CfgARCMF {
     class Markers {
         class BLUFOR {
             enableGroupMarkers = true;
-            fireteamMemberFadeDistance = 100;
         };
         class OPFOR {
             enableGroupMarkers = true;
-            fireteamMemberFadeDistance = 100;
         };
         class INDFOR {
             enableGroupMarkers = true;
-            fireteamMemberFadeDistance = 100;
         };
     };
     /*
