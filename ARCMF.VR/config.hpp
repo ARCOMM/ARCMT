@@ -21,59 +21,59 @@ class CfgARCMF {
     */
     class Briefing {
         class BLUFOR {
-            logistics[] = {};
+            situation[] = {};
+            mission[] = {};
+            friendlyForces[] = {};
+            enemyForces[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
             specialTasks[] = {};
-            mission[] = {};
-            situation[] = {};
-            enemyForces[] = {};
-            friendlyForces[] = {};
+            logistics[] = {};
         };
         class OPFOR {
-            logistics[] = {};
+            situation[] = {};
+            mission[] = {};
+            friendlyForces[] = {};
+            enemyForces[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
             specialTasks[] = {};
-            mission[] = {};
-            situation[] = {};
-            enemyForces[] = {};
-            friendlyForces[] = {};
+            logistics[] = {};
         };
         class INDFOR {
-            logistics[] = {};
+            situation[] = {};
+            mission[] = {};
+            friendlyForces[] = {};
+            enemyForces[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
             specialTasks[] = {};
-            mission[] = {};
-            situation[] = {};
-            enemyForces[] = {};
-            friendlyForces[] = {};
+            logistics[] = {};
         };
         class CIVILIAN {
-            logistics[] = {};
+            situation[] = {};
+            mission[] = {};
+            friendlyForces[] = {};
+            enemyForces[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
             specialTasks[] = {};
-            mission[] = {};
-            situation[] = {};
-            enemyForces[] = {};
-            friendlyForces[] = {};
+            logistics[] = {};
         };
         class GAME_MASTER {
-            logistics[] = {};
+            situation[] = {};
+            mission[] = {};
+            friendlyForces[] = {};
+            enemyForces[] = {};
             commandersIntent[] = {};
             movementPlan[] = {};
             fireSupportPlan[] = {};
             specialTasks[] = {};
-            mission[] = {};
-            situation[] = {};
-            enemyForces[] = {};
-            friendlyForces[] = {};
+            logistics[] = {};
         };
     };
     /*
