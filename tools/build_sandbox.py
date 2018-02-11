@@ -25,7 +25,7 @@ if os.path.isdir(sandbox_dir):
 copy_folder("../ARCMF.VR", sandbox_dir)
 shutil.copy("description.ext", sandbox_dir)
 
-for t in ["abel","Altis","Bootcamp_ACR","Bozcaada","cain","Chernarus","Chernarus_Summer","Desert_E","Desert_Island","eden","fallujah","FDF_Isle1_a","IsolaDiCapraia","mbg_celle2","MCN_Aliabad","namalsk","noe","Porto","ProvingGrounds_PMC","Sara","Shapur_BAF","Stratis","Takistan","Tanoa","Thirsk","ThirskW","torabora","utes","VR","vt5","WL_WRoute191","Woodland_ACR","Zargabad","Caribou","pja310","pja314","lythium","fata","xcam_taunus","Malden"]:
+for t in ["abel","Altis","Bootcamp_ACR","Bozcaada","cain","Chernarus","Chernarus_Summer","Desert_E","Desert_Island","eden","FDF_Isle1_a","mbg_celle2","noe","Porto","ProvingGrounds_PMC","Sara","Shapur_BAF","Stratis","Takistan","Tanoa","Thirsk","ThirskW","utes","VR","WL_WRoute191","Woodland_ACR","Zargabad","Caribou","fata","Malden"]:
 	try:
 		subprocess.check_output([
 			"makepbo",
