@@ -106,24 +106,24 @@ class CfgARCMF {
         class BLUFOR {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
-            AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac", "m"};
-            AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgtl", "mattl", "mtrl", "fac"};
+            AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgl", "matl", "fac", "m"};
+            AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgl", "matl", "mtrl", "fac"};
             AN_PRC_117F[] = {};
             AN_PRC_77[] = {};
         };
         class OPFOR {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
-            AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac", "m"};
-            AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgtl", "mattl", "mtrl", "fac"};
+            AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgl", "matl", "fac", "m"};
+            AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgl", "matl", "mtrl", "fac"};
             AN_PRC_117F[] = {};
             AN_PRC_77[] = {};
         };
         class INDFOR {
             languages[] = {"english","russian","greek"};
             AN_PRC_343[] = {"all"};
-            AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgtl", "mattl", "fac", "m"};
-            AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgtl", "mattl", "mtrl", "fac"};
+            AN_PRC_148[] = {"co", "dc", "ftl", "vc", "mmgl", "matl", "fac", "m"};
+            AN_PRC_152[] = {"co", "dc", "cp", "p", "vc", "mmgl", "matl", "mtrl", "fac"};
             AN_PRC_117F[] = {};
             AN_PRC_77[] = {};
         };
