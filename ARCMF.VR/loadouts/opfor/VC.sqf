@@ -10,7 +10,7 @@ this addItemToUniform "ACE_IR_Strobe_Item";
 this addVest "V_TacVest_oli";
 for "_i" from 1 to 3 do {this addItemToVest "CUP_30Rnd_9x19_Vityaz";};
 
-this addHeadgear "H_Tank_black_F";
+this addHeadgear "CUP_H_SLA_TankerHelmet";
 
 this addWeapon "CUP_smg_vityaz_vfg_top_rail";
 this addPrimaryWeaponItem "optic_holosight_smg_blk_f";

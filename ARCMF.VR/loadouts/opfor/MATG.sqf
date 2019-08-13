@@ -13,8 +13,11 @@ this addVest selectRandom ["CUP_V_RUS_6B45_1", "CUP_V_RUS_6B45_2"];
 for "_i" from 1 to 7 do {this addItemToVest "hlc_30Rnd_545x39_B_AK";};
 for "_i" from 1 to 2 do {this addItemToVest "hlc_30Rnd_545x39_t_ak";};
 
-this addBackpack "CUP_B_RUS_Backpack";
-for "_i" from 1 to 2 do {this addItemToBackpack "Vorona_HEAT";};
+this addWeapon "launch_O_Vorona_green_F";
+this addPrimaryWeaponItem "CUP_AT13_M";
+
+this addBackpack "B_Carryall_oli";
+this addItemToBackpack "CUP_AT13_M";
 
 this addHeadgear "CUP_H_RUS_6B47";
 this addGoggles "CUP_G_PMC_RadioHeadset";
@@ -22,7 +25,6 @@ this addGoggles "CUP_G_PMC_RadioHeadset";
 this addWeapon "hlc_rifle_aku12";
 this addPrimaryWeaponItem "optic_aco";
 this addPrimaryWeaponItem "acc_pointer_ir";
-this addWeapon "launch_O_Vorona_green_F";
 
 this linkItem "ItemMap";
 this linkItem "ItemCompass";

@@ -14,9 +14,8 @@ this addVest selectRandom ["CUP_V_RUS_6B45_1", "CUP_V_RUS_6B45_2"];
 for "_i" from 1 to 7 do {this addItemToVest "hlc_30Rnd_545x39_B_AK";};
 for "_i" from 1 to 2 do {this addItemToVest "hlc_30Rnd_545x39_t_ak";};
 
-this addBackpack "CUP_B_RUS_Backpack";
-this addItemToBackpack "Vorona_HEAT";
-this addItemToBackpack "Vorona_HE";
+this addBackpack "B_Carryall_oli";
+this addItemToBackpack "CUP_AT13_M";
 
 this addHeadgear "CUP_H_RUS_6B47";
 this addGoggles "CUP_G_PMC_RadioHeadset";

@@ -14,7 +14,7 @@ this addBackpack "B_FieldPack_green_F";
 this addItemToBackpack "ToolKit";
 this addItemToBackpack "ACE_EntrenchingTool";
 
-this addHeadgear "H_Tank_black_F";
+this addHeadgear "CUP_H_SLA_TankerHelmet";
 
 this addWeapon "CUP_smg_vityaz_vfg_top_rail";
 this addPrimaryWeaponItem "optic_holosight_smg_blk_f";
