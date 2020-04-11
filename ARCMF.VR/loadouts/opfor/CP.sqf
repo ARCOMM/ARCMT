@@ -1,21 +1,23 @@
-this forceAddUniform "rhs_uniform_gorka_r_g";
-for "_i" from 1 to 2 do {this addItemToUniform "ACE_fieldDressing";};
+this forceAddUniform selectRandom ["CUP_U_O_RUS_EMR_1", "CUP_U_O_RUS_EMR_2"];
+for "_i" from 1 to 3 do {this addItemToUniform "ACE_fieldDressing";};
+this addItemToUniform "ACE_Flashlight_XL50";
+this addItemToUniform "ACE_morphine";
 this addItemToUniform "ACE_tourniquet";
-this addItemToUniform "ACE_morphine";
+for "_i" from 1 to 2 do {this addItemToUniform "SmokeShellPurple";};
+for "_i" from 1 to 3 do {this addItemToUniform "Chemlight_red";};
 this addItemToUniform "ACE_IR_Strobe_Item";
-this addItemToUniform "ACE_Flashlight_KSF1";
-this addItemToUniform "ACE_EarPlugs";
-this addItemToUniform "ACE_morphine";
-this addVest "rhs_6b23_crew";
-for "_i" from 1 to 4 do {this addItemToVest "rhs_30Rnd_545x39_AK";};
-this addItemToVest "rhs_mag_m18_green";
-this addItemToVest "rhs_mag_m18_red";
-this addItemToVest "rhs_mag_9x19_17";
-this addHeadgear "rhs_zsh7a_mike_green";
-this addWeapon "rhs_weap_ak74m_folded";
-this addWeapon "rhs_weap_pya";
+
+this addVest "V_TacVest_oli";
+for "_i" from 1 to 3 do {this addItemToVest "CUP_30Rnd_9x19_Vityaz";};
+
+this addBackpack "ACE_NonSteerableParachute";
+
+this addHeadgear "CUP_H_RUS_ZSH_Shield_Down";
+
+this addWeapon "CUP_smg_vityaz_vfg_top_rail";
+this addPrimaryWeaponItem "optic_holosight_smg_blk_f";
+
 this linkItem "ItemMap";
 this linkItem "ItemCompass";
 this linkItem "ItemWatch";
-this linkItem "ItemGPS";
-this linkItem "rhs_1PN138";
+this linkItem "ACE_NVG_Wide";
