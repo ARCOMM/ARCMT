@@ -1,5 +1,5 @@
 this forceAddUniform selectRandom ["CUP_U_O_RUS_EMR_1", "CUP_U_O_RUS_EMR_2"];
-for "_i" from 1 to 3 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
 this addItemToUniform "ACE_Flashlight_XL50";
 this addItemToUniform "ACE_morphine";
 this addItemToUniform "ACE_tourniquet";
