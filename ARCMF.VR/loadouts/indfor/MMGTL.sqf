@@ -1,5 +1,5 @@
 this forceAddUniform "CUP_U_B_BAF_MTP_S3_RolledUp";
-for "_i" from 1 to 3 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
 this addItemToUniform "ACE_CableTie";
 this addItemToUniform "ACE_EarPlugs";
 this addItemToUniform "ACE_morphine";
