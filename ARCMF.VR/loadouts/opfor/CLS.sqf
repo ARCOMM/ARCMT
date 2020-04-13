@@ -13,11 +13,14 @@ this addVest selectRandom ["CUP_V_RUS_6B45_1", "CUP_V_RUS_6B45_2"];
 for "_i" from 1 to 7 do {this addItemToVest "hlc_30Rnd_545x39_B_AK";};
 for "_i" from 1 to 2 do {this addItemToVest "hlc_30Rnd_545x39_t_ak";};
 
-this addBackpack "B_AssaultPack_rgr";
-for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
-for "_i" from 1 to 5 do {this addItemToBackpack "ACE_morphine";};
+this addBackpack "B_Carryall_oli";
+for "_i" from 1 to 6 do {this addItemToBackpack "ACE_bodyBag";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_salineIV_250";};
+for "_i" from 1 to 20 do {this addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_morphine";};
 for "_i" from 1 to 5 do {this addItemToBackpack "ACE_epinephrine";};
-for "_i" from 1 to 3 do {this addItemToBackpack "ACE_personalAidKit";};
+for "_i" from 1 to 5 do {this addItemToBackpack "ACE_tourniquet";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_splint";};
 
 this addHeadgear "CUP_H_RUS_6B47";
 this addGoggles "CUP_G_PMC_RadioHeadset";
