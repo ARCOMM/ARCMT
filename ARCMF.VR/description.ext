@@ -1,6 +1,6 @@
 onLoadName = "ARCMF";
 onLoadMission = "ARCOMM Mission Framework.";
-author = "Kingsley, tryteyker, Krijger";
+author = "Kingsley, tryteyker, Krijger, RamenNoodleNinja";
 
 #include "config.hpp"
-#include "\z\arcore\addons\main\bootstrap.hpp"
+#include "bootstrap.hpp"
