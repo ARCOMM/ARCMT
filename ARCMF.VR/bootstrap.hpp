@@ -8,7 +8,7 @@ class Header {
     #endif
 };
 
-loadScreen = data\splash.paa);
+loadScreen = data\splash.paa;
 enableDebugConsole = 1;
 disabledAI = 1;
 respawnDelay = 3;
