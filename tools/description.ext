@@ -1,8 +1,0 @@
-#define SANDBOX 1
-
-onLoadName = "Sandbox";
-onLoadMission = "ARCOMM Mission Framework.";
-author = "Kingsley, tryteyker";
-
-#include "config.hpp"
-#include "\z\arcore\addons\main\bootstrap.hpp"

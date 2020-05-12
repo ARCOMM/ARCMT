@@ -1,6 +1,0 @@
-onLoadName = "ARCMF";
-onLoadMission = "ARCOMM Mission Framework.";
-author = "Kingsley, tryteyker, Krijger, RamenNoodleNinja";
-
-#include "config.hpp"
-#include "bootstrap.hpp"
