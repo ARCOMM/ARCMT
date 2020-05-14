@@ -1446,7 +1446,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[11]";
+							value="[11,0]";
 						};
 					};
 				};
@@ -2562,7 +2562,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[12]";
+							value="[12,1]";
 						};
 					};
 				};
@@ -2619,7 +2619,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[]";
+							value="[0]";
 						};
 					};
 				};
@@ -20743,7 +20743,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[26]";
+							value="[26,2]";
 						};
 					};
 				};
@@ -20800,7 +20800,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[]";
+							value="[0]";
 						};
 					};
 				};
@@ -24489,7 +24489,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[9,2,0]";
+							value="[9,2]";
 						};
 					};
 				};
