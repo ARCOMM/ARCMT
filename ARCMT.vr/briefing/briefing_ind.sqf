@@ -19,12 +19,11 @@ private _situation = ["diary", ["Situation","
 <font size='18'>ENEMY FORCES</font>
 <br/>
 *** Provide information on enemy forces.***
-<br/><br/>"
+<br/><br/>
 
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
 *** Detail friendly forces that are external to the playable force. ***
-
 "]];
 
 /* ===============================================
