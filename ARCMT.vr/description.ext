@@ -11,38 +11,6 @@ class CfgDebriefingSections {
     };
 };
 
-class CfgDebriefing
-{
-    class Success
-    {
-        title = "Mission Success";
-        subtitle = "";
-        description = "";
-        // pictureBackground = "";
-        // picture = "";
-        // pictureColor[] = {0.0,0.3,0.6,1};
-    };
-    class Failed
-    {
-        title = "Mission Failed";
-        subtitle = "";
-        description = "";
-        // pictureBackground = "";
-        // picture = "";
-        // pictureColor[] = {0.0,0.3,0.6,1};
-    };
-    class CustomEnding1
-    {
-        title = "Custom Ending #1";
-        subtitle = "";
-        description = "*** Explanation for the debriefing page ***";
-        // pictureBackground = "";
-        // picture = "";
-        // pictureColor[] = {0.0,0.3,0.6,1};
-    };
-
-};
-
 // DO NOT REMOVE. Include the macros for custom loadouts.
 #include "loadouts\_macros.hpp"
 
