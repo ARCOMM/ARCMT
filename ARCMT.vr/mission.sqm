@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={66.594986,50.381107,2.0109801};
-		dir[]={-0.11801117,-0.87454706,0.47050884};
-		up[]={-0.21277413,0.48484412,0.84832519};
-		aside[]={0.97001058,4.0046871e-008,0.24329349};
+		pos[]={47.019768,50.381107,-2.3426011};
+		dir[]={-0.027861489,-0.72048777,0.69300789};
+		up[]={-0.028948022,0.69334948,0.72002077};
+		aside[]={0.99924952,-1.4260877e-007,0.040172808};
 	};
 };
 binarizationWanted=0;
@@ -247,7 +247,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="[[""English"",[1,0,2]]]";
+					value="[[""English"",[1]],[""Russian"",[0]],[""Greek"",[2]]]";
 				};
 			};
 		};
@@ -285,7 +285,7 @@ class CustomAttributes
 							"BOOL"
 						};
 					};
-					value=1;
+					value=0;
 				};
 			};
 		};
@@ -334,7 +334,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category3
+	class Category7
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -76575,7 +76575,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="["""",""Delta 3-3"","""",0]";
+							value="["""",""Delta 3-3"","""",1]";
 						};
 					};
 				};
@@ -77558,7 +77558,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="["""",""Delta 3-3"","""",0]";
+							value="["""",""Delta 3-3"","""",1]";
 						};
 					};
 				};
@@ -78427,7 +78427,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="["""",""Delta 3-3"","""",0]";
+							value="["""",""Delta 3-3"","""",1]";
 						};
 					};
 				};
