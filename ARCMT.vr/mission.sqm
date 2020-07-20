@@ -8,14 +8,14 @@ class EditorData
 	toggles=5;
 	class ItemIDProvider
 	{
-		nextID=1531;
+		nextID=1570;
 	};
 	class Camera
 	{
-		pos[]={47.019768,50.381107,-2.3426011};
-		dir[]={-0.027861489,-0.72048777,0.69300789};
-		up[]={-0.028948022,0.69334948,0.72002077};
-		aside[]={0.99924952,-1.4260877e-007,0.040172808};
+		pos[]={50.636433,30.354374,23.798527};
+		dir[]={0.00044105097,-0.88831717,0.45941994};
+		up[]={0.00085318671,0.45911244,0.88837725};
+		aside[]={1.0000744,1.053927e-007,-0.00096139952};
 	};
 };
 binarizationWanted=0;
@@ -29,13 +29,16 @@ addons[]=
 	"ace_nouniformrestrictions",
 	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Curator_Curator",
-	"TMF_safestart"
+	"TMF_safestart",
+	"ace_gforces",
+	"ace_parachute",
+	"FIR_PilotCrewPack_US"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=11;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -98,6 +101,18 @@ class AddonsMetaData
 			author="Head";
 			url="http://www.teamonetactical.com";
 		};
+		class Item9
+		{
+			className="ace_parachute";
+			name="ACE3 - Parachute";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item10
+		{
+			className="FIR_PilotCrewPack_US";
+			name="FIR_PilotCrewPack_US";
+		};
 	};
 };
 class DynamicSimulation
@@ -134,25 +149,6 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATTrackerCondition";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"STRING"
-						};
-					};
-					value="true";
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="TMF_ORBATTracker";
 			expression="false";
 			class Value
@@ -167,6 +163,25 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="TMF_ORBATTrackerCondition";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="true";
 				};
 			};
 		};
@@ -185,7 +200,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="[[0,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",2],[]],[[12,"""","""","""",""Gamblers"",3],[]],[[13,"""","""","""",""Phantoms"",4],[]],[[14,"""","""","""",""Ravens"",5],[]],[[10,"""","""","""",""Weapons Squad"",8],[]]]]],[1,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",2],[]],[[12,"""","""","""",""Gamblers"",3],[]],[[13,"""","""","""",""Phantoms"",4],[]],[[14,"""","""","""",""Ravens"",5],[]],[[10,"""","""","""",""Weapons Squad"",8],[]]]]],[2,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",2],[]],[[12,"""","""","""",""Gamblers"",3],[]],[[13,"""","""","""",""Phantoms"",4],[]],[[14,"""","""","""",""Ravens"",5],[]],[[10,"""","""","""",""Weapons Squad"",8],[]]]]]]";
+					value="[[0,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[16,"""","""","""",""Fixed Wing"",5],[]]]]],[1,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[17,"""","""","""",""Fixed Wing"",5],[]]]]],[2,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[15,"""","""","""",""Fixed Wing"",5],[]]]]]]";
 				};
 			};
 		};
@@ -334,7 +349,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category7
+	class Category3
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -416,7 +431,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=116;
+		items=119;
 		class Item0
 		{
 			dataType="Group";
@@ -51040,7 +51055,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="[""x\tmf\addons\orbat\textures\green_sl_flag.paa"",""CSL"",22]";
+									value="[""x\tmf\addons\orbat\textures\green_sl_flag.paa"",""CSL"",11]";
 								};
 							};
 						};
@@ -51214,7 +51229,7 @@ class Mission
 											"STRING"
 										};
 									};
-									value="[""x\tmf\addons\orbat\textures\green_cross.paa"",""CM"",23]";
+									value="[""x\tmf\addons\orbat\textures\green_cross.paa"",""CM"",12]";
 								};
 							};
 						};
@@ -52432,7 +52447,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""x\tmf\addons\orbat\textures\green_inf.paa"",""C1"",""x\tmf\addons\orbat\textures\modif_o.paa"",11]";
+							value="[""x\tmf\addons\orbat\textures\green_inf.paa"",""C1"",""x\tmf\addons\orbat\textures\modif_o.paa"",13]";
 						};
 					};
 				};
@@ -53469,7 +53484,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""x\tmf\addons\orbat\textures\green_inf.paa"",""C2"",""x\tmf\addons\orbat\textures\modif_o.paa"",12]";
+							value="[""x\tmf\addons\orbat\textures\green_inf.paa"",""C2"",""x\tmf\addons\orbat\textures\modif_o.paa"",22]";
 						};
 					};
 				};
@@ -54506,7 +54521,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="[""x\tmf\addons\orbat\textures\green_inf.paa"",""C3"",""x\tmf\addons\orbat\textures\modif_o.paa"",13]";
+							value="[""x\tmf\addons\orbat\textures\green_inf.paa"",""C3"",""x\tmf\addons\orbat\textures\modif_o.paa"",23]";
 						};
 					};
 				};
@@ -75754,48 +75769,29 @@ class Mission
 		class Item113
 		{
 			dataType="Group";
-			side="East";
+			side="Independent";
 			class Entities
 			{
-				items=8;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={48,5.0014391,56.049999};
+						position[]={84,5.0014391,38.049999};
 					};
-					side="East";
+					side="Independent";
 					flags=7;
 					class Attributes
 					{
-						description="Spare Rifleman@JIP";
+						description="Pilot@Falcon";
 						isPlayable=1;
 					};
-					id=1505;
-					type="O_Soldier_F";
+					id=1535;
+					type="I_pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[""r"",""ru_army_2010"",true]";
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="TMF_SpecialistMarker";
 							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
@@ -75811,6 +75807,25 @@ class Mission
 										};
 									};
 									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="tk_locals";
 								};
 							};
 						};
@@ -75835,7 +75850,83 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="TMF_assignGear_faction";
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="GreekHead_A3_01";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""jp"",""tk_locals"",true]";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="TMF_assignGear_role";
 							expression="false";
 							class Value
 							{
@@ -75848,11 +75939,11 @@ class Mission
 											"STRING"
 										};
 									};
-									value="ru_army_2010";
+									value="jp";
 								};
 							};
 						};
-						nAttributes=4;
+						nAttributes=8;
 					};
 				};
 				class Item1
@@ -75860,39 +75951,20 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={49,5.0014391,56.049999};
+						position[]={85,5.0014391,38.049999};
 					};
-					side="East";
+					side="Independent";
 					flags=5;
 					class Attributes
 					{
-						description="Spare Rifleman@JIP";
+						description="Pilot@Falcon";
 						isPlayable=1;
 					};
-					id=1506;
-					type="O_Soldier_F";
+					id=1536;
+					type="I_pilot_F";
 					class CustomAttributes
 					{
 						class Attribute0
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[""r"",""ru_army_2010"",true]";
-								};
-							};
-						};
-						class Attribute1
 						{
 							property="TMF_SpecialistMarker";
 							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
@@ -75908,6 +75980,25 @@ class Mission
 										};
 									};
 									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="tk_locals";
 								};
 							};
 						};
@@ -75932,8 +76023,27 @@ class Mission
 						};
 						class Attribute3
 						{
-							property="TMF_assignGear_faction";
-							expression="false";
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
 							class Value
 							{
 								class data
@@ -75945,32 +76055,11 @@ class Mission
 											"STRING"
 										};
 									};
-									value="ru_army_2010";
+									value="Male06GRE";
 								};
 							};
 						};
-						nAttributes=4;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={48,5.0014391,55.049999};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						description="Spare Rifleman@JIP";
-						isPlayable=1;
-					};
-					id=1507;
-					type="O_Soldier_F";
-					class CustomAttributes
-					{
-						class Attribute0
+						class Attribute5
 						{
 							property="TMF_assignGear_full";
 							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
@@ -75985,51 +76074,13 @@ class Mission
 											"STRING"
 										};
 									};
-									value="[""r"",""ru_army_2010"",true]";
+									value="[""jp"",""tk_locals"",true]";
 								};
 							};
 						};
-						class Attribute1
+						class Attribute6
 						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_assignGear_faction";
+							property="TMF_assignGear_role";
 							expression="false";
 							class Value
 							{
@@ -76042,509 +76093,24 @@ class Mission
 											"STRING"
 										};
 									};
-									value="ru_army_2010";
+									value="jp";
 								};
 							};
 						};
-						nAttributes=4;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={49,5.0014391,55.049999};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						description="Spare Rifleman@JIP";
-						isPlayable=1;
-					};
-					id=1508;
-					type="O_Soldier_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[""r"",""ru_army_2010"",true]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ru_army_2010";
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={48,5.0014391,54.049999};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						description="Spare Rifleman@JIP";
-						isPlayable=1;
-					};
-					id=1509;
-					type="O_Soldier_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[""r"",""ru_army_2010"",true]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ru_army_2010";
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={49,5.0014391,54.049999};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						description="Spare Rifleman@JIP";
-						isPlayable=1;
-					};
-					id=1510;
-					type="O_Soldier_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[""r"",""ru_army_2010"",true]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ru_army_2010";
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={48,5.0014391,53.049999};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						description="Spare Rifleman@JIP";
-						isPlayable=1;
-					};
-					id=1511;
-					type="O_Soldier_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[""r"",""ru_army_2010"",true]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ru_army_2010";
-								};
-							};
-						};
-						nAttributes=4;
-					};
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={49,5.0014391,53.049999};
-					};
-					side="East";
-					flags=5;
-					class Attributes
-					{
-						description="Spare Rifleman@JIP";
-						isPlayable=1;
-					};
-					id=1512;
-					type="O_Soldier_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="TMF_assignGear_full";
-							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="[""r"",""ru_army_2010"",true]";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="TMF_SpecialistMarker";
-							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="["""",""""]";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="TMF_assignGear_enabled";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="TMF_assignGear_faction";
-							expression="false";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="ru_army_2010";
-								};
-							};
-						};
-						nAttributes=4;
+						nAttributes=7;
 					};
 				};
 			};
 			class Attributes
 			{
 			};
-			id=1504;
+			id=1534;
 			class CustomAttributes
 			{
 				class Attribute0
 				{
-					property="groupID";
-					expression="[_this, _value] call CBA_fnc_setCallsign";
+					property="TMF_Channellist";
+					expression="[_this,'TMF_Channellist',_value] call tmf_common_fnc_initGroupVar;";
 					class Value
 					{
 						class data
@@ -76556,7 +76122,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="JIP";
+							value="[25,2]";
 						};
 					};
 				};
@@ -76575,14 +76141,854 @@ class Mission
 									"STRING"
 								};
 							};
-							value="["""",""Delta 3-3"","""",1]";
+							value="[""x\tmf\addons\orbat\textures\purple_fixedwing.paa"",""FLC"","""",7]";
 						};
 					};
 				};
-				nAttributes=2;
+				class Attribute2
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="FLC";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="TMF_OrbatParent";
+					expression="[_this,'TMF_OrbatParent',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=15;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 		class Item114
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={45,5.0014391,38.049999};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						description="Pilot@Falcon";
+						isPlayable=1;
+					};
+					id=1538;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="us_army_2010";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male09ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""jp"",""us_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="TMF_assignGear_role";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="jp";
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={46,5.0014391,38.049999};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Pilot@Falcon";
+						isPlayable=1;
+					};
+					id=1539;
+					type="B_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="us_army_2010";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENG";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""jp"",""us_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="TMF_assignGear_role";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="jp";
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1537;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="TMF_Channellist";
+					expression="[_this,'TMF_Channellist',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[24,2]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TMF_groupMarker";
+					expression="[_this,'TMF_groupMarker',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[""x\tmf\addons\orbat\textures\purple_fixedwing.paa"",""FLC"","""",6]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="FLC";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="TMF_OrbatParent";
+					expression="[_this,'TMF_OrbatParent',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=17;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item115
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={45,5.0014391,66.050003};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						description="Pilot@Falcon";
+						isPlayable=1;
+					};
+					id=1541;
+					type="O_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""jp"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="TMF_assignGear_role";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="jp";
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={46,5.0014391,66.050003};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="Pilot@Falcon";
+						isPlayable=1;
+					};
+					id=1542;
+					type="O_Pilot_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02PER";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""jp"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="TMF_assignGear_role";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="jp";
+								};
+							};
+						};
+						nAttributes=7;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1540;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="TMF_Channellist";
+					expression="[_this,'TMF_Channellist',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[2,25]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TMF_groupMarker";
+					expression="[_this,'TMF_groupMarker',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[""x\tmf\addons\orbat\textures\purple_fixedwing.paa"",""FLC"","""",6]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="FLC";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="TMF_OrbatParent";
+					expression="[_this,'TMF_OrbatParent',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=16;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item116
 		{
 			dataType="Group";
 			side="West";
@@ -76603,7 +77009,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1514;
+					id=1544;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -76719,7 +77125,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1515;
+					id=1545;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -76835,7 +77241,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1516;
+					id=1546;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -76951,7 +77357,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1517;
+					id=1547;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -77067,7 +77473,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1518;
+					id=1548;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -77183,7 +77589,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1519;
+					id=1549;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -77299,7 +77705,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1520;
+					id=1550;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -77415,7 +77821,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1521;
+					id=1551;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -77521,7 +77927,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1513;
+			id=1543;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -77558,7 +77964,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="["""",""Delta 3-3"","""",1]";
+							value="["""","""","""",6]";
 						};
 					};
 				};
@@ -77603,7 +78009,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item115
+		class Item117
 		{
 			dataType="Group";
 			side="Independent";
@@ -77624,7 +78030,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1523;
+					id=1553;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -77721,7 +78127,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1524;
+					id=1554;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -77818,7 +78224,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1525;
+					id=1555;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -77915,7 +78321,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1526;
+					id=1556;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -78012,7 +78418,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1527;
+					id=1557;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -78109,7 +78515,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1528;
+					id=1558;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -78206,7 +78612,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1529;
+					id=1559;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -78303,7 +78709,7 @@ class Mission
 						description="Spare Rifleman@JIP";
 						isPlayable=1;
 					};
-					id=1530;
+					id=1560;
 					type="I_soldier_F";
 					class CustomAttributes
 					{
@@ -78390,7 +78796,7 @@ class Mission
 			class Attributes
 			{
 			};
-			id=1522;
+			id=1552;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -78427,7 +78833,838 @@ class Mission
 									"STRING"
 								};
 							};
-							value="["""",""Delta 3-3"","""",1]";
+							value="["""","""","""",6]";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item118
+		{
+			dataType="Group";
+			side="East";
+			class Entities
+			{
+				items=8;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={48,5.0014391,56.049999};
+					};
+					side="East";
+					flags=7;
+					class Attributes
+					{
+						description="Spare Rifleman@JIP";
+						isPlayable=1;
+					};
+					id=1562;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""r"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={49,5.0014391,56.049999};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="Spare Rifleman@JIP";
+						isPlayable=1;
+					};
+					id=1563;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""r"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={48,5.0014391,55.049999};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="Spare Rifleman@JIP";
+						isPlayable=1;
+					};
+					id=1564;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""r"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={49,5.0014391,55.049999};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="Spare Rifleman@JIP";
+						isPlayable=1;
+					};
+					id=1565;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""r"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={48,5.0014391,54.049999};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="Spare Rifleman@JIP";
+						isPlayable=1;
+					};
+					id=1566;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""r"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={49,5.0014391,54.049999};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="Spare Rifleman@JIP";
+						isPlayable=1;
+					};
+					id=1567;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""r"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={48,5.0014391,53.049999};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="Spare Rifleman@JIP";
+						isPlayable=1;
+					};
+					id=1568;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""r"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={49,5.0014391,53.049999};
+					};
+					side="East";
+					flags=5;
+					class Attributes
+					{
+						description="Spare Rifleman@JIP";
+						isPlayable=1;
+					};
+					id=1569;
+					type="O_Soldier_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="TMF_assignGear_full";
+							expression="[_this,_value] call tmf_assignGear_fnc_helper;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[""r"",""ru_army_2010"",true]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="TMF_SpecialistMarker";
+							expression="_this setVariable ['TMF_SpecialistMarker',_value,true];";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="["""",""""]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="TMF_assignGear_enabled";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="TMF_assignGear_faction";
+							expression="false";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="ru_army_2010";
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1561;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="groupID";
+					expression="[_this, _value] call CBA_fnc_setCallsign";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="JIP";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="TMF_groupMarker";
+					expression="[_this,'TMF_groupMarker',_value] call tmf_common_fnc_initGroupVar;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="["""","""","""",6]";
 						};
 					};
 				};
