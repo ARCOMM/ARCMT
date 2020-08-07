@@ -9,6 +9,11 @@ class CfgDebriefingSections {
 		title = "Kill Tracker";
 		variable = "acex_killTracker_outputText";
 	};
+	class tmf_adminlog
+	{
+		title = "TMF Log";
+		variable = "TMF_adminmenu_debrief";
+	};
 };
 
 class CfgDebriefing {
