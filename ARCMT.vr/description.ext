@@ -28,7 +28,7 @@ class CfgDebriefing {
 };
 
 // DO NOT REMOVE. Include the macros for custom loadouts.
-#include "loadouts\_macros.hpp"
+#include "\x\arc_misc\addons\tmf_loadouts\macros.inc"
 
 class CfgLoadouts {
 	class EXAMPLE_LOADOUT {
