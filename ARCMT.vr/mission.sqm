@@ -5,17 +5,17 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=5;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1570;
+		nextID=1593;
 	};
 	class Camera
 	{
-		pos[]={50.636433,30.354374,23.798527};
-		dir[]={0.00044105097,-0.88831717,0.45941994};
-		up[]={0.00085318671,0.45911244,0.88837725};
-		aside[]={1.0000744,1.053927e-007,-0.00096139952};
+		pos[]={48.481289,79.9804,-13.475907};
+		dir[]={0.028845554,-0.76148468,0.6476863};
+		up[]={0.033886686,0.64802361,0.76086652};
+		aside[]={0.99909258,7.278868e-008,-0.044496972};
 	};
 };
 binarizationWanted=0;
@@ -25,20 +25,19 @@ addons[]=
 	"A3_Characters_F_Mark",
 	"ace_explosives",
 	"A3_Characters_F_Orange",
-	"cfp_uniforms",
 	"ace_nouniformrestrictions",
 	"A3_Data_F_Curator_Virtual",
 	"A3_Modules_F_Curator_Curator",
 	"TMF_safestart",
 	"ace_gforces",
 	"ace_parachute",
-	"FIR_PilotCrewPack_US"
+	"tmf_spectator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=11;
+		items=10;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -69,49 +68,45 @@ class AddonsMetaData
 		};
 		class Item4
 		{
-			className="cfp_uniforms";
-			name="cfp_uniforms";
-			author="CFP Team";
-		};
-		class Item5
-		{
 			className="ace_nouniformrestrictions";
 			name="ACE3 - No Uniform Restrictions";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item6
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item7
 		{
 			className="TMF_safestart";
 			name="TMF: Safestart";
 			author="Head";
 			url="http://www.teamonetactical.com";
 		};
-		class Item9
+		class Item8
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item10
+		class Item9
 		{
-			className="FIR_PilotCrewPack_US";
-			name="FIR_PilotCrewPack_US";
+			className="TMF_spectator";
+			name="TMF: Spectator";
+			author="Head";
+			url="http://www.teamonetactical.com";
 		};
 	};
 };
@@ -127,14 +122,9 @@ randomSeed=652147;
 class ScenarioData
 {
 	author="Freddo, BorderKeeper";
-	overviewText="ARCOMM Mission Template";
-	onLoadMission="ARCOMM Mission Template";
+	overviewText="**PLACEHOLDER TEXT**";
 	disabledAI=1;
 	respawn=1;
-	class Header
-	{
-		gameType="Coop";
-	};
 	wreckManagerMode=1;
 	wreckLimit=25;
 	wreckRemovalMaxTime=3600;
@@ -148,25 +138,6 @@ class CustomAttributes
 	{
 		name="TMF_ORBAT_Settings";
 		class Attribute0
-		{
-			property="TMF_ORBATTracker";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"BOOL"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
 		{
 			property="TMF_ORBATTrackerCondition";
 			expression="false";
@@ -185,6 +156,25 @@ class CustomAttributes
 				};
 			};
 		};
+		class Attribute1
+		{
+			property="TMF_ORBATTracker";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
 		class Attribute2
 		{
 			property="TMF_ORBATSettings";
@@ -200,7 +190,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="[[0,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[16,"""","""","""",""Fixed Wing"",5],[]]]]],[1,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[17,"""","""","""",""Fixed Wing"",5],[]]]]],[2,[[0,""COY"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_company.paa"",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[15,"""","""","""",""Fixed Wing"",5],[]]]]]]";
+					value="[[0,[[0,"""","""","""",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[16,"""","""","""",""Fixed Wing"",5],[]]]]],[1,[[0,"""","""","""",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[17,"""","""","""",""Fixed Wing"",5],[]]]]],[2,[[0,"""","""","""",""Company"",0],[[[1,""1PLT"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_3dot.paa"",""First Platoon"",0],[[[3,""A"",""x\tmf\addons\orbat\textures\red_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Alpha Squad"",5],[]],[[4,""B"",""x\tmf\addons\orbat\textures\blue_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Bravo Squad"",6],[]],[[5,""C"",""x\tmf\addons\orbat\textures\green_inf.paa"",""x\tmf\addons\orbat\textures\modif_2dot.paa"",""Charlie Squad"",7],[]]]],[[11,"""","""","""",""Mikes"",1],[]],[[12,"""","""","""",""Gamblers"",2],[]],[[13,"""","""","""",""Phantoms"",3],[]],[[14,"""","""","""",""Ravens"",4],[]],[[10,"""","""","""",""Weapons Squad"",8],[]],[[15,"""","""","""",""Fixed Wing"",5],[]]]]]]";
 				};
 			};
 		};
@@ -407,10 +397,11 @@ class CustomAttributes
 };
 class Mission
 {
+	assetType="Free";
 	class Intel
 	{
 		briefingName="ARCMT";
-		overviewText="ARCOMM Mission Template";
+		overviewText="**PLACEHOLDER TEXT**";
 		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0;
@@ -431,7 +422,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=119;
+		items=135;
 		class Item0
 		{
 			dataType="Group";
@@ -21623,42 +21614,6 @@ class Mission
 		};
 		class Item34
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12,5,22};
-			};
-			name="HC1";
-			isPlayable=1;
-			id=583;
-			type="HeadlessClient_F";
-		};
-		class Item35
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12,5,20};
-			};
-			name="HC2";
-			isPlayable=1;
-			id=584;
-			type="HeadlessClient_F";
-		};
-		class Item36
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={12,5,18};
-			};
-			name="HC3";
-			isPlayable=1;
-			id=585;
-			type="HeadlessClient_F";
-		};
-		class Item37
-		{
 			dataType="Group";
 			side="East";
 			class Entities
@@ -22269,7 +22224,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item38
+		class Item35
 		{
 			dataType="Group";
 			side="East";
@@ -22903,7 +22858,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item39
+		class Item36
 		{
 			dataType="Group";
 			side="East";
@@ -23363,7 +23318,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item40
+		class Item37
 		{
 			dataType="Group";
 			side="East";
@@ -24400,7 +24355,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item41
+		class Item38
 		{
 			dataType="Group";
 			side="East";
@@ -25437,7 +25392,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item42
+		class Item39
 		{
 			dataType="Group";
 			side="East";
@@ -26474,7 +26429,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item43
+		class Item40
 		{
 			dataType="Group";
 			side="East";
@@ -26934,7 +26889,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item44
+		class Item41
 		{
 			dataType="Group";
 			side="East";
@@ -27971,7 +27926,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item45
+		class Item42
 		{
 			dataType="Group";
 			side="East";
@@ -29008,7 +28963,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item46
+		class Item43
 		{
 			dataType="Group";
 			side="East";
@@ -30045,7 +30000,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item47
+		class Item44
 		{
 			dataType="Group";
 			side="East";
@@ -30505,7 +30460,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item48
+		class Item45
 		{
 			dataType="Group";
 			side="East";
@@ -31542,7 +31497,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item49
+		class Item46
 		{
 			dataType="Group";
 			side="East";
@@ -32579,7 +32534,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item50
+		class Item47
 		{
 			dataType="Group";
 			side="East";
@@ -33616,7 +33571,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item51
+		class Item48
 		{
 			dataType="Group";
 			side="East";
@@ -34076,7 +34031,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item52
+		class Item49
 		{
 			dataType="Group";
 			side="East";
@@ -34765,7 +34720,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item53
+		class Item50
 		{
 			dataType="Group";
 			side="East";
@@ -35454,7 +35409,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item54
+		class Item51
 		{
 			dataType="Group";
 			side="East";
@@ -35932,7 +35887,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item55
+		class Item52
 		{
 			dataType="Group";
 			side="East";
@@ -36602,7 +36557,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item56
+		class Item53
 		{
 			dataType="Group";
 			side="East";
@@ -37445,7 +37400,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item57
+		class Item54
 		{
 			dataType="Group";
 			side="East";
@@ -37924,7 +37879,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item58
+		class Item55
 		{
 			dataType="Group";
 			side="East";
@@ -38499,7 +38454,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item59
+		class Item56
 		{
 			dataType="Group";
 			side="East";
@@ -39074,7 +39029,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item60
+		class Item57
 		{
 			dataType="Group";
 			side="East";
@@ -39650,7 +39605,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item61
+		class Item58
 		{
 			dataType="Group";
 			side="East";
@@ -40226,7 +40181,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item62
+		class Item59
 		{
 			dataType="Group";
 			side="East";
@@ -40956,7 +40911,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item63
+		class Item60
 		{
 			dataType="Group";
 			side="East";
@@ -41686,7 +41641,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item64
+		class Item61
 		{
 			dataType="Group";
 			side="East";
@@ -42147,7 +42102,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item65
+		class Item62
 		{
 			dataType="Group";
 			side="East";
@@ -42607,7 +42562,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item66
+		class Item63
 		{
 			dataType="Group";
 			side="Independent";
@@ -43219,7 +43174,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item67
+		class Item64
 		{
 			dataType="Group";
 			side="Independent";
@@ -43872,7 +43827,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item68
+		class Item65
 		{
 			dataType="Group";
 			side="Independent";
@@ -44332,7 +44287,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item69
+		class Item66
 		{
 			dataType="Group";
 			side="Independent";
@@ -45369,7 +45324,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item70
+		class Item67
 		{
 			dataType="Group";
 			side="Independent";
@@ -46406,7 +46361,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item71
+		class Item68
 		{
 			dataType="Group";
 			side="Independent";
@@ -47443,7 +47398,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item72
+		class Item69
 		{
 			dataType="Group";
 			side="Independent";
@@ -47903,7 +47858,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item73
+		class Item70
 		{
 			dataType="Group";
 			side="Independent";
@@ -48940,7 +48895,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item74
+		class Item71
 		{
 			dataType="Group";
 			side="Independent";
@@ -49977,7 +49932,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item75
+		class Item72
 		{
 			dataType="Group";
 			side="Independent";
@@ -51014,7 +50969,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item76
+		class Item73
 		{
 			dataType="Group";
 			side="Independent";
@@ -51474,7 +51429,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item77
+		class Item74
 		{
 			dataType="Group";
 			side="Independent";
@@ -52511,7 +52466,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item78
+		class Item75
 		{
 			dataType="Group";
 			side="Independent";
@@ -53548,7 +53503,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item79
+		class Item76
 		{
 			dataType="Group";
 			side="Independent";
@@ -54585,7 +54540,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item80
+		class Item77
 		{
 			dataType="Group";
 			side="Independent";
@@ -55045,7 +55000,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item81
+		class Item78
 		{
 			dataType="Group";
 			side="Independent";
@@ -55542,7 +55497,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item82
+		class Item79
 		{
 			dataType="Group";
 			side="Independent";
@@ -56231,7 +56186,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item83
+		class Item80
 		{
 			dataType="Group";
 			side="Independent";
@@ -56709,7 +56664,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item84
+		class Item81
 		{
 			dataType="Group";
 			side="Independent";
@@ -57379,7 +57334,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item85
+		class Item82
 		{
 			dataType="Group";
 			side="Independent";
@@ -58222,7 +58177,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item86
+		class Item83
 		{
 			dataType="Group";
 			side="Independent";
@@ -58701,7 +58656,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item87
+		class Item84
 		{
 			dataType="Group";
 			side="Independent";
@@ -59276,7 +59231,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item88
+		class Item85
 		{
 			dataType="Group";
 			side="Independent";
@@ -59851,7 +59806,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item89
+		class Item86
 		{
 			dataType="Group";
 			side="Independent";
@@ -60427,7 +60382,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item90
+		class Item87
 		{
 			dataType="Group";
 			side="Independent";
@@ -61003,7 +60958,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item91
+		class Item88
 		{
 			dataType="Group";
 			side="Independent";
@@ -61733,7 +61688,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item92
+		class Item89
 		{
 			dataType="Group";
 			side="Independent";
@@ -62463,7 +62418,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item93
+		class Item90
 		{
 			dataType="Group";
 			side="Independent";
@@ -62923,7 +62878,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item94
+		class Item91
 		{
 			dataType="Group";
 			side="Independent";
@@ -63421,7 +63376,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item95
+		class Item92
 		{
 			dataType="Group";
 			side="East";
@@ -64110,7 +64065,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item96
+		class Item93
 		{
 			dataType="Group";
 			side="East";
@@ -64799,7 +64754,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item97
+		class Item94
 		{
 			dataType="Group";
 			side="East";
@@ -65488,7 +65443,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item98
+		class Item95
 		{
 			dataType="Group";
 			side="East";
@@ -66177,7 +66132,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item99
+		class Item96
 		{
 			dataType="Group";
 			side="East";
@@ -66866,7 +66821,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item100
+		class Item97
 		{
 			dataType="Group";
 			side="East";
@@ -67555,7 +67510,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item101
+		class Item98
 		{
 			dataType="Group";
 			side="West";
@@ -68245,7 +68200,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item102
+		class Item99
 		{
 			dataType="Group";
 			side="West";
@@ -68934,7 +68889,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item103
+		class Item100
 		{
 			dataType="Group";
 			side="West";
@@ -69623,7 +69578,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item104
+		class Item101
 		{
 			dataType="Group";
 			side="West";
@@ -70312,7 +70267,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item105
+		class Item102
 		{
 			dataType="Group";
 			side="West";
@@ -71002,7 +70957,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item106
+		class Item103
 		{
 			dataType="Group";
 			side="West";
@@ -71710,7 +71665,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item107
+		class Item104
 		{
 			dataType="Group";
 			side="Independent";
@@ -72399,7 +72354,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item108
+		class Item105
 		{
 			dataType="Group";
 			side="Independent";
@@ -72896,7 +72851,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item109
+		class Item106
 		{
 			dataType="Group";
 			side="Independent";
@@ -73642,7 +73597,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item110
+		class Item107
 		{
 			dataType="Group";
 			side="Independent";
@@ -74331,7 +74286,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item111
+		class Item108
 		{
 			dataType="Group";
 			side="Independent";
@@ -75020,7 +74975,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item112
+		class Item109
 		{
 			dataType="Group";
 			side="Independent";
@@ -75766,7 +75721,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item113
+		class Item110
 		{
 			dataType="Group";
 			side="Independent";
@@ -76186,7 +76141,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item114
+		class Item111
 		{
 			dataType="Group";
 			side="West";
@@ -76587,7 +76542,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item115
+		class Item112
 		{
 			dataType="Group";
 			side="East";
@@ -76988,7 +76943,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item116
+		class Item113
 		{
 			dataType="Group";
 			side="West";
@@ -78009,7 +77964,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item117
+		class Item114
 		{
 			dataType="Group";
 			side="Independent";
@@ -78840,7 +78795,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item118
+		class Item115
 		{
 			dataType="Group";
 			side="East";
@@ -79670,6 +79625,234 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item116
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16,5,18};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1570;
+			type="TMF_spectator_unit";
+		};
+		class Item117
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18,5,18};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1571;
+			type="TMF_spectator_unit";
+		};
+		class Item118
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={20,5,18};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1572;
+			type="TMF_spectator_unit";
+		};
+		class Item119
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={22,5,18};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1573;
+			type="TMF_spectator_unit";
+		};
+		class Item120
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={24,5,18};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1574;
+			type="TMF_spectator_unit";
+		};
+		class Item121
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26,5,18};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1575;
+			type="TMF_spectator_unit";
+		};
+		class Item122
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28,5,18};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1576;
+			type="TMF_spectator_unit";
+		};
+		class Item123
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={30,5,18};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1577;
+			type="TMF_spectator_unit";
+		};
+		class Item124
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={16,5,16};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1578;
+			type="TMF_spectator_unit";
+		};
+		class Item125
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18,5,16};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1579;
+			type="TMF_spectator_unit";
+		};
+		class Item126
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={20,5,16};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1580;
+			type="TMF_spectator_unit";
+		};
+		class Item127
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={22,5,16};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1581;
+			type="TMF_spectator_unit";
+		};
+		class Item128
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={24,5,16};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1582;
+			type="TMF_spectator_unit";
+		};
+		class Item129
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={26,5,16};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1583;
+			type="TMF_spectator_unit";
+		};
+		class Item130
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={28,5,16};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1584;
+			type="TMF_spectator_unit";
+		};
+		class Item131
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={30,5,16};
+			};
+			isPlayable=1;
+			description="Spectator";
+			id=1585;
+			type="TMF_spectator_unit";
+		};
+		class Item132
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12,5,22};
+			};
+			name="HC1";
+			isPlayable=1;
+			id=1586;
+			type="HeadlessClient_F";
+		};
+		class Item133
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12,5,20};
+			};
+			name="HC2";
+			isPlayable=1;
+			id=1587;
+			type="HeadlessClient_F";
+		};
+		class Item134
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={12,5,18};
+			};
+			name="HC3";
+			isPlayable=1;
+			id=1588;
+			type="HeadlessClient_F";
 		};
 	};
 };
