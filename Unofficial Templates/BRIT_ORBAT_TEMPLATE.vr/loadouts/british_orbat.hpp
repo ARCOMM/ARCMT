@@ -171,7 +171,7 @@ class run : r {
 	vest[] = {"CUP_V_B_BAF_MTP_Osprey_Mk4_Scout"};
 	magazines[] = {
 		LIST_7("CUP_30Rnd_556x45_Emag"),
-		LIST_2("HandGrenade"),
+		LIST_2("CUP_HandGrenade_L109A1_HE"),
 		LIST_2("SmokeShell"),
 		LIST_3("hlc_15Rnd_9x19_JHP_P226")
 	};
@@ -190,7 +190,7 @@ class smg : r {
     vest[] = {"CUP_V_B_BAF_MTP_Osprey_Mk4_Scout"};
     magazines[] = {
         LIST_10("hlc_30Rnd_9x19_GD_MP5"),
-        LIST_2("HandGrenade"),
+        LIST_2("CUP_HandGrenade_L109A1_HE"),
         LIST_2("SmokeShell"),
         LIST_3("hlc_15Rnd_9x19_JHP_P226")
     };
@@ -289,7 +289,7 @@ class sgt : sll {
 };
 
 class fac : co {
-displayName = "Forward Air Controller";
+	displayName = "Forward Air Controller";
 	vest[] = {"CUP_V_B_BAF_MTP_Osprey_Mk4_Officer"};
 	backpack[] = {"CUP_B_Predator_Radio_MTP"};
 	backpackItems[] = { FAC_GEAR };
@@ -304,7 +304,7 @@ displayName = "Forward Air Controller";
 };
 
 class rto : co {
-displayName = "RTO";
+	displayName = "RTO";
 	vest[] = {"CUP_V_B_BAF_MTP_Osprey_Mk4_Officer"};
 	backpack[] = {"CUP_B_Predator_Radio_MTP"};
 	linkedItems[] = {
@@ -312,13 +312,13 @@ displayName = "RTO";
 		"ItemCompass",
 		"ItemRadio",
 		"ACE_Altimeter",
-		"Rangefinder",
+		"ACE_VectorDay",
 		"ItemGPS"
 	};
 };
 
 class enll : sll {
-displayName = "Engineer (logistics) Lead";
+	displayName = "Engineer (logistics) Lead";
 	backpack[] = {"CUP_B_Bergen_BAF"};
 	traits[] = {
 		"engineer"
@@ -337,7 +337,7 @@ class ar : r {
 	silencer[] = {"hlc_muzzle_mag58_brake"};
 	magazines[] = {
 		LIST_5("CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M"),
-		LIST_1("HandGrenade"),
+		LIST_1("CUP_HandGrenade_L109A1_HE"),
 		LIST_1("SmokeShell")
 	};
 };
@@ -376,15 +376,20 @@ class rat : r {
 
 class dm : r {
 	displayName = "Designated Marksman";
-	primaryWeapon[] = {"srifle_DMR_03_tan_F"};
-	scope[] = {"optic_MRCO"};
-	bipod[] = {"bipod_01_F_snd"};
+	primaryWeapon[] = {"CUP_srifle_L129A1_HG"};
+	bipod[] = {"cup_bipod_harris_1a2_l_blk"};
+	scope[] = {"cup_optic_elcan_specterdr_kf_rmr_black"};
 	magazines[] = {
-		LIST_11("20Rnd_762x51_Mag"),
-		LIST_2("HandGrenade"),
-		LIST_2("SmokeShell")
+		LIST_10("CUP_20Rnd_762x51_L129_M"),
+		"CUP_HandGrenade_L109A1_HE",
+		"SmokeShell"
+	};
+	items[] += {
+		"ACE_MapTools",
+		"ACE_RangeCard"
 	};
 };
+
 
 class vdi : run {
 	displayName = "Vehicle Driver (infantry)";
@@ -470,7 +475,7 @@ class sn : r {
 	sidearmAttachments[] = {"cup_muzzle_snds_m9", "cup_acc_cz_m3x"};
 	magazines[] = {
 		LIST_8("7Rnd_408_Mag"),
-		LIST_2("HandGrenade"),
+		LIST_2("CUP_HandGrenade_L109A1_HE"),
 		LIST_2("SmokeShell"),
 		LIST_4("hlc_15Rnd_9x19_JHP_P226")
 	};
@@ -630,7 +635,7 @@ class hc : smg {
 	sidearmWeapon[] = {};
 	magazines[] = {
 		LIST_4("hlc_30Rnd_9x19_GD_MP5"),
-		LIST_1("HandGrenade"),
+		LIST_1("CUP_HandGrenade_L109A1_HE"),
 		LIST_1("SmokeShell"),
 		"SmokeShellPurple"
 	};
