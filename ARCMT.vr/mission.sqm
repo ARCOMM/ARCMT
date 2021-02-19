@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=22;
+		nextID=27;
 	};
 	class Camera
 	{
-		pos[]={71.441628,25.698112,27.819792};
-		dir[]={0.062307283,-0.94273913,0.32801226};
-		up[]={0.17593804,0.3334507,0.92620021};
-		aside[]={0.98252761,5.1094685e-007,-0.18663621};
+		pos[]={65.15416,30.986034,-12.08567};
+		dir[]={-0.29280341,-0.54836208,0.78345191};
+		up[]={-0.19206883,0.83605349,0.51392543};
+		aside[]={0.93681133,-2.7823262e-007,0.35011756};
 	};
 };
 binarizationWanted=0;
@@ -143,25 +143,6 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATTrackerCondition";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"STRING"
-						};
-					};
-					value="true";
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="TMF_ORBATTracker";
 			expression="false";
 			class Value
@@ -176,6 +157,25 @@ class CustomAttributes
 						};
 					};
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="TMF_ORBATTrackerCondition";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="true";
 				};
 			};
 		};
@@ -1292,6 +1292,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_HQ_GRP";
 							};
 							id=67;
 							class CustomAttributes
@@ -1754,6 +1755,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_ASL_GRP";
 							};
 							id=74;
 							class CustomAttributes
@@ -2797,6 +2799,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_A1_GRP";
 							};
 							id=77;
 							class CustomAttributes
@@ -3840,6 +3843,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_A2_GRP";
 							};
 							id=88;
 							class CustomAttributes
@@ -4883,6 +4887,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_A3_GRP";
 							};
 							id=99;
 							class CustomAttributes
@@ -5345,6 +5350,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_BSL_GRP";
 							};
 							id=110;
 							class CustomAttributes
@@ -6388,6 +6394,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_B1_GRP";
 							};
 							id=113;
 							class CustomAttributes
@@ -7431,6 +7438,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_B2_GRP";
 							};
 							id=124;
 							class CustomAttributes
@@ -8474,6 +8482,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_B3_GRP";
 							};
 							id=135;
 							class CustomAttributes
@@ -8936,6 +8945,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_CSL_GRP";
 							};
 							id=146;
 							class CustomAttributes
@@ -9979,6 +9989,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_C1_GRP";
 							};
 							id=149;
 							class CustomAttributes
@@ -11022,6 +11033,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_C2_GRP";
 							};
 							id=160;
 							class CustomAttributes
@@ -12065,6 +12077,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_C3_GRP";
 							};
 							id=171;
 							class CustomAttributes
@@ -12527,6 +12540,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_WSL_GRP";
 							};
 							id=182;
 							class CustomAttributes
@@ -13219,6 +13233,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_MMG1_GRP";
 							};
 							id=188;
 							class CustomAttributes
@@ -13911,6 +13926,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_MMG2_GRP";
 							};
 							id=1459;
 							class CustomAttributes
@@ -14603,6 +14619,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_HMG1_GRP";
 							};
 							id=1463;
 							class CustomAttributes
@@ -15314,6 +15331,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_HMG2_GRP";
 							};
 							id=1475;
 							class CustomAttributes
@@ -16006,6 +16024,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_MAT1_GRP";
 							};
 							id=209;
 							class CustomAttributes
@@ -16699,6 +16718,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_MAT2_GRP";
 							};
 							id=1455;
 							class CustomAttributes
@@ -17391,6 +17411,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_HAT1_GRP";
 							};
 							id=1467;
 							class CustomAttributes
@@ -18084,6 +18105,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_HAT2_GRP";
 							};
 							id=1471;
 							class CustomAttributes
@@ -18564,6 +18586,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_MANPADS_GRP";
 							};
 							id=231;
 							class CustomAttributes
@@ -19237,6 +19260,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_MTR_GRP";
 							};
 							id=235;
 							class CustomAttributes
@@ -19718,6 +19742,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_SN_GRP";
 							};
 							id=253;
 							class CustomAttributes
@@ -20565,6 +20590,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_ENG_GRP";
 							};
 							id=248;
 							class CustomAttributes
@@ -21143,6 +21169,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_M1_GRP";
 							};
 							id=386;
 							class CustomAttributes
@@ -21721,6 +21748,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_M2_GRP";
 							};
 							id=428;
 							class CustomAttributes
@@ -22300,6 +22328,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_G1_GRP";
 							};
 							id=456;
 							class CustomAttributes
@@ -22879,6 +22908,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_G2_GRP";
 							};
 							id=460;
 							class CustomAttributes
@@ -23689,6 +23719,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_PHT1_GRP";
 							};
 							id=488;
 							class CustomAttributes
@@ -24518,6 +24549,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_PHT2_GRP";
 							};
 							id=494;
 							class CustomAttributes
@@ -24980,6 +25012,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_RVN1_GRP";
 							};
 							id=529;
 							class CustomAttributes
@@ -25442,6 +25475,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_RVN2_GRP";
 							};
 							id=532;
 							class CustomAttributes
@@ -25902,6 +25936,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_FLC_GRP";
 							};
 							id=1537;
 							class CustomAttributes
@@ -27254,6 +27289,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="NATO_JIP_GRP";
 							};
 							id=1543;
 							class CustomAttributes
@@ -28174,6 +28210,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_CO_GRP";
 							};
 							id=873;
 							class CustomAttributes
@@ -28636,6 +28673,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_ASL_GRP";
 							};
 							id=877;
 							class CustomAttributes
@@ -29679,6 +29717,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_A1_GRP";
 							};
 							id=880;
 							class CustomAttributes
@@ -30722,6 +30761,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_A2_GRP";
 							};
 							id=887;
 							class CustomAttributes
@@ -31765,6 +31805,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_A3_GRP";
 							};
 							id=894;
 							class CustomAttributes
@@ -32227,6 +32268,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_BSL_GRP";
 							};
 							id=901;
 							class CustomAttributes
@@ -33270,6 +33312,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_B1_GRP";
 							};
 							id=904;
 							class CustomAttributes
@@ -34313,6 +34356,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_B2_GRP";
 							};
 							id=911;
 							class CustomAttributes
@@ -35356,6 +35400,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_B3_GRP";
 							};
 							id=918;
 							class CustomAttributes
@@ -35818,6 +35863,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_CSL_GRP";
 							};
 							id=925;
 							class CustomAttributes
@@ -36861,6 +36907,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_C1_GRP";
 							};
 							id=928;
 							class CustomAttributes
@@ -37904,6 +37951,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_C2_GRP";
 							};
 							id=935;
 							class CustomAttributes
@@ -38947,6 +38995,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_C3_GRP";
 							};
 							id=942;
 							class CustomAttributes
@@ -39409,6 +39458,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_WSL_GRP";
 							};
 							id=949;
 							class CustomAttributes
@@ -40101,6 +40151,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_MMG1_GRP";
 							};
 							id=952;
 							class CustomAttributes
@@ -40793,6 +40844,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_MMG2_GRP";
 							};
 							id=1435;
 							class CustomAttributes
@@ -41485,6 +41537,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_HMG1_GRP";
 							};
 							id=1439;
 							class CustomAttributes
@@ -42177,6 +42230,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_HMG2_GRP";
 							};
 							id=1451;
 							class CustomAttributes
@@ -42869,6 +42923,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_MAT1_GRP";
 							};
 							id=968;
 							class CustomAttributes
@@ -43561,6 +43616,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_MAT2_GRP";
 							};
 							id=1431;
 							class CustomAttributes
@@ -44253,6 +44309,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_HAT1_GRP";
 							};
 							id=1443;
 							class CustomAttributes
@@ -44945,6 +45002,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_HAT2_GRP";
 							};
 							id=1447;
 							class CustomAttributes
@@ -45425,6 +45483,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_MANPADS_GRP";
 							};
 							id=984;
 							class CustomAttributes
@@ -46098,6 +46157,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_MTR_GRP";
 							};
 							id=987;
 							class CustomAttributes
@@ -46579,6 +46639,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_SN_GRP";
 							};
 							id=996;
 							class CustomAttributes
@@ -47426,6 +47487,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_ENG_GRP";
 							};
 							id=991;
 							class CustomAttributes
@@ -48004,6 +48066,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_M1_GRP";
 							};
 							id=1075;
 							class CustomAttributes
@@ -48582,6 +48645,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_M2_GRP";
 							};
 							id=1079;
 							class CustomAttributes
@@ -49161,6 +49225,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_G1_GRP";
 							};
 							id=1091;
 							class CustomAttributes
@@ -49740,6 +49805,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_G2_GRP";
 							};
 							id=1095;
 							class CustomAttributes
@@ -50550,6 +50616,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_PHT1_GRP";
 							};
 							id=1107;
 							class CustomAttributes
@@ -51360,6 +51427,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_PHT2_GRP";
 							};
 							id=1112;
 							class CustomAttributes
@@ -51822,6 +51890,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_RVN1_GRP";
 								placementRadius=10;
 							};
 							id=1127;
@@ -52285,6 +52354,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_RVN2_GRP";
 							};
 							id=1130;
 							class CustomAttributes
@@ -52745,6 +52815,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_FLC_GRP";
 							};
 							id=1540;
 							class CustomAttributes
@@ -54097,6 +54168,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="CSAT_JIP_GRP";
 							};
 							id=1561;
 							class CustomAttributes
@@ -55036,6 +55108,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_CO_GRP";
 							};
 							id=1155;
 							class CustomAttributes
@@ -55498,6 +55571,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_ASL_GRP";
 							};
 							id=1159;
 							class CustomAttributes
@@ -56541,6 +56615,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_A1_GRP";
 							};
 							id=1162;
 							class CustomAttributes
@@ -57584,6 +57659,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_A2_GRP";
 							};
 							id=1169;
 							class CustomAttributes
@@ -58627,6 +58703,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_A3_GRP";
 							};
 							id=1176;
 							class CustomAttributes
@@ -59089,6 +59166,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_BSL_GRP";
 							};
 							id=1183;
 							class CustomAttributes
@@ -60132,6 +60210,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_B1_GRP";
 							};
 							id=1186;
 							class CustomAttributes
@@ -61175,6 +61254,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_B2_GRP";
 							};
 							id=1193;
 							class CustomAttributes
@@ -62218,6 +62298,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_B3_GRP";
 							};
 							id=1200;
 							class CustomAttributes
@@ -62680,6 +62761,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_CSL_GRP";
 							};
 							id=1207;
 							class CustomAttributes
@@ -63723,6 +63805,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_C1_GRP";
 							};
 							id=1210;
 							class CustomAttributes
@@ -64766,6 +64849,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_C2_GRP";
 							};
 							id=1217;
 							class CustomAttributes
@@ -65809,6 +65893,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_C3_GRP";
 							};
 							id=1224;
 							class CustomAttributes
@@ -66271,6 +66356,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_WSL_GRP";
 							};
 							id=1231;
 							class CustomAttributes
@@ -66963,6 +67049,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_MMG1_GRP";
 							};
 							id=1234;
 							class CustomAttributes
@@ -67655,6 +67742,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_MMG2_GRP";
 							};
 							id=1483;
 							class CustomAttributes
@@ -68404,6 +68492,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_HMG1_GRP";
 							};
 							id=1486;
 							class CustomAttributes
@@ -69153,6 +69242,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_HMG2_GRP";
 							};
 							id=1497;
 							class CustomAttributes
@@ -69845,6 +69935,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_MAT1_GRP";
 							};
 							id=1248;
 							class CustomAttributes
@@ -70537,6 +70628,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_MAT2_GRP";
 							};
 							id=1479;
 							class CustomAttributes
@@ -71229,6 +71321,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_HAT1_GRP";
 							};
 							id=1489;
 							class CustomAttributes
@@ -71921,6 +72014,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_HAT2_GRP";
 							};
 							id=1493;
 							class CustomAttributes
@@ -72401,6 +72495,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_MANPADS_GRP";
 							};
 							id=1264;
 							class CustomAttributes
@@ -73074,6 +73169,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_MTR_GRP";
 							};
 							id=1267;
 							class CustomAttributes
@@ -73555,6 +73651,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_SN_GRP";
 							};
 							id=1276;
 							class CustomAttributes
@@ -74402,6 +74499,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_ENG_GRP";
 							};
 							id=1271;
 							class CustomAttributes
@@ -74980,6 +75078,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_M1_GRP";
 							};
 							id=1355;
 							class CustomAttributes
@@ -75558,6 +75657,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_M2_GRP";
 							};
 							id=1359;
 							class CustomAttributes
@@ -76137,6 +76237,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_G1_GRP";
 							};
 							id=1371;
 							class CustomAttributes
@@ -76716,6 +76817,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_G2_GRP";
 							};
 							id=1375;
 							class CustomAttributes
@@ -77526,6 +77628,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_PHT1_GRP";
 							};
 							id=1387;
 							class CustomAttributes
@@ -78336,6 +78439,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_PHT2_GRP";
 							};
 							id=1392;
 							class CustomAttributes
@@ -78798,6 +78902,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_RVN1_GRP";
 							};
 							id=1407;
 							class CustomAttributes
@@ -79298,6 +79403,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_RVN2_GRP";
 							};
 							id=1410;
 							class CustomAttributes
@@ -79777,6 +79883,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_FLC_GRP";
 							};
 							id=1534;
 							class CustomAttributes
@@ -81129,6 +81236,7 @@ class Mission
 							};
 							class Attributes
 							{
+								name="AAF_JIP_GRP";
 							};
 							id=1552;
 							class CustomAttributes
