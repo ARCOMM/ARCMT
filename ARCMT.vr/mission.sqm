@@ -1,4 +1,4 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=1;
@@ -12,17 +12,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=27;
+		nextID=32;
 	};
 	class Camera
 	{
 		pos[]={65.15416,30.986034,-12.08567};
-		dir[]={-0.29280341,-0.54836208,0.78345191};
-		up[]={-0.19206883,0.83605349,0.51392543};
-		aside[]={0.93681133,-2.7823262e-007,0.35011756};
+		dir[]={-0.29276931,-0.54829854,0.78336138};
+		up[]={-0.19195062,0.83628267,0.5136013};
+		aside[]={0.9367184,0,0.35008416};
 	};
 };
 binarizationWanted=0;
+sourceName="ARCMT_DEV";
 addons[]=
 {
 	"A3_Characters_F",
@@ -143,25 +144,6 @@ class CustomAttributes
 		name="TMF_ORBAT_Settings";
 		class Attribute0
 		{
-			property="TMF_ORBATTracker";
-			expression="false";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"BOOL"
-						};
-					};
-					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="TMF_ORBATTrackerCondition";
 			expression="false";
 			class Value
@@ -176,6 +158,25 @@ class CustomAttributes
 						};
 					};
 					value="true";
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="TMF_ORBATTracker";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
 				};
 			};
 		};
@@ -275,7 +276,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="[[[0],[[""CMND"",""Command Net"",""ACRE_PRC152"",[],false],[""FAC"",""FAC-Net"",""ACRE_PRC152"",[],false],[""A-Net"",""Alpha Net"",""ACRE_PRC148"",[],false],[""B-Net"",""Bravo Net"",""ACRE_PRC148"",[],false],[""C-Net"",""Charlie Net"",""ACRE_PRC148"",[],false],[""SPARE"",""Spare Net"",""ACRE_PRC148"",[],false],[""CMND-S"",""Command Short Net"",""ACRE_PRC343"",[],false],[""AS-Net"",""Alpha Short Net"",""ACRE_PRC343"",[],false],[""A1-Net"",""Alpha One Net"",""ACRE_PRC343"",[],false],[""A2-Net"",""Alpha Two Net"",""ACRE_PRC343"",[],false],[""A3-Net"",""Alpha Three Net"",""ACRE_PRC343"",[],false],[""BS-Net"",""Bravo Short Net"",""ACRE_PRC343"",[],false],[""B1-Net"",""Bravo One Net"",""ACRE_PRC343"",[],false],[""B2-Net"",""Bravo Two Net"",""ACRE_PRC343"",[],false],[""B3-Net"",""Bravo Three Net"",""ACRE_PRC343"",[],false],[""CS-Net"",""Charlie Short Net"",""ACRE_PRC343"",[],false],[""C1-Net"",""Charlie One Net"",""ACRE_PRC343"",[],false],[""C2-Net"",""Charlie Two Net"",""ACRE_PRC343"",[],false],[""C3-Net"",""Charlie Three Net"",""ACRE_PRC343"",[],false],[""SPARE1"",""Spare Net One"",""ACRE_PRC343"",[],false],[""SPARE2"",""Spare Net Two"",""ACRE_PRC343"",[],false]]],[[1],[[""CMND"",""Command Net"",""ACRE_PRC152"",[],false],[""FAC"",""FAC-Net"",""ACRE_PRC152"",[],false],[""A-Net"",""Alpha Net"",""ACRE_PRC148"",[],false],[""B-Net"",""Bravo Net"",""ACRE_PRC148"",[],false],[""C-Net"",""Charlie Net"",""ACRE_PRC148"",[],false],[""SPARE"",""Spare Net"",""ACRE_PRC148"",[],false],[""CMND-S"",""Command Short Net"",""ACRE_PRC343"",[],false],[""AS-Net"",""Alpha Short Net"",""ACRE_PRC343"",[],false],[""A1-Net"",""Alpha One Net"",""ACRE_PRC343"",[],false],[""A2-Net"",""Alpha Two Net"",""ACRE_PRC343"",[],false],[""A3-Net"",""Alpha Three Net"",""ACRE_PRC343"",[],false],[""BS-Net"",""Bravo Short Net"",""ACRE_PRC343"",[],false],[""B1-Net"",""Bravo One Net"",""ACRE_PRC343"",[],false],[""B2-Net"",""Bravo Two Net"",""ACRE_PRC343"",[],false],[""B3-Net"",""Bravo Three Net"",""ACRE_PRC343"",[],false],[""CS-Net"",""Charlie Short Net"",""ACRE_PRC343"",[],false],[""C1-Net"",""Charlie One Net"",""ACRE_PRC343"",[],false],[""C2-Net"",""Charlie Two Net"",""ACRE_PRC343"",[],false],[""C3-Net"",""Charlie Three Net"",""ACRE_PRC343"",[],false],[""SPARE1"",""Spare Net One"",""ACRE_PRC343"",[],false],[""SPARE2"",""Spare Net Two"",""ACRE_PRC343"",[],false]],[[2],[[""CMND"",""Command Net"",""ACRE_PRC152"",[],false],[""FAC"",""FAC-Net"",""ACRE_PRC152"",[],false],[""A-Net"",""Alpha Net"",""ACRE_PRC148"",[],false],[""B-Net"",""Bravo Net"",""ACRE_PRC148"",[],false],[""C-Net"",""Charlie Net"",""ACRE_PRC148"",[],false],[""SPARE"",""Spare Net"",""ACRE_PRC148"",[],false],[""CMND-S"",""Command Short Net"",""ACRE_PRC343"",[],false],[""AS-Net"",""Alpha Short Net"",""ACRE_PRC343"",[],false],[""A1-Net"",""Alpha One Net"",""ACRE_PRC343"",[],false],[""A2-Net"",""Alpha Two Net"",""ACRE_PRC343"",[],false],[""A3-Net"",""Alpha Three Net"",""ACRE_PRC343"",[],false],[""BS-Net"",""Bravo Short Net"",""ACRE_PRC343"",[],false],[""B1-Net"",""Bravo One Net"",""ACRE_PRC343"",[],false],[""B2-Net"",""Bravo Two Net"",""ACRE_PRC343"",[],false],[""B3-Net"",""Bravo Three Net"",""ACRE_PRC343"",[],false],[""CS-Net"",""Charlie Short Net"",""ACRE_PRC343"",[],false],[""C1-Net"",""Charlie One Net"",""ACRE_PRC343"",[],false],[""C2-Net"",""Charlie Two Net"",""ACRE_PRC343"",[],false],[""C3-Net"",""Charlie Three Net"",""ACRE_PRC343"",[],false],[""SPARE1"",""Spare Net One"",""ACRE_PRC343"",[],false],[""SPARE2"",""Spare Net Two"",""ACRE_PRC343"",[],false]]]],[[2],[[""CMND"",""Command Net"",""ACRE_PRC152"",[],false],[""FAC"",""FAC-Net"",""ACRE_PRC152"",[],false],[""A-Net"",""Alpha Net"",""ACRE_PRC148"",[],false],[""B-Net"",""Bravo Net"",""ACRE_PRC148"",[],false],[""C-Net"",""Charlie Net"",""ACRE_PRC148"",[],false],[""SPARE"",""Spare Net"",""ACRE_PRC148"",[],false],[""CMND-S"",""Command Short Net"",""ACRE_PRC343"",[],false],[""AS-Net"",""Alpha Short Net"",""ACRE_PRC343"",[],false],[""A1-Net"",""Alpha One Net"",""ACRE_PRC343"",[],false],[""A2-Net"",""Alpha Two Net"",""ACRE_PRC343"",[],false],[""A3-Net"",""Alpha Three Net"",""ACRE_PRC343"",[],false],[""BS-Net"",""Bravo Short Net"",""ACRE_PRC343"",[],false],[""B1-Net"",""Bravo One Net"",""ACRE_PRC343"",[],false],[""B2-Net"",""Bravo Two Net"",""ACRE_PRC343"",[],false],[""B3-Net"",""Bravo Three Net"",""ACRE_PRC343"",[],false],[""CS-Net"",""Charlie Short Net"",""ACRE_PRC343"",[],false],[""C1-Net"",""Charlie One Net"",""ACRE_PRC343"",[],false],[""C2-Net"",""Charlie Two Net"",""ACRE_PRC343"",[],false],[""C3-Net"",""Charlie Three Net"",""ACRE_PRC343"",[],false],[""SPARE1"",""Spare Net One"",""ACRE_PRC343"",[],false],[""SPARE2"",""Spare Net Two"",""ACRE_PRC343"",[],false]]]]";
+					value="[[[0],[[""CMND"",""Command Net"",""ACRE_PRC152"",[],false],[""FAC"",""FAC Net"",""ACRE_PRC152"",[],false],[""A-Net"",""Alpha Net"",""ACRE_PRC148"",[],false],[""B-Net"",""Bravo Net"",""ACRE_PRC148"",[],false],[""C-Net"",""Charlie Net"",""ACRE_PRC148"",[],false],[""XO"",""XO Net"",""ACRE_PRC152"",[],false],[""CMND-S"",""Command Short Net"",""ACRE_PRC343"",[],false],[""AS-Net"",""Alpha Short Net"",""ACRE_PRC343"",[],false],[""A1-Net"",""Alpha One Net"",""ACRE_PRC343"",[],false],[""A2-Net"",""Alpha Two Net"",""ACRE_PRC343"",[],false],[""A3-Net"",""Alpha Three Net"",""ACRE_PRC343"",[],false],[""BS-Net"",""Bravo Short Net"",""ACRE_PRC343"",[],false],[""B1-Net"",""Bravo One Net"",""ACRE_PRC343"",[],false],[""B2-Net"",""Bravo Two Net"",""ACRE_PRC343"",[],false],[""B3-Net"",""Bravo Three Net"",""ACRE_PRC343"",[],false],[""CS-Net"",""Charlie Short Net"",""ACRE_PRC343"",[],false],[""C1-Net"",""Charlie One Net"",""ACRE_PRC343"",[],false],[""C2-Net"",""Charlie Two Net"",""ACRE_PRC343"",[],false],[""C3-Net"",""Charlie Three Net"",""ACRE_PRC343"",[],false],[""SPARE1"",""Spare Net One"",""ACRE_PRC343"",[],false],[""SPARE2"",""Spare Net Two"",""ACRE_PRC343"",[],false]]],[[1],[[""CMND"",""Command Net"",""ACRE_PRC152"",[],false],[""FAC"",""FAC Net"",""ACRE_PRC152"",[],false],[""A-Net"",""Alpha Net"",""ACRE_PRC148"",[],false],[""B-Net"",""Bravo Net"",""ACRE_PRC148"",[],false],[""C-Net"",""Charlie Net"",""ACRE_PRC148"",[],false],[""XO"",""XO Net"",""ACRE_PRC152"",[],false],[""CMND-S"",""Command Short Net"",""ACRE_PRC343"",[],false],[""AS-Net"",""Alpha Short Net"",""ACRE_PRC343"",[],false],[""A1-Net"",""Alpha One Net"",""ACRE_PRC343"",[],false],[""A2-Net"",""Alpha Two Net"",""ACRE_PRC343"",[],false],[""A3-Net"",""Alpha Three Net"",""ACRE_PRC343"",[],false],[""BS-Net"",""Bravo Short Net"",""ACRE_PRC343"",[],false],[""B1-Net"",""Bravo One Net"",""ACRE_PRC343"",[],false],[""B2-Net"",""Bravo Two Net"",""ACRE_PRC343"",[],false],[""B3-Net"",""Bravo Three Net"",""ACRE_PRC343"",[],false],[""CS-Net"",""Charlie Short Net"",""ACRE_PRC343"",[],false],[""C1-Net"",""Charlie One Net"",""ACRE_PRC343"",[],false],[""C2-Net"",""Charlie Two Net"",""ACRE_PRC343"",[],false],[""C3-Net"",""Charlie Three Net"",""ACRE_PRC343"",[],false],[""SPARE1"",""Spare Net One"",""ACRE_PRC343"",[],false],[""SPARE2"",""Spare Net Two"",""ACRE_PRC343"",[],false]],[[2],[[""CMND"",""Command Net"",""ACRE_PRC152"",[],false],[""FAC"",""FAC-Net"",""ACRE_PRC152"",[],false],[""A-Net"",""Alpha Net"",""ACRE_PRC148"",[],false],[""B-Net"",""Bravo Net"",""ACRE_PRC148"",[],false],[""C-Net"",""Charlie Net"",""ACRE_PRC148"",[],false],[""SPARE"",""Spare Net"",""ACRE_PRC148"",[],false],[""CMND-S"",""Command Short Net"",""ACRE_PRC343"",[],false],[""AS-Net"",""Alpha Short Net"",""ACRE_PRC343"",[],false],[""A1-Net"",""Alpha One Net"",""ACRE_PRC343"",[],false],[""A2-Net"",""Alpha Two Net"",""ACRE_PRC343"",[],false],[""A3-Net"",""Alpha Three Net"",""ACRE_PRC343"",[],false],[""BS-Net"",""Bravo Short Net"",""ACRE_PRC343"",[],false],[""B1-Net"",""Bravo One Net"",""ACRE_PRC343"",[],false],[""B2-Net"",""Bravo Two Net"",""ACRE_PRC343"",[],false],[""B3-Net"",""Bravo Three Net"",""ACRE_PRC343"",[],false],[""CS-Net"",""Charlie Short Net"",""ACRE_PRC343"",[],false],[""C1-Net"",""Charlie One Net"",""ACRE_PRC343"",[],false],[""C2-Net"",""Charlie Two Net"",""ACRE_PRC343"",[],false],[""C3-Net"",""Charlie Three Net"",""ACRE_PRC343"",[],false],[""SPARE1"",""Spare Net One"",""ACRE_PRC343"",[],false],[""SPARE2"",""Spare Net Two"",""ACRE_PRC343"",[],false]]]],[[2],[[""CMND"",""Command Net"",""ACRE_PRC152"",[],false],[""FAC"",""FAC Net"",""ACRE_PRC152"",[],false],[""A-Net"",""Alpha Net"",""ACRE_PRC148"",[],false],[""B-Net"",""Bravo Net"",""ACRE_PRC148"",[],false],[""C-Net"",""Charlie Net"",""ACRE_PRC148"",[],false],[""XO"",""XO Net"",""ACRE_PRC152"",[],false],[""CMND-S"",""Command Short Net"",""ACRE_PRC343"",[],false],[""AS-Net"",""Alpha Short Net"",""ACRE_PRC343"",[],false],[""A1-Net"",""Alpha One Net"",""ACRE_PRC343"",[],false],[""A2-Net"",""Alpha Two Net"",""ACRE_PRC343"",[],false],[""A3-Net"",""Alpha Three Net"",""ACRE_PRC343"",[],false],[""BS-Net"",""Bravo Short Net"",""ACRE_PRC343"",[],false],[""B1-Net"",""Bravo One Net"",""ACRE_PRC343"",[],false],[""B2-Net"",""Bravo Two Net"",""ACRE_PRC343"",[],false],[""B3-Net"",""Bravo Three Net"",""ACRE_PRC343"",[],false],[""CS-Net"",""Charlie Short Net"",""ACRE_PRC343"",[],false],[""C1-Net"",""Charlie One Net"",""ACRE_PRC343"",[],false],[""C2-Net"",""Charlie Two Net"",""ACRE_PRC343"",[],false],[""C3-Net"",""Charlie Three Net"",""ACRE_PRC343"",[],false],[""SPARE1"",""Spare Net One"",""ACRE_PRC343"",[],false],[""SPARE2"",""Spare Net Two"",""ACRE_PRC343"",[],false]]]]";
 				};
 			};
 		};
@@ -739,7 +740,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="[]";
+													value="[5]";
 												};
 											};
 										};
@@ -1312,7 +1313,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[0,6]";
 										};
 									};
 								};
@@ -1775,7 +1776,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[2]";
+											value="[2,7]";
 										};
 									};
 								};
@@ -2819,7 +2820,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[8]";
 										};
 									};
 								};
@@ -3863,7 +3864,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[9]";
 										};
 									};
 								};
@@ -4907,7 +4908,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[10]";
 										};
 									};
 								};
@@ -5370,7 +5371,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[3]";
+											value="[3,11]";
 										};
 									};
 								};
@@ -6414,7 +6415,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[12]";
 										};
 									};
 								};
@@ -7458,7 +7459,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[13]";
 										};
 									};
 								};
@@ -8502,7 +8503,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[14]";
 										};
 									};
 								};
@@ -8965,7 +8966,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[4]";
+											value="[4,15]";
 										};
 									};
 								};
@@ -10009,7 +10010,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[16]";
 										};
 									};
 								};
@@ -11053,7 +11054,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[17]";
 										};
 									};
 								};
@@ -12097,7 +12098,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[18]";
 										};
 									};
 								};
@@ -12560,7 +12561,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -12617,7 +12618,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[0,5]";
 										};
 									};
 								};
@@ -13253,7 +13254,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -13310,7 +13311,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -13946,7 +13947,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -14003,7 +14004,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -14639,7 +14640,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -14696,7 +14697,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -15351,7 +15352,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -15408,7 +15409,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -16044,7 +16045,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -16101,7 +16102,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -16738,7 +16739,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -16795,7 +16796,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -17431,7 +17432,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -17488,7 +17489,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -18125,7 +18126,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -18182,7 +18183,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -18606,7 +18607,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -18663,7 +18664,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -19280,7 +19281,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -19337,7 +19338,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -19762,7 +19763,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -19819,7 +19820,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -20610,7 +20611,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -21189,7 +21190,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -21246,7 +21247,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -21768,7 +21769,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -21825,7 +21826,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -22348,7 +22349,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -22405,7 +22406,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -22928,7 +22929,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -22985,7 +22986,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -23739,7 +23740,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[1]";
+											value="[1,6]";
 										};
 									};
 								};
@@ -24569,7 +24570,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[1]";
+											value="[1,6]";
 										};
 									};
 								};
@@ -25032,7 +25033,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[1]";
+											value="[1,6]";
 										};
 									};
 								};
@@ -25495,7 +25496,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[1]";
+											value="[1,6]";
 										};
 									};
 								};
@@ -25956,7 +25957,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[1]";
+											value="[1,6]";
 										};
 									};
 								};
@@ -27309,7 +27310,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[]";
+											value="[6]";
 										};
 									};
 								};
@@ -27657,7 +27658,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="[]";
+													value="[5]";
 												};
 											};
 										};
@@ -39535,7 +39536,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[0,5]";
 										};
 									};
 								};
@@ -40228,7 +40229,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -40921,7 +40922,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -41614,7 +41615,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -42307,7 +42308,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -43000,7 +43001,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -43693,7 +43694,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -44386,7 +44387,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -45079,7 +45080,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -45560,7 +45561,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -46234,7 +46235,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -46716,7 +46717,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -48143,7 +48144,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -48722,7 +48723,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -49302,7 +49303,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -49882,7 +49883,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -54555,7 +54556,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="[]";
+													value="[5]";
 												};
 											};
 										};
@@ -66433,7 +66434,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[0,5]";
 										};
 									};
 								};
@@ -67126,7 +67127,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -67819,7 +67820,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -68569,7 +68570,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -69319,7 +69320,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -70012,7 +70013,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -70705,7 +70706,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -71398,7 +71399,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -72091,7 +72092,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -72572,7 +72573,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -73246,7 +73247,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -73728,7 +73729,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -75155,7 +75156,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -75734,7 +75735,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -76314,7 +76315,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
@@ -76894,7 +76895,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[0]";
+											value="[5]";
 										};
 									};
 								};
