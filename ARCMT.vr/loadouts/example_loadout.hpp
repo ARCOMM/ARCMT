@@ -8,13 +8,13 @@ class baseMan {// Weaponless baseclass
 	vest[] = {"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"};
 	backpack[] = {"B_AssaultPack_mcamo"};
 	headgear[] = {};
-	goggles[] = {"default"};
 	hmd[] = {};
 	// Leave empty to remove all. "Default" > leave original item.
-	faces[] = {"faceset:african", "faceset:caucasian"};
+	goggles[] = {"default"};
 	// Leave empty to not change faces.
-	insignias[] = {"111thID"};
+	faces[] = {"faceset:african", "faceset:caucasian"};
 	// Leave empty to not change insignias
+	insignias[] = {"111thID"};
 
 	// All randomized
 	primaryWeapon[] = {};
