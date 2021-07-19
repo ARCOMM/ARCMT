@@ -12,7 +12,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=62;
+		nextID=72;
 	};
 	class Camera
 	{
@@ -19589,7 +19589,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[""x\tmf\addons\orbat\textures\gray_mortar.paa"",""MTR"",""x\tmf\addons\orbat\textures\modif_o.paa"",14]";
+											value="[""x\tmf\addons\orbat\textures\gray_mortar.paa"",""MTR"",""x\tmf\addons\orbat\textures\modif_o.paa"",11]";
 										};
 									};
 								};
@@ -20919,7 +20919,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[""x\tmf\addons\orbat\textures\gray_engineer.paa"",""ENG"",""x\tmf\addons\orbat\textures\modif_o.paa"",11]";
+											value="[""x\tmf\addons\orbat\textures\gray_logistics.paa"",""LOGI"",""x\tmf\addons\orbat\textures\modif_o.paa"",14]";
 										};
 									};
 								};
@@ -47006,7 +47006,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[""x\tmf\addons\orbat\textures\gray_sf.paa"",""SN"","""",23]";
+											value="[""x\tmf\addons\orbat\textures\gray_sf.paa"",""SN"","""",24]";
 										};
 									};
 								};
@@ -47873,7 +47873,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[""x\tmf\addons\orbat\textures\gray_engineer.paa"",""ENG"",""x\tmf\addons\orbat\textures\modif_o.paa"",7]";
+											value="[""x\tmf\addons\orbat\textures\gray_logistics.paa"",""LOGI"",""x\tmf\addons\orbat\textures\modif_o.paa"",23]";
 										};
 									};
 								};
@@ -74075,7 +74075,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[""x\tmf\addons\orbat\textures\gray_sf.paa"",""SN"","""",15]";
+											value="[""x\tmf\addons\orbat\textures\gray_sf.paa"",""SN"","""",16]";
 										};
 									};
 								};
@@ -74942,7 +74942,7 @@ class Mission
 													"STRING"
 												};
 											};
-											value="[""x\tmf\addons\orbat\textures\gray_engineer.paa"",""ENG"",""x\tmf\addons\orbat\textures\modif_o.paa"",8]";
+											value="[""x\tmf\addons\orbat\textures\gray_logistics.paa"",""LOGI"",""x\tmf\addons\orbat\textures\modif_o.paa"",15]";
 										};
 									};
 								};
