@@ -31,26 +31,8 @@ addons[]=
 	"A3_Weapons_F_Rifles_MX",
 	"A3_Sounds_F",
 	"A3_Sounds_F_Enoch",
-	"ace_realisticnames",
-	"ace_scopes",
-	"ace_ai",
-	"ace_ballistics",
 	"A3_Weapons_F_Acc",
-	"ace_laserpointer",
 	"A3_Weapons_F",
-	"ace_smallarms",
-	"ace_csw",
-	"ace_vector",
-	"acre_main",
-	"ace_medical_treatment",
-	"ace_trenches",
-	"ace_mk6mortar",
-	"ace_maptools",
-	"ace_hearing",
-	"ace_explosives",
-	"ace_nouniformrestrictions",
-	"ace_gforces",
-	"ace_parachute",
 	"A3_Modules_F_Curator_Curator",
 	"TMF_safestart",
 	"tmf_spectator",
@@ -60,7 +42,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=25;
+		items=9;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -98,138 +80,26 @@ class AddonsMetaData
 		};
 		class Item5
 		{
-			className="ace_scopes";
-			name="ACE3 - Scopes";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item6
-		{
-			className="ace_ai";
-			name="ACE3 - AI";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item7
-		{
-			className="ace_ballistics";
-			name="ACE3 - Ballistics";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item8
-		{
-			className="ace_laserpointer";
-			name="ACE3 - Laser Pointer";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item9
-		{
-			className="ace_smallarms";
-			name="ACE3 - Small Arms";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item10
-		{
-			className="ace_csw";
-			name="ACE3 - Crew-Served Weapons";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item11
-		{
-			className="ace_vector";
-			name="ACE3 - Vector";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item12
-		{
-			className="acre_main";
-			name="ACRE2 - Main";
-			author="ACRE2Team";
-			url="https://github.com/IDI-Systems/acre2";
-		};
-		class Item13
-		{
-			className="ace_medical_treatment";
-			name="ACE3 - Medical Treatment";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item14
-		{
-			className="ace_trenches";
-			name="ACE3 - Trenches";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item15
-		{
-			className="ace_mk6mortar";
-			name="ACE3 - Mk6 Mortar";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item16
-		{
-			className="ace_maptools";
-			name="ACE3 - Map Tools";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item17
-		{
-			className="ace_hearing";
-			name="ACE3 - Hearing";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item18
-		{
-			className="ace_explosives";
-			name="ACE3 - Explosives";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item19
-		{
-			className="ace_nouniformrestrictions";
-			name="ACE3 - No Uniform Restrictions";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item20
-		{
-			className="ace_parachute";
-			name="ACE3 - Parachute";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item21
-		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item6
 		{
 			className="TMF_safestart";
 			name="TMF: Safestart";
 			author="Head";
 			url="http://www.teamonetactical.com";
 		};
-		class Item23
+		class Item7
 		{
 			className="TMF_spectator";
 			name="TMF: Spectator";
 			author="Head";
 			url="http://www.teamonetactical.com";
 		};
-		class Item24
+		class Item8
 		{
 			className="A3_Data_F_Curator";
 			name="Arma 3 Zeus Update - Main Configuration";
@@ -245,10 +115,6 @@ class DynamicSimulation
 		Vehicle=1000;
 		Group=1000;
 	};
-};
-dlcs[]=
-{
-	"Mark"
 };
 randomSeed=652147;
 class ScenarioData
