@@ -485,7 +485,7 @@ class CustomAttributes
 							"STRING"
 						};
 					};
-					value="4.0.1";
+					value="4.0.2";
 				};
 			};
 		};
