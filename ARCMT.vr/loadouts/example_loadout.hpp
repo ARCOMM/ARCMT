@@ -203,8 +203,7 @@ class mmgg : ar {
 		LIST_4("130Rnd_338_Mag"),
 		"HandGrenade",
 		"SmokeShell",
-		LIST_4("11Rnd_45ACP_Mag"),
-		"ACE_SpareBarrel"
+		LIST_4("11Rnd_45ACP_Mag")
 	};
 };
 
