@@ -24,23 +24,11 @@ class CfgDebriefing {
 };
 
 // DO NOT REMOVE. Include the macros for custom loadouts.
-#include "\x\arc_misc\addons\tmf_loadouts\macros.inc"
+#include "\z\arc_tmf\addons\loadout\macros.inc"
 
 class CfgLoadouts {
 	class EXAMPLE_LOADOUT {
 		displayName = "Example Loadout";
 		#include "loadouts\example_loadout.hpp"
-	};
-
-	// Example import and modification of loadout
-	import BLU_F from CfgLoadouts;
-	class BLU_F: BLU_F {
-		// Add some explosives to the engineer
-		class eng: eng {
-			backpackitems[] += {
-				"SatchelCharge_Remote_Mag",
-				LIST_3("DemoCharge_Remote_Mag")
-			};
-		};
 	};
 };
