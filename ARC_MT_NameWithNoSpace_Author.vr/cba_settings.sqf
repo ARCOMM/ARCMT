@@ -23,4 +23,4 @@ force ace_weather_windSimulation = false;
 
 	https://community.bistudio.com/wiki/disableRemoteSensors
 */
-force arc_misc_difficulty_disableRemoteSensors = true;
+force arc_dif_main_disableRemoteSensors = true;
