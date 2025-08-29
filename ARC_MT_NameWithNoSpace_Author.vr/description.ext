@@ -10,6 +10,16 @@ class CfgDebriefingSections {
 	#if __has_include("\z\ace\addons\killtracker\killtracker.inc")
 		#include "\z\ace\addons\killtracker\killtracker.inc"
 	#endif
+
+    class arc_cfg_shot_counter_countTeams {
+        title = "Munitions Expended by Teams";
+        variable = "arc_cfg_shot_counter_countTextTeams";
+    };
+
+    class arc_cfg_shot_counter_countPlayer {
+        title = "Munitions Expended by You";
+        variable = "arc_cfg_shot_counter_countTextPlayer";
+    };
 };
 
 class CfgDebriefing {
